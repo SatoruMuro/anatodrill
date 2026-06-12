@@ -1,0 +1,554 @@
+[
+  {
+    "id": "scapula",
+    "japanese": "肩甲骨",
+    "english": "scapula",
+    "latin": "scapula",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": [
+      "basic_upper",
+      "osteology_basic"
+    ],
+    "explanation": "肩甲骨は肩の後面にある平たい骨で、上腕骨や鎖骨と関節を作ります。"
+  },
+  {
+    "id": "clavicle",
+    "japanese": "鎖骨",
+    "english": "clavicle",
+    "latin": "clavicula",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": [
+      "basic_upper",
+      "osteology_basic"
+    ],
+    "explanation": "鎖骨は胸骨と肩甲骨をつなぎ、上肢帯を体幹に連結します。"
+  },
+  {
+    "id": "humerus",
+    "japanese": "上腕骨",
+    "english": "humerus",
+    "latin": "humerus",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": [
+      "basic_upper",
+      "osteology_basic"
+    ],
+    "explanation": "上腕骨は肩から肘までを構成する長骨です。"
+  },
+  {
+    "id": "radius",
+    "japanese": "橈骨",
+    "english": "radius",
+    "latin": "radius",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": [
+      "basic_upper",
+      "osteology_basic"
+    ],
+    "explanation": "橈骨は前腕の母指側にある骨で、回内回外運動に関わります。"
+  },
+  {
+    "id": "ulna",
+    "japanese": "尺骨",
+    "english": "ulna",
+    "latin": "ulna",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": [
+      "basic_upper",
+      "osteology_basic"
+    ],
+    "explanation": "尺骨は前腕の小指側にある骨で、肘関節の形成に重要です。"
+  },
+  {
+    "id": "sternum",
+    "japanese": "胸骨",
+    "english": "sternum",
+    "latin": "sternum",
+    "category": "bone",
+    "region": "trunk",
+    "testSet": [
+      "basic_trunk",
+      "osteology_basic"
+    ],
+    "explanation": "胸骨は胸郭前面の中央にある骨で、肋軟骨を介して肋骨とつながります。"
+  },
+  {
+    "id": "rib",
+    "japanese": "肋骨",
+    "english": "rib",
+    "latin": "costa",
+    "category": "bone",
+    "region": "trunk",
+    "testSet": [
+      "basic_trunk",
+      "osteology_basic"
+    ],
+    "explanation": "肋骨は胸郭を構成し、心臓や肺を保護します。"
+  },
+  {
+    "id": "atlas",
+    "japanese": "環椎",
+    "english": "atlas",
+    "latin": "atlas",
+    "category": "bone",
+    "region": "spine",
+    "testSet": "osteology_basic",
+    "explanation": "環椎は第1頸椎で、頭蓋骨を支える輪状の椎骨です。"
+  },
+  {
+    "id": "axis",
+    "japanese": "軸椎",
+    "english": "axis",
+    "latin": "axis",
+    "category": "bone",
+    "region": "spine",
+    "testSet": "osteology_basic",
+    "explanation": "軸椎は第2頸椎で、歯突起を介して頭部の回旋に関わります。"
+  },
+  {
+    "id": "vertebra",
+    "japanese": "椎骨",
+    "english": "vertebra",
+    "latin": "vertebra",
+    "category": "bone",
+    "region": "spine",
+    "testSet": "osteology_basic",
+    "explanation": "椎骨は脊柱を構成する骨で、椎孔を通して脊髄を保護します。"
+  },
+  {
+    "id": "lumbar_vertebra",
+    "japanese": "腰椎",
+    "english": "lumbar vertebra",
+    "latin": "vertebra lumbalis",
+    "category": "bone",
+    "region": "spine",
+    "testSet": "osteology_basic",
+    "explanation": "腰椎は腰部の脊柱を構成する大きな椎骨で、体重支持に関わります。"
+  },
+  {
+    "id": "thoracic_vertebra",
+    "japanese": "胸椎",
+    "english": "thoracic vertebra",
+    "latin": "vertebra thoracica",
+    "category": "bone",
+    "region": "thorax",
+    "testSet": "osteology_basic",
+    "explanation": "胸椎は胸郭を構成する椎骨で、肋骨と関節する。"
+  },
+  {
+    "id": "cervical_vertebra",
+    "japanese": "頸椎",
+    "english": "cervical vertebra",
+    "latin": "vertebra cervicalis",
+    "category": "bone",
+    "region": "neck",
+    "testSet": "osteology_basic",
+    "explanation": "頸椎は頸部の椎骨で、通常7個存在する。"
+  },
+  {
+    "id": "mandible",
+    "japanese": "下顎骨",
+    "english": "mandible",
+    "latin": "mandibula",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": [
+      "basic_head",
+      "osteology_basic"
+    ],
+    "explanation": "下顎骨は顔面頭蓋で唯一大きく可動する骨です。"
+  },
+  {
+    "id": "maxilla",
+    "japanese": "上顎骨",
+    "english": "maxilla",
+    "latin": "maxilla",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": [
+      "basic_head",
+      "osteology_basic"
+    ],
+    "explanation": "上顎骨は上歯列や眼窩底、鼻腔外側壁の一部を作ります。"
+  },
+  {
+    "id": "temporal_bone",
+    "japanese": "側頭骨",
+    "english": "temporal bone",
+    "latin": "os temporale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": [
+      "basic_head",
+      "osteology_basic"
+    ],
+    "explanation": "側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。"
+  },
+  {
+    "id": "femur",
+    "japanese": "大腿骨",
+    "english": "femur",
+    "latin": "femur",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "大腿骨は人体で最も長い骨で、股関節と膝関節を構成します。"
+  },
+  {
+    "id": "tibia",
+    "japanese": "脛骨",
+    "english": "tibia",
+    "latin": "tibia",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "脛骨は下腿内側の太い骨で、体重支持に大きく関わります。"
+  },
+  {
+    "id": "fibula",
+    "japanese": "腓骨",
+    "english": "fibula",
+    "latin": "fibula",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "腓骨は下腿外側の細い骨で、足関節外果を形成します。"
+  },
+  {
+    "id": "hip_bone",
+    "japanese": "寛骨",
+    "english": "hip bone",
+    "latin": "os coxae",
+    "category": "bone",
+    "region": "pelvis",
+    "testSet": "osteology_basic",
+    "explanation": "寛骨は腸骨・坐骨・恥骨が癒合した骨で、骨盤の側壁を作ります。"
+  },
+  {
+    "id": "pelvis",
+    "japanese": "骨盤",
+    "english": "pelvis",
+    "latin": "pelvis",
+    "category": "bone",
+    "region": "pelvis",
+    "testSet": "osteology_basic",
+    "explanation": "骨盤は左右の寛骨、仙骨、尾骨からなる骨性の輪です。"
+  },
+  {
+    "id": "patella",
+    "japanese": "膝蓋骨",
+    "english": "patella",
+    "latin": "patella",
+    "category": "bone",
+    "region": "knee",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "膝蓋骨は膝関節前面に位置する種子骨で、大腿四頭筋腱内に存在する。"
+  },
+  {
+    "id": "sacrum",
+    "japanese": "仙骨",
+    "english": "sacrum",
+    "latin": "os sacrum",
+    "category": "bone",
+    "region": "pelvis",
+    "testSet": "osteology_basic",
+    "explanation": "仙骨は骨盤後壁を構成する骨で、複数の仙椎が癒合して形成される。"
+  },
+  {
+    "id": "coccyx",
+    "japanese": "尾骨",
+    "english": "coccyx",
+    "latin": "os coccygis",
+    "category": "bone",
+    "region": "pelvis",
+    "testSet": "osteology_basic",
+    "explanation": "尾骨は脊柱の最下部に位置する小骨である。"
+  },
+  {
+    "id": "calcaneus",
+    "japanese": "踵骨",
+    "english": "calcaneus",
+    "latin": "calcaneus",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "踵骨は足根骨の一つで、かかとの骨格を作ります。"
+  },
+  {
+    "id": "diaphragm",
+    "japanese": "横隔膜",
+    "english": "diaphragm",
+    "latin": "diaphragma",
+    "category": "muscle",
+    "region": "trunk",
+    "testSet": "basic_trunk",
+    "explanation": "横隔膜は胸腔と腹腔を隔てる呼吸筋です。"
+  },
+  {
+    "id": "biceps_brachii",
+    "japanese": "上腕二頭筋",
+    "english": "biceps brachii",
+    "latin": "musculus biceps brachii",
+    "category": "muscle",
+    "region": "upper limb",
+    "testSet": "basic_muscle",
+    "explanation": "上腕二頭筋は肘関節屈曲と前腕回外に関わります。"
+  },
+  {
+    "id": "triceps_brachii",
+    "japanese": "上腕三頭筋",
+    "english": "triceps brachii",
+    "latin": "musculus triceps brachii",
+    "category": "muscle",
+    "region": "upper limb",
+    "testSet": "basic_muscle",
+    "explanation": "上腕三頭筋は主に肘関節伸展に働きます。"
+  },
+  {
+    "id": "deltoid",
+    "japanese": "三角筋",
+    "english": "deltoid",
+    "latin": "musculus deltoideus",
+    "category": "muscle",
+    "region": "upper limb",
+    "testSet": "basic_muscle",
+    "explanation": "三角筋は肩関節の外転を中心に、屈曲や伸展にも関わります。"
+  },
+  {
+    "id": "trapezius",
+    "japanese": "僧帽筋",
+    "english": "trapezius",
+    "latin": "musculus trapezius",
+    "category": "muscle",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "僧帽筋は肩甲骨の挙上、内転、回旋に関わる背部の筋です。"
+  },
+  {
+    "id": "frontal_bone",
+    "japanese": "前頭骨",
+    "english": "frontal bone",
+    "latin": "os frontale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "前頭骨は額と眼窩上部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "ethmoid_bone",
+    "japanese": "篩骨",
+    "english": "ethmoid bone",
+    "latin": "os ethmoidale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "篩骨は鼻腔上部と眼窩内側壁の一部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "sphenoid_bone",
+    "japanese": "蝶形骨",
+    "english": "sphenoid bone",
+    "latin": "os sphenoidale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "parietal_bone",
+    "japanese": "頭頂骨",
+    "english": "parietal bone",
+    "latin": "os parietale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "頭頂骨は頭蓋冠の側上部を構成する骨です。"
+  },
+  {
+    "id": "occipital_bone",
+    "japanese": "後頭骨",
+    "english": "occipital bone",
+    "latin": "os occipitale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "後頭骨は頭蓋後下部を構成し、大後頭孔を含む骨です。"
+  },
+  {
+    "id": "nasal_bone",
+    "japanese": "鼻骨",
+    "english": "nasal bone",
+    "latin": "os nasale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "鼻骨は鼻背の骨性部分を構成する小骨です。"
+  },
+  {
+    "id": "zygomatic_bone",
+    "japanese": "頬骨",
+    "english": "zygomatic bone",
+    "latin": "os zygomaticum",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "頬骨は頬の突出を作り、眼窩外側壁の一部を構成します。"
+  },
+  {
+    "id": "lacrimal_bone",
+    "japanese": "涙骨",
+    "english": "lacrimal bone",
+    "latin": "os lacrimale",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "涙骨は眼窩内側壁前方に位置する小さな骨です。"
+  },
+  {
+    "id": "pisiform",
+    "japanese": "豆状骨",
+    "english": "pisiform",
+    "latin": "os pisiforme",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "豆状骨は手根骨の一つで、尺側近位に位置する小さな骨です。"
+  },
+  {
+    "id": "triquetral_bone",
+    "japanese": "三角骨",
+    "english": "triquetral bone",
+    "latin": "os triquetrum",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "三角骨は手根骨近位列の尺側に位置する骨です。"
+  },
+  {
+    "id": "lunate_bone",
+    "japanese": "月状骨",
+    "english": "lunate bone",
+    "latin": "os lunatum",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "月状骨は手根骨近位列中央に位置する骨です。"
+  },
+  {
+    "id": "scaphoid_bone",
+    "japanese": "舟状骨",
+    "english": "scaphoid bone",
+    "latin": "os scaphoideum",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "舟状骨は手根骨近位列橈側に位置する骨です。"
+  },
+  {
+    "id": "trapezium_bone",
+    "japanese": "大菱形骨",
+    "english": "trapezium",
+    "latin": "os trapezium",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "大菱形骨は母指側の遠位手根骨で、第1中手骨と関節します。"
+  },
+  {
+    "id": "trapezoid_bone",
+    "japanese": "小菱形骨",
+    "english": "trapezoid bone",
+    "latin": "os trapezoideum",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "小菱形骨は遠位手根骨の一つで、大菱形骨と有頭骨の間に位置します。"
+  },
+  {
+    "id": "capitate_bone",
+    "japanese": "有頭骨",
+    "english": "capitate bone",
+    "latin": "os capitatum",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "有頭骨は手根骨の中央に位置する大きな骨です。"
+  },
+  {
+    "id": "hamate_bone",
+    "japanese": "有鈎骨",
+    "english": "hamate bone",
+    "latin": "os hamatum",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "有鈎骨は遠位手根骨の尺側に位置し、有鈎骨鈎を持つ骨です。"
+  },
+  {
+    "id": "metacarpal_bone",
+    "japanese": "中手骨",
+    "english": "metacarpal bone",
+    "latin": "os metacarpale",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "中手骨は手掌部を構成し、手根骨と指骨をつなぐ骨です。"
+  },
+  {
+    "id": "proximal_phalanx",
+    "japanese": "基節骨",
+    "english": "proximal phalanx",
+    "latin": "phalanx proximalis",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "基節骨は指骨のうち最も近位にある骨です。"
+  },
+  {
+    "id": "middle_phalanx",
+    "japanese": "中節骨",
+    "english": "middle phalanx",
+    "latin": "phalanx media",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "中節骨は第2から第5指で基節骨と末節骨の間にある骨です。"
+  },
+  {
+    "id": "distal_phalanx",
+    "japanese": "末節骨",
+    "english": "distal phalanx",
+    "latin": "phalanx distalis",
+    "category": "bone",
+    "region": "upper limb",
+    "testSet": "osteology_basic",
+    "explanation": "末節骨は指先を構成する遠位の指骨です。"
+  },
+  {
+    "id": "vomer",
+    "japanese": "鋤骨",
+    "english": "vomer",
+    "latin": "vomer",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": "osteology_basic",
+    "explanation": "鋤骨は鼻中隔の後下部を構成する薄い骨です。"
+  }
+]

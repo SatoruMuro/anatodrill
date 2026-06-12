@@ -1,0 +1,52 @@
+id,japanese,english,latin,category,region,testSet,explanation
+scapula,肩甲骨,scapula,scapula,bone,upper limb,basic_upper|osteology_basic,肩甲骨は肩の後面にある平たい骨で、上腕骨や鎖骨と関節を作ります。
+clavicle,鎖骨,clavicle,clavicula,bone,upper limb,basic_upper|osteology_basic,鎖骨は胸骨と肩甲骨をつなぎ、上肢帯を体幹に連結します。
+humerus,上腕骨,humerus,humerus,bone,upper limb,basic_upper|osteology_basic,上腕骨は肩から肘までを構成する長骨です。
+radius,橈骨,radius,radius,bone,upper limb,basic_upper|osteology_basic,橈骨は前腕の母指側にある骨で、回内回外運動に関わります。
+ulna,尺骨,ulna,ulna,bone,upper limb,basic_upper|osteology_basic,尺骨は前腕の小指側にある骨で、肘関節の形成に重要です。
+sternum,胸骨,sternum,sternum,bone,trunk,basic_trunk|osteology_basic,胸骨は胸郭前面の中央にある骨で、肋軟骨を介して肋骨とつながります。
+rib,肋骨,rib,costa,bone,trunk,basic_trunk|osteology_basic,肋骨は胸郭を構成し、心臓や肺を保護します。
+atlas,環椎,atlas,atlas,bone,spine,osteology_basic,環椎は第1頸椎で、頭蓋骨を支える輪状の椎骨です。
+axis,軸椎,axis,axis,bone,spine,osteology_basic,軸椎は第2頸椎で、歯突起を介して頭部の回旋に関わります。
+vertebra,椎骨,vertebra,vertebra,bone,spine,osteology_basic,椎骨は脊柱を構成する骨で、椎孔を通して脊髄を保護します。
+lumbar_vertebra,腰椎,lumbar vertebra,vertebra lumbalis,bone,spine,osteology_basic,腰椎は腰部の脊柱を構成する大きな椎骨で、体重支持に関わります。
+thoracic_vertebra,胸椎,thoracic vertebra,vertebra thoracica,bone,thorax,osteology_basic,胸椎は胸郭を構成する椎骨で、肋骨と関節する。
+cervical_vertebra,頸椎,cervical vertebra,vertebra cervicalis,bone,neck,osteology_basic,頸椎は頸部の椎骨で、通常7個存在する。
+mandible,下顎骨,mandible,mandibula,bone,head and neck,basic_head|osteology_basic,下顎骨は顔面頭蓋で唯一大きく可動する骨です。
+maxilla,上顎骨,maxilla,maxilla,bone,head and neck,basic_head|osteology_basic,上顎骨は上歯列や眼窩底、鼻腔外側壁の一部を作ります。
+temporal_bone,側頭骨,temporal bone,os temporale,bone,head and neck,basic_head|osteology_basic,側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。
+femur,大腿骨,femur,femur,bone,lower limb,basic_lower|osteology_basic,大腿骨は人体で最も長い骨で、股関節と膝関節を構成します。
+tibia,脛骨,tibia,tibia,bone,lower limb,basic_lower|osteology_basic,脛骨は下腿内側の太い骨で、体重支持に大きく関わります。
+fibula,腓骨,fibula,fibula,bone,lower limb,basic_lower|osteology_basic,腓骨は下腿外側の細い骨で、足関節外果を形成します。
+hip_bone,寛骨,hip bone,os coxae,bone,pelvis,osteology_basic,寛骨は腸骨・坐骨・恥骨が癒合した骨で、骨盤の側壁を作ります。
+pelvis,骨盤,pelvis,pelvis,bone,pelvis,osteology_basic,骨盤は左右の寛骨、仙骨、尾骨からなる骨性の輪です。
+patella,膝蓋骨,patella,patella,bone,knee,basic_lower|osteology_basic,膝蓋骨は膝関節前面に位置する種子骨で、大腿四頭筋腱内に存在する。
+sacrum,仙骨,sacrum,os sacrum,bone,pelvis,osteology_basic,仙骨は骨盤後壁を構成する骨で、複数の仙椎が癒合して形成される。
+coccyx,尾骨,coccyx,os coccygis,bone,pelvis,osteology_basic,尾骨は脊柱の最下部に位置する小骨である。
+calcaneus,踵骨,calcaneus,calcaneus,bone,lower limb,basic_lower,踵骨は足根骨の一つで、かかとの骨格を作ります。
+diaphragm,横隔膜,diaphragm,diaphragma,muscle,trunk,basic_trunk,横隔膜は胸腔と腹腔を隔てる呼吸筋です。
+biceps_brachii,上腕二頭筋,biceps brachii,musculus biceps brachii,muscle,upper limb,basic_muscle,上腕二頭筋は肘関節屈曲と前腕回外に関わります。
+triceps_brachii,上腕三頭筋,triceps brachii,musculus triceps brachii,muscle,upper limb,basic_muscle,上腕三頭筋は主に肘関節伸展に働きます。
+deltoid,三角筋,deltoid,musculus deltoideus,muscle,upper limb,basic_muscle,三角筋は肩関節の外転を中心に、屈曲や伸展にも関わります。
+trapezius,僧帽筋,trapezius,musculus trapezius,muscle,back,basic_muscle,僧帽筋は肩甲骨の挙上、内転、回旋に関わる背部の筋です。
+frontal_bone,前頭骨,frontal bone,os frontale,bone,head and neck,osteology_basic,前頭骨は額と眼窩上部を構成する頭蓋骨です。
+ethmoid_bone,篩骨,ethmoid bone,os ethmoidale,bone,head and neck,osteology_basic,篩骨は鼻腔上部と眼窩内側壁の一部を構成する頭蓋骨です。
+sphenoid_bone,蝶形骨,sphenoid bone,os sphenoidale,bone,head and neck,osteology_basic,蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。
+parietal_bone,頭頂骨,parietal bone,os parietale,bone,head and neck,osteology_basic,頭頂骨は頭蓋冠の側上部を構成する骨です。
+occipital_bone,後頭骨,occipital bone,os occipitale,bone,head and neck,osteology_basic,後頭骨は頭蓋後下部を構成し、大後頭孔を含む骨です。
+nasal_bone,鼻骨,nasal bone,os nasale,bone,head and neck,osteology_basic,鼻骨は鼻背の骨性部分を構成する小骨です。
+zygomatic_bone,頬骨,zygomatic bone,os zygomaticum,bone,head and neck,osteology_basic,頬骨は頬の突出を作り、眼窩外側壁の一部を構成します。
+lacrimal_bone,涙骨,lacrimal bone,os lacrimale,bone,head and neck,osteology_basic,涙骨は眼窩内側壁前方に位置する小さな骨です。
+pisiform,豆状骨,pisiform,os pisiforme,bone,upper limb,osteology_basic,豆状骨は手根骨の一つで、尺側近位に位置する小さな骨です。
+triquetral_bone,三角骨,triquetral bone,os triquetrum,bone,upper limb,osteology_basic,三角骨は手根骨近位列の尺側に位置する骨です。
+lunate_bone,月状骨,lunate bone,os lunatum,bone,upper limb,osteology_basic,月状骨は手根骨近位列中央に位置する骨です。
+scaphoid_bone,舟状骨,scaphoid bone,os scaphoideum,bone,upper limb,osteology_basic,舟状骨は手根骨近位列橈側に位置する骨です。
+trapezium_bone,大菱形骨,trapezium,os trapezium,bone,upper limb,osteology_basic,大菱形骨は母指側の遠位手根骨で、第1中手骨と関節します。
+trapezoid_bone,小菱形骨,trapezoid bone,os trapezoideum,bone,upper limb,osteology_basic,小菱形骨は遠位手根骨の一つで、大菱形骨と有頭骨の間に位置します。
+capitate_bone,有頭骨,capitate bone,os capitatum,bone,upper limb,osteology_basic,有頭骨は手根骨の中央に位置する大きな骨です。
+hamate_bone,有鈎骨,hamate bone,os hamatum,bone,upper limb,osteology_basic,有鈎骨は遠位手根骨の尺側に位置し、有鈎骨鈎を持つ骨です。
+metacarpal_bone,中手骨,metacarpal bone,os metacarpale,bone,upper limb,osteology_basic,中手骨は手掌部を構成し、手根骨と指骨をつなぐ骨です。
+proximal_phalanx,基節骨,proximal phalanx,phalanx proximalis,bone,upper limb,osteology_basic,基節骨は指骨のうち最も近位にある骨です。
+middle_phalanx,中節骨,middle phalanx,phalanx media,bone,upper limb,osteology_basic,中節骨は第2から第5指で基節骨と末節骨の間にある骨です。
+distal_phalanx,末節骨,distal phalanx,phalanx distalis,bone,upper limb,osteology_basic,末節骨は指先を構成する遠位の指骨です。
+vomer,鋤骨,vomer,vomer,bone,head and neck,osteology_basic,鋤骨は鼻中隔の後下部を構成する薄い骨です。

@@ -1,0 +1,1028 @@
+[
+  {
+    "id": "gray83_vertebra_section",
+    "file": "/images/gray/single/Gray83.png",
+    "title": "Lumbar vertebra arch and body section",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray83.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray86_atlas_superior",
+    "file": "/images/gray/single/Gray86.heb.png",
+    "title": "Atlas, superior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray86.heb.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray87_axis_superior",
+    "file": "/images/gray/single/Gray87.heb.png",
+    "title": "Axis, superior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray87.heb.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray94_vertebra",
+    "file": "/images/gray/single/Gray94.png",
+    "title": "Lumbar vertebra",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray94.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray200_clavicle_superior",
+    "file": "/images/gray/single/Gray200.png",
+    "title": "Clavicle, superior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray200.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray201_clavicle_inferior",
+    "file": "/images/gray/single/Gray201.png",
+    "title": "Clavicle, inferior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray201.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray202_scapula_posterior",
+    "file": "/images/gray/single/Gray202.png",
+    "title": "Scapula, posterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray202.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray203_scapula_anterior",
+    "file": "/images/gray/single/Gray203.png",
+    "title": "Scapula, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray203.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray207_humerus_anterior",
+    "file": "/images/gray/single/Gray207.png",
+    "title": "Humerus, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray207.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray208_humerus_posterior",
+    "file": "/images/gray/single/Gray208.png",
+    "title": "Humerus, posterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray208.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray244_femur_anterior",
+    "file": "/images/gray/single/Gray244_he.png",
+    "title": "Femur, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray244_he.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray245_femur_posterior",
+    "file": "/images/gray/single/Gray245.png",
+    "title": "Femur, posterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray245.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray256_distal_femur",
+    "file": "/images/gray/single/Gray256.png",
+    "title": "Patella",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray256.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray_rib",
+    "file": "/images/gray/single/Rib.heb.png",
+    "title": "Rib",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rib.heb.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray_vertebra_superior",
+    "file": "/images/gray/single/Vertebra.heb.png",
+    "title": "Thoracic vertebra, superior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vertebra.heb.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray_vertebra_lateral",
+    "file": "/images/gray/single/Vertebra.side.heb.png",
+    "title": "Thoracic vertebra, lateral view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vertebra.side.heb.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for single-image identification; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray111_vertebral_column_plate",
+    "file": "/images/gray/plates/Gray_111_-_Vertebral_column.png",
+    "title": "Vertebral column",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray_111_-_Vertebral_column.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "cervical_vertebra",
+        "x": 0.3812,
+        "y": 0.1318,
+        "note": "頸椎"
+      },
+      {
+        "label": "2",
+        "termId": "thoracic_vertebra",
+        "x": 0.6447,
+        "y": 0.4077,
+        "note": "胸椎"
+      },
+      {
+        "label": "3",
+        "termId": "lumbar_vertebra",
+        "x": 0.4435,
+        "y": 0.7441,
+        "note": "腰椎"
+      },
+      {
+        "label": "4",
+        "termId": "sacrum",
+        "x": 0.6316,
+        "y": 0.8793,
+        "note": "仙骨"
+      },
+      {
+        "label": "5",
+        "termId": "coccyx",
+        "x": 0.601,
+        "y": 0.9932,
+        "note": "尾骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray112_thorax_anterior_plate",
+    "file": "/images/gray/plates/Gray112.png",
+    "title": "Thoracic cage, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray112.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "sternum",
+        "x": 0.4993,
+        "y": 0.3143,
+        "note": "胸骨"
+      },
+      {
+        "label": "2",
+        "termId": "rib",
+        "x": 0.1548,
+        "y": 0.3159,
+        "note": "肋骨"
+      },
+      {
+        "label": "3",
+        "termId": "thoracic_vertebra",
+        "x": 0.4927,
+        "y": 0.6801,
+        "note": "胸椎"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray113_thorax_posterior_plate",
+    "file": "/images/gray/plates/Gray113.png",
+    "title": "Thoracic cage, posterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray113.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "rib",
+        "x": 0.8077,
+        "y": 0.2624,
+        "note": "肋骨"
+      },
+      {
+        "label": "2",
+        "termId": "thoracic_vertebra",
+        "x": 0.4938,
+        "y": 0.3226,
+        "note": "胸椎"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray164_pelvis_plate",
+    "file": "/images/gray/plates/Gray164-ar.png",
+    "title": "Hip bone / pelvis plate",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray164-ar.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "frontal_bone",
+        "x": 0.286,
+        "y": 0.1551,
+        "note": "前頭骨"
+      },
+      {
+        "label": "2",
+        "termId": "parietal_bone",
+        "x": 0.8383,
+        "y": 0.1008,
+        "note": "頭頂骨"
+      },
+      {
+        "label": "3",
+        "termId": "temporal_bone",
+        "x": 0.9138,
+        "y": 0.4205,
+        "note": "側頭骨"
+      },
+      {
+        "label": "4",
+        "termId": "sphenoid_bone",
+        "x": 0.6742,
+        "y": 0.4321,
+        "note": "蝶形骨"
+      },
+      {
+        "label": "5",
+        "termId": "zygomatic_bone",
+        "x": 0.5452,
+        "y": 0.6467,
+        "note": "頬骨"
+      },
+      {
+        "label": "6",
+        "termId": "lacrimal_bone",
+        "x": 0.3287,
+        "y": 0.4632,
+        "note": "涙骨"
+      },
+      {
+        "label": "7",
+        "termId": "maxilla",
+        "x": 0.2762,
+        "y": 0.7448,
+        "note": "上顎骨"
+      },
+      {
+        "label": "8",
+        "termId": "nasal_bone",
+        "x": 0.1088,
+        "y": 0.454,
+        "note": "鼻骨"
+      },
+      {
+        "label": "9",
+        "termId": "ethmoid_bone",
+        "x": 0.4129,
+        "y": 0.43,
+        "note": "篩骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray188_temporal_bone_plate",
+    "file": "/images/gray/plates/Gray188_no_text_color_temporal_r.jpg",
+    "title": "Temporal bone, color no-text derivative",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray188_no_text_color_temporal_r.jpg",
+    "modified": true,
+    "modificationDescription": "Downloaded as a modified/derivative Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "frontal_bone",
+        "x": 0.3604,
+        "y": 0.2191,
+        "note": "前頭骨"
+      },
+      {
+        "label": "2",
+        "termId": "parietal_bone",
+        "x": 0.6863,
+        "y": 0.2716,
+        "note": "頭頂骨"
+      },
+      {
+        "label": "3",
+        "termId": "occipital_bone",
+        "x": 0.7891,
+        "y": 0.6126,
+        "note": "後頭骨"
+      },
+      {
+        "label": "4",
+        "termId": "temporal_bone",
+        "x": 0.578,
+        "y": 0.5062,
+        "note": "側頭骨"
+      },
+      {
+        "label": "5",
+        "termId": "sphenoid_bone",
+        "x": 0.4107,
+        "y": 0.4436,
+        "note": "蝶形骨"
+      },
+      {
+        "label": "6",
+        "termId": "zygomatic_bone",
+        "x": 0.3308,
+        "y": 0.5485,
+        "note": "頬骨"
+      },
+      {
+        "label": "7",
+        "termId": "ethmoid_bone",
+        "x": 0.3122,
+        "y": 0.4552,
+        "note": "篩骨"
+      },
+      {
+        "label": "8",
+        "termId": "lacrimal_bone",
+        "x": 0.286,
+        "y": 0.4669,
+        "note": "涙骨"
+      },
+      {
+        "label": "9",
+        "termId": "maxilla",
+        "x": 0.2587,
+        "y": 0.5966,
+        "note": "上顎骨"
+      },
+      {
+        "label": "10",
+        "termId": "nasal_bone",
+        "x": 0.2204,
+        "y": 0.4319,
+        "note": "鼻骨"
+      },
+      {
+        "label": "12",
+        "termId": "mandible",
+        "x": 0.3844,
+        "y": 0.8079,
+        "note": "下顎骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray190_skull_anterior_plate",
+    "file": "/images/gray/plates/Gray190.png",
+    "title": "Skull, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray190.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "frontal_bone",
+        "x": 0.3451,
+        "y": 0.2552,
+        "note": "前頭骨"
+      },
+      {
+        "label": "2",
+        "termId": "nasal_bone",
+        "x": 0.3571,
+        "y": 0.4929,
+        "note": "鼻骨"
+      },
+      {
+        "label": "3",
+        "termId": "maxilla",
+        "x": 0.3549,
+        "y": 0.7167,
+        "note": "上顎骨"
+      },
+      {
+        "label": "4",
+        "termId": "zygomatic_bone",
+        "x": 0.5725,
+        "y": 0.5672,
+        "note": "頬骨"
+      },
+      {
+        "label": "5",
+        "termId": "sphenoid_bone",
+        "x": 0.2116,
+        "y": 0.4886,
+        "note": "蝶形骨"
+      },
+      {
+        "label": "6",
+        "termId": "lacrimal_bone",
+        "x": 0.286,
+        "y": 0.5077,
+        "note": "涙骨"
+      },
+      {
+        "label": "7",
+        "termId": "parietal_bone",
+        "x": 0.0465,
+        "y": 0.2245,
+        "note": "頭頂骨"
+      },
+      {
+        "label": "8",
+        "termId": "temporal_bone",
+        "x": 0.0498,
+        "y": 0.4133,
+        "note": "側頭骨"
+      },
+      {
+        "label": "9",
+        "termId": "sphenoid_bone",
+        "x": 0.0924,
+        "y": 0.4059,
+        "note": "蝶形骨"
+      },
+      {
+        "label": "10",
+        "termId": "mandible",
+        "x": 0.3549,
+        "y": 0.9183,
+        "note": "下顎骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray193_ear_plate",
+    "file": "/images/gray/plates/Gray193_notext.png",
+    "title": "External/middle ear region, no-text derivative",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray193_notext.png",
+    "modified": true,
+    "modificationDescription": "Downloaded as a modified/derivative Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "frontal_bone",
+        "x": 0.3506,
+        "y": 0.1592,
+        "note": "前頭骨"
+      },
+      {
+        "label": "2",
+        "termId": "ethmoid_bone",
+        "x": 0.0855,
+        "y": 0.1804,
+        "note": "篩骨"
+      },
+      {
+        "label": "3",
+        "termId": "sphenoid_bone",
+        "x": 0.1698,
+        "y": 0.3848,
+        "note": "蝶形骨"
+      },
+      {
+        "label": "4",
+        "termId": "temporal_bone",
+        "x": 0.6891,
+        "y": 0.4696,
+        "note": "側頭骨"
+      },
+      {
+        "label": "5",
+        "termId": "parietal_bone",
+        "x": 0.8216,
+        "y": 0.6827,
+        "note": "頭頂骨"
+      },
+      {
+        "label": "6",
+        "termId": "occipital_bone",
+        "x": 0.2136,
+        "y": 0.7699,
+        "note": "後頭骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray194_skull_lateral_plate",
+    "file": "/images/gray/plates/Gray194az.png",
+    "title": "Skull, lateral view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray194az.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "vomer",
+        "x": 0.3896,
+        "y": 0.7432,
+        "note": "鋤骨"
+      },
+      {
+        "label": "2",
+        "termId": "maxilla",
+        "x": 0.312,
+        "y": 0.8785,
+        "note": "上顎骨"
+      },
+      {
+        "label": "3",
+        "termId": "nasal_bone",
+        "x": 0.2387,
+        "y": 0.5538,
+        "note": "鼻骨"
+      },
+      {
+        "label": "4",
+        "termId": "ethmoid_bone",
+        "x": 0.3361,
+        "y": 0.5927,
+        "note": "篩骨"
+      },
+      {
+        "label": "5",
+        "termId": "sphenoid_bone",
+        "x": 0.4727,
+        "y": 0.6621,
+        "note": "蝶形骨"
+      },
+      {
+        "label": "6",
+        "termId": "frontal_bone",
+        "x": 0.382,
+        "y": 0.3289,
+        "note": "前頭骨"
+      },
+      {
+        "label": "7",
+        "termId": "parietal_bone",
+        "x": 0.7352,
+        "y": 0.2698,
+        "note": "頭頂骨"
+      },
+      {
+        "label": "8",
+        "termId": "occipital_bone",
+        "x": 0.8937,
+        "y": 0.6959,
+        "note": "後頭骨"
+      },
+      {
+        "label": "9",
+        "termId": "temporal_bone",
+        "x": 0.6215,
+        "y": 0.5893,
+        "note": "側頭骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray204_thorax_posterior_plate",
+    "file": "/images/gray/plates/Gray204.gif",
+    "title": "Thoracic skeleton, posterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray204.gif",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "scapula",
+        "x": 0.7756,
+        "y": 0.255,
+        "note": "肩甲骨"
+      },
+      {
+        "label": "2",
+        "termId": "clavicle",
+        "x": 0.7767,
+        "y": 0.0927,
+        "note": "鎖骨"
+      },
+      {
+        "label": "3",
+        "termId": "rib",
+        "x": 0.663,
+        "y": 0.5684,
+        "note": "肋骨"
+      },
+      {
+        "label": "4",
+        "termId": "thoracic_vertebra",
+        "x": 0.4892,
+        "y": 0.3903,
+        "note": "胸椎"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray213_lower_limb_plate",
+    "file": "/images/gray/plates/Gray213.png",
+    "title": "Lower limb bone markings plate",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray213.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "ulna",
+        "x": 0.383,
+        "y": 0.4628,
+        "note": "尺骨"
+      },
+      {
+        "label": "2",
+        "termId": "radius",
+        "x": 0.6106,
+        "y": 0.5041,
+        "note": "橈骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray219_hand_palmar_plate",
+    "file": "/images/gray/plates/Gray219.png",
+    "title": "Hand bones, palmar view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray219.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [
+      {
+        "label": "1",
+        "termId": "pisiform",
+        "x": 0.3403,
+        "y": 0.1229,
+        "note": "豆状骨"
+      },
+      {
+        "label": "2",
+        "termId": "triquetral_bone",
+        "x": 0.3907,
+        "y": 0.0887,
+        "note": "三角骨"
+      },
+      {
+        "label": "3",
+        "termId": "lunate_bone",
+        "x": 0.4508,
+        "y": 0.0398,
+        "note": "月状骨"
+      },
+      {
+        "label": "4",
+        "termId": "scaphoid_bone",
+        "x": 0.5767,
+        "y": 0.0535,
+        "note": "舟状骨"
+      },
+      {
+        "label": "5",
+        "termId": "trapezium_bone",
+        "x": 0.6566,
+        "y": 0.1503,
+        "note": "大菱形骨"
+      },
+      {
+        "label": "6",
+        "termId": "trapezoid_bone",
+        "x": 0.5657,
+        "y": 0.1777,
+        "note": "小菱形骨"
+      },
+      {
+        "label": "7",
+        "termId": "capitate_bone",
+        "x": 0.4935,
+        "y": 0.1555,
+        "note": "有頭骨"
+      },
+      {
+        "label": "8",
+        "termId": "hamate_bone",
+        "x": 0.4169,
+        "y": 0.1392,
+        "note": "有鈎骨"
+      },
+      {
+        "label": "9",
+        "termId": "metacarpal_bone",
+        "x": 0.5964,
+        "y": 0.3567,
+        "note": "中手骨"
+      },
+      {
+        "label": "10",
+        "termId": "proximal_phalanx",
+        "x": 0.6161,
+        "y": 0.6419,
+        "note": "基節骨"
+      },
+      {
+        "label": "11",
+        "termId": "middle_phalanx",
+        "x": 0.6183,
+        "y": 0.8029,
+        "note": "中節骨"
+      },
+      {
+        "label": "12",
+        "termId": "distal_phalanx",
+        "x": 0.6248,
+        "y": 0.9176,
+        "note": "末節骨"
+      }
+    ],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray220_hand_dorsal_plate",
+    "file": "/images/gray/plates/Gray220.png",
+    "title": "Hand bones, dorsal view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray220.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray238_pelvis_plate",
+    "file": "/images/gray/plates/Gray238.png",
+    "title": "Bony pelvis",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray238.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray241_pelvis_plate",
+    "file": "/images/gray/plates/Gray241_he.png",
+    "title": "Pelvis, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray241_he.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray258_lower_limb_anterior_plate",
+    "file": "/images/gray/plates/Gray258_he.png",
+    "title": "Lower limb bones, anterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray258_he.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray259_lower_limb_posterior_plate",
+    "file": "/images/gray/plates/Gray259_he.png",
+    "title": "Lower limb bones, posterior view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray259_he.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray268_foot_dorsal_plate",
+    "file": "/images/gray/plates/Gray268.png",
+    "title": "Foot bones, dorsal view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray268.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray269_foot_plantar_plate",
+    "file": "/images/gray/plates/Gray269.png",
+    "title": "Foot bones, plantar view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray269.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray290_foot_medial_plate",
+    "file": "/images/gray/plates/Gray290_he.png",
+    "title": "Foot bones, medial view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray290_he.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  },
+  {
+    "id": "gray291_foot_lateral_plate",
+    "file": "/images/gray/plates/Gray291_he.png",
+    "title": "Foot bones, lateral view",
+    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
+    "sourceType": "gray_anatomy",
+    "author": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray291_he.png",
+    "modified": false,
+    "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "labels": [],
+    "editionYear": 1918
+  }
+]

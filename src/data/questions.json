@@ -1,0 +1,1690 @@
+[
+  {
+    "id": "q_text_001",
+    "type": "text_mcq",
+    "testSet": "basic_upper",
+    "prompt": "英語 scapula に対応する日本語はどれですか。",
+    "answerTermId": "scapula",
+    "choices": [
+      "scapula",
+      "clavicle",
+      "humerus",
+      "sternum"
+    ],
+    "explanation": "scapula は肩甲骨です。肩の後面に位置します。"
+  },
+  {
+    "id": "q_text_002",
+    "type": "text_mcq",
+    "testSet": "basic_upper",
+    "prompt": "日本語 鎖骨 に対応する英語はどれですか。",
+    "answerTermId": "clavicle",
+    "choices": [
+      "clavicle",
+      "scapula",
+      "radius",
+      "ulna"
+    ],
+    "explanation": "鎖骨は英語で clavicle、ラテン語で clavicula です。"
+  },
+  {
+    "id": "q_text_003",
+    "type": "text_mcq",
+    "testSet": "basic_upper",
+    "prompt": "ラテン語 humerus に対応する日本語はどれですか。",
+    "answerTermId": "humerus",
+    "choices": [
+      "humerus",
+      "radius",
+      "ulna",
+      "femur"
+    ],
+    "explanation": "humerus は上腕骨です。"
+  },
+  {
+    "id": "q_text_004",
+    "type": "text_mcq",
+    "testSet": "basic_upper",
+    "prompt": "前腕の母指側にある骨はどれですか。",
+    "answerTermId": "radius",
+    "choices": [
+      "radius",
+      "ulna",
+      "tibia",
+      "fibula"
+    ],
+    "explanation": "橈骨は前腕の母指側、尺骨は小指側にあります。"
+  },
+  {
+    "id": "q_text_005",
+    "type": "text_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "英語 sternum に対応する日本語はどれですか。",
+    "answerTermId": "sternum",
+    "choices": [
+      "sternum",
+      "rib",
+      "diaphragm",
+      "scapula"
+    ],
+    "explanation": "sternum は胸骨です。"
+  },
+  {
+    "id": "q_text_006",
+    "type": "text_mcq",
+    "testSet": "basic_head",
+    "prompt": "下顎骨に対応する英語はどれですか。",
+    "answerTermId": "mandible",
+    "choices": [
+      "mandible",
+      "maxilla",
+      "temporal_bone",
+      "patella"
+    ],
+    "explanation": "下顎骨は mandible です。"
+  },
+  {
+    "id": "q_text_007",
+    "type": "text_mcq",
+    "testSet": "basic_lower",
+    "prompt": "人体で最も長い骨はどれですか。",
+    "answerTermId": "femur",
+    "choices": [
+      "femur",
+      "tibia",
+      "humerus",
+      "fibula"
+    ],
+    "explanation": "大腿骨は人体で最も長い骨です。"
+  },
+  {
+    "id": "q_text_008",
+    "type": "text_mcq",
+    "testSet": "basic_lower",
+    "prompt": "膝前面にある種子骨はどれですか。",
+    "answerTermId": "patella",
+    "choices": [
+      "patella",
+      "calcaneus",
+      "tibia",
+      "fibula"
+    ],
+    "explanation": "膝蓋骨は膝前面に位置する種子骨です。"
+  },
+  {
+    "id": "q_text_009",
+    "type": "text_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "胸腔と腹腔を隔てる呼吸筋はどれですか。",
+    "answerTermId": "diaphragm",
+    "choices": [
+      "diaphragm",
+      "trapezius",
+      "deltoid",
+      "biceps_brachii"
+    ],
+    "explanation": "横隔膜は主要な呼吸筋です。"
+  },
+  {
+    "id": "q_text_010",
+    "type": "text_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "肘関節伸展に主に働く筋はどれですか。",
+    "answerTermId": "triceps_brachii",
+    "choices": [
+      "triceps_brachii",
+      "biceps_brachii",
+      "deltoid",
+      "trapezius"
+    ],
+    "explanation": "上腕三頭筋は肘関節を伸展します。"
+  },
+  {
+    "id": "q_text_011",
+    "type": "text_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "ラテン語 musculus deltoideus に対応する日本語はどれですか。",
+    "answerTermId": "deltoid",
+    "choices": [
+      "deltoid",
+      "trapezius",
+      "biceps_brachii",
+      "triceps_brachii"
+    ],
+    "explanation": "musculus deltoideus は三角筋です。"
+  },
+  {
+    "id": "q_text_012",
+    "type": "text_mcq",
+    "testSet": "basic_head",
+    "prompt": "上顎骨に対応する英語はどれですか。",
+    "answerTermId": "maxilla",
+    "choices": [
+      "maxilla",
+      "mandible",
+      "temporal_bone",
+      "sternum"
+    ],
+    "explanation": "上顎骨は maxilla です。"
+  },
+  {
+    "id": "q_text_013",
+    "type": "text_mcq",
+    "testSet": "basic_upper",
+    "prompt": "前腕の小指側にある骨はどれですか。",
+    "answerTermId": "ulna",
+    "choices": [
+      "ulna",
+      "radius",
+      "humerus",
+      "clavicle"
+    ],
+    "explanation": "尺骨は前腕の小指側にあります。"
+  },
+  {
+    "id": "q_text_014",
+    "type": "text_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "ラテン語 costa に対応する日本語はどれですか。",
+    "answerTermId": "rib",
+    "choices": [
+      "rib",
+      "sternum",
+      "diaphragm",
+      "scapula"
+    ],
+    "explanation": "costa は肋骨です。"
+  },
+  {
+    "id": "q_text_015",
+    "type": "text_mcq",
+    "testSet": "basic_head",
+    "prompt": "ラテン語 os temporale に対応する日本語はどれですか。",
+    "answerTermId": "temporal_bone",
+    "choices": [
+      "temporal_bone",
+      "maxilla",
+      "mandible",
+      "sternum"
+    ],
+    "explanation": "os temporale は側頭骨です。"
+  },
+  {
+    "id": "q_text_016",
+    "type": "text_mcq",
+    "testSet": "basic_lower",
+    "prompt": "下腿内側の太い骨はどれですか。",
+    "answerTermId": "tibia",
+    "choices": [
+      "tibia",
+      "fibula",
+      "patella",
+      "calcaneus"
+    ],
+    "explanation": "脛骨は下腿内側にあり、体重支持に関わります。"
+  },
+  {
+    "id": "q_text_017",
+    "type": "text_mcq",
+    "testSet": "basic_lower",
+    "prompt": "足関節の外果を形成する骨はどれですか。",
+    "answerTermId": "fibula",
+    "choices": [
+      "fibula",
+      "tibia",
+      "femur",
+      "patella"
+    ],
+    "explanation": "腓骨の遠位端は外果を形成します。"
+  },
+  {
+    "id": "q_text_018",
+    "type": "text_mcq",
+    "testSet": "basic_lower",
+    "prompt": "かかとの骨格を作る足根骨はどれですか。",
+    "answerTermId": "calcaneus",
+    "choices": [
+      "calcaneus",
+      "patella",
+      "tibia",
+      "fibula"
+    ],
+    "explanation": "踵骨はかかとの骨格を作ります。"
+  },
+  {
+    "id": "q_text_019",
+    "type": "text_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "肘関節屈曲と前腕回外に関わる筋はどれですか。",
+    "answerTermId": "biceps_brachii",
+    "choices": [
+      "biceps_brachii",
+      "triceps_brachii",
+      "deltoid",
+      "trapezius"
+    ],
+    "explanation": "上腕二頭筋は肘関節屈曲と前腕回外に関わります。"
+  },
+  {
+    "id": "q_text_020",
+    "type": "text_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "肩甲骨の挙上や内転に関わる背部の筋はどれですか。",
+    "answerTermId": "trapezius",
+    "choices": [
+      "trapezius",
+      "deltoid",
+      "biceps_brachii",
+      "diaphragm"
+    ],
+    "explanation": "僧帽筋は肩甲骨の挙上、内転、回旋に関わります。"
+  },
+  {
+    "id": "q_gray_single_gray86_atlas",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "atlas",
+    "choices": [
+      "atlas",
+      "axis",
+      "vertebra",
+      "rib"
+    ],
+    "imageId": "gray86_atlas_superior",
+    "explanation": "環椎は第1頸椎で、頭蓋骨を支える輪状の椎骨です。"
+  },
+  {
+    "id": "q_gray_single_gray87_axis",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "axis",
+    "choices": [
+      "axis",
+      "atlas",
+      "vertebra",
+      "sternum"
+    ],
+    "imageId": "gray87_axis_superior",
+    "explanation": "軸椎は第2頸椎で、歯突起を持つ頸椎です。"
+  },
+  {
+    "id": "q_gray_single_gray94_vertebra",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "lumbar_vertebra",
+    "choices": [
+      "lumbar_vertebra",
+      "vertebra",
+      "atlas",
+      "axis"
+    ],
+    "imageId": "gray94_vertebra",
+    "explanation": "この図版は腰椎を示しています。腰椎は腰部の脊柱を構成する大きな椎骨です。"
+  },
+  {
+    "id": "q_gray_single_gray83_vertebra",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "lumbar_vertebra",
+    "choices": [
+      "lumbar_vertebra",
+      "vertebra",
+      "atlas",
+      "axis"
+    ],
+    "imageId": "gray83_vertebra_section",
+    "explanation": "この図版は腰椎を示しています。腰椎は体重支持に関わる腰部の椎骨です。"
+  },
+  {
+    "id": "q_gray_single_rib_heb_rib",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "rib",
+    "choices": [
+      "rib",
+      "sternum",
+      "clavicle",
+      "vertebra"
+    ],
+    "imageId": "gray_rib",
+    "explanation": "肋骨は胸郭を構成し、胸部臓器を保護します。"
+  },
+  {
+    "id": "q_gray_single_vertebra_heb_thoracic_vertebra",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "thoracic_vertebra",
+    "choices": [
+      "thoracic_vertebra",
+      "cervical_vertebra",
+      "lumbar_vertebra",
+      "sacrum"
+    ],
+    "imageId": "gray_vertebra_superior",
+    "explanation": "この図版は胸椎を上方から見たものです。胸椎は肋骨と関節する椎骨です。"
+  },
+  {
+    "id": "q_gray_single_vertebra_side_heb_thoracic_vertebra",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "thoracic_vertebra",
+    "choices": [
+      "thoracic_vertebra",
+      "cervical_vertebra",
+      "lumbar_vertebra",
+      "sacrum"
+    ],
+    "imageId": "gray_vertebra_lateral",
+    "explanation": "この図版は胸椎を側方から見たものです。胸椎は肋骨と関節する椎骨です。"
+  },
+  {
+    "id": "q_gray_single_gray207_humerus",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "humerus",
+    "choices": [
+      "humerus",
+      "radius",
+      "ulna",
+      "femur"
+    ],
+    "imageId": "gray207_humerus_anterior",
+    "explanation": "上腕骨は肩から肘までを構成する長骨です。"
+  },
+  {
+    "id": "q_gray_single_gray208_humerus",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "humerus",
+    "choices": [
+      "humerus",
+      "radius",
+      "ulna",
+      "femur"
+    ],
+    "imageId": "gray208_humerus_posterior",
+    "explanation": "この図版は上腕骨を示しています。"
+  },
+  {
+    "id": "q_gray_single_gray244_femur",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "femur",
+    "choices": [
+      "femur",
+      "humerus",
+      "tibia",
+      "fibula"
+    ],
+    "imageId": "gray244_femur_anterior",
+    "explanation": "大腿骨は人体で最も長い骨です。"
+  },
+  {
+    "id": "q_gray_single_gray245_femur",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "femur",
+    "choices": [
+      "femur",
+      "humerus",
+      "tibia",
+      "fibula"
+    ],
+    "imageId": "gray245_femur_posterior",
+    "explanation": "この図版は大腿骨を示しています。"
+  },
+  {
+    "id": "q_gray_single_gray200_clavicle",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "clavicle",
+    "choices": [
+      "clavicle",
+      "scapula",
+      "sternum",
+      "rib"
+    ],
+    "imageId": "gray200_clavicle_superior",
+    "explanation": "鎖骨は胸骨と肩甲骨をつなぐ上肢帯の骨です。"
+  },
+  {
+    "id": "q_gray_single_gray201_clavicle",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "clavicle",
+    "choices": [
+      "clavicle",
+      "scapula",
+      "sternum",
+      "rib"
+    ],
+    "imageId": "gray201_clavicle_inferior",
+    "explanation": "この図版は鎖骨を示しています。"
+  },
+  {
+    "id": "q_gray_single_gray202_scapula",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "scapula",
+    "choices": [
+      "scapula",
+      "clavicle",
+      "humerus",
+      "sternum"
+    ],
+    "imageId": "gray202_scapula_posterior",
+    "explanation": "肩甲骨は肩の後面にある平たい骨です。"
+  },
+  {
+    "id": "q_gray_single_gray203_scapula",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "scapula",
+    "choices": [
+      "scapula",
+      "clavicle",
+      "humerus",
+      "sternum"
+    ],
+    "imageId": "gray203_scapula_anterior",
+    "explanation": "この図版は肩甲骨を示しています。"
+  },
+  {
+    "id": "q_gray_single_gray256_patella",
+    "type": "single_image_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "この構造物はどれか。",
+    "answerTermId": "patella",
+    "choices": [
+      "patella",
+      "femur",
+      "tibia",
+      "fibula"
+    ],
+    "imageId": "gray256_distal_femur",
+    "explanation": "この図版は膝蓋骨を示しています。膝蓋骨は膝関節前面に位置する種子骨です。"
+  },
+  {
+    "id": "q_gray111_label_1_cervical_vertebra",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "cervical_vertebra",
+    "choices": [
+      "cervical_vertebra",
+      "thoracic_vertebra",
+      "lumbar_vertebra",
+      "atlas"
+    ],
+    "imageId": "gray111_vertebral_column_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は頸椎を示しています。頸椎は頸部の椎骨です。"
+  },
+  {
+    "id": "q_gray111_label_2_thoracic_vertebra",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "thoracic_vertebra",
+    "choices": [
+      "thoracic_vertebra",
+      "cervical_vertebra",
+      "lumbar_vertebra",
+      "sacrum"
+    ],
+    "imageId": "gray111_vertebral_column_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は胸椎を示しています。胸椎は肋骨と関節する椎骨です。"
+  },
+  {
+    "id": "q_gray111_label_3_lumbar_vertebra",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "lumbar_vertebra",
+    "choices": [
+      "lumbar_vertebra",
+      "thoracic_vertebra",
+      "cervical_vertebra",
+      "sacrum"
+    ],
+    "imageId": "gray111_vertebral_column_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は腰椎を示しています。腰椎は腰部の椎骨です。"
+  },
+  {
+    "id": "q_gray111_label_4_sacrum",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "sacrum",
+    "choices": [
+      "sacrum",
+      "coccyx",
+      "lumbar_vertebra",
+      "vertebra"
+    ],
+    "imageId": "gray111_vertebral_column_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は仙骨を示しています。仙骨は骨盤後壁を構成します。"
+  },
+  {
+    "id": "q_gray111_label_5_coccyx",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "coccyx",
+    "choices": [
+      "coccyx",
+      "sacrum",
+      "lumbar_vertebra",
+      "vertebra"
+    ],
+    "imageId": "gray111_vertebral_column_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は尾骨を示しています。尾骨は脊柱の最下部に位置する小骨です。"
+  },
+  {
+    "id": "q_gray193_ear_plate_label_1_frontal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "frontal_bone",
+    "choices": [
+      "frontal_bone",
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone"
+    ],
+    "imageId": "gray193_ear_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は前頭骨を示しています。前頭骨は額と眼窩上部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray193_ear_plate_label_2_ethmoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "ethmoid_bone",
+    "choices": [
+      "ethmoid_bone",
+      "occipital_bone",
+      "temporal_bone",
+      "sphenoid_bone"
+    ],
+    "imageId": "gray193_ear_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は篩骨を示しています。篩骨は鼻腔上部と眼窩内側壁の一部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray193_ear_plate_label_3_sphenoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "sphenoid_bone",
+    "choices": [
+      "sphenoid_bone",
+      "temporal_bone",
+      "ethmoid_bone",
+      "zygomatic_bone"
+    ],
+    "imageId": "gray193_ear_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は蝶形骨を示しています。蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "q_gray193_ear_plate_label_4_temporal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "temporal_bone",
+    "choices": [
+      "temporal_bone",
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone"
+    ],
+    "imageId": "gray193_ear_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は側頭骨を示しています。側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。"
+  },
+  {
+    "id": "q_gray193_ear_plate_label_5_parietal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "parietal_bone",
+    "choices": [
+      "parietal_bone",
+      "ethmoid_bone",
+      "zygomatic_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray193_ear_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は頭頂骨を示しています。頭頂骨は頭蓋冠の側上部を構成する骨です。"
+  },
+  {
+    "id": "q_gray193_ear_plate_label_6_occipital_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "occipital_bone",
+    "choices": [
+      "occipital_bone",
+      "zygomatic_bone",
+      "lacrimal_bone",
+      "nasal_bone"
+    ],
+    "imageId": "gray193_ear_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は後頭骨を示しています。後頭骨は頭蓋後下部を構成し、大後頭孔を含む骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_1_frontal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "frontal_bone",
+    "choices": [
+      "frontal_bone",
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は前頭骨を示しています。前頭骨は額と眼窩上部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_2_nasal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "nasal_bone",
+    "choices": [
+      "nasal_bone",
+      "occipital_bone",
+      "temporal_bone",
+      "sphenoid_bone"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は鼻骨を示しています。鼻骨は鼻背の骨性部分を構成する小骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_3_maxilla",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "maxilla",
+    "choices": [
+      "maxilla",
+      "temporal_bone",
+      "sphenoid_bone",
+      "ethmoid_bone"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は上顎骨を示しています。上顎骨は上歯列や眼窩底、鼻腔外側壁の一部を作ります。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_4_zygomatic_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "zygomatic_bone",
+    "choices": [
+      "zygomatic_bone",
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は頬骨を示しています。頬骨は頬の突出を作り、眼窩外側壁の一部を構成します。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_5_sphenoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "sphenoid_bone",
+    "choices": [
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は蝶形骨を示しています。蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_6_lacrimal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "lacrimal_bone",
+    "choices": [
+      "lacrimal_bone",
+      "zygomatic_bone",
+      "nasal_bone",
+      "maxilla"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は涙骨を示しています。涙骨は眼窩内側壁前方に位置する小さな骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_7_parietal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "parietal_bone",
+    "choices": [
+      "parietal_bone",
+      "lacrimal_bone",
+      "nasal_bone",
+      "maxilla"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は頭頂骨を示しています。頭頂骨は頭蓋冠の側上部を構成する骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_8_temporal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "temporal_bone",
+    "choices": [
+      "temporal_bone",
+      "nasal_bone",
+      "maxilla",
+      "mandible"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は側頭骨を示しています。側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_9_sphenoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "sphenoid_bone",
+    "choices": [
+      "sphenoid_bone",
+      "maxilla",
+      "mandible",
+      "vomer"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は蝶形骨を示しています。蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "q_gray190_skull_anterior_plate_label_10_mandible",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "mandible",
+    "choices": [
+      "mandible",
+      "vomer",
+      "frontal_bone",
+      "parietal_bone"
+    ],
+    "imageId": "gray190_skull_anterior_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は下顎骨を示しています。下顎骨は顔面頭蓋で唯一大きく可動する骨です。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_1_frontal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "frontal_bone",
+    "choices": [
+      "frontal_bone",
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は前頭骨を示しています。前頭骨は額と眼窩上部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_2_parietal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "parietal_bone",
+    "choices": [
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone",
+      "sphenoid_bone"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は頭頂骨を示しています。頭頂骨は頭蓋冠の側上部を構成する骨です。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_3_temporal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "temporal_bone",
+    "choices": [
+      "temporal_bone",
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は側頭骨を示しています。側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_4_sphenoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "sphenoid_bone",
+    "choices": [
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は蝶形骨を示しています。蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_5_zygomatic_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "zygomatic_bone",
+    "choices": [
+      "zygomatic_bone",
+      "ethmoid_bone",
+      "lacrimal_bone",
+      "nasal_bone"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は頬骨を示しています。頬骨は頬の突出を作り、眼窩外側壁の一部を構成します。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_6_lacrimal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "lacrimal_bone",
+    "choices": [
+      "lacrimal_bone",
+      "zygomatic_bone",
+      "nasal_bone",
+      "maxilla"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は涙骨を示しています。涙骨は眼窩内側壁前方に位置する小さな骨です。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_7_maxilla",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "maxilla",
+    "choices": [
+      "maxilla",
+      "lacrimal_bone",
+      "nasal_bone",
+      "mandible"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は上顎骨を示しています。上顎骨は上歯列や眼窩底、鼻腔外側壁の一部を作ります。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_8_nasal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "nasal_bone",
+    "choices": [
+      "nasal_bone",
+      "maxilla",
+      "mandible",
+      "vomer"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は鼻骨を示しています。鼻骨は鼻背の骨性部分を構成する小骨です。"
+  },
+  {
+    "id": "q_gray164_pelvis_plate_label_9_ethmoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "ethmoid_bone",
+    "choices": [
+      "ethmoid_bone",
+      "maxilla",
+      "mandible",
+      "vomer"
+    ],
+    "imageId": "gray164_pelvis_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は篩骨を示しています。篩骨は鼻腔上部と眼窩内側壁の一部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_1_frontal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "frontal_bone",
+    "choices": [
+      "frontal_bone",
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は前頭骨を示しています。前頭骨は額と眼窩上部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_2_parietal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "parietal_bone",
+    "choices": [
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone",
+      "sphenoid_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は頭頂骨を示しています。頭頂骨は頭蓋冠の側上部を構成する骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_3_occipital_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "occipital_bone",
+    "choices": [
+      "occipital_bone",
+      "temporal_bone",
+      "sphenoid_bone",
+      "ethmoid_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は後頭骨を示しています。後頭骨は頭蓋後下部を構成し、大後頭孔を含む骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_4_temporal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "temporal_bone",
+    "choices": [
+      "temporal_bone",
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は側頭骨を示しています。側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_5_sphenoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "sphenoid_bone",
+    "choices": [
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は蝶形骨を示しています。蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_6_zygomatic_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "zygomatic_bone",
+    "choices": [
+      "zygomatic_bone",
+      "lacrimal_bone",
+      "nasal_bone",
+      "maxilla"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は頬骨を示しています。頬骨は頬の突出を作り、眼窩外側壁の一部を構成します。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_7_ethmoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "ethmoid_bone",
+    "choices": [
+      "ethmoid_bone",
+      "lacrimal_bone",
+      "nasal_bone",
+      "maxilla"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は篩骨を示しています。篩骨は鼻腔上部と眼窩内側壁の一部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_8_lacrimal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "lacrimal_bone",
+    "choices": [
+      "lacrimal_bone",
+      "nasal_bone",
+      "maxilla",
+      "mandible"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は涙骨を示しています。涙骨は眼窩内側壁前方に位置する小さな骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_9_maxilla",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "maxilla",
+    "choices": [
+      "maxilla",
+      "mandible",
+      "vomer",
+      "frontal_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は上顎骨を示しています。上顎骨は上歯列や眼窩底、鼻腔外側壁の一部を作ります。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_10_nasal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "nasal_bone",
+    "choices": [
+      "nasal_bone",
+      "mandible",
+      "vomer",
+      "frontal_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は鼻骨を示しています。鼻骨は鼻背の骨性部分を構成する小骨です。"
+  },
+  {
+    "id": "q_gray188_temporal_bone_plate_label_12_mandible",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "mandible",
+    "choices": [
+      "mandible",
+      "frontal_bone",
+      "parietal_bone",
+      "occipital_bone"
+    ],
+    "imageId": "gray188_temporal_bone_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は下顎骨を示しています。下顎骨は顔面頭蓋で唯一大きく可動する骨です。"
+  },
+  {
+    "id": "q_gray113_thorax_posterior_plate_label_1_rib",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "rib",
+    "choices": [
+      "rib",
+      "thoracic_vertebra",
+      "scapula",
+      "clavicle"
+    ],
+    "imageId": "gray113_thorax_posterior_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は肋骨を示しています。肋骨は胸郭を構成し、心臓や肺を保護します。"
+  },
+  {
+    "id": "q_gray113_thorax_posterior_plate_label_2_thoracic_vertebra",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "thoracic_vertebra",
+    "choices": [
+      "thoracic_vertebra",
+      "scapula",
+      "clavicle",
+      "sternum"
+    ],
+    "imageId": "gray113_thorax_posterior_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は胸椎を示しています。胸椎は胸郭を構成する椎骨で、肋骨と関節する。"
+  },
+  {
+    "id": "q_gray112_thorax_anterior_plate_label_1_sternum",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "sternum",
+    "choices": [
+      "sternum",
+      "rib",
+      "thoracic_vertebra",
+      "scapula"
+    ],
+    "imageId": "gray112_thorax_anterior_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は胸骨を示しています。胸骨は胸郭前面の中央にある骨で、肋軟骨を介して肋骨とつながります。"
+  },
+  {
+    "id": "q_gray112_thorax_anterior_plate_label_2_rib",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "rib",
+    "choices": [
+      "rib",
+      "thoracic_vertebra",
+      "scapula",
+      "clavicle"
+    ],
+    "imageId": "gray112_thorax_anterior_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は肋骨を示しています。肋骨は胸郭を構成し、心臓や肺を保護します。"
+  },
+  {
+    "id": "q_gray112_thorax_anterior_plate_label_3_thoracic_vertebra",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "thoracic_vertebra",
+    "choices": [
+      "thoracic_vertebra",
+      "scapula",
+      "clavicle",
+      "sternum"
+    ],
+    "imageId": "gray112_thorax_anterior_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は胸椎を示しています。胸椎は胸郭を構成する椎骨で、肋骨と関節する。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_1_pisiform",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "pisiform",
+    "choices": [
+      "pisiform",
+      "triquetral_bone",
+      "lunate_bone",
+      "scaphoid_bone"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は豆状骨を示しています。豆状骨は手根骨の一つで、尺側近位に位置する小さな骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_2_triquetral_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "triquetral_bone",
+    "choices": [
+      "triquetral_bone",
+      "lunate_bone",
+      "scaphoid_bone",
+      "trapezium_bone"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は三角骨を示しています。三角骨は手根骨近位列の尺側に位置する骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_3_lunate_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "lunate_bone",
+    "choices": [
+      "lunate_bone",
+      "scaphoid_bone",
+      "trapezium_bone",
+      "trapezoid_bone"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は月状骨を示しています。月状骨は手根骨近位列中央に位置する骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_4_scaphoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "scaphoid_bone",
+    "choices": [
+      "scaphoid_bone",
+      "trapezium_bone",
+      "trapezoid_bone",
+      "capitate_bone"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は舟状骨を示しています。舟状骨は手根骨近位列橈側に位置する骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_5_trapezium_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "trapezium_bone",
+    "choices": [
+      "trapezium_bone",
+      "trapezoid_bone",
+      "capitate_bone",
+      "hamate_bone"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は大菱形骨を示しています。大菱形骨は母指側の遠位手根骨で、第1中手骨と関節します。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_6_trapezoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "trapezoid_bone",
+    "choices": [
+      "trapezoid_bone",
+      "capitate_bone",
+      "hamate_bone",
+      "metacarpal_bone"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は小菱形骨を示しています。小菱形骨は遠位手根骨の一つで、大菱形骨と有頭骨の間に位置します。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_7_capitate_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "capitate_bone",
+    "choices": [
+      "capitate_bone",
+      "hamate_bone",
+      "metacarpal_bone",
+      "proximal_phalanx"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は有頭骨を示しています。有頭骨は手根骨の中央に位置する大きな骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_8_hamate_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "hamate_bone",
+    "choices": [
+      "hamate_bone",
+      "metacarpal_bone",
+      "proximal_phalanx",
+      "middle_phalanx"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は有鈎骨を示しています。有鈎骨は遠位手根骨の尺側に位置し、有鈎骨鈎を持つ骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_9_metacarpal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "metacarpal_bone",
+    "choices": [
+      "metacarpal_bone",
+      "proximal_phalanx",
+      "middle_phalanx",
+      "distal_phalanx"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は中手骨を示しています。中手骨は手掌部を構成し、手根骨と指骨をつなぐ骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_10_proximal_phalanx",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "proximal_phalanx",
+    "choices": [
+      "proximal_phalanx",
+      "middle_phalanx",
+      "distal_phalanx",
+      "radius"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は基節骨を示しています。基節骨は指骨のうち最も近位にある骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_11_middle_phalanx",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "middle_phalanx",
+    "choices": [
+      "middle_phalanx",
+      "distal_phalanx",
+      "radius",
+      "ulna"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は中節骨を示しています。中節骨は第2から第5指で基節骨と末節骨の間にある骨です。"
+  },
+  {
+    "id": "q_gray219_hand_palmar_plate_label_12_distal_phalanx",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "distal_phalanx",
+    "choices": [
+      "distal_phalanx",
+      "radius",
+      "ulna",
+      "pisiform"
+    ],
+    "imageId": "gray219_hand_palmar_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は末節骨を示しています。末節骨は指先を構成する遠位の指骨です。"
+  },
+  {
+    "id": "q_gray213_lower_limb_plate_label_1_ulna",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "ulna",
+    "choices": [
+      "ulna",
+      "radius",
+      "humerus",
+      "scapula"
+    ],
+    "imageId": "gray213_lower_limb_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は尺骨を示しています。尺骨は前腕の小指側にある骨で、肘関節の形成に重要です。"
+  },
+  {
+    "id": "q_gray213_lower_limb_plate_label_2_radius",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "radius",
+    "choices": [
+      "radius",
+      "humerus",
+      "scapula",
+      "clavicle"
+    ],
+    "imageId": "gray213_lower_limb_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は橈骨を示しています。橈骨は前腕の母指側にある骨で、回内回外運動に関わります。"
+  },
+  {
+    "id": "q_gray204_thorax_posterior_plate_label_1_scapula",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "scapula",
+    "choices": [
+      "scapula",
+      "rib",
+      "thoracic_vertebra",
+      "clavicle"
+    ],
+    "imageId": "gray204_thorax_posterior_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は肩甲骨を示しています。肩甲骨は肩の後面にある平たい骨で、上腕骨や鎖骨と関節を作ります。"
+  },
+  {
+    "id": "q_gray204_thorax_posterior_plate_label_2_clavicle",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "clavicle",
+    "choices": [
+      "clavicle",
+      "thoracic_vertebra",
+      "scapula",
+      "sternum"
+    ],
+    "imageId": "gray204_thorax_posterior_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は鎖骨を示しています。鎖骨は胸骨と肩甲骨をつなぎ、上肢帯を体幹に連結します。"
+  },
+  {
+    "id": "q_gray204_thorax_posterior_plate_label_3_rib",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "rib",
+    "choices": [
+      "rib",
+      "scapula",
+      "clavicle",
+      "sternum"
+    ],
+    "imageId": "gray204_thorax_posterior_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は肋骨を示しています。肋骨は胸郭を構成し、心臓や肺を保護します。"
+  },
+  {
+    "id": "q_gray204_thorax_posterior_plate_label_4_thoracic_vertebra",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "thoracic_vertebra",
+    "choices": [
+      "thoracic_vertebra",
+      "clavicle",
+      "sternum",
+      "rib"
+    ],
+    "imageId": "gray204_thorax_posterior_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は胸椎を示しています。胸椎は胸郭を構成する椎骨で、肋骨と関節する。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_1_vomer",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "vomer",
+    "choices": [
+      "vomer",
+      "parietal_bone",
+      "occipital_bone",
+      "temporal_bone"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は鋤骨を示しています。鋤骨は鼻中隔の後下部を構成する薄い骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_2_maxilla",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "maxilla",
+    "choices": [
+      "maxilla",
+      "occipital_bone",
+      "temporal_bone",
+      "sphenoid_bone"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は上顎骨を示しています。上顎骨は上歯列や眼窩底、鼻腔外側壁の一部を作ります。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_3_nasal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "nasal_bone",
+    "choices": [
+      "nasal_bone",
+      "temporal_bone",
+      "sphenoid_bone",
+      "ethmoid_bone"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は鼻骨を示しています。鼻骨は鼻背の骨性部分を構成する小骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_4_ethmoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "ethmoid_bone",
+    "choices": [
+      "ethmoid_bone",
+      "sphenoid_bone",
+      "zygomatic_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は篩骨を示しています。篩骨は鼻腔上部と眼窩内側壁の一部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_5_sphenoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "sphenoid_bone",
+    "choices": [
+      "sphenoid_bone",
+      "ethmoid_bone",
+      "zygomatic_bone",
+      "lacrimal_bone"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は蝶形骨を示しています。蝶形骨は頭蓋底中央に位置し、多くの頭蓋骨と連結する骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_6_frontal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "frontal_bone",
+    "choices": [
+      "frontal_bone",
+      "zygomatic_bone",
+      "lacrimal_bone",
+      "nasal_bone"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は前頭骨を示しています。前頭骨は額と眼窩上部を構成する頭蓋骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_7_parietal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "parietal_bone",
+    "choices": [
+      "parietal_bone",
+      "lacrimal_bone",
+      "nasal_bone",
+      "maxilla"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は頭頂骨を示しています。頭頂骨は頭蓋冠の側上部を構成する骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_8_occipital_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "occipital_bone",
+    "choices": [
+      "occipital_bone",
+      "nasal_bone",
+      "maxilla",
+      "mandible"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は後頭骨を示しています。後頭骨は頭蓋後下部を構成し、大後頭孔を含む骨です。"
+  },
+  {
+    "id": "q_gray194_skull_lateral_plate_label_9_temporal_bone",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "temporal_bone",
+    "choices": [
+      "temporal_bone",
+      "maxilla",
+      "mandible",
+      "vomer"
+    ],
+    "imageId": "gray194_skull_lateral_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は側頭骨を示しています。側頭骨は頭蓋側面にあり、外耳道や顎関節窩を含みます。"
+  }
+]
