@@ -375,7 +375,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                   className="plate-marker"
                   style={{ left: `${label.x * 100}%`, top: `${label.y * 100}%` }}
                 >
-                  {label.label}
+                  <span className="plate-marker-visual">{label.label}</span>
                 </span>
               ))}
               {draft.x !== '' && draft.y !== '' ? (
@@ -383,7 +383,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                   className="plate-marker pending"
                   style={{ left: `${Number(draft.x) * 100}%`, top: `${Number(draft.y) * 100}%` }}
                 >
-                  {draft.label || '+'}
+                  <span className="plate-marker-visual">{draft.label || '+'}</span>
                 </span>
               ) : null}
             </span>

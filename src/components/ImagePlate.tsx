@@ -30,7 +30,7 @@ export function ImagePlate({ image, activeLabel, selectedLabel, onSelectLabel }:
                 onClick={() => onSelectLabel(label)}
                 aria-label={`ラベル ${label.label}`}
               >
-                {label.label}
+                <span className="plate-marker-visual">{label.label}</span>
               </button>
             );
           }
@@ -42,7 +42,7 @@ export function ImagePlate({ image, activeLabel, selectedLabel, onSelectLabel }:
               style={{ left: `${label.x * 100}%`, top: `${label.y * 100}%` }}
               aria-label={`ラベル ${label.label}`}
             >
-              {label.label}
+              <span className="plate-marker-visual">{label.label}</span>
             </span>
           );
         })}

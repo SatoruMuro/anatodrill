@@ -380,6 +380,28 @@ dd {
   background: #fbfaf5;
 }
 
+.plate-viewer,
+.label-editor-image {
+  container-type: inline-size;
+  --marker-size: clamp(14px, 4vw, 28px);
+  --marker-active-size: clamp(18px, 5vw, 34px);
+  --marker-font-size: clamp(9px, 2.6vw, 18px);
+  --marker-active-font-size: clamp(11px, 3.2vw, 21px);
+  --marker-border-width: clamp(1px, 0.35vw, 2px);
+  --marker-hit-size: max(28px, var(--marker-active-size));
+}
+
+@supports (width: 1cqw) {
+  .plate-viewer,
+  .label-editor-image {
+    --marker-size: clamp(14px, 4cqw, 28px);
+    --marker-active-size: clamp(18px, 5cqw, 34px);
+    --marker-font-size: clamp(9px, 2.6cqw, 18px);
+    --marker-active-font-size: clamp(11px, 3.2cqw, 21px);
+    --marker-border-width: clamp(1px, 0.35cqw, 2px);
+  }
+}
+
 .plate-viewer img {
   display: block;
   width: 100%;
@@ -394,33 +416,57 @@ dd {
 .plate-marker {
   position: absolute;
   display: grid;
-  width: 34px;
-  height: 34px;
+  width: var(--marker-hit-size);
+  height: var(--marker-hit-size);
   place-items: center;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  background: #0d6b5f;
+  transform: translate(-50%, -50%);
+  z-index: 1;
   color: #ffffff;
+  line-height: 1;
+}
+
+.plate-marker-visual {
+  display: grid;
+  width: var(--marker-size);
+  height: var(--marker-size);
+  place-items: center;
+  border: var(--marker-border-width) solid rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  background: rgba(13, 107, 95, 0.88);
+  box-shadow: 0 2px 8px rgba(23, 33, 30, 0.24);
+  color: inherit;
+  font-size: var(--marker-font-size);
   font-weight: 900;
   line-height: 1;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 2px 10px rgba(23, 33, 30, 0.28);
+  pointer-events: none;
+  user-select: none;
 }
 
 button.plate-marker {
+  border: 0;
+  background: transparent;
   padding: 0;
 }
 
 .plate-marker.active {
-  width: 42px;
-  height: 42px;
-  background: #d8583f;
+  z-index: 3;
+}
+
+.plate-marker.active .plate-marker-visual {
+  width: var(--marker-active-size);
+  height: var(--marker-active-size);
+  background: rgba(216, 88, 63, 0.92);
+  font-size: var(--marker-active-font-size);
   box-shadow: 0 0 0 5px rgba(216, 88, 63, 0.24);
 }
 
 .plate-marker.selected {
-  background: #f1d07a;
   color: #17211e;
+  z-index: 2;
+}
+
+.plate-marker.selected .plate-marker-visual {
+  background: rgba(241, 208, 122, 0.92);
   box-shadow: 0 0 0 5px rgba(241, 208, 122, 0.32);
 }
 
@@ -946,18 +992,27 @@ button.plate-marker {
 
 .question-thumb .plate-viewer {
   width: 100%;
+  --marker-size: 16px;
+  --marker-active-size: 20px;
+  --marker-font-size: 10px;
+  --marker-active-font-size: 12px;
+  --marker-hit-size: 22px;
 }
 
-.question-thumb .plate-marker {
-  width: 20px;
-  height: 20px;
+@supports (width: 1cqw) {
+  .question-thumb .plate-viewer {
+    --marker-size: clamp(12px, 7cqw, 18px);
+    --marker-active-size: clamp(14px, 8cqw, 22px);
+    --marker-font-size: clamp(8px, 4.5cqw, 12px);
+    --marker-active-font-size: clamp(9px, 5cqw, 14px);
+  }
+}
+
+.question-thumb .plate-marker-visual {
   border-width: 1px;
-  font-size: 0.7rem;
 }
 
-.question-thumb .plate-marker.active {
-  width: 24px;
-  height: 24px;
+.question-thumb .plate-marker.active .plate-marker-visual {
   box-shadow: 0 0 0 3px rgba(216, 88, 63, 0.24);
 }
 
@@ -1038,8 +1093,11 @@ button.plate-marker {
 }
 
 .plate-marker.pending {
-  background: #f1d07a;
   color: #17211e;
+}
+
+.plate-marker.pending .plate-marker-visual {
+  background: rgba(241, 208, 122, 0.94);
   box-shadow: 0 0 0 5px rgba(241, 208, 122, 0.34);
 }
 
