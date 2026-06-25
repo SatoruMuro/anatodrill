@@ -910,7 +910,92 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray220.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "pisiform",
+        "x": 0.6852,
+        "y": 0.1075,
+        "note": "豆状骨"
+      },
+      {
+        "label": "2",
+        "termId": "triquetral_bone",
+        "x": 0.6273,
+        "y": 0.1065,
+        "note": "三角骨"
+      },
+      {
+        "label": "3",
+        "termId": "lunate_bone",
+        "x": 0.5606,
+        "y": 0.0504,
+        "note": "月状骨"
+      },
+      {
+        "label": "4",
+        "termId": "scaphoid_bone",
+        "x": 0.4589,
+        "y": 0.0744,
+        "note": "舟状骨"
+      },
+      {
+        "label": "5",
+        "termId": "trapezium_bone",
+        "x": 0.3507,
+        "y": 0.1261,
+        "note": "大菱形骨"
+      },
+      {
+        "label": "6",
+        "termId": "trapezoid_bone",
+        "x": 0.4206,
+        "y": 0.1457,
+        "note": "小菱形骨"
+      },
+      {
+        "label": "7",
+        "termId": "capitate_bone",
+        "x": 0.5201,
+        "y": 0.1555,
+        "note": "有頭骨"
+      },
+      {
+        "label": "8",
+        "termId": "hamate_bone",
+        "x": 0.613,
+        "y": 0.1688,
+        "note": "有鈎骨"
+      },
+      {
+        "label": "9",
+        "termId": "metacarpal_bone",
+        "x": 0.3714,
+        "y": 0.3577,
+        "note": "中手骨"
+      },
+      {
+        "label": "10",
+        "termId": "proximal_phalanx",
+        "x": 0.3146,
+        "y": 0.6082,
+        "note": "基節骨"
+      },
+      {
+        "label": "11",
+        "termId": "middle_phalanx",
+        "x": 0.2829,
+        "y": 0.7738,
+        "note": "中節骨"
+      },
+      {
+        "label": "12",
+        "termId": "distal_phalanx",
+        "x": 0.2763,
+        "y": 0.8785,
+        "note": "末節骨"
+      }
+    ],
     "editionYear": 1918
   },
   {
@@ -924,7 +1009,29 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray238.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "hip_bone",
+        "x": 0.2009,
+        "y": 0.3382,
+        "note": "寛骨"
+      },
+      {
+        "label": "2",
+        "termId": "sacrum",
+        "x": 0.3999,
+        "y": 0.3028,
+        "note": "仙骨"
+      },
+      {
+        "label": "3",
+        "termId": "coccyx",
+        "x": 0.4983,
+        "y": 0.5489,
+        "note": "尾骨"
+      }
+    ],
     "editionYear": 1918
   },
   {

@@ -82,5 +82,19 @@
     "version": "2026.1",
     "isActive": true,
     "order": 50
+  },
+  {
+    "id": "pdf_reference_terms",
+    "titleJa": "PDF由来用語",
+    "titleEn": "PDF Reference Terms",
+    "descriptionJa": "アップロードされたPDFから抽出した解剖学用語の参照用セットです。",
+    "descriptionEn": "Reference terms extracted from uploaded PDFs.",
+    "category": "reference",
+    "region": "general",
+    "passingScore": 80,
+    "defaultQuestionCount": 30,
+    "version": "2026.1",
+    "isActive": false,
+    "order": 900
   }
 ]
