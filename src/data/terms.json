@@ -550,5 +550,15 @@
     "region": "head and neck",
     "testSet": "osteology_basic",
     "explanation": "鋤骨は鼻中隔の後下部を構成する薄い骨です。"
+  },
+  {
+    "id": "pubic_symphysis",
+    "japanese": "恥骨結合",
+    "english": "pubic symphysis",
+    "latin": "symphysis pubica",
+    "category": "joint",
+    "region": "pelvis",
+    "testSet": "osteology_basic",
+    "explanation": "恥骨結合は左右の恥骨の間にある線維軟骨性の結合で、骨盤前方の正中部を構成する。"
   }
 ]
