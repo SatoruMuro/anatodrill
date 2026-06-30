@@ -161,6 +161,14 @@ For numbered image plates, start the local dev server and open:
 http://localhost:5173/anatodrill/?dev=1
 ```
 
+After deployment, trusted editors can also open:
+
+```text
+https://SatoruMuro.github.io/anatodrill/?dev=1
+```
+
+The online editor URL is intentionally hidden from normal navigation and requires the editor password before the developer navigation appears. This is client-side protection for a static GitHub Pages app, not server-side authentication.
+
 Then click `ラベル作成`.
 
 This developer-only page is hidden unless `?dev=1` is present. It lets you select an image, preferably from `public/images/gray/plates/`, click the image to place normalized `x` / `y` markers, search terms by ID/Japanese/English/Latin, edit labels, and export JSON or CSV rows.

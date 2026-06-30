@@ -4,6 +4,7 @@ import questionsJson from './data/questions.json';
 import testSetsJson from './data/testSets.json';
 import termsJson from './data/terms.json';
 import { DrillMode } from './components/DrillMode';
+import { EditorAccessGate } from './components/EditorAccessGate';
 import { HistoryBackup } from './components/HistoryBackup';
 import { Home } from './components/Home';
 import { ImageCredits } from './components/ImageCredits';
@@ -24,12 +25,24 @@ const terms = termsJson as Term[];
 const questions = questionsJson as Question[];
 const knownTermIds = new Set(terms.map((term) => term.id));
 const isDevMode = new URLSearchParams(window.location.search).get('dev') === '1';
+const editorPassword = 'kaibou2026';
+const editorAccessStorageKey = 'anatodrill_editor_access';
+
+function hasStoredEditorAccess() {
+  try {
+    return window.sessionStorage.getItem(editorAccessStorageKey) === 'unlocked';
+  } catch {
+    return false;
+  }
+}
 
 export function App() {
-  const [view, setView] = useState<ViewKey>('home');
+  const [view, setView] = useState<ViewKey>(() => (isDevMode ? 'label_editor' : 'home'));
+  const [editorUnlocked, setEditorUnlocked] = useState(() => (isDevMode ? hasStoredEditorAccess() : false));
   const [learningData, setLearningData] = useState<LearningData>(() => loadLearningData(knownTermIds));
   const termsById = useMemo(() => buildTermMap(terms), []);
   const imagesById = useMemo(() => buildImageMap(images), []);
+  const isEditorMode = isDevMode && editorUnlocked;
 
   useEffect(() => {
     saveLearningData(learningData);
@@ -60,12 +73,39 @@ export function App() {
     setLearningData(data);
   };
 
+  const unlockEditor = () => {
+    try {
+      window.sessionStorage.setItem(editorAccessStorageKey, 'unlocked');
+    } catch {
+      // Keep the current tab unlocked even when browser storage is unavailable.
+    }
+    setEditorUnlocked(true);
+    setView('label_editor');
+  };
+
+  const lockEditor = () => {
+    try {
+      window.sessionStorage.removeItem(editorAccessStorageKey);
+    } catch {
+      // Ignore storage failures; local React state still closes the editor.
+    }
+    setEditorUnlocked(false);
+    setView('home');
+  };
+
+  if (isDevMode && !editorUnlocked) {
+    return <EditorAccessGate password={editorPassword} onUnlock={unlockEditor} />;
+  }
+
   return (
     <>
-      <Navigation current={view} onNavigate={setView} isDevMode={isDevMode} />
-      {isDevMode ? (
+      <Navigation current={view} onNavigate={setView} isDevMode={isEditorMode} />
+      {isEditorMode ? (
         <aside className="dev-mode-notice">
-          開発者モードです。ラベル作成ツールの出力を image_labels.csv に手動で反映してください。
+          <span>編集者モードです。ラベル作成ツールの出力を image_labels.csv に手動で反映してください。</span>
+          <button className="secondary-button" type="button" onClick={lockEditor}>
+            閉じる
+          </button>
         </aside>
       ) : null}
       {view === 'home' ? <Home terms={terms} questions={questions} data={learningData} onNavigate={setView} /> : null}
@@ -100,7 +140,7 @@ export function App() {
         <HistoryBackup data={learningData} terms={terms} testSets={testSets} onImportData={importData} />
       ) : null}
       {view === 'credits' ? <ImageCredits images={images} /> : null}
-      {isDevMode && view === 'label_editor' ? <LabelEditor images={images} terms={terms} /> : null}
+      {isEditorMode && view === 'label_editor' ? <LabelEditor images={images} terms={terms} /> : null}
     </>
   );
 }

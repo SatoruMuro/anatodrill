@@ -106,6 +106,14 @@ The published URL should be:
 https://SatoruMuro.github.io/anatodrill/
 ```
 
+Editor-only tools can be opened online with the hidden query-string URL:
+
+```text
+https://SatoruMuro.github.io/anatodrill/?dev=1
+```
+
+The editor page is protected by a client-side password gate. This is a lightweight static-site guard for trusted editors, not server-side authentication. The app still has no backend, login system, or external API dependency.
+
 The deployment workflow runs:
 
 ```bash
