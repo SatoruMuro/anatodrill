@@ -204,6 +204,24 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   });
   const [termSearch, setTermSearch] = useState('');
   const [copyStatus, setCopyStatus] = useState('');
+  const [showOnlyUnlabeled, setShowOnlyUnlabeled] = useState(false);
+
+  const imageStats = useMemo(
+    () =>
+      selectableImages.map((image) => {
+        const imageLabels = labelsByImageId[image.id] ?? labelsFromImage(image);
+        return {
+          image,
+          labelCount: imageLabels.length,
+        };
+      }),
+    [labelsByImageId, selectableImages],
+  );
+  const unlabeledImageStats = useMemo(() => imageStats.filter((item) => item.labelCount === 0), [imageStats]);
+  const visibleImageStats = useMemo(
+    () => (showOnlyUnlabeled ? imageStats.filter((item) => item.labelCount === 0 || item.image.id === selectedImageId) : imageStats),
+    [imageStats, selectedImageId, showOnlyUnlabeled],
+  );
 
   const matchingTerms = useMemo(
     () => terms.filter((term) => termMatches(term, termSearch)).slice(0, 24),
@@ -238,6 +256,18 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
       note: '',
     });
     setCopyStatus('');
+  };
+
+  const toggleShowOnlyUnlabeled = (checked: boolean) => {
+    setShowOnlyUnlabeled(checked);
+    if (!checked || labels.length === 0) {
+      return;
+    }
+
+    const firstUnlabeledImage = imageStats.find((item) => item.labelCount === 0)?.image;
+    if (firstUnlabeledImage) {
+      changeImage(firstUnlabeledImage.id);
+    }
   };
 
   const handleImageClick = (event: MouseEvent<HTMLButtonElement>) => {
@@ -357,14 +387,55 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
           <label className="compact-select">
             画像
             <select value={selectedImageId} onChange={(event) => changeImage(event.target.value)}>
-              {selectableImages.map((image) => (
+              {visibleImageStats.map(({ image, labelCount }) => (
                 <option key={image.id} value={image.id}>
+                  {labelCount === 0 ? '未設定' : `設定済み ${labelCount}件`} |{' '}
                   {image.file.includes('/images/gray/plates/') ? 'Gray plate: ' : ''}
                   {image.title} ({image.id})
                 </option>
               ))}
             </select>
           </label>
+
+          <div className="label-editor-image-meta">
+            <div className="label-editor-status-row">
+              <span className={labels.length === 0 ? 'label-status-pill missing' : 'label-status-pill ready'}>
+                {labels.length === 0 ? 'この画像はラベル未設定' : `この画像はラベル ${labels.length}件`}
+              </span>
+              <span className="muted">
+                未設定 {unlabeledImageStats.length} / 全 {selectableImages.length}
+              </span>
+            </div>
+            <label className="label-filter-toggle">
+              <input
+                type="checkbox"
+                checked={showOnlyUnlabeled}
+                onChange={(event) => toggleShowOnlyUnlabeled(event.target.checked)}
+              />
+              未設定のみ表示
+            </label>
+          </div>
+
+          {unlabeledImageStats.length > 0 ? (
+            <div className="unlabeled-image-panel">
+              <p>ラベル未設定の画像</p>
+              <div className="unlabeled-image-list">
+                {unlabeledImageStats.map(({ image }) => (
+                  <button
+                    key={image.id}
+                    type="button"
+                    className={image.id === selectedImageId ? 'secondary-button active' : 'secondary-button'}
+                    onClick={() => changeImage(image.id)}
+                  >
+                    {image.title}
+                    <span>{image.id}</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          ) : (
+            <p className="status-line">すべての画像にラベルがあります。</p>
+          )}
 
           <button type="button" className="label-editor-image" onClick={handleImageClick}>
             <img src={assetUrl(selectedImage.file)} alt={selectedImage.title} />

@@ -1148,6 +1148,97 @@ button.plate-marker {
   background: #f8fbfa;
 }
 
+.label-editor-image-meta {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.label-editor-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.label-status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+.label-status-pill.missing {
+  border: 1px solid #d8583f;
+  background: #fff2ed;
+  color: #9f2f1c;
+}
+
+.label-status-pill.ready {
+  border: 1px solid #7cb8ae;
+  background: #eaf7f3;
+  color: #0d6b5f;
+}
+
+.label-filter-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #2d3b37;
+  font-weight: 800;
+}
+
+.label-filter-toggle input {
+  width: 18px;
+  height: 18px;
+  accent-color: #0d6b5f;
+}
+
+.unlabeled-image-panel {
+  display: grid;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px solid #e8c65b;
+  border-radius: 8px;
+  background: #fffaf0;
+}
+
+.unlabeled-image-panel p {
+  color: #4f3f00;
+  font-weight: 900;
+}
+
+.unlabeled-image-list {
+  display: flex;
+  max-height: 180px;
+  flex-wrap: wrap;
+  gap: 8px;
+  overflow: auto;
+}
+
+.unlabeled-image-list .secondary-button {
+  display: inline-grid;
+  gap: 2px;
+  min-height: 42px;
+  padding: 7px 10px;
+  text-align: left;
+}
+
+.unlabeled-image-list .secondary-button.active {
+  border-color: #0d6b5f;
+  background: #dff3ee;
+}
+
+.unlabeled-image-list .secondary-button span {
+  color: #53635e;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .label-editor-image img {
   display: block;
   width: 100%;
