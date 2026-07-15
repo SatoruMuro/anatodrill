@@ -1,5 +1,7 @@
 # AnatoDrill
 
+[Open AnatoDrill](https://satorumuro.github.io/anatodrill/)
+
 AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation.
 
 ## Tech Stack
