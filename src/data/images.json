@@ -1045,7 +1045,43 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray241_he.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "ilium",
+        "x": 0.2371,
+        "y": 0.1144,
+        "note": "腸骨"
+      },
+      {
+        "label": "2",
+        "termId": "pubis",
+        "x": 0.352,
+        "y": 0.6868,
+        "note": "恥骨"
+      },
+      {
+        "label": "3",
+        "termId": "ischium",
+        "x": 0.2732,
+        "y": 0.8695,
+        "note": "坐骨"
+      },
+      {
+        "label": "4",
+        "termId": "sacrum",
+        "x": 0.4996,
+        "y": 0.3648,
+        "note": "仙骨"
+      },
+      {
+        "label": "5",
+        "termId": "coccyx",
+        "x": 0.5018,
+        "y": 0.6665,
+        "note": "尾骨"
+      }
+    ],
     "editionYear": 1918
   },
   {
@@ -1059,7 +1095,22 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray258_he.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "tibia",
+        "x": 0.6129,
+        "y": 0.4726,
+        "note": "脛骨"
+      },
+      {
+        "label": "2",
+        "termId": "fibula",
+        "x": 0.3846,
+        "y": 0.472,
+        "note": "腓骨"
+      }
+    ],
     "editionYear": 1918
   },
   {
@@ -1073,7 +1124,22 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray259_he.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "tibia",
+        "x": 0.4661,
+        "y": 0.4471,
+        "note": "脛骨"
+      },
+      {
+        "label": "2",
+        "termId": "fibula",
+        "x": 0.6635,
+        "y": 0.4455,
+        "note": "腓骨"
+      }
+    ],
     "editionYear": 1918
   },
   {
