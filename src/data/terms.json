@@ -292,6 +292,19 @@
     "explanation": "踵骨は足根骨の一つで、かかとの骨格を作ります。"
   },
   {
+    "id": "talus",
+    "japanese": "距骨",
+    "english": "talus",
+    "latin": "talus",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "距骨は下腿骨と踵骨・舟状骨の間に位置し、足関節を構成する足根骨です。"
+  },
+  {
     "id": "diaphragm",
     "japanese": "横隔膜",
     "english": "diaphragm",
