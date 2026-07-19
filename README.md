@@ -269,11 +269,11 @@ JSON and CSV result exports include:
 - `pass`
 - `durationSeconds`
 
-The History / Backup page keeps the full localStorage backup/import flow and adds a `テスト結果のエクスポート` section. Recent stored attempts show date/time, name, student ID, Japanese test set title, score percentage, pass/fail result, and certificate ID. Each stored attempt can be downloaded as JSON or CSV, and passing attempts can also re-download the PDF certificate.
+The History / Backup page keeps the full localStorage backup/import flow and adds a `テスト結果のエクスポート` section. Recent stored attempts show date/time, name, student ID, question scope, score percentage, pass/fail result, and certificate ID. Each stored attempt can be downloaded as JSON or CSV, and passing attempts can also re-download the PDF certificate.
 
 ## Learning Data
 
-Progress and test attempts are stored in the current browser's `localStorage`. Progress is tracked separately for trilingual, Japanese-only, English-only, and Latin-only study. Legacy Japanese/English progress remains preserved as the old bilingual mode. Use the History / Backup screen to export learning data as JSON before clearing browser data or moving to another device.
+Progress and test attempts are stored in the current browser's `localStorage`. Progress is tracked separately for trilingual, Japanese-only, English-only, and Latin-only study. Correct answers expand the review interval through 1, 3, 7, 14, and 30 days; a wrong answer resets the item for immediate review. This is a simple spaced-repetition schedule inspired by the forgetting-curve principle, not an individualized mathematical model of a learner's memory. Legacy Japanese/English progress remains preserved as the old bilingual mode. Use the History / Backup screen to export learning data as JSON before clearing browser data or moving to another device.
 
 ## Japanese PDF Fonts
 

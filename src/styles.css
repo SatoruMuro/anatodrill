@@ -175,6 +175,12 @@ button:disabled {
   line-height: 1.7;
 }
 
+.dashboard-intro .intro-note {
+  margin-top: 10px;
+  color: #6d7c77;
+  font-size: 0.9rem;
+}
+
 .intro-actions,
 .button-row {
   display: flex;

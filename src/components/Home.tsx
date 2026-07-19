@@ -19,11 +19,14 @@ export function Home({ terms, questions, data, onNavigate }: HomeProps) {
     <main className="page-shell">
       <section className="dashboard-intro">
         <div>
-          <p className="eyebrow">ブラウザだけで学習</p>
-          <h2>解剖学用語の暗記を、短い反復で進める。</h2>
+          <p className="eyebrow">あなたと通る、アナトドリル。</p>
+          <h2>忘れる頃に、もう一度。</h2>
           <p>
-            進捗はこのブラウザの localStorage に保存されます。別端末や別ブラウザへ移す場合は
-            「履歴・バックアップ」からエクスポートしてください。
+            正解が続くほど復習間隔を1日・3日・7日・14日・30日へと広げ、間違えた用語はその日の復習へ戻します。
+            忘却曲線の考え方を取り入れた間隔反復で、解剖学用語を記憶に定着させます。
+          </p>
+          <p className="intro-note">
+            進捗はこのブラウザに保存されます。端末を移るときは「履歴・バックアップ」から書き出せます。
           </p>
         </div>
         <div className="intro-actions">
