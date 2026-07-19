@@ -96,3 +96,14 @@ gray258_lower_limb_anterior_plate,1,tibia,0.6129,0.4726,脛骨
 gray258_lower_limb_anterior_plate,2,fibula,0.3846,0.472,腓骨
 gray259_lower_limb_posterior_plate,1,tibia,0.4661,0.4471,脛骨
 gray259_lower_limb_posterior_plate,2,fibula,0.6635,0.4455,腓骨
+gray268_foot_dorsal_plate,1,talus,0.5081,0.2218,距骨
+gray268_foot_dorsal_plate,2,calcaneus,0.4401,0.0919,踵骨
+gray268_foot_dorsal_plate,3,scaphoid_bone,0.5825,0.3778,舟状骨
+gray268_foot_dorsal_plate,4,pdf_kaibo3_1_47acd64faf,0.3366,0.3709,立方骨
+gray268_foot_dorsal_plate,5,medial_cuneiform_bone,0.5987,0.4697,内側楔状骨
+gray268_foot_dorsal_plate,6,pdf_kaibo3_1_d3712a2fb8,0.4822,0.4333,中間楔状骨
+gray268_foot_dorsal_plate,7,pdf_kaibo3_1_274524cc2e,0.3786,0.4281,外側楔状骨
+gray268_foot_dorsal_plate,8,proximal_phalanx,0.4498,0.8388,基節骨
+gray268_foot_dorsal_plate,9,middle_phalanx,0.4337,0.9237,中節骨
+gray268_foot_dorsal_plate,10,distal_phalanx,0.4337,0.9722,末節骨
+gray268_foot_dorsal_plate,11,pdf_kaibo3_1_a2fff9434b,0.4272,0.6274,中足骨
