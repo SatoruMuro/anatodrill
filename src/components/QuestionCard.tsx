@@ -148,7 +148,7 @@ export function QuestionCard({
       {imagePath ? (
         <div className={question.type === 'single_image_mcq' ? 'image-question single-image-question' : 'image-question'}>
           {question.type === 'image_number_mcq' && imageCredit ? (
-            <ImagePlate image={imageCredit} activeLabel={targetPlateLabel?.label} />
+            <ImagePlate image={imageCredit} activeLabel={targetPlateLabel?.label} altText="問題画像" />
           ) : question.type === 'image_hotspot' ? (
             <button
               type="button"
@@ -157,7 +157,7 @@ export function QuestionCard({
               disabled={Boolean(answerState)}
               aria-label="画像内の構造をクリックして解答"
             >
-              <img src={assetUrl(imagePath)} alt={imageCredit?.title ?? displayPrompt} />
+              <img src={assetUrl(imagePath)} alt="問題画像" />
               {answerState?.point ? (
                 <span
                   className={answerState.correct ? 'click-marker correct' : 'click-marker wrong'}
@@ -166,15 +166,9 @@ export function QuestionCard({
               ) : null}
             </button>
           ) : (
-            <img src={assetUrl(imagePath)} alt={imageCredit?.title ?? displayPrompt} />
+            <img src={assetUrl(imagePath)} alt="問題画像" />
           )}
         </div>
-      ) : null}
-
-      {imageCredit ? (
-        <p className="image-credit-inline">
-          画像: {imageCredit.title} / {imageCredit.license}
-        </p>
       ) : null}
 
       {question.type === 'image_hotspot' && (!question.hotspots || question.hotspots.length === 0) ? (

@@ -5,13 +5,14 @@ interface ImagePlateProps {
   image: AnatomyImage;
   activeLabel?: string;
   selectedLabel?: string;
+  altText?: string;
   onSelectLabel?: (label: ImagePlateLabel) => void;
 }
 
-export function ImagePlate({ image, activeLabel, selectedLabel, onSelectLabel }: ImagePlateProps) {
+export function ImagePlate({ image, activeLabel, selectedLabel, altText, onSelectLabel }: ImagePlateProps) {
   return (
     <div className="plate-viewer">
-      <img src={assetUrl(image.file)} alt={image.title} />
+      <img src={assetUrl(image.file)} alt={altText ?? image.title} />
       <div className="plate-marker-layer" aria-label="番号付き解剖図ラベル">
         {image.labels.map((label) => {
           const isActive = label.label === activeLabel;
