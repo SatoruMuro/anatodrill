@@ -25,6 +25,7 @@ sacrum,仙骨,sacrum,os sacrum,bone,pelvis,osteology_basic,仙骨は骨盤後壁
 coccyx,尾骨,coccyx,os coccygis,bone,pelvis,osteology_basic,尾骨は脊柱の最下部に位置する小骨である。
 calcaneus,踵骨,calcaneus,calcaneus,bone,lower limb,basic_lower,踵骨は足根骨の一つで、かかとの骨格を作ります。
 talus,距骨,talus,talus,bone,lower limb,basic_lower|osteology_basic,距骨は下腿骨と踵骨・舟状骨の間に位置し、足関節を構成する足根骨です。
+medial_cuneiform_bone,内側楔状骨,medial cuneiform bone,os cuneiforme mediale,bone,lower limb,basic_lower|osteology_basic,内側楔状骨は足根骨遠位列の最内側にあり、舟状骨と第1中足骨の間に位置します。
 diaphragm,横隔膜,diaphragm,diaphragma,muscle,trunk,basic_trunk,横隔膜は胸腔と腹腔を隔てる呼吸筋です。
 biceps_brachii,上腕二頭筋,biceps brachii,musculus biceps brachii,muscle,upper limb,basic_muscle,上腕二頭筋は肘関節屈曲と前腕回外に関わります。
 triceps_brachii,上腕三頭筋,triceps brachii,musculus triceps brachii,muscle,upper limb,basic_muscle,上腕三頭筋は主に肘関節伸展に働きます。

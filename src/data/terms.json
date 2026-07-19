@@ -305,6 +305,19 @@
     "explanation": "距骨は下腿骨と踵骨・舟状骨の間に位置し、足関節を構成する足根骨です。"
   },
   {
+    "id": "medial_cuneiform_bone",
+    "japanese": "内側楔状骨",
+    "english": "medial cuneiform bone",
+    "latin": "os cuneiforme mediale",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "内側楔状骨は足根骨遠位列の最内側にあり、舟状骨と第1中足骨の間に位置します。"
+  },
+  {
     "id": "diaphragm",
     "japanese": "横隔膜",
     "english": "diaphragm",
