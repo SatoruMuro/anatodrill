@@ -507,11 +507,6 @@ for (const testSet of testSets) {
     addError(`${context}: active testSet has no questions.`);
   }
 
-  if (testSet.isActive && questionCount > 0 && questionCount < testSet.defaultQuestionCount) {
-    addWarning(
-      `${context}: active testSet has ${questionCount} question(s), fewer than defaultQuestionCount ${testSet.defaultQuestionCount}.`,
-    );
-  }
 }
 
 if (warnings.length > 0) {

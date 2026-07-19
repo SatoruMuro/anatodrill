@@ -7,7 +7,6 @@ import type {
   Term,
   TestAttempt,
   TestParticipant,
-  TestSet,
 } from '../types/anatodrill';
 import { APP_VERSION } from '../lib/constants';
 import {
@@ -17,15 +16,12 @@ import {
 } from '../lib/choiceLanguage';
 import { formatDateTime, formatDuration } from '../lib/dates';
 import { generateCertificatePdf } from '../lib/pdf';
-import { getQuestionCountsByTestSet } from '../lib/questions';
 import { takeRandom } from '../lib/random';
-import { activeTestSets } from '../lib/testSets';
 import { buildCertificatePayload, downloadTestResultCsv, downloadTestResultJson } from '../lib/testResults';
 import { QuestionCard } from './QuestionCard';
 
 interface TestModeProps {
   questions: Question[];
-  testSets: TestSet[];
   termsById: Map<string, Term>;
   imagesById: Map<string, AnatomyImage>;
   onRecordAnswer: (record: AnswerRecord) => void;
@@ -33,6 +29,12 @@ interface TestModeProps {
 }
 
 type Phase = 'setup' | 'running' | 'finished';
+
+const ALL_RANGE_TEST_ID = 'all_range';
+const ALL_RANGE_TEST_TITLE = '全範囲テスト';
+const ALL_RANGE_TEST_VERSION = '2026.3';
+const PASSING_SCORE = 80;
+const DEFAULT_QUESTION_COUNT = 30;
 
 function makeCertificateId(): string {
   const stamp = new Date()
@@ -43,11 +45,9 @@ function makeCertificateId(): string {
   return `AD-${stamp}-${random}`;
 }
 
-export function TestMode({ questions, testSets, termsById, imagesById, onRecordAnswer, onSaveAttempt }: TestModeProps) {
-  const activeSets = useMemo(() => activeTestSets(testSets), [testSets]);
+export function TestMode({ questions, termsById, imagesById, onRecordAnswer, onSaveAttempt }: TestModeProps) {
   const [phase, setPhase] = useState<Phase>('setup');
   const [participant, setParticipant] = useState<TestParticipant>({ name: '', studentId: '' });
-  const [testSetId, setTestSetId] = useState(activeSets[0]?.id ?? '');
   const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
   const [queue, setQueue] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -59,21 +59,10 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
     () => questions.filter((question) => questionSupportsChoiceLanguage(question, choiceLanguageMode, termsById)),
     [choiceLanguageMode, questions, termsById],
   );
-  const questionCounts = useMemo(
-    () => getQuestionCountsByTestSet(languageEligibleQuestions),
-    [languageEligibleQuestions],
-  );
-
-  const selectedTestSet = activeSets.find((testSet) => testSet.id === testSetId) ?? activeSets[0];
-  const selectedPool = selectedTestSet
-    ? languageEligibleQuestions.filter((question) => question.testSet === selectedTestSet.id)
-    : [];
-  const availableQuestionCount = selectedTestSet ? questionCounts[selectedTestSet.id] ?? 0 : 0;
-  const effectiveQuestionCount = selectedTestSet
-    ? Math.min(selectedTestSet.defaultQuestionCount, availableQuestionCount)
-    : 0;
+  const availableQuestionCount = languageEligibleQuestions.length;
+  const effectiveQuestionCount = Math.min(DEFAULT_QUESTION_COUNT, availableQuestionCount);
   const usesAllAvailableQuestions =
-    Boolean(selectedTestSet) && availableQuestionCount > 0 && availableQuestionCount < selectedTestSet.defaultQuestionCount;
+    availableQuestionCount > 0 && availableQuestionCount < DEFAULT_QUESTION_COUNT;
 
   const updateParticipant = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -85,11 +74,11 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
 
   const startTest = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!selectedTestSet || !participant.name.trim() || !participant.studentId.trim() || selectedPool.length === 0) {
+    if (!participant.name.trim() || !participant.studentId.trim() || languageEligibleQuestions.length === 0) {
       return;
     }
 
-    setQueue(takeRandom(selectedPool, effectiveQuestionCount));
+    setQueue(takeRandom(languageEligibleQuestions, effectiveQuestionCount));
     setAnswers([]);
     setIndex(0);
     setStartedAt(new Date());
@@ -107,24 +96,20 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
     const correct = answers.filter((answer) => answer.correct).length;
     const total = queue.length;
     const score = total === 0 ? 0 : Math.round((correct / total) * 100);
-    const testSet = selectedTestSet;
-    if (!testSet) {
-      return;
-    }
-    const passed = score >= testSet.passingScore;
+    const passed = score >= PASSING_SCORE;
     const attempt: TestAttempt = {
       id: `attempt-${completedAt.getTime()}`,
       name: participant.name.trim(),
       studentId: participant.studentId.trim(),
-      testSetId: testSet.id,
-      testSetTitleJa: testSet.titleJa,
-      testSetVersion: testSet.version,
+      testSetId: ALL_RANGE_TEST_ID,
+      testSetTitleJa: ALL_RANGE_TEST_TITLE,
+      testSetVersion: ALL_RANGE_TEST_VERSION,
       choiceLanguageMode,
       completedAt: completedAt.toISOString(),
       total,
       correct,
       score,
-      passingScore: testSet.passingScore,
+      passingScore: PASSING_SCORE,
       passed,
       durationSeconds: startedAt ? Math.max(0, Math.round((completedAt.getTime() - startedAt.getTime()) / 1000)) : 0,
       certificateId: makeCertificateId(),
@@ -159,7 +144,7 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
             <p className="eyebrow">Test mode</p>
             <h2>セルフチェックテスト</h2>
           </div>
-          {selectedTestSet ? <span className="progress-pill">合格 {selectedTestSet.passingScore}%</span> : null}
+          <span className="progress-pill">合格 {PASSING_SCORE}%</span>
         </section>
 
         <form className="setup-form" onSubmit={startTest}>
@@ -184,16 +169,6 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
             />
           </label>
           <label>
-            テストセット
-            <select value={selectedTestSet?.id ?? ''} onChange={(event) => setTestSetId(event.target.value)} required>
-              {activeSets.map((set) => (
-                <option key={set.id} value={set.id}>
-                  {set.titleJa} ({questionCounts[set.id] ?? 0}問)
-                </option>
-              ))}
-            </select>
-          </label>
-          <label>
             テスト形式
             <select
               value={choiceLanguageMode}
@@ -208,49 +183,39 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
             </select>
           </label>
 
-          {selectedTestSet ? (
-            <section className="test-set-detail" aria-label="選択中のテストセット">
-              <h3>{selectedTestSet.titleJa}</h3>
-              <p>{selectedTestSet.descriptionJa}</p>
-              <dl className="compact-list">
-                <div>
-                  <dt>Test set ID</dt>
-                  <dd>{selectedTestSet.id}</dd>
-                </div>
-                <div>
-                  <dt>Version</dt>
-                  <dd>{selectedTestSet.version}</dd>
-                </div>
-                <div>
-                  <dt>合格基準</dt>
-                  <dd>{selectedTestSet.passingScore}%</dd>
-                </div>
-                <div>
-                  <dt>標準問題数</dt>
-                  <dd>{selectedTestSet.defaultQuestionCount}問</dd>
-                </div>
-                <div>
-                  <dt>今回の出題数</dt>
-                  <dd>{effectiveQuestionCount}問</dd>
-                </div>
-                <div>
-                  <dt>選択肢</dt>
-                  <dd>{choiceLanguageModeLabel(choiceLanguageMode)}</dd>
-                </div>
-              </dl>
-              {usesAllAvailableQuestions ? (
-                <p className="status-line">
-                  登録問題が標準問題数より少ないため、利用可能な {availableQuestionCount} 問すべてを出題します。
-                </p>
-              ) : null}
-            </section>
-          ) : (
-            <p className="error-text">有効なテストセットがありません。</p>
-          )}
+          <section className="test-set-detail" aria-label="テスト内容">
+            <h3>{ALL_RANGE_TEST_TITLE}</h3>
+            <p>登録されている全分野の問題からランダムに出題します。</p>
+            <dl className="compact-list">
+              <div>
+                <dt>出題範囲</dt>
+                <dd>全範囲</dd>
+              </div>
+              <div>
+                <dt>出題候補</dt>
+                <dd>{availableQuestionCount}問</dd>
+              </div>
+              <div>
+                <dt>今回の出題数</dt>
+                <dd>{effectiveQuestionCount}問</dd>
+              </div>
+              <div>
+                <dt>合格基準</dt>
+                <dd>{PASSING_SCORE}%</dd>
+              </div>
+              <div>
+                <dt>選択肢</dt>
+                <dd>{choiceLanguageModeLabel(choiceLanguageMode)}</dd>
+              </div>
+            </dl>
+            {usesAllAvailableQuestions ? (
+              <p className="status-line">登録問題が30問未満のため、利用可能な問題をすべて出題します。</p>
+            ) : null}
+          </section>
 
-          {selectedPool.length === 0 ? <p className="error-text">選択できる問題がありません。</p> : null}
+          {languageEligibleQuestions.length === 0 ? <p className="error-text">選択できる問題がありません。</p> : null}
 
-          <button type="submit" className="primary-button" disabled={!selectedTestSet || selectedPool.length === 0}>
+          <button type="submit" className="primary-button" disabled={languageEligibleQuestions.length === 0}>
             テスト開始
           </button>
         </form>
@@ -281,16 +246,12 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
               <dd>{formatDuration(result.durationSeconds)}</dd>
             </div>
             <div>
-              <dt>テストセット</dt>
+              <dt>出題範囲</dt>
               <dd>{result.testSetTitleJa}</dd>
             </div>
             <div>
               <dt>合格基準</dt>
               <dd>{result.passingScore}%</dd>
-            </div>
-            <div>
-              <dt>Version</dt>
-              <dd>{result.testSetVersion}</dd>
             </div>
             <div>
               <dt>選択肢</dt>
@@ -330,7 +291,7 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
       <section className="mode-heading">
         <div>
           <p className="eyebrow">Test mode</p>
-          <h2>{selectedTestSet?.titleJa ?? testSetId}</h2>
+          <h2>{ALL_RANGE_TEST_TITLE}</h2>
           <p className="muted">選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
         </div>
         <span className="progress-pill">

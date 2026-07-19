@@ -82,8 +82,8 @@ function certificateRows(payload: CertificatePayload, supportsJapanese: boolean)
     return [
       ['氏名', payload.participant.name],
       ['学籍番号', payload.participant.studentId],
-      ['テストセット', payload.testSetTitleJa],
-      ['テストセットID', payload.testSetId],
+      ['出題範囲', payload.testSetTitleJa],
+      ['出題範囲ID', payload.testSetId],
       ['Version', payload.testSetVersion],
       ['選択肢', payload.choiceLanguageLabel],
       ['日時', formatDateTime(payload.completedAt)],
@@ -100,9 +100,9 @@ function certificateRows(payload: CertificatePayload, supportsJapanese: boolean)
   return [
     ['Name', asciiFallback(payload.participant.name, 'Name contains non-Latin characters')],
     ['Student ID', asciiFallback(payload.participant.studentId, 'Student ID contains non-Latin characters')],
-    ['Test set', asciiFallback(payload.testSetTitleJa, 'Japanese test set name omitted')],
-    ['Test set ID', asciiFallback(payload.testSetId, 'Test set ID contains non-Latin characters')],
-    ['Test set version', asciiFallback(payload.testSetVersion, 'Test set version contains non-Latin characters')],
+    ['Question scope', asciiFallback(payload.testSetTitleJa, 'Japanese scope name omitted')],
+    ['Question scope ID', asciiFallback(payload.testSetId, 'Scope ID contains non-Latin characters')],
+    ['Scope version', asciiFallback(payload.testSetVersion, 'Scope version contains non-Latin characters')],
     ['Choice language', asciiFallback(payload.choiceLanguageLabel, 'Choice language contains non-Latin characters')],
     ['Date and time', formatDateTime(payload.completedAt)],
     ['Number of questions', String(payload.total)],

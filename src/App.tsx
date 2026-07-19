@@ -101,7 +101,6 @@ export function App() {
       {view === 'test' ? (
         <TestMode
           questions={questions}
-          testSets={testSets}
           termsById={termsById}
           imagesById={imagesById}
           onRecordAnswer={recordAnswer}
