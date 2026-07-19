@@ -1,4 +1,5 @@
 import type { CertificatePayload, TestAttempt, TestResultRecord } from '../types/anatodrill';
+import { choiceLanguageModeLabel } from './choiceLanguage';
 
 const RESULT_FIELDS: Array<keyof TestResultRecord> = [
   'appVersion',
@@ -8,6 +9,8 @@ const RESULT_FIELDS: Array<keyof TestResultRecord> = [
   'testSetId',
   'testSetTitleJa',
   'testSetVersion',
+  'choiceLanguageMode',
+  'choiceLanguageLabel',
   'dateTime',
   'totalQuestions',
   'correctAnswers',
@@ -44,6 +47,8 @@ export function buildTestResultRecord(attempt: TestAttempt): TestResultRecord {
     testSetId: attempt.testSetId,
     testSetTitleJa: attempt.testSetTitleJa,
     testSetVersion: attempt.testSetVersion,
+    choiceLanguageMode: attempt.choiceLanguageMode,
+    choiceLanguageLabel: choiceLanguageModeLabel(attempt.choiceLanguageMode),
     dateTime: attempt.completedAt,
     totalQuestions: attempt.total,
     correctAnswers: attempt.correct,
@@ -64,6 +69,7 @@ export function buildCertificatePayload(attempt: TestAttempt): CertificatePayloa
     testSetId: attempt.testSetId,
     testSetTitleJa: attempt.testSetTitleJa,
     testSetVersion: attempt.testSetVersion,
+    choiceLanguageLabel: choiceLanguageModeLabel(attempt.choiceLanguageMode),
     completedAt: attempt.completedAt,
     total: attempt.total,
     correct: attempt.correct,
@@ -76,7 +82,7 @@ export function buildCertificatePayload(attempt: TestAttempt): CertificatePayloa
 
 export function testResultFileStem(attempt: TestAttempt): string {
   const datePart = attempt.completedAt.replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
-  return `anatodrill-result-${attempt.testSetId}-${datePart}`;
+  return `anatodrill-result-${attempt.testSetId}-${attempt.choiceLanguageMode}-${datePart}`;
 }
 
 export function downloadTestResultJson(attempt: TestAttempt): void {

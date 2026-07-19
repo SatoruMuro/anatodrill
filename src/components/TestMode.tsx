@@ -1,6 +1,16 @@
 import { useMemo, useState, type ChangeEvent, type FormEvent } from 'react';
-import type { AnatomyImage, AnswerRecord, Question, Term, TestAttempt, TestParticipant, TestSet } from '../types/anatodrill';
+import type {
+  AnatomyImage,
+  AnswerRecord,
+  Question,
+  SelectableChoiceLanguageMode,
+  Term,
+  TestAttempt,
+  TestParticipant,
+  TestSet,
+} from '../types/anatodrill';
 import { APP_VERSION } from '../lib/constants';
+import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
 import { formatDateTime, formatDuration } from '../lib/dates';
 import { generateCertificatePdf } from '../lib/pdf';
 import { getQuestionCountsByTestSet } from '../lib/questions';
@@ -35,6 +45,7 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
   const [phase, setPhase] = useState<Phase>('setup');
   const [participant, setParticipant] = useState<TestParticipant>({ name: '', studentId: '' });
   const [testSetId, setTestSetId] = useState(activeSets[0]?.id ?? '');
+  const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
   const [queue, setQueue] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
   const [answers, setAnswers] = useState<AnswerRecord[]>([]);
@@ -95,6 +106,7 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
       testSetId: testSet.id,
       testSetTitleJa: testSet.titleJa,
       testSetVersion: testSet.version,
+      choiceLanguageMode,
       completedAt: completedAt.toISOString(),
       total,
       correct,
@@ -168,6 +180,20 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
               ))}
             </select>
           </label>
+          <label>
+            テスト形式
+            <select
+              value={choiceLanguageMode}
+              onChange={(event) => setChoiceLanguageMode(event.target.value as SelectableChoiceLanguageMode)}
+              required
+            >
+              {CHOICE_LANGUAGE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.testLabel}
+                </option>
+              ))}
+            </select>
+          </label>
 
           {selectedTestSet ? (
             <section className="test-set-detail" aria-label="選択中のテストセット">
@@ -193,6 +219,10 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
                 <div>
                   <dt>今回の出題数</dt>
                   <dd>{effectiveQuestionCount}問</dd>
+                </div>
+                <div>
+                  <dt>選択肢</dt>
+                  <dd>{choiceLanguageModeLabel(choiceLanguageMode)}</dd>
                 </div>
               </dl>
               {usesAllAvailableQuestions ? (
@@ -249,6 +279,10 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
               <dt>Version</dt>
               <dd>{result.testSetVersion}</dd>
             </div>
+            <div>
+              <dt>選択肢</dt>
+              <dd>{choiceLanguageModeLabel(result.choiceLanguageMode)}</dd>
+            </div>
           </dl>
           <div className="button-row">
             <button type="button" className="secondary-button" onClick={() => setPhase('setup')}>
@@ -284,6 +318,7 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
         <div>
           <p className="eyebrow">Test mode</p>
           <h2>{selectedTestSet?.titleJa ?? testSetId}</h2>
+          <p className="muted">選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
         </div>
         <span className="progress-pill">
           {index + 1} / {queue.length}
@@ -291,11 +326,12 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
       </section>
 
       <QuestionCard
-        key={`${current.id}-test-${index}`}
+        key={`${current.id}-test-${choiceLanguageMode}-${index}`}
         question={current}
         termsById={termsById}
         imagesById={imagesById}
         sequenceLabel={`テスト ${index + 1}`}
+        choiceLanguageMode={choiceLanguageMode}
         continueLabel={index + 1 === queue.length ? '結果を見る' : '次へ'}
         onAnswer={recordAnswer}
         onContinue={() => {

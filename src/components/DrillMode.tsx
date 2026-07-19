@@ -1,5 +1,6 @@
-import { useMemo, useState } from 'react';
-import type { AnatomyImage, AnswerRecord, Question, Term } from '../types/anatodrill';
+import { useMemo, useState, type FormEvent } from 'react';
+import type { AnatomyImage, AnswerRecord, Question, SelectableChoiceLanguageMode, Term } from '../types/anatodrill';
+import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
 import { shuffle } from '../lib/random';
 import { QuestionCard } from './QuestionCard';
 
@@ -13,13 +14,25 @@ interface DrillModeProps {
 export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: DrillModeProps) {
   const [sessionId, setSessionId] = useState(1);
   const [index, setIndex] = useState(0);
+  const [started, setStarted] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
   const queue = useMemo(() => shuffle(questions), [questions, sessionId]);
+  const selectedLanguageOption = CHOICE_LANGUAGE_OPTIONS.find((option) => option.value === choiceLanguageMode);
+
+  const start = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    setSessionId((value) => value + 1);
+    setIndex(0);
+    setCompleted(false);
+    setStarted(true);
+  };
 
   const restart = () => {
     setSessionId((value) => value + 1);
     setIndex(0);
     setCompleted(false);
+    setStarted(true);
   };
 
   if (questions.length === 0) {
@@ -33,6 +46,45 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
     );
   }
 
+  if (!started) {
+    return (
+      <main className="page-shell narrow">
+        <section className="mode-heading">
+          <div>
+            <p className="eyebrow">Drill mode</p>
+            <h2>ドリルを選択</h2>
+          </div>
+          <span className="progress-pill">全 {questions.length}問</span>
+        </section>
+
+        <form className="setup-form" onSubmit={start}>
+          <label>
+            ドリル形式
+            <select
+              value={choiceLanguageMode}
+              onChange={(event) => setChoiceLanguageMode(event.target.value as SelectableChoiceLanguageMode)}
+            >
+              {CHOICE_LANGUAGE_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.drillLabel}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <section className="test-set-detail" aria-label="選択中のドリル形式">
+            <h3>{selectedLanguageOption?.drillLabel}</h3>
+            <p>{selectedLanguageOption?.description}</p>
+          </section>
+
+          <button type="submit" className="primary-button">
+            ドリル開始
+          </button>
+        </form>
+      </main>
+    );
+  }
+
   if (completed) {
     return (
       <main className="page-shell">
@@ -40,9 +92,15 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
           <p className="eyebrow">Drill complete</p>
           <h2>このセットのドリルが終わりました。</h2>
           <p>{queue.length} 問を解答しました。もう一度開始すると出題順が再シャッフルされます。</p>
-          <button type="button" className="primary-button" onClick={restart}>
-            もう一度ドリル
-          </button>
+          <p>選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
+          <div className="button-row">
+            <button type="button" className="primary-button" onClick={restart}>
+              同じ形式でもう一度
+            </button>
+            <button type="button" className="secondary-button" onClick={() => setStarted(false)}>
+              形式を選び直す
+            </button>
+          </div>
         </section>
       </main>
     );
@@ -56,6 +114,7 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
         <div>
           <p className="eyebrow">Drill mode</p>
           <h2>ランダムドリル</h2>
+          <p className="muted">選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
         </div>
         <span className="progress-pill">
           {index + 1} / {queue.length}
@@ -68,6 +127,7 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
         termsById={termsById}
         imagesById={imagesById}
         sequenceLabel={`問題 ${index + 1}`}
+        choiceLanguageMode={choiceLanguageMode}
         continueLabel={index + 1 === queue.length ? '完了' : '次へ'}
         onAnswer={onRecordAnswer}
         onContinue={() => {

@@ -6,6 +6,7 @@ import { progressSummary } from '../lib/progress';
 import { buildTestSetMap } from '../lib/testSets';
 import { generateCertificatePdf } from '../lib/pdf';
 import { buildCertificatePayload, downloadTestResultCsv, downloadTestResultJson } from '../lib/testResults';
+import { choiceLanguageModeLabel } from '../lib/choiceLanguage';
 
 interface HistoryBackupProps {
   data: LearningData;
@@ -158,6 +159,10 @@ export function HistoryBackup({ data, terms, testSets, onImportData }: HistoryBa
                       <div>
                         <dt>testSetTitleJa</dt>
                         <dd>{attempt.testSetTitleJa}</dd>
+                      </div>
+                      <div>
+                        <dt>choiceLanguage</dt>
+                        <dd>{choiceLanguageModeLabel(attempt.choiceLanguageMode)}</dd>
                       </div>
                       <div>
                         <dt>scorePercentage</dt>

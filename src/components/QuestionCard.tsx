@@ -1,7 +1,8 @@
 import { useMemo, useState, type MouseEvent } from 'react';
-import type { AnatomyImage, AnswerRecord, Question, Term } from '../types/anatodrill';
+import type { AnatomyImage, AnswerRecord, ChoiceLanguageMode, Question, Term } from '../types/anatodrill';
 import { shuffle } from '../lib/random';
-import { answerLabel, assetUrl, detailLabel } from '../lib/questions';
+import { assetUrl, detailLabel } from '../lib/questions';
+import { termChoiceLabel } from '../lib/choiceLanguage';
 import { ImagePlate } from './ImagePlate';
 
 interface QuestionCardProps {
@@ -9,6 +10,7 @@ interface QuestionCardProps {
   termsById: Map<string, Term>;
   imagesById: Map<string, AnatomyImage>;
   sequenceLabel: string;
+  choiceLanguageMode?: ChoiceLanguageMode;
   continueLabel?: string;
   onAnswer: (record: AnswerRecord) => void;
   onContinue: () => void;
@@ -39,7 +41,11 @@ function questionTypeLabel(type: Question['type']): string {
   return '用語選択';
 }
 
-function choiceLabel(term: Term, question: Question): string {
+function choiceLabel(term: Term, question: Question, choiceLanguageMode: ChoiceLanguageMode): string {
+  if (choiceLanguageMode !== 'bilingual') {
+    return termChoiceLabel(term, choiceLanguageMode);
+  }
+
   const prompt = question.prompt.trim();
   if (/対応する英語|英語は/.test(prompt)) {
     return term.english;
@@ -49,7 +55,7 @@ function choiceLabel(term: Term, question: Question): string {
     return term.japanese;
   }
 
-  return answerLabel(term);
+  return termChoiceLabel(term, 'bilingual');
 }
 
 export function QuestionCard({
@@ -57,6 +63,7 @@ export function QuestionCard({
   termsById,
   imagesById,
   sequenceLabel,
+  choiceLanguageMode = 'bilingual',
   continueLabel = '次へ',
   onAnswer,
   onContinue,
@@ -214,7 +221,7 @@ export function QuestionCard({
                 disabled={Boolean(answerState)}
                 onClick={() => handleChoice(term.id)}
               >
-                {choiceLabel(term, question)}
+                {choiceLabel(term, question, choiceLanguageMode)}
               </button>
             );
           })}

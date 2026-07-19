@@ -2,6 +2,7 @@ import type { LearningData, Question, Term, ViewKey } from '../types/anatodrill'
 import { APP_VERSION } from '../lib/constants';
 import { progressSummary } from '../lib/progress';
 import { formatDateTime } from '../lib/dates';
+import { choiceLanguageModeLabel } from '../lib/choiceLanguage';
 
 interface HomeProps {
   terms: Term[];
@@ -96,6 +97,10 @@ export function Home({ terms, questions, data, onNavigate }: HomeProps) {
               <div>
                 <dt>受験者</dt>
                 <dd>{latestAttempt.name}</dd>
+              </div>
+              <div>
+                <dt>選択肢</dt>
+                <dd>{choiceLanguageModeLabel(latestAttempt.choiceLanguageMode)}</dd>
               </div>
             </dl>
           ) : (

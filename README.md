@@ -2,7 +2,7 @@
 
 [Open AnatoDrill](https://satorumuro.github.io/anatodrill/)
 
-AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation.
+AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation. Drill and test choices can be displayed in Japanese/English/Latin together, Japanese only, English only, or Latin only.
 
 ## Tech Stack
 
@@ -264,6 +264,8 @@ JSON and CSV result exports include:
 - `testSetId`
 - `testSetTitleJa`
 - `testSetVersion`
+- `choiceLanguageMode`
+- `choiceLanguageLabel`
 - `dateTime`
 - `totalQuestions`
 - `correctAnswers`

@@ -1,4 +1,5 @@
 import type { LearningData, TermProgress, TestAttempt } from '../types/anatodrill';
+import { isChoiceLanguageMode } from './choiceLanguage';
 import { APP_NAME, APP_VERSION } from './constants';
 import { createEmptyLearningData } from './progress';
 
@@ -52,6 +53,7 @@ function normalizeAttempt(value: unknown): TestAttempt | null {
   const testSetId = stringValue(value.testSetId) ?? stringValue(value.testSet);
   const testSetTitleJa = stringValue(value.testSetTitleJa) ?? testSetId;
   const testSetVersion = stringValue(value.testSetVersion) ?? 'unknown';
+  const choiceLanguageMode = isChoiceLanguageMode(value.choiceLanguageMode) ? value.choiceLanguageMode : 'bilingual';
   const completedAt = stringValue(value.completedAt);
   const total = finiteNumber(value.total);
   const correct = finiteNumber(value.correct);
@@ -94,6 +96,7 @@ function normalizeAttempt(value: unknown): TestAttempt | null {
     testSetId,
     testSetTitleJa,
     testSetVersion,
+    choiceLanguageMode,
     completedAt,
     total,
     correct,

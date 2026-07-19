@@ -5,6 +5,10 @@ export type QuestionType =
   | 'image_number_mcq'
   | 'single_image_mcq';
 
+export type ChoiceLanguageMode = 'trilingual' | 'japanese' | 'english' | 'latin' | 'bilingual';
+
+export type SelectableChoiceLanguageMode = Exclude<ChoiceLanguageMode, 'bilingual'>;
+
 export type ImageSourceType = 'placeholder' | 'gray_anatomy' | 'openstax' | 'wikimedia_commons' | 'other';
 
 export interface Term {
@@ -93,6 +97,7 @@ export interface TestAttempt {
   testSetId: string;
   testSetTitleJa: string;
   testSetVersion: string;
+  choiceLanguageMode: ChoiceLanguageMode;
   completedAt: string;
   total: number;
   correct: number;
@@ -112,6 +117,8 @@ export interface TestResultRecord {
   testSetId: string;
   testSetTitleJa: string;
   testSetVersion: string;
+  choiceLanguageMode: ChoiceLanguageMode;
+  choiceLanguageLabel: string;
   dateTime: string;
   totalQuestions: number;
   correctAnswers: number;
@@ -154,6 +161,7 @@ export interface CertificatePayload {
   testSetId: string;
   testSetTitleJa: string;
   testSetVersion: string;
+  choiceLanguageLabel: string;
   completedAt: string;
   total: number;
   correct: number;
