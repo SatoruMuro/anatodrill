@@ -1,7 +1,7 @@
 import type { LearningData, TermProgress, TestAttempt } from '../types/anatodrill';
 import { isChoiceLanguageMode } from './choiceLanguage';
 import { APP_NAME, APP_VERSION } from './constants';
-import { createEmptyLearningData } from './progress';
+import { createEmptyLearningData, progressKey } from './progress';
 
 const STORAGE_KEY = 'anatodrill.learningData.v1';
 
@@ -9,29 +9,42 @@ function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
-function isValidProgress(value: unknown, knownTermIds: Set<string>): value is TermProgress {
+function normalizeProgress(value: unknown, knownTermIds: Set<string>): TermProgress | null {
   if (!isRecord(value)) {
-    return false;
+    return null;
   }
 
   const termId = value.termId;
   const level = value.level;
-  return (
-    typeof termId === 'string' &&
-    knownTermIds.has(termId) &&
-    typeof value.correctCount === 'number' &&
-    Number.isFinite(value.correctCount) &&
-    value.correctCount >= 0 &&
-    typeof value.wrongCount === 'number' &&
-    Number.isFinite(value.wrongCount) &&
-    value.wrongCount >= 0 &&
-    (typeof value.lastAnsweredAt === 'string' || value.lastAnsweredAt === null) &&
-    (typeof value.nextReviewAt === 'string' || value.nextReviewAt === null) &&
-    typeof level === 'number' &&
-    Number.isInteger(level) &&
-    level >= 0 &&
-    level <= 5
-  );
+  const choiceLanguageMode = isChoiceLanguageMode(value.choiceLanguageMode) ? value.choiceLanguageMode : 'bilingual';
+  if (
+    typeof termId !== 'string' ||
+    !knownTermIds.has(termId) ||
+    typeof value.correctCount !== 'number' ||
+    !Number.isFinite(value.correctCount) ||
+    value.correctCount < 0 ||
+    typeof value.wrongCount !== 'number' ||
+    !Number.isFinite(value.wrongCount) ||
+    value.wrongCount < 0 ||
+    (typeof value.lastAnsweredAt !== 'string' && value.lastAnsweredAt !== null) ||
+    (typeof value.nextReviewAt !== 'string' && value.nextReviewAt !== null) ||
+    typeof level !== 'number' ||
+    !Number.isInteger(level) ||
+    level < 0 ||
+    level > 5
+  ) {
+    return null;
+  }
+
+  return {
+    termId,
+    choiceLanguageMode,
+    correctCount: value.correctCount,
+    wrongCount: value.wrongCount,
+    lastAnsweredAt: value.lastAnsweredAt,
+    nextReviewAt: value.nextReviewAt,
+    level,
+  };
 }
 
 function stringValue(value: unknown): string | null {
@@ -117,10 +130,15 @@ export function validateLearningData(value: unknown, knownTermIds: Set<string>):
   const progressEntries = Object.entries(value.progress);
   const progress: Record<string, TermProgress> = {};
   for (const [key, record] of progressEntries) {
-    if (!isValidProgress(record, knownTermIds) || key !== record.termId) {
+    const normalized = normalizeProgress(record, knownTermIds);
+    if (!normalized) {
       return null;
     }
-    progress[key] = record;
+    const normalizedKey = progressKey(normalized.termId, normalized.choiceLanguageMode);
+    if (key !== normalized.termId && key !== normalizedKey) {
+      return null;
+    }
+    progress[normalizedKey] = normalized;
   }
 
   const attempts: TestAttempt[] = [];

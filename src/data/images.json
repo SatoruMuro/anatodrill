@@ -1170,14 +1170,14 @@
       },
       {
         "label": "3",
-        "termId": "scaphoid_bone",
+        "termId": "navicular_bone",
         "x": 0.5825,
         "y": 0.3778,
         "note": "舟状骨"
       },
       {
         "label": "4",
-        "termId": "pdf_kaibo3_1_47acd64faf",
+        "termId": "cuboid_bone",
         "x": 0.3366,
         "y": 0.3709,
         "note": "立方骨"
@@ -1191,42 +1191,42 @@
       },
       {
         "label": "6",
-        "termId": "pdf_kaibo3_1_d3712a2fb8",
+        "termId": "intermediate_cuneiform_bone",
         "x": 0.4822,
         "y": 0.4333,
         "note": "中間楔状骨"
       },
       {
         "label": "7",
-        "termId": "pdf_kaibo3_1_274524cc2e",
+        "termId": "lateral_cuneiform_bone",
         "x": 0.3786,
         "y": 0.4281,
         "note": "外側楔状骨"
       },
       {
         "label": "8",
-        "termId": "proximal_phalanx",
+        "termId": "proximal_phalanx_of_foot",
         "x": 0.4498,
         "y": 0.8388,
         "note": "基節骨"
       },
       {
         "label": "9",
-        "termId": "middle_phalanx",
+        "termId": "middle_phalanx_of_foot",
         "x": 0.4337,
         "y": 0.9237,
         "note": "中節骨"
       },
       {
         "label": "10",
-        "termId": "distal_phalanx",
+        "termId": "distal_phalanx_of_foot",
         "x": 0.4337,
         "y": 0.9722,
         "note": "末節骨"
       },
       {
         "label": "11",
-        "termId": "pdf_kaibo3_1_a2fff9434b",
+        "termId": "metatarsal_bone",
         "x": 0.4272,
         "y": 0.6274,
         "note": "中足骨"

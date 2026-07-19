@@ -2,7 +2,7 @@
 
 [Open AnatoDrill](https://satorumuro.github.io/anatodrill/)
 
-AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation. Drill and test choices can be displayed in Japanese/English/Latin together, Japanese only, English only, or Latin only.
+AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation. Drill, review, and test choices can be displayed in Japanese/English/Latin together, Japanese only, English only, or Latin only.
 
 ## Tech Stack
 
@@ -44,7 +44,7 @@ Validate local data before building or deploying:
 npm run validate:data
 ```
 
-The validator checks term references, choice references, test set IDs, image IDs, image files under `public/`, numbered image target labels, image label term IDs, and whether each active test set has at least one question.
+The validator checks term references, three-language completeness for quiz terms, choice references, test set IDs, image IDs, image files under `public/`, numbered image target labels, one-to-one coverage between image labels and numbered questions, duplicate label use, and whether each active test set has at least one question.
 
 ## CSV Content Pipeline
 
@@ -72,6 +72,8 @@ npm run build
 Use pipe-separated IDs for array-like fields. For example, `choices` in `questions.csv` uses `term_a|term_b|term_c|term_d`, and a term that belongs to multiple test sets can use `test_a|test_b` in `terms.csv`.
 
 The CSV build script is development-only. The deployed browser app still imports static JSON files and does not parse CSV at runtime. The script uses a built-in CSV parser, so no extra CSV parsing dependency is required.
+
+Every valid row in `image_labels.csv` automatically becomes one `image_number_mcq` unless an authored question already uses the same image/label pair. Generated choices prefer other structures on the same plate, and numbered questions are routed to head/neck, upper limb, lower limb, trunk, or muscle test sets from the answer term metadata.
 
 More authoring details are in `docs/content-authoring.md`.
 
@@ -228,7 +230,7 @@ For public-domain Gray's Anatomy plates, use metadata like:
 
 Do not add copyrighted textbook images unless the project has explicit permission and records the license in `images.json`.
 
-Gray single-structure files under `public/images/gray/single/` are used for `single_image_mcq` questions. Gray plate files under `public/images/gray/plates/` should be registered with credits first; add `image_labels.csv` rows before generating `image_number_mcq` questions from them.
+Gray single-structure files under `public/images/gray/single/` are used for `single_image_mcq` questions. Gray plate files under `public/images/gray/plates/` should be registered with credits first. Adding valid numbered markers to `image_labels.csv` generates the corresponding `image_number_mcq` questions during `npm run build:data`.
 
 ## Test Sets And Results
 
@@ -278,7 +280,7 @@ The History / Backup page keeps the full localStorage backup/import flow and add
 
 ## Learning Data
 
-Progress and test attempts are stored in the current browser's `localStorage`. Use the History / Backup screen to export learning data as JSON before clearing browser data or moving to another device.
+Progress and test attempts are stored in the current browser's `localStorage`. Progress is tracked separately for trilingual, Japanese-only, English-only, and Latin-only study. Legacy Japanese/English progress remains preserved as the old bilingual mode. Use the History / Backup screen to export learning data as JSON before clearing browser data or moving to another device.
 
 ## Japanese PDF Fonts
 

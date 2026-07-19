@@ -1,8 +1,8 @@
 id,titleJa,titleEn,descriptionJa,descriptionEn,category,region,passingScore,defaultQuestionCount,version,isActive,order
-osteology_basic,骨学基礎,Basic Osteology,Gray’s Anatomy図版を用いて基本的な骨学用語を確認します。,Basic osteology terms using Gray’s Anatomy plates.,骨学,general,80,10,2026.1,true,1
-basic_upper,上肢ベーシック,Upper Limb Basics,肩甲帯、上腕、前腕の基本的な骨格用語を確認します。,"Core terminology for the shoulder girdle, upper arm, and forearm.",bones,upper limb,80,30,2026.1,true,10
-basic_lower,下肢ベーシック,Lower Limb Basics,大腿、下腿、膝、足部の基本的な骨格用語を確認します。,"Core terminology for the thigh, leg, knee, and foot.",bones,lower limb,80,30,2026.1,true,20
-basic_head,頭頸部ベーシック,Head and Neck Basics,顔面頭蓋と頭蓋側面の基本用語を確認します。,Core terminology for facial bones and lateral cranial structures.,bones,head and neck,80,30,2026.1,true,30
-basic_trunk,体幹ベーシック,Trunk Basics,胸郭と呼吸に関わる体幹部の基本用語を確認します。,Core terminology for the thorax and respiratory trunk structures.,bones and muscles,trunk,80,30,2026.1,true,40
-basic_muscle,筋ベーシック,Muscle Basics,上肢と背部を中心に、主要な筋の名称と作用を確認します。,"Core muscle names and actions, focusing on the upper limb and back.",muscles,upper limb and back,80,30,2026.1,true,50
+osteology_basic,骨学基礎,Basic Osteology,Gray’s Anatomy図版を用いて基本的な骨学用語を確認します。,Basic osteology terms using Gray’s Anatomy plates.,骨学,general,80,10,2026.2,true,1
+basic_upper,上肢ベーシック,Upper Limb Basics,肩甲帯、上腕、前腕の基本的な骨格用語を確認します。,"Core terminology for the shoulder girdle, upper arm, and forearm.",bones,upper limb,80,30,2026.2,true,10
+basic_lower,下肢ベーシック,Lower Limb Basics,大腿、下腿、膝、足部の基本的な骨格用語を確認します。,"Core terminology for the thigh, leg, knee, and foot.",bones,lower limb,80,30,2026.2,true,20
+basic_head,頭頸部ベーシック,Head and Neck Basics,顔面頭蓋と頭蓋側面の基本用語を確認します。,Core terminology for facial bones and lateral cranial structures.,bones,head and neck,80,30,2026.2,true,30
+basic_trunk,体幹ベーシック,Trunk Basics,胸郭と呼吸に関わる体幹部の基本用語を確認します。,Core terminology for the thorax and respiratory trunk structures.,bones and muscles,trunk,80,30,2026.2,true,40
+basic_muscle,筋ベーシック,Muscle Basics,上肢と背部を中心に、主要な筋の名称と作用を確認します。,"Core muscle names and actions, focusing on the upper limb and back.",muscles,upper limb and back,80,30,2026.2,true,50
 pdf_reference_terms,PDF由来用語,PDF Reference Terms,アップロードされたPDFから抽出した解剖学用語の参照用セットです。,Reference terms extracted from uploaded PDFs.,reference,general,80,30,2026.1,false,900

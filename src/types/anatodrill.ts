@@ -83,6 +83,7 @@ export interface TestSet {
 
 export interface TermProgress {
   termId: string;
+  choiceLanguageMode: ChoiceLanguageMode;
   correctCount: number;
   wrongCount: number;
   lastAnsweredAt: string | null;
@@ -136,6 +137,7 @@ export interface LearningData {
 export interface AnswerRecord {
   questionId: string;
   termId: string;
+  choiceLanguageMode: ChoiceLanguageMode;
   correct: boolean;
 }
 

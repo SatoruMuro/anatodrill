@@ -151,7 +151,19 @@ The `termId` column can contain the internal term ID, or an exact anatomical nam
 
 For example, `頸椎` resolves to `cervical_vertebra` when `terms.csv` contains that Japanese name. If there is no exact match, or if multiple terms match the same text, `npm run build:data` fails with an error so the source row can be fixed. The generated `src/data/images.json` always stores the resolved internal `termId`.
 
+Some Japanese names intentionally have multiple anatomical meanings. For example, the hand scaphoid and foot navicular are both called `舟状骨`; use `scaphoid_bone` for the hand and `navicular_bone` for the foot. The editor shows both candidates and exports the selected internal ID.
+
 All rows with the same `imageId` are grouped into the `labels` array of that image in `src/data/images.json`.
+
+Each label also automatically generates one `image_number_mcq` during `npm run build:data` unless `questions.csv` already contains a question for the same `imageId` and `targetLabel`. The generator:
+
+- requires Japanese, English, and Latin names for the referenced term;
+- prefers distractors from other labels on the same image;
+- supplements choices with terms from the same anatomical category/region;
+- assigns the question to a regional test set from the answer term metadata;
+- creates a stable `q_auto_...` question ID.
+
+The validator fails if a label has no numbered question, if two numbered questions use the same image/label pair, or if a quiz term lacks any of the three language names.
 
 ## Label Creation Tool
 
@@ -171,11 +183,13 @@ The online editor URL is intentionally hidden from normal navigation and require
 
 Then click `ラベル作成`.
 
-This developer-only page is hidden unless `?dev=1` is present. It lets you select an image, preferably from `public/images/gray/plates/`, click the image to place normalized `x` / `y` markers, search terms by ID/Japanese/English/Latin, edit labels, and export JSON or CSV rows.
+This developer-only page is hidden unless `?dev=1` is present. It lists numbered-plate targets rather than isolated single-structure images, lets you click the image to place normalized `x` / `y` markers, search terms by ID/Japanese/English/Latin, edit labels, and export JSON or CSV rows.
 
 In the `構造名 / termId` field, you can type a Japanese anatomical name such as `頸椎`, `胸椎`, `腰椎`, `仙骨`, or `尾骨`. The editor resolves it through the loaded term data from `terms.csv` / `terms.json`. If the input exactly matches one term, the label is resolved automatically. If multiple candidates match, select the correct candidate before exporting. If no candidate appears, add the term to `content/csv/terms.csv` first.
 
-CSV export writes the resolved internal `termId`. If `note` is empty and the original input was a Japanese term name, the Japanese name is preserved in the `note` column.
+CSV export writes the resolved internal `termId`. If `note` is empty and the original input was a Japanese term name, the Japanese name is preserved in the `note` column. Duplicate label numbers, unresolved terms, blank labels, and invalid coordinates block export until corrected.
+
+Added and edited labels are automatically saved in the current browser. A saved draft is used only while the source image labels are unchanged, so a newer deployed CSV safely supersedes stale local drafts. Use `全図版CSV` to download one complete replacement CSV containing every labeled plate, or reset the current image to its deployed CSV state.
 
 The tool does not write source files. Copy or download its CSV output and manually paste the rows into:
 

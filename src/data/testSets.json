@@ -9,7 +9,7 @@
     "region": "general",
     "passingScore": 80,
     "defaultQuestionCount": 10,
-    "version": "2026.1",
+    "version": "2026.2",
     "isActive": true,
     "order": 1
   },
@@ -23,7 +23,7 @@
     "region": "upper limb",
     "passingScore": 80,
     "defaultQuestionCount": 30,
-    "version": "2026.1",
+    "version": "2026.2",
     "isActive": true,
     "order": 10
   },
@@ -37,7 +37,7 @@
     "region": "lower limb",
     "passingScore": 80,
     "defaultQuestionCount": 30,
-    "version": "2026.1",
+    "version": "2026.2",
     "isActive": true,
     "order": 20
   },
@@ -51,7 +51,7 @@
     "region": "head and neck",
     "passingScore": 80,
     "defaultQuestionCount": 30,
-    "version": "2026.1",
+    "version": "2026.2",
     "isActive": true,
     "order": 30
   },
@@ -65,7 +65,7 @@
     "region": "trunk",
     "passingScore": 80,
     "defaultQuestionCount": 30,
-    "version": "2026.1",
+    "version": "2026.2",
     "isActive": true,
     "order": 40
   },
@@ -79,7 +79,7 @@
     "region": "upper limb and back",
     "passingScore": 80,
     "defaultQuestionCount": 30,
-    "version": "2026.1",
+    "version": "2026.2",
     "isActive": true,
     "order": 50
   },

@@ -4,7 +4,6 @@ import questionsJson from './data/questions.json';
 import testSetsJson from './data/testSets.json';
 import termsJson from './data/terms.json';
 import { DrillMode } from './components/DrillMode';
-import { EditorAccessGate } from './components/EditorAccessGate';
 import { HistoryBackup } from './components/HistoryBackup';
 import { Home } from './components/Home';
 import { ImageCredits } from './components/ImageCredits';
@@ -15,7 +14,7 @@ import { QuestionBrowser } from './components/QuestionBrowser';
 import { ReviewMode } from './components/ReviewMode';
 import { TestMode } from './components/TestMode';
 import type { AnatomyImage, AnswerRecord, LearningData, Question, Term, TestAttempt, TestSet, ViewKey } from './types/anatodrill';
-import { updateProgressRecord } from './lib/progress';
+import { progressKey, updateProgressRecord } from './lib/progress';
 import { buildImageMap, buildTermMap } from './lib/questions';
 import { loadLearningData, saveLearningData } from './lib/storage';
 
@@ -25,39 +24,34 @@ const terms = termsJson as Term[];
 const questions = questionsJson as Question[];
 const knownTermIds = new Set(terms.map((term) => term.id));
 const isDevMode = new URLSearchParams(window.location.search).get('dev') === '1';
-const editorPassword = 'kaibou2026';
-const editorAccessStorageKey = 'anatodrill_editor_access';
-
-function hasStoredEditorAccess() {
-  try {
-    return window.sessionStorage.getItem(editorAccessStorageKey) === 'unlocked';
-  } catch {
-    return false;
-  }
-}
 
 export function App() {
   const [view, setView] = useState<ViewKey>(() => (isDevMode ? 'label_editor' : 'home'));
-  const [editorUnlocked, setEditorUnlocked] = useState(() => (isDevMode ? hasStoredEditorAccess() : false));
   const [learningData, setLearningData] = useState<LearningData>(() => loadLearningData(knownTermIds));
   const termsById = useMemo(() => buildTermMap(terms), []);
   const imagesById = useMemo(() => buildImageMap(images), []);
-  const isEditorMode = isDevMode && editorUnlocked;
+  const isEditorMode = isDevMode;
 
   useEffect(() => {
     saveLearningData(learningData);
   }, [learningData]);
 
   const recordAnswer = (record: AnswerRecord) => {
-    setLearningData((current) =>
-      ({
+    setLearningData((current) => {
+      const key = progressKey(record.termId, record.choiceLanguageMode);
+      return {
         ...current,
         progress: {
           ...current.progress,
-          [record.termId]: updateProgressRecord(current.progress[record.termId], record.termId, record.correct),
+          [key]: updateProgressRecord(
+            current.progress[key],
+            record.termId,
+            record.choiceLanguageMode,
+            record.correct,
+          ),
         },
-      }),
-    );
+      };
+    });
   };
 
   const saveAttempt = (attempt: TestAttempt) => {
@@ -73,29 +67,11 @@ export function App() {
     setLearningData(data);
   };
 
-  const unlockEditor = () => {
-    try {
-      window.sessionStorage.setItem(editorAccessStorageKey, 'unlocked');
-    } catch {
-      // Keep the current tab unlocked even when browser storage is unavailable.
-    }
-    setEditorUnlocked(true);
-    setView('label_editor');
+  const closeEditor = () => {
+    const url = new URL(window.location.href);
+    url.searchParams.delete('dev');
+    window.location.assign(url.toString());
   };
-
-  const lockEditor = () => {
-    try {
-      window.sessionStorage.removeItem(editorAccessStorageKey);
-    } catch {
-      // Ignore storage failures; local React state still closes the editor.
-    }
-    setEditorUnlocked(false);
-    setView('home');
-  };
-
-  if (isDevMode && !editorUnlocked) {
-    return <EditorAccessGate password={editorPassword} onUnlock={unlockEditor} />;
-  }
 
   return (
     <>
@@ -103,7 +79,7 @@ export function App() {
       {isEditorMode ? (
         <aside className="dev-mode-notice">
           <span>編集者モードです。ラベル作成ツールの出力を image_labels.csv に手動で反映してください。</span>
-          <button className="secondary-button" type="button" onClick={lockEditor}>
+          <button className="secondary-button" type="button" onClick={closeEditor}>
             閉じる
           </button>
         </aside>

@@ -1,6 +1,10 @@
 import { useMemo, useState, type FormEvent } from 'react';
 import type { AnatomyImage, AnswerRecord, Question, SelectableChoiceLanguageMode, Term } from '../types/anatodrill';
-import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
+import {
+  CHOICE_LANGUAGE_OPTIONS,
+  choiceLanguageModeLabel,
+  questionSupportsChoiceLanguage,
+} from '../lib/choiceLanguage';
 import { shuffle } from '../lib/random';
 import { QuestionCard } from './QuestionCard';
 
@@ -17,7 +21,11 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
   const [started, setStarted] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
-  const queue = useMemo(() => shuffle(questions), [questions, sessionId]);
+  const eligibleQuestions = useMemo(
+    () => questions.filter((question) => questionSupportsChoiceLanguage(question, choiceLanguageMode, termsById)),
+    [choiceLanguageMode, questions, termsById],
+  );
+  const queue = useMemo(() => shuffle(eligibleQuestions), [eligibleQuestions, sessionId]);
   const selectedLanguageOption = CHOICE_LANGUAGE_OPTIONS.find((option) => option.value === choiceLanguageMode);
 
   const start = (event: FormEvent<HTMLFormElement>) => {
@@ -54,7 +62,7 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
             <p className="eyebrow">Drill mode</p>
             <h2>ドリルを選択</h2>
           </div>
-          <span className="progress-pill">全 {questions.length}問</span>
+          <span className="progress-pill">対象 {eligibleQuestions.length}問</span>
         </section>
 
         <form className="setup-form" onSubmit={start}>
@@ -75,9 +83,10 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
           <section className="test-set-detail" aria-label="選択中のドリル形式">
             <h3>{selectedLanguageOption?.drillLabel}</h3>
             <p>{selectedLanguageOption?.description}</p>
+            <p>この形式で出題可能: {eligibleQuestions.length}問</p>
           </section>
 
-          <button type="submit" className="primary-button">
+          <button type="submit" className="primary-button" disabled={eligibleQuestions.length === 0}>
             ドリル開始
           </button>
         </form>

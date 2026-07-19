@@ -1,4 +1,4 @@
-import type { ChoiceLanguageMode, SelectableChoiceLanguageMode, Term } from '../types/anatodrill';
+import type { ChoiceLanguageMode, Question, SelectableChoiceLanguageMode, Term } from '../types/anatodrill';
 
 interface ChoiceLanguageOption {
   value: SelectableChoiceLanguageMode;
@@ -66,4 +66,51 @@ export function termChoiceLabel(term: Term, mode: ChoiceLanguageMode): string {
   }
 
   return `${term.japanese} / ${term.english} / ${term.latin}`;
+}
+
+function requestedAnswerLanguage(question: Question): SelectableChoiceLanguageMode | null {
+  const prompt = question.prompt.trim();
+  if (/対応する日本語|日本語(?:名)?はどれ/.test(prompt)) {
+    return 'japanese';
+  }
+  if (/対応する英語|英語(?:名)?はどれ/.test(prompt)) {
+    return 'english';
+  }
+  if (/対応するラテン語|ラテン語(?:名)?はどれ/.test(prompt)) {
+    return 'latin';
+  }
+  return null;
+}
+
+function termSupportsMode(term: Term, mode: ChoiceLanguageMode): boolean {
+  if (mode === 'japanese') {
+    return Boolean(term.japanese.trim());
+  }
+  if (mode === 'english') {
+    return Boolean(term.english.trim());
+  }
+  if (mode === 'latin') {
+    return Boolean(term.latin.trim());
+  }
+  if (mode === 'bilingual') {
+    return Boolean(term.japanese.trim() && term.english.trim());
+  }
+  return Boolean(term.japanese.trim() && term.english.trim() && term.latin.trim());
+}
+
+export function questionSupportsChoiceLanguage(
+  question: Question,
+  mode: ChoiceLanguageMode,
+  termsById: ReadonlyMap<string, Term>,
+): boolean {
+  const requestedLanguage = requestedAnswerLanguage(question);
+  if (requestedLanguage && mode !== 'bilingual' && mode !== requestedLanguage) {
+    return false;
+  }
+
+  const termIds = new Set([...question.choices, question.answerTermId]);
+  return [...termIds].every((termId) => {
+    const term = termsById.get(termId);
+    return Boolean(term && termSupportsMode(term, mode));
+  });
 }

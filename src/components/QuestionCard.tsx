@@ -99,6 +99,7 @@ export function QuestionCard({
     onAnswer({
       questionId: question.id,
       termId: question.answerTermId,
+      choiceLanguageMode,
       correct: state.correct,
     });
   };

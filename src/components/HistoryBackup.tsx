@@ -6,7 +6,7 @@ import { progressSummary } from '../lib/progress';
 import { buildTestSetMap } from '../lib/testSets';
 import { generateCertificatePdf } from '../lib/pdf';
 import { buildCertificatePayload, downloadTestResultCsv, downloadTestResultJson } from '../lib/testResults';
-import { choiceLanguageModeLabel } from '../lib/choiceLanguage';
+import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
 
 interface HistoryBackupProps {
   data: LearningData;
@@ -22,6 +22,10 @@ export function HistoryBackup({ data, terms, testSets, onImportData }: HistoryBa
   const knownTermIds = useMemo(() => new Set(terms.map((term) => term.id)), [terms]);
   const testSetsById = useMemo(() => buildTestSetMap(testSets), [testSets]);
   const summary = progressSummary(terms, data);
+  const languageSummaries = CHOICE_LANGUAGE_OPTIONS.map((option) => ({
+    option,
+    summary: progressSummary(terms, data, option.value),
+  }));
 
   const exportBackup = () => {
     const backup = buildBackup(data);
@@ -106,6 +110,21 @@ export function HistoryBackup({ data, terms, testSets, onImportData }: HistoryBa
           <span>テスト履歴</span>
           <strong>{data.attempts.length}</strong>
         </article>
+      </section>
+
+      <section className="panel">
+        <h3>言語別の習熟状況</h3>
+        <dl className="compact-list">
+          {languageSummaries.map(({ option, summary: languageSummary }) => (
+            <div key={option.value}>
+              <dt>{option.label}</dt>
+              <dd>
+                解答済み {languageSummary.answered} / 習熟 {languageSummary.mastered} / 復習期限 {languageSummary.due}
+              </dd>
+            </div>
+          ))}
+        </dl>
+        <p className="muted">旧形式の日本語・英語併記履歴は、上段の全体集計とバックアップに保持されます。</p>
       </section>
 
       <section className="content-grid two-columns">

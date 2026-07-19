@@ -1,4 +1,4 @@
-import { useMemo, useState, type MouseEvent } from 'react';
+import { useEffect, useMemo, useState, type MouseEvent } from 'react';
 import type { AnatomyImage, ImagePlateLabel, Term } from '../types/anatodrill';
 import { assetUrl, detailLabel } from '../lib/questions';
 
@@ -26,11 +26,58 @@ interface TermResolution {
   candidates: Term[];
 }
 
-function labelsFromImage(image: AnatomyImage | undefined): EditableLabel[] {
-  return (image?.labels ?? []).map((label, index) => ({
+interface StoredLabelDraft {
+  baseFingerprint: string;
+  labels: ImagePlateLabel[];
+}
+
+const LABEL_DRAFT_STORAGE_KEY = 'anatodrill.labelDrafts.v1';
+
+function labelFingerprint(labels: readonly ImagePlateLabel[]): string {
+  return JSON.stringify(
+    labels.map(({ label, termId, x, y, note }) => ({ label, termId, x, y, note: note ?? '' })),
+  );
+}
+
+function editableLabels(labels: readonly ImagePlateLabel[]): EditableLabel[] {
+  return labels.map((label, index) => ({
     ...label,
     id: `${label.label}-${label.termId}-${index}`,
   }));
+}
+
+function loadStoredDrafts(images: readonly AnatomyImage[]): Record<string, EditableLabel[]> {
+  try {
+    const parsed = JSON.parse(localStorage.getItem(LABEL_DRAFT_STORAGE_KEY) ?? '{}') as Record<string, StoredLabelDraft>;
+    const drafts: Record<string, EditableLabel[]> = {};
+
+    for (const image of images) {
+      const stored = parsed[image.id];
+      if (!stored || stored.baseFingerprint !== labelFingerprint(image.labels) || !Array.isArray(stored.labels)) {
+        continue;
+      }
+
+      const validLabels = stored.labels.filter(
+        (label) =>
+          label &&
+          typeof label.label === 'string' &&
+          typeof label.termId === 'string' &&
+          typeof label.x === 'number' &&
+          Number.isFinite(label.x) &&
+          typeof label.y === 'number' &&
+          Number.isFinite(label.y),
+      );
+      drafts[image.id] = editableLabels(validLabels);
+    }
+
+    return drafts;
+  } catch {
+    return {};
+  }
+}
+
+function labelsFromImage(image: AnatomyImage | undefined): EditableLabel[] {
+  return editableLabels(image?.labels ?? []);
 }
 
 function nextLabelValue(labels: readonly EditableLabel[]): string {
@@ -102,14 +149,63 @@ function resolvedNote(label: EditableLabel, resolution: TermResolution): string 
 
 function labelsToCsvRows(imageId: string, labels: readonly EditableLabel[], terms: readonly Term[]): string {
   const header = 'imageId,label,termId,x,y,note';
-  const rows = labels.map((label) => {
-    const resolution = resolveTermInput(label.termId, terms);
-    const termId = resolution.status === 'resolved' && resolution.term ? resolution.term.id : label.termId;
-    return [imageId, label.label, termId, formatCoordinate(label.x), formatCoordinate(label.y), resolvedNote(label, resolution) ?? '']
-      .map(csvEscape)
-      .join(',');
-  });
+  const rows = labels.map((label) => labelToCsvRow(imageId, label, terms));
   return `${header}\n${rows.join('\n')}${rows.length ? '\n' : ''}`;
+}
+
+function labelToCsvRow(imageId: string, label: EditableLabel, terms: readonly Term[]): string {
+  const resolution = resolveTermInput(label.termId, terms);
+  const termId = resolution.status === 'resolved' && resolution.term ? resolution.term.id : label.termId;
+  return [
+    imageId,
+    label.label,
+    termId,
+    formatCoordinate(label.x),
+    formatCoordinate(label.y),
+    resolvedNote(label, resolution) ?? '',
+  ]
+    .map(csvEscape)
+    .join(',');
+}
+
+function allLabelsToCsvRows(
+  images: readonly AnatomyImage[],
+  labelsByImageId: Readonly<Record<string, EditableLabel[]>>,
+  terms: readonly Term[],
+): string {
+  const header = 'imageId,label,termId,x,y,note';
+  const rows = images.flatMap((image) =>
+    (labelsByImageId[image.id] ?? labelsFromImage(image)).map((label) => labelToCsvRow(image.id, label, terms)),
+  );
+  return `${header}\n${rows.join('\n')}${rows.length ? '\n' : ''}`;
+}
+
+function duplicateLabelValues(labels: readonly EditableLabel[]): string[] {
+  const counts = new Map<string, number>();
+  for (const label of labels) {
+    const value = label.label.trim();
+    if (value) {
+      counts.set(value, (counts.get(value) ?? 0) + 1);
+    }
+  }
+  return [...counts.entries()].filter(([, count]) => count > 1).map(([value]) => value);
+}
+
+function labelsAreValid(labels: readonly EditableLabel[], terms: readonly Term[]): boolean {
+  return (
+    duplicateLabelValues(labels).length === 0 &&
+    labels.every(
+      (label) =>
+        label.label.trim() !== '' &&
+        resolveTermInput(label.termId, terms).status === 'resolved' &&
+        Number.isFinite(label.x) &&
+        label.x >= 0 &&
+        label.x <= 1 &&
+        Number.isFinite(label.y) &&
+        label.y >= 0 &&
+        label.y <= 1,
+    )
+  );
 }
 
 function labelsToJson(labels: readonly EditableLabel[], terms: readonly Term[]): string {
@@ -184,16 +280,20 @@ function resolutionMessage(resolution: TermResolution): string {
 
 export function LabelEditor({ images, terms }: LabelEditorProps) {
   const selectableImages = useMemo(() => {
-    const grayPlateImages = images.filter((image) => image.file.includes('/images/gray/plates/'));
-    const otherImages = images.filter((image) => !image.file.includes('/images/gray/plates/'));
+    const labelTargetImages = images.filter((image) => image.file.includes('/plates/') || image.labels.length > 0);
+    const grayPlateImages = labelTargetImages.filter((image) => image.file.includes('/images/gray/plates/'));
+    const otherImages = labelTargetImages.filter((image) => !image.file.includes('/images/gray/plates/'));
     return [...grayPlateImages, ...otherImages];
   }, [images]);
 
   const [selectedImageId, setSelectedImageId] = useState(selectableImages[0]?.id ?? '');
   const selectedImage = selectableImages.find((image) => image.id === selectedImageId);
-  const [labelsByImageId, setLabelsByImageId] = useState<Record<string, EditableLabel[]>>(() =>
-    Object.fromEntries(selectableImages.map((image) => [image.id, labelsFromImage(image)])),
-  );
+  const [labelsByImageId, setLabelsByImageId] = useState<Record<string, EditableLabel[]>>(() => {
+    const storedDrafts = loadStoredDrafts(selectableImages);
+    return Object.fromEntries(
+      selectableImages.map((image) => [image.id, storedDrafts[image.id] ?? labelsFromImage(image)]),
+    );
+  });
   const labels = labelsByImageId[selectedImageId] ?? [];
   const [draft, setDraft] = useState<DraftLabel>({
     label: nextLabelValue(labels),
@@ -205,6 +305,30 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   const [termSearch, setTermSearch] = useState('');
   const [copyStatus, setCopyStatus] = useState('');
   const [showOnlyUnlabeled, setShowOnlyUnlabeled] = useState(false);
+
+  useEffect(() => {
+    try {
+      const drafts: Record<string, StoredLabelDraft> = {};
+      for (const image of selectableImages) {
+        const currentLabels = labelsByImageId[image.id] ?? labelsFromImage(image);
+        if (labelFingerprint(currentLabels) === labelFingerprint(image.labels)) {
+          continue;
+        }
+        drafts[image.id] = {
+          baseFingerprint: labelFingerprint(image.labels),
+          labels: currentLabels.map(({ label, termId, x, y, note }) => ({ label, termId, x, y, ...(note ? { note } : {}) })),
+        };
+      }
+
+      if (Object.keys(drafts).length === 0) {
+        localStorage.removeItem(LABEL_DRAFT_STORAGE_KEY);
+      } else {
+        localStorage.setItem(LABEL_DRAFT_STORAGE_KEY, JSON.stringify(drafts));
+      }
+    } catch {
+      // The editor remains usable when browser storage is unavailable.
+    }
+  }, [labelsByImageId, selectableImages]);
 
   const imageStats = useMemo(
     () =>
@@ -236,7 +360,15 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     () => labels.filter((label) => resolveTermInput(label.termId, terms).status !== 'resolved'),
     [labels, terms],
   );
-  const canExport = invalidLabels.length === 0;
+  const duplicateLabels = useMemo(() => duplicateLabelValues(labels), [labels]);
+  const draftLabelIsDuplicate = Boolean(
+    draft.label.trim() && labels.some((label) => label.label.trim() === draft.label.trim()),
+  );
+  const canExport = invalidLabels.length === 0 && labelsAreValid(labels, terms);
+  const canExportAll = useMemo(
+    () => selectableImages.every((image) => labelsAreValid(labelsByImageId[image.id] ?? labelsFromImage(image), terms)),
+    [labelsByImageId, selectableImages, terms],
+  );
 
   const updateLabels = (nextLabels: EditableLabel[]) => {
     setLabelsByImageId((current) => ({
@@ -287,6 +419,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
       draft.x === '' ||
       draft.y === '' ||
       !draft.label.trim() ||
+      draftLabelIsDuplicate ||
       draftResolution.status !== 'resolved' ||
       !draftResolution.term
     ) {
@@ -308,7 +441,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     updateLabels(nextLabels);
     setDraft({
       label: nextLabelValue(nextLabels),
-      termInput: draftResolution.term.japanese,
+      termInput: draftResolution.term.id,
       x: '',
       y: '',
       note: '',
@@ -342,6 +475,22 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     updateLabels(labels.filter((label) => label.id !== id));
   };
 
+  const resetCurrentDraft = () => {
+    if (!selectedImage) {
+      return;
+    }
+    const sourceLabels = labelsFromImage(selectedImage);
+    updateLabels(sourceLabels);
+    setDraft({
+      label: nextLabelValue(sourceLabels),
+      termInput: '',
+      x: '',
+      y: '',
+      note: '',
+    });
+    setCopyStatus('この画像の下書きをCSV登録済みの状態へ戻しました。');
+  };
+
   const copyJson = async () => {
     if (!canExport) {
       return;
@@ -367,6 +516,9 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   const csvOutput = canExport
     ? labelsToCsvRows(selectedImage.id, labels, terms)
     : '未解決または曖昧な用語があります。候補から選択するか、terms.csv に用語を追加してください。';
+  const allCsvOutput = canExportAll
+    ? allLabelsToCsvRows(selectableImages, labelsByImageId, terms)
+    : 'いずれかの画像に未解決用語、重複番号、または不正な座標があります。';
 
   return (
     <main className="page-shell label-editor-shell">
@@ -379,7 +531,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
       </section>
 
       <section className="warning-band">
-        開発者モードです。ラベル作成ツールの出力を image_labels.csv に手動で反映してください。
+        作業内容はこの端末に自動保存されます。完成後にCSVをダウンロードし、image_labels.csv に反映してください。
       </section>
 
       <section className="label-editor-layout">
@@ -403,7 +555,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                 {labels.length === 0 ? 'この画像はラベル未設定' : `この画像はラベル ${labels.length}件`}
               </span>
               <span className="muted">
-                未設定 {unlabeledImageStats.length} / 全 {selectableImages.length}
+                未設定 {unlabeledImageStats.length} / ラベル対象図版 {selectableImages.length}
               </span>
             </div>
             <label className="label-filter-toggle">
@@ -524,6 +676,9 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
           <p className={draftResolution.status === 'resolved' ? 'status-line' : 'error-text'}>
             {resolutionMessage(draftResolution)}
           </p>
+          {draftLabelIsDuplicate ? (
+            <p className="error-text">ラベル番号「{draft.label.trim()}」はこの画像ですでに使われています。</p>
+          ) : null}
 
           {draftCandidates.length > 0 && draftResolution.status !== 'resolved' ? (
             <div className="term-search-results compact">
@@ -533,8 +688,8 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                   type="button"
                   className="secondary-button"
                   onClick={() => {
-                    setDraft((current) => ({ ...current, termInput: term.japanese, note: current.note || term.japanese }));
-                    setTermSearch(term.japanese);
+                    setDraft((current) => ({ ...current, termInput: term.id, note: current.note || term.japanese }));
+                    setTermSearch(term.id);
                   }}
                 >
                   {detailLabel(term)} / {term.id}
@@ -543,7 +698,12 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
             </div>
           ) : null}
 
-          <button type="button" className="primary-button" onClick={addLabel} disabled={draftResolution.status !== 'resolved'}>
+          <button
+            type="button"
+            className="primary-button"
+            onClick={addLabel}
+            disabled={draftResolution.status !== 'resolved' || draftLabelIsDuplicate}
+          >
             ラベルを追加
           </button>
 
@@ -562,8 +722,8 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                 type="button"
                 className="secondary-button"
                 onClick={() => {
-                  setDraft((current) => ({ ...current, termInput: term.japanese, note: current.note || term.japanese }));
-                  setTermSearch(term.japanese);
+                  setDraft((current) => ({ ...current, termInput: term.id, note: current.note || term.japanese }));
+                  setTermSearch(term.id);
                 }}
               >
                 {detailLabel(term)} / {term.id}
@@ -597,15 +757,32 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
               disabled={!canExport}
               onClick={() => downloadText(`${selectedImage.id}-image_labels.csv`, csvOutput, 'text/csv;charset=utf-8')}
             >
-              CSVダウンロード
+              この画像のCSV
+            </button>
+            <button
+              type="button"
+              className="primary-button"
+              disabled={!canExportAll}
+              onClick={() =>
+                downloadText('anatodrill-image_labels-all.csv', allCsvOutput, 'text/csv;charset=utf-8')
+              }
+            >
+              全図版CSV
+            </button>
+            <button type="button" className="secondary-button danger" onClick={resetCurrentDraft}>
+              この画像を元に戻す
             </button>
           </div>
         </div>
         {!canExport ? (
           <p className="error-text">
-            未解決の用語があります。CSV/JSONを出力する前に、候補から正しい用語を選択してください。
+            未解決用語、重複番号、空欄、または不正な座標があります。修正後に出力してください。
           </p>
         ) : null}
+        {duplicateLabels.length > 0 ? (
+          <p className="error-text">重複しているラベル番号: {duplicateLabels.join(', ')}</p>
+        ) : null}
+        {!canExportAll ? <p className="error-text">別の図版にも修正が必要な下書きがあります。</p> : null}
         {copyStatus ? <p className="status-line">{copyStatus}</p> : null}
 
         <div className="label-table-scroll">

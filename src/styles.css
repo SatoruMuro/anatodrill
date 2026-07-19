@@ -670,59 +670,6 @@ button.plate-marker {
   padding: 8px 12px;
 }
 
-.editor-access-shell {
-  display: grid;
-  min-height: 100vh;
-  place-items: center;
-  padding: 24px;
-  background:
-    linear-gradient(180deg, rgba(13, 107, 95, 0.08), rgba(241, 208, 122, 0.1)),
-    #f7faf8;
-}
-
-.editor-access-card {
-  display: grid;
-  width: min(480px, 100%);
-  gap: 16px;
-  padding: clamp(24px, 5vw, 38px);
-  border: 1px solid #dce5e1;
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 20px 60px rgba(23, 33, 30, 0.12);
-}
-
-.editor-access-card h2 {
-  margin: 0;
-  font-size: clamp(1.6rem, 4vw, 2.2rem);
-}
-
-.editor-access-card p {
-  color: #53635e;
-  line-height: 1.7;
-}
-
-.editor-access-card label {
-  display: grid;
-  gap: 8px;
-  color: #2d3b37;
-  font-weight: 800;
-}
-
-.editor-access-card input {
-  width: 100%;
-  border: 1px solid #c7d6cf;
-  border-radius: 8px;
-  padding: 12px 14px;
-  background: #ffffff;
-  color: #17211e;
-  font: inherit;
-}
-
-.editor-access-note {
-  margin-top: 4px;
-  font-size: 0.9rem;
-}
-
 .plate-study-layout {
   grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
 }

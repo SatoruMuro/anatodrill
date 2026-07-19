@@ -318,6 +318,45 @@
     "explanation": "内側楔状骨は足根骨遠位列の最内側にあり、舟状骨と第1中足骨の間に位置します。"
   },
   {
+    "id": "proximal_phalanx_of_foot",
+    "japanese": "基節骨",
+    "english": "proximal phalanx of foot",
+    "latin": "phalanx proximalis pedis",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "足の基節骨は中足骨に続く足趾の最も近位の趾骨です。"
+  },
+  {
+    "id": "middle_phalanx_of_foot",
+    "japanese": "中節骨",
+    "english": "middle phalanx of foot",
+    "latin": "phalanx media pedis",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "足の中節骨は第2趾から第5趾で基節骨と末節骨の間に位置します。"
+  },
+  {
+    "id": "distal_phalanx_of_foot",
+    "japanese": "末節骨",
+    "english": "distal phalanx of foot",
+    "latin": "phalanx distalis pedis",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "足の末節骨は足趾の先端を構成する最も遠位の趾骨です。"
+  },
+  {
     "id": "diaphragm",
     "japanese": "横隔膜",
     "english": "diaphragm",
@@ -8758,14 +8797,17 @@
     "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
   },
   {
-    "id": "pdf_kaibo3_1_6b46f92713",
-    "japanese": "足の舟状骨",
-    "english": "",
-    "latin": "",
+    "id": "navicular_bone",
+    "japanese": "舟状骨",
+    "english": "navicular bone",
+    "latin": "os naviculare",
     "category": "bone",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "舟状骨は距骨と3個の楔状骨の間に位置する足根骨です。"
   },
   {
     "id": "pdf_kaibo3_1_250600a1be",
@@ -8798,34 +8840,43 @@
     "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
   },
   {
-    "id": "pdf_kaibo3_1_d3712a2fb8",
+    "id": "intermediate_cuneiform_bone",
     "japanese": "中間楔状骨",
-    "english": "",
-    "latin": "",
+    "english": "intermediate cuneiform bone",
+    "latin": "os cuneiforme intermedium",
     "category": "bone",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "中間楔状骨は3個の楔状骨の中央にあり、舟状骨と第2中足骨の間に位置します。"
   },
   {
-    "id": "pdf_kaibo3_1_274524cc2e",
+    "id": "lateral_cuneiform_bone",
     "japanese": "外側楔状骨",
-    "english": "",
-    "latin": "",
+    "english": "lateral cuneiform bone",
+    "latin": "os cuneiforme laterale",
     "category": "bone",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "外側楔状骨は3個の楔状骨の最外側にあり、舟状骨と第3中足骨の間に位置します。"
   },
   {
-    "id": "pdf_kaibo3_1_47acd64faf",
+    "id": "cuboid_bone",
     "japanese": "立方骨",
-    "english": "",
-    "latin": "",
+    "english": "cuboid bone",
+    "latin": "os cuboideum",
     "category": "bone",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "立方骨は足根骨遠位列の外側にあり、踵骨と第4・第5中足骨の間に位置します。"
   },
   {
     "id": "pdf_kaibo3_1_4f4f50cb14",
@@ -8848,14 +8899,17 @@
     "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
   },
   {
-    "id": "pdf_kaibo3_1_a2fff9434b",
+    "id": "metatarsal_bone",
     "japanese": "中足骨",
-    "english": "",
-    "latin": "",
+    "english": "metatarsal bones",
+    "latin": "ossa metatarsalia",
     "category": "bone",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
+    "region": "lower limb",
+    "testSet": [
+      "basic_lower",
+      "osteology_basic"
+    ],
+    "explanation": "中足骨は足根骨と趾骨の間に並ぶ5本の骨です。"
   },
   {
     "id": "pdf_kaibo3_1_359f75dc83",

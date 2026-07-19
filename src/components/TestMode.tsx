@@ -10,7 +10,11 @@ import type {
   TestSet,
 } from '../types/anatodrill';
 import { APP_VERSION } from '../lib/constants';
-import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
+import {
+  CHOICE_LANGUAGE_OPTIONS,
+  choiceLanguageModeLabel,
+  questionSupportsChoiceLanguage,
+} from '../lib/choiceLanguage';
 import { formatDateTime, formatDuration } from '../lib/dates';
 import { generateCertificatePdf } from '../lib/pdf';
 import { getQuestionCountsByTestSet } from '../lib/questions';
@@ -41,7 +45,6 @@ function makeCertificateId(): string {
 
 export function TestMode({ questions, testSets, termsById, imagesById, onRecordAnswer, onSaveAttempt }: TestModeProps) {
   const activeSets = useMemo(() => activeTestSets(testSets), [testSets]);
-  const questionCounts = useMemo(() => getQuestionCountsByTestSet(questions), [questions]);
   const [phase, setPhase] = useState<Phase>('setup');
   const [participant, setParticipant] = useState<TestParticipant>({ name: '', studentId: '' });
   const [testSetId, setTestSetId] = useState(activeSets[0]?.id ?? '');
@@ -52,9 +55,19 @@ export function TestMode({ questions, testSets, termsById, imagesById, onRecordA
   const [startedAt, setStartedAt] = useState<Date | null>(null);
   const [result, setResult] = useState<TestAttempt | null>(null);
   const [isGeneratingCertificate, setIsGeneratingCertificate] = useState(false);
+  const languageEligibleQuestions = useMemo(
+    () => questions.filter((question) => questionSupportsChoiceLanguage(question, choiceLanguageMode, termsById)),
+    [choiceLanguageMode, questions, termsById],
+  );
+  const questionCounts = useMemo(
+    () => getQuestionCountsByTestSet(languageEligibleQuestions),
+    [languageEligibleQuestions],
+  );
 
   const selectedTestSet = activeSets.find((testSet) => testSet.id === testSetId) ?? activeSets[0];
-  const selectedPool = selectedTestSet ? questions.filter((question) => question.testSet === selectedTestSet.id) : [];
+  const selectedPool = selectedTestSet
+    ? languageEligibleQuestions.filter((question) => question.testSet === selectedTestSet.id)
+    : [];
   const availableQuestionCount = selectedTestSet ? questionCounts[selectedTestSet.id] ?? 0 : 0;
   const effectiveQuestionCount = selectedTestSet
     ? Math.min(selectedTestSet.defaultQuestionCount, availableQuestionCount)

@@ -522,7 +522,7 @@
   {
     "id": "q_gray111_label_1_cervical_vertebra",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "cervical_vertebra",
     "choices": [
@@ -538,7 +538,7 @@
   {
     "id": "q_gray111_label_2_thoracic_vertebra",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "thoracic_vertebra",
     "choices": [
@@ -554,7 +554,7 @@
   {
     "id": "q_gray111_label_3_lumbar_vertebra",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "lumbar_vertebra",
     "choices": [
@@ -570,7 +570,7 @@
   {
     "id": "q_gray111_label_4_sacrum",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_lower",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "sacrum",
     "choices": [
@@ -586,7 +586,7 @@
   {
     "id": "q_gray111_label_5_coccyx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_lower",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "coccyx",
     "choices": [
@@ -602,7 +602,7 @@
   {
     "id": "q_gray193_ear_plate_label_1_frontal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "frontal_bone",
     "choices": [
@@ -618,7 +618,7 @@
   {
     "id": "q_gray193_ear_plate_label_2_ethmoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "ethmoid_bone",
     "choices": [
@@ -634,7 +634,7 @@
   {
     "id": "q_gray193_ear_plate_label_3_sphenoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "sphenoid_bone",
     "choices": [
@@ -650,7 +650,7 @@
   {
     "id": "q_gray193_ear_plate_label_4_temporal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "temporal_bone",
     "choices": [
@@ -666,7 +666,7 @@
   {
     "id": "q_gray193_ear_plate_label_5_parietal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "parietal_bone",
     "choices": [
@@ -682,7 +682,7 @@
   {
     "id": "q_gray193_ear_plate_label_6_occipital_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "occipital_bone",
     "choices": [
@@ -698,7 +698,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_1_frontal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "frontal_bone",
     "choices": [
@@ -714,7 +714,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_2_nasal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "nasal_bone",
     "choices": [
@@ -730,7 +730,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_3_maxilla",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "maxilla",
     "choices": [
@@ -746,7 +746,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_4_zygomatic_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "zygomatic_bone",
     "choices": [
@@ -762,7 +762,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_5_sphenoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "sphenoid_bone",
     "choices": [
@@ -778,7 +778,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_6_lacrimal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "lacrimal_bone",
     "choices": [
@@ -794,7 +794,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_7_parietal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「7」で示す構造はどれか。",
     "answerTermId": "parietal_bone",
     "choices": [
@@ -810,7 +810,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_8_temporal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「8」で示す構造はどれか。",
     "answerTermId": "temporal_bone",
     "choices": [
@@ -826,7 +826,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_9_sphenoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「9」で示す構造はどれか。",
     "answerTermId": "sphenoid_bone",
     "choices": [
@@ -842,7 +842,7 @@
   {
     "id": "q_gray190_skull_anterior_plate_label_10_mandible",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「10」で示す構造はどれか。",
     "answerTermId": "mandible",
     "choices": [
@@ -858,7 +858,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_1_frontal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "frontal_bone",
     "choices": [
@@ -874,7 +874,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_2_parietal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "parietal_bone",
     "choices": [
@@ -890,7 +890,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_3_temporal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "temporal_bone",
     "choices": [
@@ -906,7 +906,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_4_sphenoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "sphenoid_bone",
     "choices": [
@@ -922,7 +922,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_5_zygomatic_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "zygomatic_bone",
     "choices": [
@@ -938,7 +938,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_6_lacrimal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "lacrimal_bone",
     "choices": [
@@ -954,7 +954,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_7_maxilla",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「7」で示す構造はどれか。",
     "answerTermId": "maxilla",
     "choices": [
@@ -970,7 +970,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_8_nasal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「8」で示す構造はどれか。",
     "answerTermId": "nasal_bone",
     "choices": [
@@ -986,7 +986,7 @@
   {
     "id": "q_gray164_pelvis_plate_label_9_ethmoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「9」で示す構造はどれか。",
     "answerTermId": "ethmoid_bone",
     "choices": [
@@ -1002,7 +1002,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_1_frontal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "frontal_bone",
     "choices": [
@@ -1018,7 +1018,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_2_parietal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "parietal_bone",
     "choices": [
@@ -1034,7 +1034,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_3_occipital_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "occipital_bone",
     "choices": [
@@ -1050,7 +1050,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_4_temporal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "temporal_bone",
     "choices": [
@@ -1066,7 +1066,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_5_sphenoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "sphenoid_bone",
     "choices": [
@@ -1082,7 +1082,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_6_zygomatic_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "zygomatic_bone",
     "choices": [
@@ -1098,7 +1098,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_7_ethmoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「7」で示す構造はどれか。",
     "answerTermId": "ethmoid_bone",
     "choices": [
@@ -1114,7 +1114,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_8_lacrimal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「8」で示す構造はどれか。",
     "answerTermId": "lacrimal_bone",
     "choices": [
@@ -1130,7 +1130,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_9_maxilla",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「9」で示す構造はどれか。",
     "answerTermId": "maxilla",
     "choices": [
@@ -1146,7 +1146,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_10_nasal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「10」で示す構造はどれか。",
     "answerTermId": "nasal_bone",
     "choices": [
@@ -1162,7 +1162,7 @@
   {
     "id": "q_gray188_temporal_bone_plate_label_12_mandible",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「12」で示す構造はどれか。",
     "answerTermId": "mandible",
     "choices": [
@@ -1178,7 +1178,7 @@
   {
     "id": "q_gray113_thorax_posterior_plate_label_1_rib",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "rib",
     "choices": [
@@ -1194,7 +1194,7 @@
   {
     "id": "q_gray113_thorax_posterior_plate_label_2_thoracic_vertebra",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "thoracic_vertebra",
     "choices": [
@@ -1210,7 +1210,7 @@
   {
     "id": "q_gray112_thorax_anterior_plate_label_1_sternum",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "sternum",
     "choices": [
@@ -1226,7 +1226,7 @@
   {
     "id": "q_gray112_thorax_anterior_plate_label_2_rib",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "rib",
     "choices": [
@@ -1242,7 +1242,7 @@
   {
     "id": "q_gray112_thorax_anterior_plate_label_3_thoracic_vertebra",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "thoracic_vertebra",
     "choices": [
@@ -1258,7 +1258,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_1_pisiform",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "pisiform",
     "choices": [
@@ -1274,7 +1274,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_2_triquetral_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "triquetral_bone",
     "choices": [
@@ -1290,7 +1290,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_3_lunate_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "lunate_bone",
     "choices": [
@@ -1306,7 +1306,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_4_scaphoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "scaphoid_bone",
     "choices": [
@@ -1322,7 +1322,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_5_trapezium_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "trapezium_bone",
     "choices": [
@@ -1338,7 +1338,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_6_trapezoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "trapezoid_bone",
     "choices": [
@@ -1354,7 +1354,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_7_capitate_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「7」で示す構造はどれか。",
     "answerTermId": "capitate_bone",
     "choices": [
@@ -1370,7 +1370,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_8_hamate_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「8」で示す構造はどれか。",
     "answerTermId": "hamate_bone",
     "choices": [
@@ -1386,7 +1386,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_9_metacarpal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「9」で示す構造はどれか。",
     "answerTermId": "metacarpal_bone",
     "choices": [
@@ -1402,7 +1402,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_10_proximal_phalanx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「10」で示す構造はどれか。",
     "answerTermId": "proximal_phalanx",
     "choices": [
@@ -1418,7 +1418,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_11_middle_phalanx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「11」で示す構造はどれか。",
     "answerTermId": "middle_phalanx",
     "choices": [
@@ -1434,7 +1434,7 @@
   {
     "id": "q_gray219_hand_palmar_plate_label_12_distal_phalanx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「12」で示す構造はどれか。",
     "answerTermId": "distal_phalanx",
     "choices": [
@@ -1450,7 +1450,7 @@
   {
     "id": "q_gray213_lower_limb_plate_label_1_ulna",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "ulna",
     "choices": [
@@ -1466,7 +1466,7 @@
   {
     "id": "q_gray213_lower_limb_plate_label_2_radius",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "radius",
     "choices": [
@@ -1482,7 +1482,7 @@
   {
     "id": "q_gray204_thorax_posterior_plate_label_1_scapula",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "scapula",
     "choices": [
@@ -1498,7 +1498,7 @@
   {
     "id": "q_gray204_thorax_posterior_plate_label_2_clavicle",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "clavicle",
     "choices": [
@@ -1514,7 +1514,7 @@
   {
     "id": "q_gray204_thorax_posterior_plate_label_3_rib",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "rib",
     "choices": [
@@ -1530,7 +1530,7 @@
   {
     "id": "q_gray204_thorax_posterior_plate_label_4_thoracic_vertebra",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_trunk",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "thoracic_vertebra",
     "choices": [
@@ -1546,7 +1546,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_1_vomer",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "vomer",
     "choices": [
@@ -1562,7 +1562,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_2_maxilla",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "maxilla",
     "choices": [
@@ -1578,7 +1578,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_3_nasal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "nasal_bone",
     "choices": [
@@ -1594,7 +1594,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_4_ethmoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "ethmoid_bone",
     "choices": [
@@ -1610,7 +1610,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_5_sphenoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "sphenoid_bone",
     "choices": [
@@ -1626,7 +1626,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_6_frontal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "frontal_bone",
     "choices": [
@@ -1642,7 +1642,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_7_parietal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「7」で示す構造はどれか。",
     "answerTermId": "parietal_bone",
     "choices": [
@@ -1658,7 +1658,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_8_occipital_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「8」で示す構造はどれか。",
     "answerTermId": "occipital_bone",
     "choices": [
@@ -1674,7 +1674,7 @@
   {
     "id": "q_gray194_skull_lateral_plate_label_9_temporal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_head",
     "prompt": "図中の「9」で示す構造はどれか。",
     "answerTermId": "temporal_bone",
     "choices": [
@@ -1690,7 +1690,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_1_pisiform",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "pisiform",
     "choices": [
@@ -1706,7 +1706,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_2_triquetral_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "triquetral_bone",
     "choices": [
@@ -1722,7 +1722,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_3_lunate_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "lunate_bone",
     "choices": [
@@ -1738,7 +1738,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_4_scaphoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「4」で示す構造はどれか。",
     "answerTermId": "scaphoid_bone",
     "choices": [
@@ -1754,7 +1754,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_5_trapezium_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「5」で示す構造はどれか。",
     "answerTermId": "trapezium_bone",
     "choices": [
@@ -1770,7 +1770,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_6_trapezoid_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「6」で示す構造はどれか。",
     "answerTermId": "trapezoid_bone",
     "choices": [
@@ -1786,7 +1786,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_7_capitate_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「7」で示す構造はどれか。",
     "answerTermId": "capitate_bone",
     "choices": [
@@ -1802,7 +1802,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_8_hamate_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「8」で示す構造はどれか。",
     "answerTermId": "hamate_bone",
     "choices": [
@@ -1818,7 +1818,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_9_metacarpal_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「9」で示す構造はどれか。",
     "answerTermId": "metacarpal_bone",
     "choices": [
@@ -1834,7 +1834,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_10_proximal_phalanx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「10」で示す構造はどれか。",
     "answerTermId": "proximal_phalanx",
     "choices": [
@@ -1850,7 +1850,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_11_middle_phalanx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「11」で示す構造はどれか。",
     "answerTermId": "middle_phalanx",
     "choices": [
@@ -1866,7 +1866,7 @@
   {
     "id": "q_gray220_hand_dorsal_plate_label_12_distal_phalanx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_upper",
     "prompt": "図中の「12」で示す構造はどれか。",
     "answerTermId": "distal_phalanx",
     "choices": [
@@ -1882,7 +1882,7 @@
   {
     "id": "q_gray238_pelvis_plate_label_1_hip_bone",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_lower",
     "prompt": "図中の「1」で示す構造はどれか。",
     "answerTermId": "hip_bone",
     "choices": [
@@ -1898,7 +1898,7 @@
   {
     "id": "q_gray238_pelvis_plate_label_2_sacrum",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_lower",
     "prompt": "図中の「2」で示す構造はどれか。",
     "answerTermId": "sacrum",
     "choices": [
@@ -1914,7 +1914,7 @@
   {
     "id": "q_gray238_pelvis_plate_label_3_coccyx",
     "type": "image_number_mcq",
-    "testSet": "osteology_basic",
+    "testSet": "basic_lower",
     "prompt": "図中の「3」で示す構造はどれか。",
     "answerTermId": "coccyx",
     "choices": [
@@ -1926,5 +1926,325 @@
     "imageId": "gray238_pelvis_plate",
     "targetLabel": "3",
     "explanation": "番号3は尾骨を示しています。尾骨は脊柱の最下部に位置する小骨です。"
+  },
+  {
+    "id": "q_auto_gray241_pelvis_plate_label_1_ilium",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "ilium",
+    "choices": [
+      "ilium",
+      "pubis",
+      "ischium",
+      "sacrum"
+    ],
+    "imageId": "gray241_pelvis_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は腸骨を示しています。腸骨は寛骨の上部を構成する大きな骨で、腸骨稜などを形成する。"
+  },
+  {
+    "id": "q_auto_gray241_pelvis_plate_label_2_pubis",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "pubis",
+    "choices": [
+      "pubis",
+      "ischium",
+      "sacrum",
+      "coccyx"
+    ],
+    "imageId": "gray241_pelvis_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は恥骨を示しています。恥骨は寛骨の前下部を構成する骨で、左右の恥骨は恥骨結合で連結する。"
+  },
+  {
+    "id": "q_auto_gray241_pelvis_plate_label_3_ischium",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "ischium",
+    "choices": [
+      "ischium",
+      "sacrum",
+      "coccyx",
+      "ilium"
+    ],
+    "imageId": "gray241_pelvis_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は坐骨を示しています。坐骨は寛骨の後下部を構成する骨で、坐骨結節などを形成する。"
+  },
+  {
+    "id": "q_auto_gray241_pelvis_plate_label_4_sacrum",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "sacrum",
+    "choices": [
+      "sacrum",
+      "coccyx",
+      "ilium",
+      "pubis"
+    ],
+    "imageId": "gray241_pelvis_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は仙骨を示しています。仙骨は骨盤後壁を構成する骨で、複数の仙椎が癒合して形成される。"
+  },
+  {
+    "id": "q_auto_gray241_pelvis_plate_label_5_coccyx",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "coccyx",
+    "choices": [
+      "coccyx",
+      "ilium",
+      "pubis",
+      "ischium"
+    ],
+    "imageId": "gray241_pelvis_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は尾骨を示しています。尾骨は脊柱の最下部に位置する小骨である。"
+  },
+  {
+    "id": "q_auto_gray258_lower_limb_anterior_plate_label_1_tibia",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "tibia",
+    "choices": [
+      "tibia",
+      "fibula",
+      "femur",
+      "calcaneus"
+    ],
+    "imageId": "gray258_lower_limb_anterior_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は脛骨を示しています。脛骨は下腿内側の太い骨で、体重支持に大きく関わります。"
+  },
+  {
+    "id": "q_auto_gray258_lower_limb_anterior_plate_label_2_fibula",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "fibula",
+    "choices": [
+      "fibula",
+      "tibia",
+      "femur",
+      "calcaneus"
+    ],
+    "imageId": "gray258_lower_limb_anterior_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は腓骨を示しています。腓骨は下腿外側の細い骨で、足関節外果を形成します。"
+  },
+  {
+    "id": "q_auto_gray259_lower_limb_posterior_plate_label_1_tibia",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "tibia",
+    "choices": [
+      "tibia",
+      "fibula",
+      "femur",
+      "calcaneus"
+    ],
+    "imageId": "gray259_lower_limb_posterior_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は脛骨を示しています。脛骨は下腿内側の太い骨で、体重支持に大きく関わります。"
+  },
+  {
+    "id": "q_auto_gray259_lower_limb_posterior_plate_label_2_fibula",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "fibula",
+    "choices": [
+      "fibula",
+      "tibia",
+      "femur",
+      "calcaneus"
+    ],
+    "imageId": "gray259_lower_limb_posterior_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は腓骨を示しています。腓骨は下腿外側の細い骨で、足関節外果を形成します。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_1_talus",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "talus",
+    "choices": [
+      "talus",
+      "calcaneus",
+      "navicular_bone",
+      "cuboid_bone"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は距骨を示しています。距骨は下腿骨と踵骨・舟状骨の間に位置し、足関節を構成する足根骨です。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_2_calcaneus",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "calcaneus",
+    "choices": [
+      "calcaneus",
+      "navicular_bone",
+      "cuboid_bone",
+      "medial_cuneiform_bone"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は踵骨を示しています。踵骨は足根骨の一つで、かかとの骨格を作ります。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_3_navicular_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "navicular_bone",
+    "choices": [
+      "navicular_bone",
+      "cuboid_bone",
+      "medial_cuneiform_bone",
+      "intermediate_cuneiform_bone"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は舟状骨を示しています。舟状骨は距骨と3個の楔状骨の間に位置する足根骨です。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_4_cuboid_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "cuboid_bone",
+    "choices": [
+      "cuboid_bone",
+      "medial_cuneiform_bone",
+      "intermediate_cuneiform_bone",
+      "lateral_cuneiform_bone"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は立方骨を示しています。立方骨は足根骨遠位列の外側にあり、踵骨と第4・第5中足骨の間に位置します。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_5_medial_cuneiform_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "medial_cuneiform_bone",
+    "choices": [
+      "medial_cuneiform_bone",
+      "intermediate_cuneiform_bone",
+      "lateral_cuneiform_bone",
+      "proximal_phalanx_of_foot"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は内側楔状骨を示しています。内側楔状骨は足根骨遠位列の最内側にあり、舟状骨と第1中足骨の間に位置します。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_6_intermediate_cuneiform_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "intermediate_cuneiform_bone",
+    "choices": [
+      "intermediate_cuneiform_bone",
+      "lateral_cuneiform_bone",
+      "proximal_phalanx_of_foot",
+      "middle_phalanx_of_foot"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は中間楔状骨を示しています。中間楔状骨は3個の楔状骨の中央にあり、舟状骨と第2中足骨の間に位置します。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_7_lateral_cuneiform_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "lateral_cuneiform_bone",
+    "choices": [
+      "lateral_cuneiform_bone",
+      "proximal_phalanx_of_foot",
+      "middle_phalanx_of_foot",
+      "distal_phalanx_of_foot"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は外側楔状骨を示しています。外側楔状骨は3個の楔状骨の最外側にあり、舟状骨と第3中足骨の間に位置します。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_8_proximal_phalanx_of_foot",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "proximal_phalanx_of_foot",
+    "choices": [
+      "proximal_phalanx_of_foot",
+      "middle_phalanx_of_foot",
+      "distal_phalanx_of_foot",
+      "metatarsal_bone"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は基節骨を示しています。足の基節骨は中足骨に続く足趾の最も近位の趾骨です。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_9_middle_phalanx_of_foot",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "middle_phalanx_of_foot",
+    "choices": [
+      "middle_phalanx_of_foot",
+      "distal_phalanx_of_foot",
+      "metatarsal_bone",
+      "talus"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は中節骨を示しています。足の中節骨は第2趾から第5趾で基節骨と末節骨の間に位置します。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_10_distal_phalanx_of_foot",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "distal_phalanx_of_foot",
+    "choices": [
+      "distal_phalanx_of_foot",
+      "metatarsal_bone",
+      "talus",
+      "calcaneus"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は末節骨を示しています。足の末節骨は足趾の先端を構成する最も遠位の趾骨です。"
+  },
+  {
+    "id": "q_auto_gray268_foot_dorsal_plate_label_11_metatarsal_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "metatarsal_bone",
+    "choices": [
+      "metatarsal_bone",
+      "talus",
+      "calcaneus",
+      "navicular_bone"
+    ],
+    "imageId": "gray268_foot_dorsal_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は中足骨を示しています。中足骨は足根骨と趾骨の間に並ぶ5本の骨です。"
   }
 ]

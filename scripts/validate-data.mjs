@@ -262,7 +262,9 @@ const questionIds = collectIds(questions, 'Question');
 const imageIds = collectIds(images, 'Image');
 const testSetIds = collectIds(testSets, 'TestSet');
 const imageById = new Map(images.filter((image) => image?.id).map((image) => [image.id, image]));
+const termById = new Map(terms.filter((term) => term?.id).map((term) => [term.id, term]));
 const questionCountsByTestSet = new Map();
+const numberedQuestionsByLabel = new Map();
 
 validateCsvImageLabelTermReferences(csvTerms, csvImageLabels);
 
@@ -315,6 +317,12 @@ for (const question of questions) {
   for (const choice of choices) {
     if (!termIds.has(choice)) {
       addError(`${context}: choice "${choice}" does not exist in terms.json.`);
+      continue;
+    }
+
+    const choiceTerm = termById.get(choice);
+    if (!choiceTerm?.japanese?.trim() || !choiceTerm?.english?.trim() || !choiceTerm?.latin?.trim()) {
+      addError(`${context}: choice term "${choice}" needs non-empty Japanese, English, and Latin names.`);
     }
   }
 
@@ -343,6 +351,14 @@ for (const question of questions) {
       if (typeof question.targetLabel !== 'string' || question.targetLabel.trim() === '') {
         addError(`${context}: image_number_mcq requires targetLabel.`);
       } else {
+        const labelKey = `${question.imageId}:${question.targetLabel}`;
+        const matchingQuestions = numberedQuestionsByLabel.get(labelKey) ?? [];
+        matchingQuestions.push(question.id);
+        numberedQuestionsByLabel.set(labelKey, matchingQuestions);
+        if (matchingQuestions.length > 1) {
+          addError(`${context}: image label "${labelKey}" is already used by ${matchingQuestions.slice(0, -1).join(', ')}.`);
+        }
+
         const target = image.labels?.find((label) => label.label === question.targetLabel);
         if (!target) {
           addError(`${context}: targetLabel "${question.targetLabel}" does not exist on image "${image.id}".`);
@@ -428,6 +444,17 @@ for (const image of images) {
       addError(
         `${labelContext}: termId "${label.termId}" does not exist in terms.json. If this came from image_labels.csv, use an existing termId or an exact Japanese/English/Latin term name resolvable from terms.csv.`,
       );
+    } else {
+      const term = termById.get(label.termId);
+      if (!term?.japanese?.trim() || !term?.english?.trim() || !term?.latin?.trim()) {
+        addError(`${labelContext}: the referenced term needs non-empty Japanese, English, and Latin names.`);
+      }
+    }
+
+    const labelKey = `${image.id}:${label.label}`;
+    const matchingQuestions = numberedQuestionsByLabel.get(labelKey) ?? [];
+    if (matchingQuestions.length === 0) {
+      addError(`${labelContext}: no image_number_mcq was generated for this label.`);
     }
 
     if (typeof label.x !== 'number' || label.x < 0 || label.x > 1) {

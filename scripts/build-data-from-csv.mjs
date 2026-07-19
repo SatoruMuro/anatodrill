@@ -196,7 +196,7 @@ function buildTerms() {
   }));
 }
 
-function buildQuestions() {
+function buildAuthoredQuestions() {
   return readCsv('questions.csv').map((row) => {
     const question = {
       id: row.id,
@@ -227,6 +227,130 @@ function buildQuestions() {
 
     return question;
   });
+}
+
+function termHasCompleteNames(term) {
+  return Boolean(term?.japanese?.trim() && term?.english?.trim() && term?.latin?.trim());
+}
+
+function testSetForTerm(term) {
+  const category = String(term?.category ?? '').toLowerCase();
+  const region = String(term?.region ?? '').toLowerCase();
+
+  if (category.includes('muscle')) {
+    return 'basic_muscle';
+  }
+  if (region.includes('head') || region.includes('neck')) {
+    return 'basic_head';
+  }
+  if (region.includes('upper limb')) {
+    return 'basic_upper';
+  }
+  if (region.includes('lower limb') || region.includes('knee') || region.includes('pelvis')) {
+    return 'basic_lower';
+  }
+  if (region.includes('trunk') || region.includes('thorax') || region.includes('spine') || region.includes('back')) {
+    return 'basic_trunk';
+  }
+
+  const configuredTestSets = Array.isArray(term?.testSet) ? term.testSet : [term?.testSet];
+  return configuredTestSets.find((testSet) => testSet && testSet !== 'pdf_reference_terms') ?? 'osteology_basic';
+}
+
+function uniqueValues(values) {
+  return [...new Set(values.filter(Boolean))];
+}
+
+function isReferenceOnlyTerm(term) {
+  const configuredTestSets = Array.isArray(term?.testSet) ? term.testSet : [term?.testSet];
+  return configuredTestSets.length > 0 && configuredTestSets.every((testSet) => testSet === 'pdf_reference_terms');
+}
+
+function generatedChoiceIds(answerTermId, image, terms) {
+  const imageTermIds = uniqueValues(image.labels.map((label) => label.termId));
+  const answerIndex = imageTermIds.indexOf(answerTermId);
+  const rotatedImageTerms =
+    answerIndex >= 0
+      ? [...imageTermIds.slice(answerIndex + 1), ...imageTermIds.slice(0, answerIndex)]
+      : imageTermIds;
+  const answerTerm = terms.find((term) => term.id === answerTermId);
+  const eligibleTerms = terms.filter(
+    (term) => term.id !== answerTermId && termHasCompleteNames(term) && !isReferenceOnlyTerm(term),
+  );
+  const sameRegionAndCategory = eligibleTerms
+    .filter((term) => term.region === answerTerm?.region && term.category === answerTerm?.category)
+    .map((term) => term.id);
+  const sameCategory = eligibleTerms.filter((term) => term.category === answerTerm?.category).map((term) => term.id);
+  const candidates = uniqueValues([
+    ...rotatedImageTerms,
+    ...sameRegionAndCategory,
+    ...sameCategory,
+    ...eligibleTerms.map((term) => term.id),
+  ]).filter((termId) => termId !== answerTermId);
+
+  return [answerTermId, ...candidates.slice(0, 3)];
+}
+
+function generatedQuestionId(imageId, label, termId) {
+  const safePart = (value) => String(value).replace(/[^a-zA-Z0-9_-]+/g, '_');
+  return `q_auto_${safePart(imageId)}_label_${safePart(label)}_${safePart(termId)}`;
+}
+
+function buildQuestions(terms, images) {
+  const termsById = new Map(terms.map((term) => [term.id, term]));
+  const authoredQuestions = buildAuthoredQuestions().map((question) => {
+    if (question.type !== 'image_number_mcq') {
+      return question;
+    }
+
+    const answerTerm = termsById.get(question.answerTermId);
+    return answerTerm ? { ...question, testSet: testSetForTerm(answerTerm) } : question;
+  });
+  const coveredLabels = new Set(
+    authoredQuestions
+      .filter((question) => question.type === 'image_number_mcq' && question.imageId && question.targetLabel)
+      .map((question) => `${question.imageId}:${question.targetLabel}`),
+  );
+  const generatedQuestions = [];
+
+  for (const image of images) {
+    for (const label of image.labels) {
+      const labelKey = `${image.id}:${label.label}`;
+      if (coveredLabels.has(labelKey)) {
+        continue;
+      }
+
+      const answerTerm = termsById.get(label.termId);
+      if (!answerTerm) {
+        throw new Error(`Image label ${labelKey}: termId "${label.termId}" does not exist.`);
+      }
+      if (!termHasCompleteNames(answerTerm)) {
+        throw new Error(
+          `Image label ${labelKey}: term "${answerTerm.id}" needs Japanese, English, and Latin before a question can be generated.`,
+        );
+      }
+
+      const choices = generatedChoiceIds(answerTerm.id, image, terms);
+      if (choices.length < 4) {
+        throw new Error(`Image label ${labelKey}: could not generate four answer choices.`);
+      }
+
+      generatedQuestions.push({
+        id: generatedQuestionId(image.id, label.label, answerTerm.id),
+        type: 'image_number_mcq',
+        testSet: testSetForTerm(answerTerm),
+        prompt: `図中の「${label.label}」で示す構造はどれか。`,
+        answerTermId: answerTerm.id,
+        choices,
+        imageId: image.id,
+        targetLabel: label.label,
+        explanation: `番号${label.label}は${answerTerm.japanese}を示しています。${answerTerm.explanation}`,
+      });
+      coveredLabels.add(labelKey);
+    }
+  }
+
+  return [...authoredQuestions, ...generatedQuestions];
 }
 
 function buildImages(terms) {
@@ -303,8 +427,8 @@ function writeJson(fileName, value) {
 
 try {
   const terms = buildTerms();
-  const questions = buildQuestions();
   const images = buildImages(terms);
+  const questions = buildQuestions(terms, images);
   const testSets = buildTestSets();
 
   writeJson('terms.json', terms);
