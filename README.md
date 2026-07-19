@@ -44,7 +44,7 @@ Validate local data before building or deploying:
 npm run validate:data
 ```
 
-The validator checks term references, three-language completeness for quiz terms, choice references, test set IDs, image IDs, image files under `public/`, image-suggestion data, numbered image target labels, one-to-one coverage between image labels and numbered questions, duplicate label use, and whether each active test set has at least one question.
+The validator checks term references, three-language completeness for quiz terms, choice references, known whole-part or generic-specific choice conflicts, test set IDs, image IDs, image files under `public/`, image-suggestion data, numbered image target labels, one-to-one coverage between image labels and numbered questions, duplicate label use, and whether each active test set has at least one question.
 
 ## CSV Content Pipeline
 

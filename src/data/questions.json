@@ -288,8 +288,8 @@
     "choices": [
       "atlas",
       "axis",
-      "vertebra",
-      "rib"
+      "thoracic_vertebra",
+      "lumbar_vertebra"
     ],
     "imageId": "gray86_atlas_superior",
     "explanation": "環椎は第1頸椎で、頭蓋骨を支える輪状の椎骨です。"
@@ -303,8 +303,8 @@
     "choices": [
       "axis",
       "atlas",
-      "vertebra",
-      "sternum"
+      "thoracic_vertebra",
+      "lumbar_vertebra"
     ],
     "imageId": "gray87_axis_superior",
     "explanation": "軸椎は第2頸椎で、歯突起を持つ頸椎です。"
@@ -317,9 +317,9 @@
     "answerTermId": "lumbar_vertebra",
     "choices": [
       "lumbar_vertebra",
-      "vertebra",
-      "atlas",
-      "axis"
+      "thoracic_vertebra",
+      "cervical_vertebra",
+      "sacrum"
     ],
     "imageId": "gray94_vertebra",
     "explanation": "この図版は腰椎を示しています。腰椎は腰部の脊柱を構成する大きな椎骨です。"
@@ -332,9 +332,9 @@
     "answerTermId": "lumbar_vertebra",
     "choices": [
       "lumbar_vertebra",
-      "vertebra",
-      "atlas",
-      "axis"
+      "thoracic_vertebra",
+      "cervical_vertebra",
+      "sacrum"
     ],
     "imageId": "gray83_vertebra_section",
     "explanation": "この図版は腰椎を示しています。腰椎は体重支持に関わる腰部の椎骨です。"
@@ -577,7 +577,7 @@
       "sacrum",
       "coccyx",
       "lumbar_vertebra",
-      "vertebra"
+      "hip_bone"
     ],
     "imageId": "gray111_vertebral_column_plate",
     "targetLabel": "4",
@@ -593,7 +593,7 @@
       "coccyx",
       "sacrum",
       "lumbar_vertebra",
-      "vertebra"
+      "hip_bone"
     ],
     "imageId": "gray111_vertebral_column_plate",
     "targetLabel": "5",
@@ -1887,9 +1887,9 @@
     "answerTermId": "hip_bone",
     "choices": [
       "hip_bone",
-      "ilium",
-      "ischium",
-      "pubis"
+      "sacrum",
+      "coccyx",
+      "femur"
     ],
     "imageId": "gray238_pelvis_plate",
     "targetLabel": "1",
@@ -1905,7 +1905,7 @@
       "sacrum",
       "coccyx",
       "hip_bone",
-      "ilium"
+      "femur"
     ],
     "imageId": "gray238_pelvis_plate",
     "targetLabel": "2",

@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { dirname, join, relative, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { findChoiceConflicts } from './choice-conflicts.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const publicRoot = join(root, 'public');
@@ -376,6 +377,12 @@ for (const question of questions) {
 
   if (uniqueChoices.size !== choices.length) {
     addError(`${context}: choices contain duplicate term IDs.`);
+  }
+
+  for (const [firstTermId, secondTermId] of findChoiceConflicts(choices)) {
+    addError(
+      `${context}: choices "${firstTermId}" and "${secondTermId}" have a whole-part or generic-specific relationship and must not appear together.`,
+    );
   }
 
   const minimumChoiceCount = Math.min(4, termIds.size);

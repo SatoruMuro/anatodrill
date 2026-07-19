@@ -1,6 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { choiceTermsConflict } from './choice-conflicts.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const csvRoot = join(root, 'content', 'csv');
@@ -288,7 +289,18 @@ function generatedChoiceIds(answerTermId, image, terms) {
     ...eligibleTerms.map((term) => term.id),
   ]).filter((termId) => termId !== answerTermId);
 
-  return [answerTermId, ...candidates.slice(0, 3)];
+  const choices = [answerTermId];
+  for (const candidate of candidates) {
+    if (choices.some((choice) => choiceTermsConflict(choice, candidate))) {
+      continue;
+    }
+    choices.push(candidate);
+    if (choices.length === 4) {
+      break;
+    }
+  }
+
+  return choices;
 }
 
 function generatedQuestionId(imageId, label, termId) {
