@@ -1,0 +1,57 @@
+imageId,suggestions
+gray269_foot_plantar_plate,踵骨::calcaneus|距骨::talus|舟状骨::navicular bone|立方骨::cuboid bone|内側楔状骨::medial cuneiform bone|中間楔状骨::intermediate cuneiform bone|外側楔状骨::lateral cuneiform bone|中足骨::metatarsal bones|趾骨::phalanges of foot
+gray290_foot_medial_plate,距骨::talus|踵骨::calcaneus|舟状骨::navicular bone|内側楔状骨::medial cuneiform bone|第1中足骨::first metatarsal bone|距骨下関節::subtalar joint|載距突起::sustentaculum tali
+gray291_foot_lateral_plate,距骨::talus|踵骨::calcaneus|舟状骨::navicular bone|立方骨::cuboid bone|第5中足骨::fifth metatarsal bone|腓骨::fibula|距骨下関節::subtalar joint
+brachial_a_plate,上腕動脈::brachial artery|上腕深動脈::deep brachial artery|上尺側側副動脈::superior ulnar collateral artery|下尺側側副動脈::inferior ulnar collateral artery|橈骨動脈::radial artery|尺骨動脈::ulnar artery|橈側反回動脈::radial recurrent artery|尺側反回動脈::ulnar recurrent artery
+grays_anatomy_plate_517_brain_plate,上前頭回::superior frontal gyrus|中前頭回::middle frontal gyrus|下前頭回::inferior frontal gyrus|中心前回::precentral gyrus|中心後回::postcentral gyrus|上頭頂小葉::superior parietal lobule|下頭頂小葉::inferior parietal lobule|上側頭回::superior temporal gyrus|中側頭回::middle temporal gyrus|下側頭回::inferior temporal gyrus
+gray490blanco_plate,上行大動脈::ascending aorta|大動脈弓::aortic arch|肺動脈幹::pulmonary trunk|右肺動脈::right pulmonary artery|左肺動脈::left pulmonary artery|上大静脈::superior vena cava|心臓::heart|肺::lung
+gray491_az_plate,右心房::right atrium|上大静脈::superior vena cava|下大静脈::inferior vena cava|冠状静脈洞::coronary sinus|卵円窩::fossa ovalis|右房室口::right atrioventricular orifice|三尖弁::tricuspid valve
+gray492_az_plate,右冠状動脈::right coronary artery|左冠状動脈::left coronary artery|前室間枝::anterior interventricular branch|回旋枝::circumflex branch|右縁枝::right marginal branch|後室間枝::posterior interventricular branch|冠状溝::coronary sulcus|心尖::apex of heart
+gray505_az_plate,上行大動脈::ascending aorta|大動脈弓::aortic arch|腕頭動脈::brachiocephalic trunk|総頸動脈::common carotid artery|鎖骨下動脈::subclavian artery|上大静脈::superior vena cava|肺動脈::pulmonary artery|肺静脈::pulmonary vein
+gray507_plate,総頸動脈::common carotid artery|外頸動脈::external carotid artery|内頸動脈::internal carotid artery|鎖骨下動脈::subclavian artery|腕頭動脈::brachiocephalic trunk|椎骨動脈::vertebral artery|甲状腺::thyroid gland|喉頭::larynx
+gray508_plate,外頸動脈::external carotid artery|上甲状腺動脈::superior thyroid artery|舌動脈::lingual artery|顔面動脈::facial artery|後頭動脈::occipital artery|後耳介動脈::posterior auricular artery|顎動脈::maxillary artery|浅側頭動脈::superficial temporal artery
+gray510_plate,顎動脈::maxillary artery|中硬膜動脈::middle meningeal artery|下歯槽動脈::inferior alveolar artery|眼窩下動脈::infraorbital artery|蝶口蓋動脈::sphenopalatine artery|深側頭動脈::deep temporal artery|頬動脈::buccal artery
+gray512_regio_submand_plate,下顎骨::mandible|顎下腺::submandibular gland|顎二腹筋::digastric muscle|顎舌骨筋::mylohyoid muscle|舌骨舌筋::hyoglossus muscle|顔面動脈::facial artery|顎下三角::submandibular triangle
+gray513_plate,総頸動脈::common carotid artery|内頸動脈::internal carotid artery|外頸動脈::external carotid artery|頸動脈洞::carotid sinus|椎骨動脈::vertebral artery|頸椎::cervical vertebra|咽頭::pharynx
+gray514_updated_plate,眼動脈::ophthalmic artery|網膜中心動脈::central retinal artery|涙腺動脈::lacrimal artery|眼窩上動脈::supraorbital artery|滑車上動脈::supratrochlear artery|鼻背動脈::dorsal nasal artery|前篩骨動脈::anterior ethmoidal artery|後篩骨動脈::posterior ethmoidal artery
+gray514_plate,眼動脈::ophthalmic artery|網膜中心動脈::central retinal artery|涙腺動脈::lacrimal artery|眼窩上動脈::supraorbital artery|滑車上動脈::supratrochlear artery|鼻背動脈::dorsal nasal artery|前篩骨動脈::anterior ethmoidal artery|後篩骨動脈::posterior ethmoidal artery
+gray516_plate,内頸動脈::internal carotid artery|椎骨動脈::vertebral artery|脳底動脈::basilar artery|前大脳動脈::anterior cerebral artery|中大脳動脈::middle cerebral artery|後大脳動脈::posterior cerebral artery|前交通動脈::anterior communicating artery|後交通動脈::posterior communicating artery|上小脳動脈::superior cerebellar artery
+gray518_plate,帯状回::cingulate gyrus|中心傍小葉::paracentral lobule|楔前部::precuneus|楔部::cuneus|舌状回::lingual gyrus|海馬傍回::parahippocampal gyrus|脳梁::corpus callosum
+gray520_plate,鎖骨下動脈::subclavian artery|総頸動脈::common carotid artery|椎骨動脈::vertebral artery|甲状頸動脈幹::thyrocervical trunk|下甲状腺動脈::inferior thyroid artery|頸横動脈::transverse cervical artery|肩甲上動脈::suprascapular artery|腕神経叢::brachial plexus
+gray521_plate,肩甲上動脈::suprascapular artery|肩甲回旋動脈::circumflex scapular artery|肩甲背動脈::dorsal scapular artery|肩甲下動脈::subscapular artery|胸背動脈::thoracodorsal artery|上腕回旋動脈::circumflex humeral artery
+gray522_plate,内胸動脈::internal thoracic artery|前肋間動脈::anterior intercostal artery|筋横隔動脈::musculophrenic artery|上腹壁動脈::superior epigastric artery|胸骨::sternum|肋骨::rib
+gray523_plate,腋窩動脈::axillary artery|鎖骨下動脈::subclavian artery|上腕動脈::brachial artery|胸肩峰動脈::thoracoacromial artery|外側胸動脈::lateral thoracic artery|肩甲下動脈::subscapular artery|前上腕回旋動脈::anterior circumflex humeral artery|後上腕回旋動脈::posterior circumflex humeral artery
+gray524_es_plate,肩甲上動脈::suprascapular artery|肩甲回旋動脈::circumflex scapular artery|肩甲背動脈::dorsal scapular artery|肩甲下動脈::subscapular artery|胸背動脈::thoracodorsal artery|上腕回旋動脈::circumflex humeral artery
+gray525_plate,上腕動脈::brachial artery|上腕深動脈::deep brachial artery|上尺側側副動脈::superior ulnar collateral artery|下尺側側副動脈::inferior ulnar collateral artery|橈骨動脈::radial artery|尺骨動脈::ulnar artery
+gray528_plate,橈骨動脈::radial artery|尺骨動脈::ulnar artery|総骨間動脈::common interosseous artery|前骨間動脈::anterior interosseous artery|後骨間動脈::posterior interosseous artery|橈骨反回動脈::radial recurrent artery|尺骨反回動脈::ulnar recurrent artery
+gray530_az_plate,胸大動脈::thoracic aorta|後肋間動脈::posterior intercostal artery|気管支動脈::bronchial artery|食道動脈::esophageal artery|心膜枝::pericardial branch|縦隔枝::mediastinal branch|横隔膜::diaphragm
+gray531_az_plate,腹大動脈::abdominal aorta|腹腔動脈::celiac trunk|上腸間膜動脈::superior mesenteric artery|腎動脈::renal artery|性腺動脈::gonadal artery|下腸間膜動脈::inferior mesenteric artery|総腸骨動脈::common iliac artery
+gray532_plate,腹腔動脈::celiac trunk|左胃動脈::left gastric artery|脾動脈::splenic artery|総肝動脈::common hepatic artery|固有肝動脈::proper hepatic artery|胃十二指腸動脈::gastroduodenal artery|胃大網動脈::gastro-omental artery|胆嚢動脈::cystic artery
+gray533_plate,腹腔動脈::celiac trunk|脾動脈::splenic artery|総肝動脈::common hepatic artery|左胃動脈::left gastric artery|上腸間膜動脈::superior mesenteric artery|膵十二指腸動脈::pancreaticoduodenal artery|胃十二指腸動脈::gastroduodenal artery
+gray537_plate,下腸間膜動脈::inferior mesenteric artery|左結腸動脈::left colic artery|S状結腸動脈::sigmoid arteries|上直腸動脈::superior rectal artery|辺縁動脈::marginal artery|中結腸動脈::middle colic artery
+gray539traducido_plate,内腸骨動脈::internal iliac artery|上殿動脈::superior gluteal artery|下殿動脈::inferior gluteal artery|内陰部動脈::internal pudendal artery|閉鎖動脈::obturator artery|臍動脈::umbilical artery|下膀胱動脈::inferior vesical artery|中直腸動脈::middle rectal artery
+gray540_plate,子宮動脈::uterine artery|卵巣動脈::ovarian artery|腟動脈::vaginal artery|内腸骨動脈::internal iliac artery|卵管枝::tubal branch|卵巣枝::ovarian branch|子宮底枝::fundal branch
+gray542_plate,内陰部動脈::internal pudendal artery|下直腸動脈::inferior rectal artery|会陰動脈::perineal artery|後陰嚢動脈::posterior scrotal artery|尿道球動脈::artery of bulb|陰茎深動脈::deep artery of penis|陰茎背動脈::dorsal artery of penis
+gray544_plate,膝窩動脈::popliteal artery|上内側膝動脈::superior medial genicular artery|上外側膝動脈::superior lateral genicular artery|下内側膝動脈::inferior medial genicular artery|下外側膝動脈::inferior lateral genicular artery|中膝動脈::middle genicular artery|腓腹動脈::sural artery
+gray545_plate,上殿動脈::superior gluteal artery|下殿動脈::inferior gluteal artery|内陰部動脈::internal pudendal artery|坐骨神経::sciatic nerve|梨状筋::piriformis muscle|大坐骨孔::greater sciatic foramen
+gray547_plate,外腸骨動脈::external iliac artery|大腿動脈::femoral artery|大腿深動脈::deep femoral artery|浅腹壁動脈::superficial epigastric artery|浅腸骨回旋動脈::superficial circumflex iliac artery|外陰部動脈::external pudendal artery|大伏在静脈::great saphenous vein
+gray548_es_plate,外腸骨動脈::external iliac artery|大腿動脈::femoral artery|大腿深動脈::deep femoral artery|浅腹壁動脈::superficial epigastric artery|浅腸骨回旋動脈::superficial circumflex iliac artery|外陰部動脈::external pudendal artery|大伏在静脈::great saphenous vein
+gray549_plate,外腸骨動脈::external iliac artery|大腿動脈::femoral artery|大腿深動脈::deep femoral artery|浅腹壁動脈::superficial epigastric artery|浅腸骨回旋動脈::superficial circumflex iliac artery|外陰部動脈::external pudendal artery|大伏在静脈::great saphenous vein
+gray550_plate,膝窩動脈::popliteal artery|上内側膝動脈::superior medial genicular artery|上外側膝動脈::superior lateral genicular artery|下内側膝動脈::inferior medial genicular artery|下外側膝動脈::inferior lateral genicular artery|中膝動脈::middle genicular artery|腓腹動脈::sural artery
+gray551_plate,後脛骨動脈::posterior tibial artery|腓骨動脈::fibular artery|内側足底動脈::medial plantar artery|外側足底動脈::lateral plantar artery|脛骨神経::tibial nerve|踵骨枝::calcaneal branch
+gray553_plate,前脛骨動脈::anterior tibial artery|足背動脈::dorsalis pedis artery|内側足根動脈::medial tarsal artery|外側足根動脈::lateral tarsal artery|弓状動脈::arcuate artery|深足底枝::deep plantar branch
+gray555_plate,内側足底動脈::medial plantar artery|外側足底動脈::lateral plantar artery|足底動脈弓::plantar arterial arch|深足底枝::deep plantar branch|足底中足動脈::plantar metatarsal artery|固有底側趾動脈::proper plantar digital artery
+gray557_plate,顔面静脈::facial vein|下顎後静脈::retromandibular vein|外頸静脈::external jugular vein|内頸静脈::internal jugular vein|浅側頭静脈::superficial temporal vein|顎静脈::maxillary vein|舌静脈::lingual vein
+gray558_plate,内頸静脈::internal jugular vein|外頸静脈::external jugular vein|前頸静脈::anterior jugular vein|鎖骨下静脈::subclavian vein|椎骨静脈::vertebral vein|総顔面静脈::common facial vein
+gray560_plate,上甲状腺静脈::superior thyroid vein|中甲状腺静脈::middle thyroid vein|下甲状腺静脈::inferior thyroid vein|内頸静脈::internal jugular vein|腕頭静脈::brachiocephalic vein|上大静脈::superior vena cava|甲状腺::thyroid gland
+gray566_plate,上矢状静脈洞::superior sagittal sinus|直静脈洞::straight sinus|横静脈洞::transverse sinus|S状静脈洞::sigmoid sinus|海綿静脈洞::cavernous sinus|上錐体静脈洞::superior petrosal sinus|下錐体静脈洞::inferior petrosal sinus|後頭静脈洞::occipital sinus
+gray574_plate,橈側皮静脈::cephalic vein|尺側皮静脈::basilic vein|肘正中皮静脈::median cubital vein|上腕静脈::brachial vein|腋窩静脈::axillary vein|鎖骨下静脈::subclavian vein
+gray576_plate,腋窩静脈::axillary vein|上腕静脈::brachial vein|橈側皮静脈::cephalic vein|尺側皮静脈::basilic vein|外側胸静脈::lateral thoracic vein|肩甲下静脈::subscapular vein
+gray577_plate,下大静脈::inferior vena cava|総腸骨静脈::common iliac vein|腎静脈::renal vein|肝静脈::hepatic vein|性腺静脈::gonadal vein|腰静脈::lumbar vein
+gray581_plate,大伏在静脈::great saphenous vein|小伏在静脈::small saphenous vein|足背静脈弓::dorsal venous arch|大腿静脈::femoral vein|膝窩静脈::popliteal vein|前脛骨静脈::anterior tibial vein|後脛骨静脈::posterior tibial vein
+gray582_plate,大伏在静脈::great saphenous vein|小伏在静脈::small saphenous vein|足背静脈弓::dorsal venous arch|大腿静脈::femoral vein|膝窩静脈::popliteal vein|前脛骨静脈::anterior tibial vein|後脛骨静脈::posterior tibial vein
+gray585_plate,内腸骨静脈::internal iliac vein|外腸骨静脈::external iliac vein|総腸骨静脈::common iliac vein|前立腺静脈叢::prostatic venous plexus|膀胱静脈叢::vesical venous plexus|内陰部静脈::internal pudendal vein|上殿静脈::superior gluteal vein|下殿静脈::inferior gluteal vein
+gray589_az_plate,臍動脈::umbilical arteries|臍静脈::umbilical vein|絨毛膜血管::chorionic vessels|絨毛間腔::intervillous space|胎盤::placenta|臍帯::umbilical cord
+gray591_plate,門脈::portal vein|脾静脈::splenic vein|上腸間膜静脈::superior mesenteric vein|下腸間膜静脈::inferior mesenteric vein|胃静脈::gastric vein|肝臓::liver|膵臓::pancreas|脾臓::spleen
+gray599_cropped4_plate,奇静脈::azygos vein|半奇静脈::hemiazygos vein|後肋間静脈::posterior intercostal vein|上行腰静脈::ascending lumbar vein|椎骨静脈叢::vertebral venous plexus|下大静脈::inferior vena cava
+image534_plate,下腸間膜動脈::inferior mesenteric artery|左結腸動脈::left colic artery|S状結腸動脈::sigmoid arteries|上直腸動脈::superior rectal artery|辺縁動脈::marginal artery|中結腸動脈::middle colic artery

@@ -37,6 +37,12 @@ export interface ImagePlateLabel {
   note?: string;
 }
 
+export interface ImageStructureSuggestion {
+  japanese: string;
+  english: string;
+  termId?: string;
+}
+
 export interface AnatomyImage {
   id: string;
   file: string;
@@ -50,6 +56,7 @@ export interface AnatomyImage {
   modified: boolean;
   modificationDescription: string;
   labels: ImagePlateLabel[];
+  suggestions: ImageStructureSuggestion[];
 }
 
 export interface Question {

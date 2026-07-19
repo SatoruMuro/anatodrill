@@ -44,7 +44,7 @@ Validate local data before building or deploying:
 npm run validate:data
 ```
 
-The validator checks term references, three-language completeness for quiz terms, choice references, test set IDs, image IDs, image files under `public/`, numbered image target labels, one-to-one coverage between image labels and numbered questions, duplicate label use, and whether each active test set has at least one question.
+The validator checks term references, three-language completeness for quiz terms, choice references, test set IDs, image IDs, image files under `public/`, image-suggestion data, numbered image target labels, one-to-one coverage between image labels and numbered questions, duplicate label use, and whether each active test set has at least one question.
 
 ## CSV Content Pipeline
 
@@ -54,6 +54,7 @@ Source content can be edited as UTF-8 CSV files under `content/csv/`:
 - `content/csv/questions.csv`
 - `content/csv/images.csv`
 - `content/csv/image_labels.csv`
+- `content/csv/image_suggestions.csv`
 - `content/csv/test_sets.csv`
 
 Generate runtime JSON data from CSV:
@@ -116,7 +117,7 @@ Editor-only tools can be opened online with the hidden query-string URL:
 https://SatoruMuro.github.io/anatodrill/?dev=1
 ```
 
-The editor page is protected by a client-side password gate. This is a lightweight static-site guard for trusted editors, not server-side authentication. The app still has no backend, login system, or external API dependency.
+The editor page has no password gate. Anyone who knows the hidden `?dev=1` URL can open it, so do not place private source material or secrets in the deployed app. The app still has no backend, login system, or external API dependency.
 
 The deployment workflow runs:
 

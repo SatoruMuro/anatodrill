@@ -179,11 +179,13 @@ After deployment, trusted editors can also open:
 https://SatoruMuro.github.io/anatodrill/?dev=1
 ```
 
-The online editor URL is intentionally hidden from normal navigation and requires the editor password before the developer navigation appears. This is client-side protection for a static GitHub Pages app, not server-side authentication.
+The online editor URL is intentionally hidden from normal navigation, but it has no password gate. Anyone who knows the `?dev=1` URL can open it, so do not deploy private source material or secrets with the app.
 
 Then click `ラベル作成`.
 
 This developer-only page is hidden unless `?dev=1` is present. It lists numbered-plate targets rather than isolated single-structure images, lets you click the image to place normalized `x` / `y` markers, search terms by ID/Japanese/English/Latin, edit labels, and export JSON or CSV rows.
+
+The editor also shows optional structure suggestions derived in advance from wording visible in each plate, its source-language labels, and the subject of the illustration. These are only authoring aids and must be checked against the image before use. A `登録済み` suggestion selects its existing quiz-ready term with one tap. A `未登録` suggestion only fills the search field; add its Japanese, English, and Latin names to `terms.csv` before creating a label.
 
 In the `構造名 / termId` field, you can type a Japanese anatomical name such as `頸椎`, `胸椎`, `腰椎`, `仙骨`, or `尾骨`. The editor resolves it through the loaded term data from `terms.csv` / `terms.json`. If the input exactly matches one term, the label is resolved automatically. If multiple candidates match, select the correct candidate before exporting. If no candidate appears, add the term to `content/csv/terms.csv` first.
 
@@ -196,6 +198,24 @@ The tool does not write source files. Copy or download its CSV output and manual
 ```text
 content/csv/image_labels.csv
 ```
+
+## Image Structure Suggestions
+
+Edit `content/csv/image_suggestions.csv` to maintain the optional candidates shown in the label editor.
+
+Required columns:
+
+```csv
+imageId,suggestions
+```
+
+Write each candidate as `Japanese::English`, and separate candidates with `|`:
+
+```csv
+gray290_foot_medial_plate,距骨::talus|踵骨::calcaneus|舟状骨::navicular bone
+```
+
+During `npm run build:data`, a candidate is linked to a registered `termId` only when it uniquely matches a term that already has Japanese, English, and Latin names. Otherwise it remains an `未登録` authoring hint. The validator rejects unknown image IDs, malformed entries, and duplicates within the same image.
 
 After updating CSV, run:
 

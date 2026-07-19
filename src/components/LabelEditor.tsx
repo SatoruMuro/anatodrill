@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, type MouseEvent } from 'react';
-import type { AnatomyImage, ImagePlateLabel, Term } from '../types/anatodrill';
+import type { AnatomyImage, ImagePlateLabel, ImageStructureSuggestion, Term } from '../types/anatodrill';
 import { assetUrl, detailLabel } from '../lib/questions';
 
 interface LabelEditorProps {
@@ -98,6 +98,10 @@ function normalizeTermText(value: string): string {
   return value.trim().toLowerCase();
 }
 
+function termIsLabelReady(term: Term): boolean {
+  return Boolean(term.japanese.trim() && term.english.trim() && term.latin.trim());
+}
+
 function exactTermMatches(terms: readonly Term[], input: string): Term[] {
   const normalizedInput = normalizeTermText(input);
   if (!normalizedInput) {
@@ -106,6 +110,9 @@ function exactTermMatches(terms: readonly Term[], input: string): Term[] {
 
   const matches = new Map<string, Term>();
   for (const term of terms) {
+    if (!termIsLabelReady(term)) {
+      continue;
+    }
     const values = [term.id, term.japanese, term.english, term.latin].map(normalizeTermText);
     if (values.includes(normalizedInput)) {
       matches.set(term.id, term);
@@ -128,7 +135,7 @@ function resolveTermInput(input: string, terms: readonly Term[]): TermResolution
     return { status: 'ambiguous', input: trimmedInput, candidates: exactMatches };
   }
 
-  const candidates = terms.filter((term) => termMatches(term, trimmedInput));
+  const candidates = terms.filter((term) => termIsLabelReady(term) && termMatches(term, trimmedInput));
   return {
     status: candidates.length > 0 ? 'ambiguous' : 'missing',
     input: trimmedInput,
@@ -348,7 +355,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   );
 
   const matchingTerms = useMemo(
-    () => terms.filter((term) => termMatches(term, termSearch)).slice(0, 24),
+    () => terms.filter((term) => termIsLabelReady(term) && termMatches(term, termSearch)).slice(0, 24),
     [terms, termSearch],
   );
   const draftResolution = useMemo(() => resolveTermInput(draft.termInput, terms), [draft.termInput, terms]);
@@ -361,6 +368,34 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     [labels, terms],
   );
   const duplicateLabels = useMemo(() => duplicateLabelValues(labels), [labels]);
+  const suggestedStructures = useMemo(() => {
+    if (!selectedImage) {
+      return [];
+    }
+
+    const usedTermIds = new Set(labels.map((label) => label.termId));
+    const termsById = new Map(terms.map((term) => [term.id, term]));
+    const usedJapaneseNames = new Set(
+      labels
+        .map((label) => termsById.get(label.termId)?.japanese)
+        .filter((name): name is string => Boolean(name))
+        .map(normalizeTermText),
+    );
+    const seen = new Set<string>();
+
+    return (selectedImage.suggestions ?? []).filter((suggestion) => {
+      const key = `${normalizeTermText(suggestion.japanese)}:${normalizeTermText(suggestion.english)}`;
+      if (
+        seen.has(key) ||
+        (suggestion.termId && usedTermIds.has(suggestion.termId)) ||
+        usedJapaneseNames.has(normalizeTermText(suggestion.japanese))
+      ) {
+        return false;
+      }
+      seen.add(key);
+      return true;
+    });
+  }, [labels, selectedImage, terms]);
   const draftLabelIsDuplicate = Boolean(
     draft.label.trim() && labels.some((label) => label.label.trim() === draft.label.trim()),
   );
@@ -375,6 +410,16 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
       ...current,
       [selectedImageId]: nextLabels,
     }));
+  };
+
+  const selectSuggestedStructure = (suggestion: ImageStructureSuggestion) => {
+    const termInput = suggestion.termId ?? suggestion.japanese;
+    setDraft((current) => ({
+      ...current,
+      termInput,
+      note: current.note || suggestion.japanese,
+    }));
+    setTermSearch(termInput);
   };
 
   const changeImage = (imageId: string) => {
@@ -672,6 +717,37 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
               />
             </label>
           </div>
+
+          {suggestedStructures.length > 0 ? (
+            <section className="image-suggestion-panel" aria-labelledby="image-suggestion-title">
+              <div className="image-suggestion-heading">
+                <h4 id="image-suggestion-title">画像からの候補</h4>
+                <span>{suggestedStructures.length}件</span>
+              </div>
+              <p>
+                図版内の英語・他言語の表記や図の内容から推定した補助候補です。画像を確認してから使用してください。
+              </p>
+              <div className="image-suggestion-list">
+                {suggestedStructures.map((suggestion) => (
+                  <button
+                    key={`${suggestion.japanese}:${suggestion.english}`}
+                    type="button"
+                    className={suggestion.termId ? 'image-suggestion-chip registered' : 'image-suggestion-chip unregistered'}
+                    onClick={() => selectSuggestedStructure(suggestion)}
+                  >
+                    <span className="image-suggestion-name">
+                      <strong>{suggestion.japanese}</strong>
+                      <span>{suggestion.english}</span>
+                    </span>
+                    <span className="image-suggestion-state">{suggestion.termId ? '登録済み' : '未登録'}</span>
+                  </button>
+                ))}
+              </div>
+              <p className="image-suggestion-footnote">
+                「未登録」は入力欄への補助入力のみです。採用する場合は、先に terms.csv へ3言語の用語を登録してください。
+              </p>
+            </section>
+          ) : null}
 
           <p className={draftResolution.status === 'resolved' ? 'status-line' : 'error-text'}>
             {resolutionMessage(draftResolution)}

@@ -1243,6 +1243,119 @@ button.plate-marker {
   color: #17211e;
 }
 
+.image-suggestion-panel {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid #c8ded8;
+  border-radius: 10px;
+  background: #f4faf8;
+}
+
+.image-suggestion-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.image-suggestion-heading h4 {
+  margin: 0;
+  color: #173a33;
+  font-size: 1rem;
+}
+
+.image-suggestion-heading > span {
+  flex: 0 0 auto;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #dff3ee;
+  color: #0d6b5f;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.image-suggestion-panel > p {
+  color: #52635e;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.image-suggestion-list {
+  display: grid;
+  gap: 8px;
+}
+
+.image-suggestion-chip {
+  display: flex;
+  width: 100%;
+  min-height: 48px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  border: 1px solid #aacbc3;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #17211e;
+  text-align: left;
+  cursor: pointer;
+}
+
+.image-suggestion-chip:hover,
+.image-suggestion-chip:focus-visible {
+  border-color: #0d6b5f;
+  background: #eaf7f3;
+}
+
+.image-suggestion-chip.unregistered {
+  border-color: #e1c363;
+  background: #fffdf7;
+}
+
+.image-suggestion-chip.unregistered:hover,
+.image-suggestion-chip.unregistered:focus-visible {
+  border-color: #a87800;
+  background: #fff7df;
+}
+
+.image-suggestion-name {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.image-suggestion-name strong,
+.image-suggestion-name span {
+  overflow-wrap: anywhere;
+}
+
+.image-suggestion-name span {
+  color: #53635e;
+  font-size: 0.8rem;
+}
+
+.image-suggestion-state {
+  flex: 0 0 auto;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #dff3ee;
+  color: #0d6b5f;
+  font-size: 0.72rem;
+  font-weight: 900;
+}
+
+.image-suggestion-chip.unregistered .image-suggestion-state {
+  background: #fff0be;
+  color: #765500;
+}
+
+.image-suggestion-panel .image-suggestion-footnote {
+  color: #765500;
+  font-size: 0.78rem;
+}
+
 .term-search-box {
   margin-top: 18px;
 }

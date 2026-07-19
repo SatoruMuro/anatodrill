@@ -175,6 +175,52 @@ function validateCsvImageLabelTermReferences(csvTerms, csvImageLabels) {
   }
 }
 
+function validateCsvImageSuggestions(csvSuggestions, validImageIds) {
+  const seenImageIds = new Set();
+
+  for (const row of csvSuggestions) {
+    const imageId = String(row.imageId ?? '').trim();
+    const context = `content/csv/image_suggestions.csv row ${row.__rowNumber ?? '?'}`;
+    if (!imageId) {
+      addError(`${context}: imageId is required.`);
+      continue;
+    }
+    if (seenImageIds.has(imageId)) {
+      addError(`${context}: duplicate imageId "${imageId}".`);
+    }
+    seenImageIds.add(imageId);
+
+    if (!validImageIds.has(imageId)) {
+      addError(`${context}: imageId "${imageId}" does not exist in images.json.`);
+    }
+
+    const items = String(row.suggestions ?? '')
+      .split('|')
+      .map((item) => item.trim())
+      .filter(Boolean);
+    if (items.length === 0) {
+      addError(`${context}: at least one suggestion is required.`);
+      continue;
+    }
+
+    const seenSuggestions = new Set();
+    items.forEach((item, index) => {
+      const parts = item.split('::');
+      const suggestionContext = `${context} suggestion ${index + 1}`;
+      if (parts.length !== 2 || !parts[0].trim() || !parts[1].trim()) {
+        addError(`${suggestionContext}: use the format "Japanese::English".`);
+        return;
+      }
+
+      const key = `${normalizeTermReference(parts[0])}:${normalizeTermReference(parts[1])}`;
+      if (seenSuggestions.has(key)) {
+        addError(`${suggestionContext}: duplicate suggestion "${item}".`);
+      }
+      seenSuggestions.add(key);
+    });
+  }
+}
+
 function isPlainObject(value) {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
@@ -256,6 +302,7 @@ const images = requireArray(readJson('src/data/images.json'), 'src/data/images.j
 const testSets = requireArray(readJson('src/data/testSets.json'), 'src/data/testSets.json');
 const csvTerms = readCsv('terms.csv');
 const csvImageLabels = readCsv('image_labels.csv');
+const csvImageSuggestions = readCsv('image_suggestions.csv');
 
 const termIds = collectIds(terms, 'Term');
 const questionIds = collectIds(questions, 'Question');
@@ -267,6 +314,7 @@ const questionCountsByTestSet = new Map();
 const numberedQuestionsByLabel = new Map();
 
 validateCsvImageLabelTermReferences(csvTerms, csvImageLabels);
+validateCsvImageSuggestions(csvImageSuggestions, imageIds);
 
 for (const term of terms) {
   const context = `Term ${term?.id ?? '(missing id)'}`;
@@ -418,6 +466,7 @@ for (const image of images) {
         'modified',
         'modificationDescription',
         'labels',
+        'suggestions',
       ],
       context,
     )
@@ -465,6 +514,38 @@ for (const image of images) {
       addError(`${labelContext}: y must be a normalized 0-1 coordinate.`);
     }
   }
+
+  const suggestions = requireArray(image.suggestions, `${context}: suggestions`);
+  const suggestionKeys = new Set();
+  suggestions.forEach((suggestion, index) => {
+    const suggestionContext = `${context} suggestion ${index + 1}`;
+    if (!hasRequiredFields(suggestion, ['japanese', 'english'], suggestionContext)) {
+      return;
+    }
+    if (typeof suggestion.japanese !== 'string' || suggestion.japanese.trim() === '') {
+      addError(`${suggestionContext}: japanese must be a non-empty string.`);
+    }
+    if (typeof suggestion.english !== 'string' || suggestion.english.trim() === '') {
+      addError(`${suggestionContext}: english must be a non-empty string.`);
+    }
+
+    const key = `${normalizeTermReference(suggestion.japanese)}:${normalizeTermReference(suggestion.english)}`;
+    if (suggestionKeys.has(key)) {
+      addError(`${suggestionContext}: duplicate Japanese/English suggestion.`);
+    }
+    suggestionKeys.add(key);
+
+    if (suggestion.termId !== undefined) {
+      if (typeof suggestion.termId !== 'string' || !termIds.has(suggestion.termId)) {
+        addError(`${suggestionContext}: termId "${suggestion.termId}" does not exist.`);
+      } else {
+        const term = termById.get(suggestion.termId);
+        if (!term?.japanese?.trim() || !term?.english?.trim() || !term?.latin?.trim()) {
+          addError(`${suggestionContext}: registered suggestion term needs Japanese, English, and Latin names.`);
+        }
+      }
+    }
+  });
 }
 
 for (const testSet of testSets) {

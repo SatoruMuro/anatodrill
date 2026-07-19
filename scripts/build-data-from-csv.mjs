@@ -379,7 +379,64 @@ function buildImages(terms) {
     labelsByImageId.get(imageId).push(label);
   }
 
-  return readCsv('images.csv').map((row) => {
+  const suggestionsByImageId = new Map();
+  const completeSuggestionTerms = terms.filter(termHasCompleteNames);
+  for (const row of readCsv('image_suggestions.csv')) {
+    const imageId = String(row.imageId ?? '').trim();
+    if (!imageId) {
+      throw new Error('image_suggestions.csv: imageId is required.');
+    }
+    if (suggestionsByImageId.has(imageId)) {
+      throw new Error(`image_suggestions.csv: duplicate imageId "${imageId}".`);
+    }
+
+    const suggestions = parsePipeArray(row.suggestions).map((item, index) => {
+      const separatorIndex = item.indexOf('::');
+      if (separatorIndex <= 0 || separatorIndex === item.length - 2) {
+        throw new Error(
+          `Image suggestion ${imageId}:${index + 1}: use the format "Japanese::English".`,
+        );
+      }
+
+      const japanese = item.slice(0, separatorIndex).trim();
+      const english = item.slice(separatorIndex + 2).trim();
+      if (!japanese || !english) {
+        throw new Error(`Image suggestion ${imageId}:${index + 1}: Japanese and English are required.`);
+      }
+
+      const normalizedJapanese = normalizeTermReference(japanese);
+      const normalizedEnglish = normalizeTermReference(english);
+      const exactPairMatches = completeSuggestionTerms.filter(
+        (term) =>
+          normalizeTermReference(term.japanese) === normalizedJapanese &&
+          normalizeTermReference(term.english) === normalizedEnglish,
+      );
+      const englishMatches = completeSuggestionTerms.filter(
+        (term) => normalizeTermReference(term.english) === normalizedEnglish,
+      );
+      const japaneseMatches = completeSuggestionTerms.filter(
+        (term) => normalizeTermReference(term.japanese) === normalizedJapanese,
+      );
+      const resolvedTerm =
+        exactPairMatches.length === 1
+          ? exactPairMatches[0]
+          : englishMatches.length === 1
+            ? englishMatches[0]
+            : japaneseMatches.length === 1
+              ? japaneseMatches[0]
+              : undefined;
+
+      return {
+        japanese,
+        english,
+        ...(resolvedTerm ? { termId: resolvedTerm.id } : {}),
+      };
+    });
+
+    suggestionsByImageId.set(imageId, suggestions);
+  }
+
+  const images = readCsv('images.csv').map((row) => {
     const image = {
       id: row.id,
       file: row.file,
@@ -392,6 +449,7 @@ function buildImages(terms) {
       modified: parseBoolean(row.modified, 'modified', `Image ${row.id}`),
       modificationDescription: row.modificationDescription,
       labels: labelsByImageId.get(row.id) ?? [],
+      suggestions: suggestionsByImageId.get(row.id) ?? [],
     };
 
     const editionYear = parseNumber(row.editionYear, 'editionYear', `Image ${row.id}`);
@@ -399,6 +457,15 @@ function buildImages(terms) {
 
     return image;
   });
+
+  const imageIds = new Set(images.map((image) => image.id));
+  for (const imageId of suggestionsByImageId.keys()) {
+    if (!imageIds.has(imageId)) {
+      throw new Error(`image_suggestions.csv: imageId "${imageId}" does not exist in images.csv.`);
+    }
+  }
+
+  return images;
 }
 
 function buildTestSets() {
