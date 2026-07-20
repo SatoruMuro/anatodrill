@@ -186,7 +186,7 @@ Then click `ラベル作成`.
 
 This developer-only page is hidden unless `?dev=1` is present. It lists numbered-plate targets rather than isolated single-structure images, lets you click the image to place normalized `x` / `y` markers, search terms by ID/Japanese/English/Latin, edit labels, and export JSON or CSV rows.
 
-The editor also shows optional structure suggestions derived in advance from wording visible in each plate, its source-language labels, and the subject of the illustration. These are only authoring aids and must be checked against the image before use. A `登録済み` suggestion selects its existing quiz-ready term with one tap. A `未登録` suggestion only fills the search field; add its Japanese, English, and Latin names to `terms.csv` before creating a label.
+The editor also shows optional structure suggestions derived in advance from wording visible in each plate, its source-language labels, and the subject of the illustration. These are only authoring aids and must be checked against the image before use. Every suggestion must match exactly one quiz-ready term with Japanese, English, and Latin names, so a suggestion selects its registered term with one tap.
 
 In the `構造名 / termId` field, you can type a Japanese anatomical name such as `頸椎`, `胸椎`, `腰椎`, `仙骨`, or `尾骨`. The editor resolves it through the loaded term data from `terms.csv` / `terms.json`. If the input exactly matches one term, the label is resolved automatically. If multiple candidates match, select the correct candidate before exporting. If no candidate appears, add the term to `content/csv/terms.csv` first.
 
@@ -216,7 +216,7 @@ Write each candidate as `Japanese::English`, and separate candidates with `|`:
 gray290_foot_medial_plate,距骨::talus|踵骨::calcaneus|舟状骨::navicular bone
 ```
 
-During `npm run build:data`, a candidate is linked to a registered `termId` only when it uniquely matches a term that already has Japanese, English, and Latin names. Otherwise it remains an `未登録` authoring hint. The validator rejects unknown image IDs, malformed entries, and duplicates within the same image.
+During `npm run build:data`, every candidate must match exactly one term that already has Japanese, English, and Latin names. An unknown or ambiguous candidate fails the build instead of appearing as an unregistered hint. The validator also rejects unknown image IDs, malformed entries, and duplicates within the same image.
 
 After updating CSV, run:
 

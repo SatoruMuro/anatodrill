@@ -145,12 +145,32 @@ function resolveTermReference(value, terms, context) {
   }
 
   const normalizedValue = normalizeTermReference(rawValue);
+  const idMatches = terms.filter((term) => normalizeTermReference(term.id) === normalizedValue);
+  if (idMatches.length === 1) {
+    return idMatches[0];
+  }
+  if (idMatches.length > 1) {
+    throw new Error(`${context}: duplicate term ID "${rawValue}" exists in terms.csv.`);
+  }
+
   const matches = new Map();
   for (const term of terms) {
-    const searchableValues = [term.id, term.japanese, term.english, term.latin].map(normalizeTermReference);
+    const searchableValues = [term.japanese, term.english, term.latin].map(normalizeTermReference);
     if (searchableValues.includes(normalizedValue)) {
       matches.set(term.id, term);
     }
+  }
+
+  const completeMatches = [...matches.values()].filter(termHasCompleteNames);
+  if (completeMatches.length === 1) {
+    return completeMatches[0];
+  }
+  if (completeMatches.length > 1) {
+    throw new Error(
+      `${context}: term reference "${rawValue}" is ambiguous. Complete matches: ${completeMatches
+        .map((term) => term.id)
+        .join(', ')}.`,
+    );
   }
 
   if (matches.size === 1) {
@@ -423,25 +443,19 @@ function buildImages(terms) {
           normalizeTermReference(term.japanese) === normalizedJapanese &&
           normalizeTermReference(term.english) === normalizedEnglish,
       );
-      const englishMatches = completeSuggestionTerms.filter(
-        (term) => normalizeTermReference(term.english) === normalizedEnglish,
-      );
-      const japaneseMatches = completeSuggestionTerms.filter(
-        (term) => normalizeTermReference(term.japanese) === normalizedJapanese,
-      );
-      const resolvedTerm =
-        exactPairMatches.length === 1
-          ? exactPairMatches[0]
-          : englishMatches.length === 1
-            ? englishMatches[0]
-            : japaneseMatches.length === 1
-              ? japaneseMatches[0]
-              : undefined;
+      if (exactPairMatches.length !== 1) {
+        throw new Error(
+          `Image suggestion ${imageId}:${index + 1}: "${japanese}::${english}" must match exactly one term with Japanese, English, and Latin names in terms.csv. Matches: ${exactPairMatches
+            .map((term) => term.id)
+            .join(', ') || 'none'}.`,
+        );
+      }
+      const resolvedTerm = exactPairMatches[0];
 
       return {
         japanese,
         english,
-        ...(resolvedTerm ? { termId: resolvedTerm.id } : {}),
+        termId: resolvedTerm.id,
       };
     });
 

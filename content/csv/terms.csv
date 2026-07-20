@@ -59,6 +59,269 @@ pubic_symphysis,恥骨結合,pubic symphysis,symphysis pubica,joint,pelvis,osteo
 ilium,腸骨,ilium,os ilium,bone,pelvis,osteology_basic,腸骨は寛骨の上部を構成する大きな骨で、腸骨稜などを形成する。
 ischium,坐骨,ischium,os ischii,bone,pelvis,osteology_basic,坐骨は寛骨の後下部を構成する骨で、坐骨結節などを形成する。
 pubis,恥骨,pubis,os pubis,bone,pelvis,osteology_basic,恥骨は寛骨の前下部を構成する骨で、左右の恥骨は恥骨結合で連結する。
+phalanges_of_foot,趾骨,phalanges of foot,phalanges pedis,bone,lower limb,basic_lower,趾骨は、英語の「phalanges of foot」に対応する解剖学用語です。
+first_metatarsal_bone,第1中足骨,first metatarsal bone,os metatarsale I,bone,lower limb,basic_lower,第1中足骨は、英語の「first metatarsal bone」に対応する解剖学用語です。
+subtalar_joint,距骨下関節,subtalar joint,articulatio subtalaris,joint,lower limb,basic_lower,距骨下関節は、英語の「subtalar joint」に対応する解剖学用語です。
+sustentaculum_tali,載距突起,sustentaculum tali,sustentaculum tali,bone,lower limb,basic_lower,載距突起は、英語の「sustentaculum tali」に対応する解剖学用語です。
+fifth_metatarsal_bone,第5中足骨,fifth metatarsal bone,os metatarsale V,bone,lower limb,basic_lower,第5中足骨は、英語の「fifth metatarsal bone」に対応する解剖学用語です。
+brachial_artery,上腕動脈,brachial artery,arteria brachialis,artery,upper limb,basic_upper,上腕動脈は、英語の「brachial artery」に対応する解剖学用語です。
+deep_brachial_artery,上腕深動脈,deep brachial artery,arteria profunda brachii,artery,upper limb,basic_upper,上腕深動脈は、英語の「deep brachial artery」に対応する解剖学用語です。
+superior_ulnar_collateral_artery,上尺側側副動脈,superior ulnar collateral artery,arteria collateralis ulnaris superior,artery,upper limb,basic_upper,上尺側側副動脈は、英語の「superior ulnar collateral artery」に対応する解剖学用語です。
+inferior_ulnar_collateral_artery,下尺側側副動脈,inferior ulnar collateral artery,arteria collateralis ulnaris inferior,artery,upper limb,basic_upper,下尺側側副動脈は、英語の「inferior ulnar collateral artery」に対応する解剖学用語です。
+radial_artery,橈骨動脈,radial artery,arteria radialis,artery,upper limb,basic_upper,橈骨動脈は、英語の「radial artery」に対応する解剖学用語です。
+ulnar_artery,尺骨動脈,ulnar artery,arteria ulnaris,artery,upper limb,basic_upper,尺骨動脈は、英語の「ulnar artery」に対応する解剖学用語です。
+radial_recurrent_artery,橈骨反回動脈,radial recurrent artery,arteria recurrens radialis,artery,upper limb,basic_upper,橈骨反回動脈は、英語の「radial recurrent artery」に対応する解剖学用語です。
+ulnar_recurrent_artery,尺骨反回動脈,ulnar recurrent artery,arteria recurrens ulnaris,artery,upper limb,basic_upper,尺骨反回動脈は、英語の「ulnar recurrent artery」に対応する解剖学用語です。
+superior_frontal_gyrus,上前頭回,superior frontal gyrus,gyrus frontalis superior,brain,head and neck,basic_head,上前頭回は、英語の「superior frontal gyrus」に対応する解剖学用語です。
+middle_frontal_gyrus,中前頭回,middle frontal gyrus,gyrus frontalis medius,brain,head and neck,basic_head,中前頭回は、英語の「middle frontal gyrus」に対応する解剖学用語です。
+inferior_frontal_gyrus,下前頭回,inferior frontal gyrus,gyrus frontalis inferior,brain,head and neck,basic_head,下前頭回は、英語の「inferior frontal gyrus」に対応する解剖学用語です。
+precentral_gyrus,中心前回,precentral gyrus,gyrus precentralis,brain,head and neck,basic_head,中心前回は、英語の「precentral gyrus」に対応する解剖学用語です。
+postcentral_gyrus,中心後回,postcentral gyrus,gyrus postcentralis,brain,head and neck,basic_head,中心後回は、英語の「postcentral gyrus」に対応する解剖学用語です。
+superior_parietal_lobule,上頭頂小葉,superior parietal lobule,lobulus parietalis superior,brain,head and neck,basic_head,上頭頂小葉は、英語の「superior parietal lobule」に対応する解剖学用語です。
+inferior_parietal_lobule,下頭頂小葉,inferior parietal lobule,lobulus parietalis inferior,brain,head and neck,basic_head,下頭頂小葉は、英語の「inferior parietal lobule」に対応する解剖学用語です。
+superior_temporal_gyrus,上側頭回,superior temporal gyrus,gyrus temporalis superior,brain,head and neck,basic_head,上側頭回は、英語の「superior temporal gyrus」に対応する解剖学用語です。
+middle_temporal_gyrus,中側頭回,middle temporal gyrus,gyrus temporalis medius,brain,head and neck,basic_head,中側頭回は、英語の「middle temporal gyrus」に対応する解剖学用語です。
+inferior_temporal_gyrus,下側頭回,inferior temporal gyrus,gyrus temporalis inferior,brain,head and neck,basic_head,下側頭回は、英語の「inferior temporal gyrus」に対応する解剖学用語です。
+ascending_aorta,上行大動脈,ascending aorta,aorta ascendens,artery,thorax,basic_trunk,上行大動脈は、英語の「ascending aorta」に対応する解剖学用語です。
+aortic_arch,大動脈弓,aortic arch,arcus aortae,artery,thorax,basic_trunk,大動脈弓は、英語の「aortic arch」に対応する解剖学用語です。
+pulmonary_trunk,肺動脈幹,pulmonary trunk,truncus pulmonalis,artery,thorax,basic_trunk,肺動脈幹は、英語の「pulmonary trunk」に対応する解剖学用語です。
+right_pulmonary_artery,右肺動脈,right pulmonary artery,arteria pulmonalis dextra,artery,thorax,basic_trunk,右肺動脈は、英語の「right pulmonary artery」に対応する解剖学用語です。
+left_pulmonary_artery,左肺動脈,left pulmonary artery,arteria pulmonalis sinistra,artery,thorax,basic_trunk,左肺動脈は、英語の「left pulmonary artery」に対応する解剖学用語です。
+superior_vena_cava,上大静脈,superior vena cava,vena cava superior,vein,thorax,basic_trunk,上大静脈は、英語の「superior vena cava」に対応する解剖学用語です。
+heart,心臓,heart,cor,heart,thorax,basic_trunk,心臓は、英語の「heart」に対応する解剖学用語です。
+lung,肺,lung,pulmo,organ,thorax,basic_trunk,肺は、英語の「lung」に対応する解剖学用語です。
+right_atrium,右心房,right atrium,atrium dextrum,heart,thorax,basic_trunk,右心房は、英語の「right atrium」に対応する解剖学用語です。
+inferior_vena_cava,下大静脈,inferior vena cava,vena cava inferior,vein,abdomen,basic_trunk,下大静脈は、英語の「inferior vena cava」に対応する解剖学用語です。
+coronary_sinus,冠状静脈洞,coronary sinus,sinus coronarius,vein,thorax,basic_trunk,冠状静脈洞は、英語の「coronary sinus」に対応する解剖学用語です。
+fossa_ovalis,卵円窩,fossa ovalis,fossa ovalis atrii dextri,heart,thorax,basic_trunk,卵円窩は、英語の「fossa ovalis」に対応する解剖学用語です。
+right_atrioventricular_orifice,右房室口,right atrioventricular orifice,ostium atrioventriculare dextrum,heart,thorax,basic_trunk,右房室口は、英語の「right atrioventricular orifice」に対応する解剖学用語です。
+tricuspid_valve,三尖弁,tricuspid valve,valva tricuspidalis,heart,thorax,basic_trunk,三尖弁は、英語の「tricuspid valve」に対応する解剖学用語です。
+right_coronary_artery,右冠状動脈,right coronary artery,arteria coronaria dextra,artery,thorax,basic_trunk,右冠状動脈は、英語の「right coronary artery」に対応する解剖学用語です。
+left_coronary_artery,左冠状動脈,left coronary artery,arteria coronaria sinistra,artery,thorax,basic_trunk,左冠状動脈は、英語の「left coronary artery」に対応する解剖学用語です。
+anterior_interventricular_branch,前室間枝,anterior interventricular branch,ramus interventricularis anterior,artery,thorax,basic_trunk,前室間枝は、英語の「anterior interventricular branch」に対応する解剖学用語です。
+circumflex_branch,回旋枝,circumflex branch,ramus circumflexus,artery,thorax,basic_trunk,回旋枝は、英語の「circumflex branch」に対応する解剖学用語です。
+right_marginal_branch,右縁枝,right marginal branch,ramus marginalis dexter,artery,thorax,basic_trunk,右縁枝は、英語の「right marginal branch」に対応する解剖学用語です。
+posterior_interventricular_branch,後室間枝,posterior interventricular branch,ramus interventricularis posterior,artery,thorax,basic_trunk,後室間枝は、英語の「posterior interventricular branch」に対応する解剖学用語です。
+coronary_sulcus,冠状溝,coronary sulcus,sulcus coronarius,heart,thorax,basic_trunk,冠状溝は、英語の「coronary sulcus」に対応する解剖学用語です。
+apex_of_heart,心尖,apex of heart,apex cordis,heart,thorax,basic_trunk,心尖は、英語の「apex of heart」に対応する解剖学用語です。
+brachiocephalic_trunk,腕頭動脈,brachiocephalic trunk,truncus brachiocephalicus,artery,thorax,basic_trunk,腕頭動脈は、英語の「brachiocephalic trunk」に対応する解剖学用語です。
+common_carotid_artery,総頸動脈,common carotid artery,carotis communis,artery,head and neck,basic_head,総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。
+subclavian_artery,鎖骨下動脈,subclavian artery,arteria subclavia,artery,upper limb,basic_upper,鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。
+pulmonary_artery,肺動脈,pulmonary artery,arteria pulmonalis,artery,thorax,basic_trunk,肺動脈は、英語の「pulmonary artery」に対応する解剖学用語です。
+pulmonary_vein,肺静脈,pulmonary vein,vena pulmonalis,vein,thorax,basic_trunk,肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。
+external_carotid_artery,外頸動脈,external carotid artery,carotis externa,artery,head and neck,basic_head,外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。
+internal_carotid_artery,内頸動脈,internal carotid artery,carotis interna,artery,head and neck,basic_head,内頸動脈は、英語の「internal carotid artery」に対応する解剖学用語です。
+vertebral_artery,椎骨動脈,vertebral artery,arteria vertebralis,artery,head and neck,basic_head,椎骨動脈は、英語の「vertebral artery」に対応する解剖学用語です。
+thyroid_gland,甲状腺,thyroid gland,glandula thyreoidea,gland,head and neck,basic_head,甲状腺は、英語の「thyroid gland」に対応する解剖学用語です。
+larynx,喉頭,larynx,larynx,organ,head and neck,basic_head,喉頭は、英語の「larynx」に対応する解剖学用語です。
+superior_thyroid_artery,上甲状腺動脈,superior thyroid artery,arteria thyreoidea superior,artery,head and neck,basic_head,上甲状腺動脈は、英語の「superior thyroid artery」に対応する解剖学用語です。
+lingual_artery,舌動脈,lingual artery,arteria lingualis,artery,head and neck,basic_head,舌動脈は、英語の「lingual artery」に対応する解剖学用語です。
+facial_artery,顔面動脈,facial artery,arteria facialis,artery,head and neck,basic_head,顔面動脈は、英語の「facial artery」に対応する解剖学用語です。
+occipital_artery,後頭動脈,occipital artery,arteria occipitalis,artery,head and neck,basic_head,後頭動脈は、英語の「occipital artery」に対応する解剖学用語です。
+posterior_auricular_artery,後耳介動脈,posterior auricular artery,arteria auricularis posterior,artery,head and neck,basic_head,後耳介動脈は、英語の「posterior auricular artery」に対応する解剖学用語です。
+maxillary_artery,顎動脈,maxillary artery,arteria maxillaris,artery,head and neck,basic_head,顎動脈は、英語の「maxillary artery」に対応する解剖学用語です。
+superficial_temporal_artery,浅側頭動脈,superficial temporal artery,arteria temporalis superficialis,artery,head and neck,basic_head,浅側頭動脈は、英語の「superficial temporal artery」に対応する解剖学用語です。
+middle_meningeal_artery,中硬膜動脈,middle meningeal artery,arteria meningea media,artery,head and neck,basic_head,中硬膜動脈は、英語の「middle meningeal artery」に対応する解剖学用語です。
+inferior_alveolar_artery,下歯槽動脈,inferior alveolar artery,arteria alveolaris inferior,artery,head and neck,basic_head,下歯槽動脈は、英語の「inferior alveolar artery」に対応する解剖学用語です。
+infraorbital_artery,眼窩下動脈,infraorbital artery,arteria infraorbitalis,artery,head and neck,basic_head,眼窩下動脈は、英語の「infraorbital artery」に対応する解剖学用語です。
+sphenopalatine_artery,蝶口蓋動脈,sphenopalatine artery,arteria sphenopalatina,artery,head and neck,basic_head,蝶口蓋動脈は、英語の「sphenopalatine artery」に対応する解剖学用語です。
+deep_temporal_artery,深側頭動脈,deep temporal artery,arteria temporalis profunda,artery,head and neck,basic_head,深側頭動脈は、英語の「deep temporal artery」に対応する解剖学用語です。
+buccal_artery,頬動脈,buccal artery,arteria buccalis,artery,head and neck,basic_head,頬動脈は、英語の「buccal artery」に対応する解剖学用語です。
+submandibular_gland,顎下腺,submandibular gland,glandula submandibularis,gland,head and neck,basic_head,顎下腺は、英語の「submandibular gland」に対応する解剖学用語です。
+digastric_muscle,顎二腹筋,digastric muscle,musculus digastricus,muscle,head and neck,basic_muscle,顎二腹筋は、英語の「digastric muscle」に対応する解剖学用語です。
+mylohyoid_muscle,顎舌骨筋,mylohyoid muscle,musculus mylohyoideus,muscle,head and neck,basic_muscle,顎舌骨筋は、英語の「mylohyoid muscle」に対応する解剖学用語です。
+hyoglossus_muscle,舌骨舌筋,hyoglossus muscle,musculus hyoglossus,muscle,head and neck,basic_muscle,舌骨舌筋は、英語の「hyoglossus muscle」に対応する解剖学用語です。
+submandibular_triangle,顎下三角,submandibular triangle,trigonum submandibulare,region,head and neck,basic_head,顎下三角は、英語の「submandibular triangle」に対応する解剖学用語です。
+carotid_sinus,頸動脈洞,carotid sinus,sinus carotidis,artery,head and neck,basic_head,頸動脈洞は、英語の「carotid sinus」に対応する解剖学用語です。
+pharynx,咽頭,pharynx,pharynx,organ,head and neck,basic_head,咽頭は、英語の「pharynx」に対応する解剖学用語です。
+ophthalmic_artery,眼動脈,ophthalmic artery,arteria ophthalmica,artery,head and neck,basic_head,眼動脈は、英語の「ophthalmic artery」に対応する解剖学用語です。
+central_retinal_artery,網膜中心動脈,central retinal artery,arteria centralis retinae,artery,head and neck,basic_head,網膜中心動脈は、英語の「central retinal artery」に対応する解剖学用語です。
+lacrimal_artery,涙腺動脈,lacrimal artery,arteria lacrimalis,artery,head and neck,basic_head,涙腺動脈は、英語の「lacrimal artery」に対応する解剖学用語です。
+supraorbital_artery,眼窩上動脈,supraorbital artery,arteria supraorbitalis,artery,head and neck,basic_head,眼窩上動脈は、英語の「supraorbital artery」に対応する解剖学用語です。
+supratrochlear_artery,滑車上動脈,supratrochlear artery,arteria supratrochlearis,artery,head and neck,basic_head,滑車上動脈は、英語の「supratrochlear artery」に対応する解剖学用語です。
+dorsal_nasal_artery,鼻背動脈,dorsal nasal artery,arteria dorsalis nasi,artery,head and neck,basic_head,鼻背動脈は、英語の「dorsal nasal artery」に対応する解剖学用語です。
+anterior_ethmoidal_artery,前篩骨動脈,anterior ethmoidal artery,arteria ethmoidalis anterior,artery,head and neck,basic_head,前篩骨動脈は、英語の「anterior ethmoidal artery」に対応する解剖学用語です。
+posterior_ethmoidal_artery,後篩骨動脈,posterior ethmoidal artery,arteria ethmoidalis posterior,artery,head and neck,basic_head,後篩骨動脈は、英語の「posterior ethmoidal artery」に対応する解剖学用語です。
+basilar_artery,脳底動脈,basilar artery,arteria basilaris,artery,head and neck,basic_head,脳底動脈は、英語の「basilar artery」に対応する解剖学用語です。
+anterior_cerebral_artery,前大脳動脈,anterior cerebral artery,arteria cerebri anterior,artery,head and neck,basic_head,前大脳動脈は、英語の「anterior cerebral artery」に対応する解剖学用語です。
+middle_cerebral_artery,中大脳動脈,middle cerebral artery,arteria cerebri media,artery,head and neck,basic_head,中大脳動脈は、英語の「middle cerebral artery」に対応する解剖学用語です。
+posterior_cerebral_artery,後大脳動脈,posterior cerebral artery,arteria cerebri posterior,artery,head and neck,basic_head,後大脳動脈は、英語の「posterior cerebral artery」に対応する解剖学用語です。
+anterior_communicating_artery,前交通動脈,anterior communicating artery,arteria communicans anterior,artery,head and neck,basic_head,前交通動脈は、英語の「anterior communicating artery」に対応する解剖学用語です。
+posterior_communicating_artery,後交通動脈,posterior communicating artery,arteria communicans posterior,artery,head and neck,basic_head,後交通動脈は、英語の「posterior communicating artery」に対応する解剖学用語です。
+superior_cerebellar_artery,上小脳動脈,superior cerebellar artery,arteria cerebelli superior,artery,head and neck,basic_head,上小脳動脈は、英語の「superior cerebellar artery」に対応する解剖学用語です。
+cingulate_gyrus,帯状回,cingulate gyrus,gyrus cinguli,brain,head and neck,basic_head,帯状回は、英語の「cingulate gyrus」に対応する解剖学用語です。
+paracentral_lobule,中心傍小葉,paracentral lobule,lobulus paracentralis,brain,head and neck,basic_head,中心傍小葉は、英語の「paracentral lobule」に対応する解剖学用語です。
+precuneus,楔前部,precuneus,precuneus,brain,head and neck,basic_head,楔前部は、英語の「precuneus」に対応する解剖学用語です。
+cuneus,楔部,cuneus,cuneus,brain,head and neck,basic_head,楔部は、英語の「cuneus」に対応する解剖学用語です。
+lingual_gyrus,舌状回,lingual gyrus,gyrus lingualis,brain,head and neck,basic_head,舌状回は、英語の「lingual gyrus」に対応する解剖学用語です。
+parahippocampal_gyrus,海馬傍回,parahippocampal gyrus,gyrus parahippocampalis,brain,head and neck,basic_head,海馬傍回は、英語の「parahippocampal gyrus」に対応する解剖学用語です。
+corpus_callosum,脳梁,corpus callosum,corpus callosum,brain,head and neck,basic_head,脳梁は、英語の「corpus callosum」に対応する解剖学用語です。
+thyrocervical_trunk,甲状頸動脈幹,thyrocervical trunk,truncus thyrocervicalis,artery,head and neck,basic_head,甲状頸動脈幹は、英語の「thyrocervical trunk」に対応する解剖学用語です。
+inferior_thyroid_artery,下甲状腺動脈,inferior thyroid artery,arteria thyreoidea inferior,artery,head and neck,basic_head,下甲状腺動脈は、英語の「inferior thyroid artery」に対応する解剖学用語です。
+transverse_cervical_artery,頸横動脈,transverse cervical artery,arteria transversa cervicis,artery,head and neck,basic_head,頸横動脈は、英語の「transverse cervical artery」に対応する解剖学用語です。
+suprascapular_artery,肩甲上動脈,suprascapular artery,arteria suprascapularis,artery,upper limb,basic_upper,肩甲上動脈は、英語の「suprascapular artery」に対応する解剖学用語です。
+brachial_plexus,腕神経叢,brachial plexus,plexus brachialis,nerve,upper limb,basic_upper,腕神経叢は、英語の「brachial plexus」に対応する解剖学用語です。
+circumflex_scapular_artery,肩甲回旋動脈,circumflex scapular artery,arteria circumflexa scapulae,artery,upper limb,basic_upper,肩甲回旋動脈は、英語の「circumflex scapular artery」に対応する解剖学用語です。
+dorsal_scapular_artery,肩甲背動脈,dorsal scapular artery,arteria dorsalis scapulae,artery,upper limb,basic_upper,肩甲背動脈は、英語の「dorsal scapular artery」に対応する解剖学用語です。
+subscapular_artery,肩甲下動脈,subscapular artery,arteria subscapularis,artery,upper limb,basic_upper,肩甲下動脈は、英語の「subscapular artery」に対応する解剖学用語です。
+thoracodorsal_artery,胸背動脈,thoracodorsal artery,arteria thoracodorsalis,artery,upper limb,basic_upper,胸背動脈は、英語の「thoracodorsal artery」に対応する解剖学用語です。
+circumflex_humeral_artery,上腕回旋動脈,circumflex humeral artery,arteria circumflexa humeri,artery,upper limb,basic_upper,上腕回旋動脈は、英語の「circumflex humeral artery」に対応する解剖学用語です。
+internal_thoracic_artery,内胸動脈,internal thoracic artery,arteria thoracica interna,artery,thorax,basic_trunk,内胸動脈は、英語の「internal thoracic artery」に対応する解剖学用語です。
+anterior_intercostal_artery,前肋間動脈,anterior intercostal artery,arteria intercostalis anterior,artery,thorax,basic_trunk,前肋間動脈は、英語の「anterior intercostal artery」に対応する解剖学用語です。
+musculophrenic_artery,筋横隔動脈,musculophrenic artery,arteria musculophrenica,artery,thorax,basic_trunk,筋横隔動脈は、英語の「musculophrenic artery」に対応する解剖学用語です。
+superior_epigastric_artery,上腹壁動脈,superior epigastric artery,arteria epigastrica superior,artery,thorax,basic_trunk,上腹壁動脈は、英語の「superior epigastric artery」に対応する解剖学用語です。
+axillary_artery,腋窩動脈,axillary artery,arteria axillaris,artery,upper limb,basic_upper,腋窩動脈は、英語の「axillary artery」に対応する解剖学用語です。
+thoracoacromial_artery,胸肩峰動脈,thoracoacromial artery,arteria thoracoacromialis,artery,upper limb,basic_upper,胸肩峰動脈は、英語の「thoracoacromial artery」に対応する解剖学用語です。
+lateral_thoracic_artery,外側胸動脈,lateral thoracic artery,arteria thoracica lateralis,artery,upper limb,basic_upper,外側胸動脈は、英語の「lateral thoracic artery」に対応する解剖学用語です。
+anterior_circumflex_humeral_artery,前上腕回旋動脈,anterior circumflex humeral artery,arteria circumflexa anterior humeri,artery,upper limb,basic_upper,前上腕回旋動脈は、英語の「anterior circumflex humeral artery」に対応する解剖学用語です。
+posterior_circumflex_humeral_artery,後上腕回旋動脈,posterior circumflex humeral artery,arteria circumflexa posterior humeri,artery,upper limb,basic_upper,後上腕回旋動脈は、英語の「posterior circumflex humeral artery」に対応する解剖学用語です。
+common_interosseous_artery,総骨間動脈,common interosseous artery,arteria interossea communis,artery,upper limb,basic_upper,総骨間動脈は、英語の「common interosseous artery」に対応する解剖学用語です。
+anterior_interosseous_artery,前骨間動脈,anterior interosseous artery,arteria interossea anterior,artery,upper limb,basic_upper,前骨間動脈は、英語の「anterior interosseous artery」に対応する解剖学用語です。
+posterior_interosseous_artery,後骨間動脈,posterior interosseous artery,arteria interossea posterior,artery,upper limb,basic_upper,後骨間動脈は、英語の「posterior interosseous artery」に対応する解剖学用語です。
+thoracic_aorta,胸大動脈,thoracic aorta,aorta thoracica,artery,thorax,basic_trunk,胸大動脈は、英語の「thoracic aorta」に対応する解剖学用語です。
+posterior_intercostal_artery,後肋間動脈,posterior intercostal artery,arteria intercostalis posterior,artery,thorax,basic_trunk,後肋間動脈は、英語の「posterior intercostal artery」に対応する解剖学用語です。
+bronchial_artery,気管支動脈,bronchial artery,arteria bronchialis,artery,thorax,basic_trunk,気管支動脈は、英語の「bronchial artery」に対応する解剖学用語です。
+esophageal_artery,食道動脈,esophageal artery,arteria oesophagea,artery,thorax,basic_trunk,食道動脈は、英語の「esophageal artery」に対応する解剖学用語です。
+pericardial_branch,心膜枝,pericardial branch,ramus pericardiacus,artery,thorax,basic_trunk,心膜枝は、英語の「pericardial branch」に対応する解剖学用語です。
+mediastinal_branch,縦隔枝,mediastinal branch,ramus mediastinalis,artery,thorax,basic_trunk,縦隔枝は、英語の「mediastinal branch」に対応する解剖学用語です。
+abdominal_aorta,腹大動脈,abdominal aorta,aorta abdominalis,artery,abdomen,basic_trunk,腹大動脈は、英語の「abdominal aorta」に対応する解剖学用語です。
+celiac_trunk,腹腔動脈,celiac trunk,truncus coeliacus,artery,abdomen,basic_trunk,腹腔動脈は、英語の「celiac trunk」に対応する解剖学用語です。
+superior_mesenteric_artery,上腸間膜動脈,superior mesenteric artery,arteria mesenterica superior,artery,abdomen,basic_trunk,上腸間膜動脈は、英語の「superior mesenteric artery」に対応する解剖学用語です。
+renal_artery,腎動脈,renal artery,arteria renalis,artery,abdomen,basic_trunk,腎動脈は、英語の「renal artery」に対応する解剖学用語です。
+gonadal_artery,性腺動脈,gonadal artery,arteria gonadalis,artery,abdomen,basic_trunk,性腺動脈は、英語の「gonadal artery」に対応する解剖学用語です。
+inferior_mesenteric_artery,下腸間膜動脈,inferior mesenteric artery,arteria mesenterica inferior,artery,abdomen,basic_trunk,下腸間膜動脈は、英語の「inferior mesenteric artery」に対応する解剖学用語です。
+common_iliac_artery,総腸骨動脈,common iliac artery,arteria iliaca communis,artery,pelvis,basic_lower,総腸骨動脈は、英語の「common iliac artery」に対応する解剖学用語です。
+left_gastric_artery,左胃動脈,left gastric artery,arteria gastrica sinistra,artery,abdomen,basic_trunk,左胃動脈は、英語の「left gastric artery」に対応する解剖学用語です。
+splenic_artery,脾動脈,splenic artery,arteria splenica,artery,abdomen,basic_trunk,脾動脈は、英語の「splenic artery」に対応する解剖学用語です。
+common_hepatic_artery,総肝動脈,common hepatic artery,arteria hepatica communis,artery,abdomen,basic_trunk,総肝動脈は、英語の「common hepatic artery」に対応する解剖学用語です。
+proper_hepatic_artery,固有肝動脈,proper hepatic artery,arteria hepatica propria,artery,abdomen,basic_trunk,固有肝動脈は、英語の「proper hepatic artery」に対応する解剖学用語です。
+gastroduodenal_artery,胃十二指腸動脈,gastroduodenal artery,arteria gastroduodenalis,artery,abdomen,basic_trunk,胃十二指腸動脈は、英語の「gastroduodenal artery」に対応する解剖学用語です。
+gastro_omental_artery,胃大網動脈,gastro-omental artery,arteria gastroomentalis,artery,abdomen,basic_trunk,胃大網動脈は、英語の「gastro-omental artery」に対応する解剖学用語です。
+cystic_artery,胆嚢動脈,cystic artery,arteria cystica,artery,abdomen,basic_trunk,胆嚢動脈は、英語の「cystic artery」に対応する解剖学用語です。
+pancreaticoduodenal_artery,膵十二指腸動脈,pancreaticoduodenal artery,arteria pancreaticoduodenalis,artery,abdomen,basic_trunk,膵十二指腸動脈は、英語の「pancreaticoduodenal artery」に対応する解剖学用語です。
+left_colic_artery,左結腸動脈,left colic artery,arteria colica sinistra,artery,abdomen,basic_trunk,左結腸動脈は、英語の「left colic artery」に対応する解剖学用語です。
+sigmoid_arteries,S状結腸動脈,sigmoid arteries,arteriae sigmoideae,artery,abdomen,basic_trunk,S状結腸動脈は、英語の「sigmoid arteries」に対応する解剖学用語です。
+superior_rectal_artery,上直腸動脈,superior rectal artery,arteria rectalis superior,artery,abdomen,basic_trunk,上直腸動脈は、英語の「superior rectal artery」に対応する解剖学用語です。
+marginal_artery,辺縁動脈,marginal artery,arteria marginalis coli,artery,abdomen,basic_trunk,辺縁動脈は、英語の「marginal artery」に対応する解剖学用語です。
+middle_colic_artery,中結腸動脈,middle colic artery,arteria colica media,artery,abdomen,basic_trunk,中結腸動脈は、英語の「middle colic artery」に対応する解剖学用語です。
+internal_iliac_artery,内腸骨動脈,internal iliac artery,arteria iliaca interna,artery,pelvis,basic_lower,内腸骨動脈は、英語の「internal iliac artery」に対応する解剖学用語です。
+superior_gluteal_artery,上殿動脈,superior gluteal artery,arteria glutea superior,artery,pelvis,basic_lower,上殿動脈は、英語の「superior gluteal artery」に対応する解剖学用語です。
+inferior_gluteal_artery,下殿動脈,inferior gluteal artery,arteria glutea inferior,artery,pelvis,basic_lower,下殿動脈は、英語の「inferior gluteal artery」に対応する解剖学用語です。
+internal_pudendal_artery,内陰部動脈,internal pudendal artery,arteria pudenda interna,artery,pelvis,basic_lower,内陰部動脈は、英語の「internal pudendal artery」に対応する解剖学用語です。
+obturator_artery,閉鎖動脈,obturator artery,arteria obturatoria,artery,pelvis,basic_lower,閉鎖動脈は、英語の「obturator artery」に対応する解剖学用語です。
+umbilical_artery,臍動脈,umbilical artery,arteria umbilicalis,artery,pelvis,basic_lower,臍動脈は、英語の「umbilical artery」に対応する解剖学用語です。
+inferior_vesical_artery,下膀胱動脈,inferior vesical artery,arteria vesicalis inferior,artery,pelvis,basic_lower,下膀胱動脈は、英語の「inferior vesical artery」に対応する解剖学用語です。
+middle_rectal_artery,中直腸動脈,middle rectal artery,arteria rectalis media,artery,pelvis,basic_lower,中直腸動脈は、英語の「middle rectal artery」に対応する解剖学用語です。
+uterine_artery,子宮動脈,uterine artery,arteria uterina,artery,pelvis,basic_lower,子宮動脈は、英語の「uterine artery」に対応する解剖学用語です。
+ovarian_artery,卵巣動脈,ovarian artery,arteria ovarica,artery,pelvis,basic_lower,卵巣動脈は、英語の「ovarian artery」に対応する解剖学用語です。
+vaginal_artery,腟動脈,vaginal artery,arteria vaginalis,artery,pelvis,basic_lower,腟動脈は、英語の「vaginal artery」に対応する解剖学用語です。
+tubal_branch,卵管枝,tubal branch,ramus tubarius arteriae uterinae,artery,pelvis,basic_lower,卵管枝は、英語の「tubal branch」に対応する解剖学用語です。
+ovarian_branch,卵巣枝,ovarian branch,ramus ovaricus arteriae uterinae,artery,pelvis,basic_lower,卵巣枝は、英語の「ovarian branch」に対応する解剖学用語です。
+fundal_branch,子宮底枝,fundal branch,ramus fundalis arteriae uterinae,artery,pelvis,basic_lower,子宮底枝は、英語の「fundal branch」に対応する解剖学用語です。
+inferior_rectal_artery,下直腸動脈,inferior rectal artery,arteria rectalis inferior,artery,pelvis,basic_lower,下直腸動脈は、英語の「inferior rectal artery」に対応する解剖学用語です。
+perineal_artery,会陰動脈,perineal artery,arteria perinealis,artery,pelvis,basic_lower,会陰動脈は、英語の「perineal artery」に対応する解剖学用語です。
+posterior_scrotal_artery,後陰嚢動脈,posterior scrotal artery,arteria scrotalis posterior,artery,pelvis,basic_lower,後陰嚢動脈は、英語の「posterior scrotal artery」に対応する解剖学用語です。
+artery_of_bulb,尿道球動脈,artery of bulb,arteria bulbi penis,artery,pelvis,basic_lower,尿道球動脈は、英語の「artery of bulb」に対応する解剖学用語です。
+deep_artery_of_penis,陰茎深動脈,deep artery of penis,arteria profunda penis,artery,pelvis,basic_lower,陰茎深動脈は、英語の「deep artery of penis」に対応する解剖学用語です。
+dorsal_artery_of_penis,陰茎背動脈,dorsal artery of penis,arteria dorsalis penis,artery,pelvis,basic_lower,陰茎背動脈は、英語の「dorsal artery of penis」に対応する解剖学用語です。
+popliteal_artery,膝窩動脈,popliteal artery,arteria poplitea,artery,lower limb,basic_lower,膝窩動脈は、英語の「popliteal artery」に対応する解剖学用語です。
+superior_medial_genicular_artery,上内側膝動脈,superior medial genicular artery,arteria superior medialis genus,artery,lower limb,basic_lower,上内側膝動脈は、英語の「superior medial genicular artery」に対応する解剖学用語です。
+superior_lateral_genicular_artery,上外側膝動脈,superior lateral genicular artery,arteria superior lateralis genus,artery,lower limb,basic_lower,上外側膝動脈は、英語の「superior lateral genicular artery」に対応する解剖学用語です。
+inferior_medial_genicular_artery,下内側膝動脈,inferior medial genicular artery,arteria inferior medialis genus,artery,lower limb,basic_lower,下内側膝動脈は、英語の「inferior medial genicular artery」に対応する解剖学用語です。
+inferior_lateral_genicular_artery,下外側膝動脈,inferior lateral genicular artery,arteria inferior lateralis genus,artery,lower limb,basic_lower,下外側膝動脈は、英語の「inferior lateral genicular artery」に対応する解剖学用語です。
+middle_genicular_artery,中膝動脈,middle genicular artery,arteria media genus,artery,lower limb,basic_lower,中膝動脈は、英語の「middle genicular artery」に対応する解剖学用語です。
+sural_artery,腓腹動脈,sural artery,arteria suralis,artery,lower limb,basic_lower,腓腹動脈は、英語の「sural artery」に対応する解剖学用語です。
+sciatic_nerve,坐骨神経,sciatic nerve,nervus ischiadicus,nerve,lower limb,basic_lower,坐骨神経は、英語の「sciatic nerve」に対応する解剖学用語です。
+piriformis_muscle,梨状筋,piriformis muscle,musculus piriformis,muscle,lower limb,basic_muscle,梨状筋は、英語の「piriformis muscle」に対応する解剖学用語です。
+greater_sciatic_foramen,大坐骨孔,greater sciatic foramen,foramen ischiadicum majus,landmark,lower limb,basic_lower,大坐骨孔は、英語の「greater sciatic foramen」に対応する解剖学用語です。
+external_iliac_artery,外腸骨動脈,external iliac artery,arteria iliaca externa,artery,pelvis,basic_lower,外腸骨動脈は、英語の「external iliac artery」に対応する解剖学用語です。
+femoral_artery,大腿動脈,femoral artery,arteria femoralis,artery,lower limb,basic_lower,大腿動脈は、英語の「femoral artery」に対応する解剖学用語です。
+deep_femoral_artery,大腿深動脈,deep femoral artery,arteria profunda femoris,artery,lower limb,basic_lower,大腿深動脈は、英語の「deep femoral artery」に対応する解剖学用語です。
+superficial_epigastric_artery,浅腹壁動脈,superficial epigastric artery,arteria epigastrica superficialis,artery,lower limb,basic_lower,浅腹壁動脈は、英語の「superficial epigastric artery」に対応する解剖学用語です。
+superficial_circumflex_iliac_artery,浅腸骨回旋動脈,superficial circumflex iliac artery,arteria circumflexa iliaca superficialis,artery,lower limb,basic_lower,浅腸骨回旋動脈は、英語の「superficial circumflex iliac artery」に対応する解剖学用語です。
+external_pudendal_artery,外陰部動脈,external pudendal artery,arteria pudenda externa,artery,lower limb,basic_lower,外陰部動脈は、英語の「external pudendal artery」に対応する解剖学用語です。
+great_saphenous_vein,大伏在静脈,great saphenous vein,vena saphena magna,vein,lower limb,basic_lower,大伏在静脈は、英語の「great saphenous vein」に対応する解剖学用語です。
+posterior_tibial_artery,後脛骨動脈,posterior tibial artery,arteria tibialis posterior,artery,lower limb,basic_lower,後脛骨動脈は、英語の「posterior tibial artery」に対応する解剖学用語です。
+fibular_artery,腓骨動脈,fibular artery,arteria fibularis,artery,lower limb,basic_lower,腓骨動脈は、英語の「fibular artery」に対応する解剖学用語です。
+medial_plantar_artery,内側足底動脈,medial plantar artery,arteria plantaris medialis,artery,lower limb,basic_lower,内側足底動脈は、英語の「medial plantar artery」に対応する解剖学用語です。
+lateral_plantar_artery,外側足底動脈,lateral plantar artery,arteria plantaris lateralis,artery,lower limb,basic_lower,外側足底動脈は、英語の「lateral plantar artery」に対応する解剖学用語です。
+tibial_nerve,脛骨神経,tibial nerve,nervus tibialis,nerve,lower limb,basic_lower,脛骨神経は、英語の「tibial nerve」に対応する解剖学用語です。
+calcaneal_branch,踵骨枝,calcaneal branch,ramus calcaneus,artery,lower limb,basic_lower,踵骨枝は、英語の「calcaneal branch」に対応する解剖学用語です。
+anterior_tibial_artery,前脛骨動脈,anterior tibial artery,arteria tibialis anterior,artery,lower limb,basic_lower,前脛骨動脈は、英語の「anterior tibial artery」に対応する解剖学用語です。
+dorsalis_pedis_artery,足背動脈,dorsalis pedis artery,arteria dorsalis pedis,artery,lower limb,basic_lower,足背動脈は、英語の「dorsalis pedis artery」に対応する解剖学用語です。
+medial_tarsal_artery,内側足根動脈,medial tarsal artery,arteria tarsalis medialis,artery,lower limb,basic_lower,内側足根動脈は、英語の「medial tarsal artery」に対応する解剖学用語です。
+lateral_tarsal_artery,外側足根動脈,lateral tarsal artery,arteria tarsalis lateralis,artery,lower limb,basic_lower,外側足根動脈は、英語の「lateral tarsal artery」に対応する解剖学用語です。
+arcuate_artery,弓状動脈,arcuate artery,arteria arcuata,artery,lower limb,basic_lower,弓状動脈は、英語の「arcuate artery」に対応する解剖学用語です。
+deep_plantar_branch,深足底枝,deep plantar branch,ramus plantaris profundus,artery,lower limb,basic_lower,深足底枝は、英語の「deep plantar branch」に対応する解剖学用語です。
+plantar_arterial_arch,足底動脈弓,plantar arterial arch,arcus plantaris,artery,lower limb,basic_lower,足底動脈弓は、英語の「plantar arterial arch」に対応する解剖学用語です。
+plantar_metatarsal_artery,足底中足動脈,plantar metatarsal artery,arteria metatarsea plantaris,artery,lower limb,basic_lower,足底中足動脈は、英語の「plantar metatarsal artery」に対応する解剖学用語です。
+proper_plantar_digital_artery,固有底側趾動脈,proper plantar digital artery,arteria digitalis plantaris propria,artery,lower limb,basic_lower,固有底側趾動脈は、英語の「proper plantar digital artery」に対応する解剖学用語です。
+facial_vein,顔面静脈,facial vein,vena facialis,vein,head and neck,basic_head,顔面静脈は、英語の「facial vein」に対応する解剖学用語です。
+retromandibular_vein,下顎後静脈,retromandibular vein,vena retromandibularis,vein,head and neck,basic_head,下顎後静脈は、英語の「retromandibular vein」に対応する解剖学用語です。
+external_jugular_vein,外頸静脈,external jugular vein,vena jugularis externa,vein,head and neck,basic_head,外頸静脈は、英語の「external jugular vein」に対応する解剖学用語です。
+internal_jugular_vein,内頸静脈,internal jugular vein,vena jugularis interna,vein,head and neck,basic_head,内頸静脈は、英語の「internal jugular vein」に対応する解剖学用語です。
+superficial_temporal_vein,浅側頭静脈,superficial temporal vein,vena temporalis superficialis,vein,head and neck,basic_head,浅側頭静脈は、英語の「superficial temporal vein」に対応する解剖学用語です。
+maxillary_vein,顎静脈,maxillary vein,vena maxillaris,vein,head and neck,basic_head,顎静脈は、英語の「maxillary vein」に対応する解剖学用語です。
+lingual_vein,舌静脈,lingual vein,vena lingualis,vein,head and neck,basic_head,舌静脈は、英語の「lingual vein」に対応する解剖学用語です。
+anterior_jugular_vein,前頸静脈,anterior jugular vein,vena jugularis anterior,vein,head and neck,basic_head,前頸静脈は、英語の「anterior jugular vein」に対応する解剖学用語です。
+subclavian_vein,鎖骨下静脈,subclavian vein,vena subclavia,vein,upper limb,basic_upper,鎖骨下静脈は、英語の「subclavian vein」に対応する解剖学用語です。
+vertebral_vein,椎骨静脈,vertebral vein,vena vertebralis,vein,head and neck,basic_head,椎骨静脈は、英語の「vertebral vein」に対応する解剖学用語です。
+common_facial_vein,総顔面静脈,common facial vein,vena facialis communis,vein,head and neck,basic_head,総顔面静脈は、英語の「common facial vein」に対応する解剖学用語です。
+superior_thyroid_vein,上甲状腺静脈,superior thyroid vein,vena thyreoidea superior,vein,head and neck,basic_head,上甲状腺静脈は、英語の「superior thyroid vein」に対応する解剖学用語です。
+middle_thyroid_vein,中甲状腺静脈,middle thyroid vein,vena thyreoidea media,vein,head and neck,basic_head,中甲状腺静脈は、英語の「middle thyroid vein」に対応する解剖学用語です。
+inferior_thyroid_vein,下甲状腺静脈,inferior thyroid vein,vena thyreoidea inferior,vein,head and neck,basic_head,下甲状腺静脈は、英語の「inferior thyroid vein」に対応する解剖学用語です。
+brachiocephalic_vein,腕頭静脈,brachiocephalic vein,vena brachiocephalica,vein,head and neck,basic_head,腕頭静脈は、英語の「brachiocephalic vein」に対応する解剖学用語です。
+superior_sagittal_sinus,上矢状静脈洞,superior sagittal sinus,sinus sagittalis superior,vein,head and neck,basic_head,上矢状静脈洞は、英語の「superior sagittal sinus」に対応する解剖学用語です。
+straight_sinus,直静脈洞,straight sinus,sinus rectus,vein,head and neck,basic_head,直静脈洞は、英語の「straight sinus」に対応する解剖学用語です。
+transverse_sinus,横静脈洞,transverse sinus,sinus transversus,vein,head and neck,basic_head,横静脈洞は、英語の「transverse sinus」に対応する解剖学用語です。
+sigmoid_sinus,S状静脈洞,sigmoid sinus,sinus sigmoideus,vein,head and neck,basic_head,S状静脈洞は、英語の「sigmoid sinus」に対応する解剖学用語です。
+cavernous_sinus,海綿静脈洞,cavernous sinus,sinus cavernosus,vein,head and neck,basic_head,海綿静脈洞は、英語の「cavernous sinus」に対応する解剖学用語です。
+superior_petrosal_sinus,上錐体静脈洞,superior petrosal sinus,sinus petrosus superior,vein,head and neck,basic_head,上錐体静脈洞は、英語の「superior petrosal sinus」に対応する解剖学用語です。
+inferior_petrosal_sinus,下錐体静脈洞,inferior petrosal sinus,sinus petrosus inferior,vein,head and neck,basic_head,下錐体静脈洞は、英語の「inferior petrosal sinus」に対応する解剖学用語です。
+occipital_sinus,後頭静脈洞,occipital sinus,sinus occipitalis,vein,head and neck,basic_head,後頭静脈洞は、英語の「occipital sinus」に対応する解剖学用語です。
+cephalic_vein,橈側皮静脈,cephalic vein,vena cephalica,vein,upper limb,basic_upper,橈側皮静脈は、英語の「cephalic vein」に対応する解剖学用語です。
+basilic_vein,尺側皮静脈,basilic vein,vena basilica,vein,upper limb,basic_upper,尺側皮静脈は、英語の「basilic vein」に対応する解剖学用語です。
+median_cubital_vein,肘正中皮静脈,median cubital vein,vena mediana cubiti,vein,upper limb,basic_upper,肘正中皮静脈は、英語の「median cubital vein」に対応する解剖学用語です。
+brachial_vein,上腕静脈,brachial vein,venae brachiales,vein,upper limb,basic_upper,上腕静脈は、英語の「brachial vein」に対応する解剖学用語です。
+axillary_vein,腋窩静脈,axillary vein,vena axillaris,vein,upper limb,basic_upper,腋窩静脈は、英語の「axillary vein」に対応する解剖学用語です。
+lateral_thoracic_vein,外側胸静脈,lateral thoracic vein,vena thoracica lateralis,vein,upper limb,basic_upper,外側胸静脈は、英語の「lateral thoracic vein」に対応する解剖学用語です。
+subscapular_vein,肩甲下静脈,subscapular vein,vena subscapularis,vein,upper limb,basic_upper,肩甲下静脈は、英語の「subscapular vein」に対応する解剖学用語です。
+common_iliac_vein,総腸骨静脈,common iliac vein,vena iliaca communis,vein,pelvis,basic_lower,総腸骨静脈は、英語の「common iliac vein」に対応する解剖学用語です。
+renal_vein,腎静脈,renal vein,vena renalis,vein,abdomen,basic_trunk,腎静脈は、英語の「renal vein」に対応する解剖学用語です。
+hepatic_vein,肝静脈,hepatic vein,venae hepaticae,vein,abdomen,basic_trunk,肝静脈は、英語の「hepatic vein」に対応する解剖学用語です。
+gonadal_vein,性腺静脈,gonadal vein,vena gonadalis,vein,abdomen,basic_trunk,性腺静脈は、英語の「gonadal vein」に対応する解剖学用語です。
+lumbar_vein,腰静脈,lumbar vein,venae lumbales,vein,abdomen,basic_trunk,腰静脈は、英語の「lumbar vein」に対応する解剖学用語です。
+small_saphenous_vein,小伏在静脈,small saphenous vein,vena saphena parva,vein,lower limb,basic_lower,小伏在静脈は、英語の「small saphenous vein」に対応する解剖学用語です。
+dorsal_venous_arch,足背静脈弓,dorsal venous arch,arcus venosus dorsalis pedis,vein,lower limb,basic_lower,足背静脈弓は、英語の「dorsal venous arch」に対応する解剖学用語です。
+femoral_vein,大腿静脈,femoral vein,vena femoralis,vein,lower limb,basic_lower,大腿静脈は、英語の「femoral vein」に対応する解剖学用語です。
+popliteal_vein,膝窩静脈,popliteal vein,vena poplitea,vein,lower limb,basic_lower,膝窩静脈は、英語の「popliteal vein」に対応する解剖学用語です。
+anterior_tibial_vein,前脛骨静脈,anterior tibial vein,venae tibiales anteriores,vein,lower limb,basic_lower,前脛骨静脈は、英語の「anterior tibial vein」に対応する解剖学用語です。
+posterior_tibial_vein,後脛骨静脈,posterior tibial vein,venae tibiales posteriores,vein,lower limb,basic_lower,後脛骨静脈は、英語の「posterior tibial vein」に対応する解剖学用語です。
+internal_iliac_vein,内腸骨静脈,internal iliac vein,vena iliaca interna,vein,pelvis,basic_lower,内腸骨静脈は、英語の「internal iliac vein」に対応する解剖学用語です。
+external_iliac_vein,外腸骨静脈,external iliac vein,vena iliaca externa,vein,pelvis,basic_lower,外腸骨静脈は、英語の「external iliac vein」に対応する解剖学用語です。
+prostatic_venous_plexus,前立腺静脈叢,prostatic venous plexus,plexus venosus prostaticus,vein,pelvis,basic_lower,前立腺静脈叢は、英語の「prostatic venous plexus」に対応する解剖学用語です。
+vesical_venous_plexus,膀胱静脈叢,vesical venous plexus,plexus venosus vesicalis,vein,pelvis,basic_lower,膀胱静脈叢は、英語の「vesical venous plexus」に対応する解剖学用語です。
+internal_pudendal_vein,内陰部静脈,internal pudendal vein,vena pudenda interna,vein,pelvis,basic_lower,内陰部静脈は、英語の「internal pudendal vein」に対応する解剖学用語です。
+superior_gluteal_vein,上殿静脈,superior gluteal vein,vena glutea superior,vein,pelvis,basic_lower,上殿静脈は、英語の「superior gluteal vein」に対応する解剖学用語です。
+inferior_gluteal_vein,下殿静脈,inferior gluteal vein,vena glutea inferior,vein,pelvis,basic_lower,下殿静脈は、英語の「inferior gluteal vein」に対応する解剖学用語です。
+umbilical_vein,臍静脈,umbilical vein,vena umbilicalis,vein,pelvis,basic_lower,臍静脈は、英語の「umbilical vein」に対応する解剖学用語です。
+chorionic_vessels,絨毛膜血管,chorionic vessels,vasa chorionica,vessel,pelvis,basic_lower,絨毛膜血管は、英語の「chorionic vessels」に対応する解剖学用語です。
+intervillous_space,絨毛間腔,intervillous space,spatium intervillosum,region,pelvis,basic_lower,絨毛間腔は、英語の「intervillous space」に対応する解剖学用語です。
+placenta,胎盤,placenta,placenta,organ,pelvis,basic_lower,胎盤は、英語の「placenta」に対応する解剖学用語です。
+umbilical_cord,臍帯,umbilical cord,funiculus umbilicalis,structure,pelvis,basic_lower,臍帯は、英語の「umbilical cord」に対応する解剖学用語です。
+portal_vein,門脈,portal vein,vena portae hepatis,vein,abdomen,basic_trunk,門脈は、英語の「portal vein」に対応する解剖学用語です。
+splenic_vein,脾静脈,splenic vein,vena splenica,vein,abdomen,basic_trunk,脾静脈は、英語の「splenic vein」に対応する解剖学用語です。
+superior_mesenteric_vein,上腸間膜静脈,superior mesenteric vein,vena mesenterica superior,vein,abdomen,basic_trunk,上腸間膜静脈は、英語の「superior mesenteric vein」に対応する解剖学用語です。
+inferior_mesenteric_vein,下腸間膜静脈,inferior mesenteric vein,vena mesenterica inferior,vein,abdomen,basic_trunk,下腸間膜静脈は、英語の「inferior mesenteric vein」に対応する解剖学用語です。
+gastric_vein,胃静脈,gastric vein,vena gastrica,vein,abdomen,basic_trunk,胃静脈は、英語の「gastric vein」に対応する解剖学用語です。
+liver,肝臓,liver,hepar,organ,abdomen,basic_trunk,肝臓は、英語の「liver」に対応する解剖学用語です。
+pancreas,膵臓,pancreas,pancreas,organ,abdomen,basic_trunk,膵臓は、英語の「pancreas」に対応する解剖学用語です。
+spleen,脾臓,spleen,splen,organ,abdomen,basic_trunk,脾臓は、英語の「spleen」に対応する解剖学用語です。
+azygos_vein,奇静脈,azygos vein,vena azyga,vein,thorax,basic_trunk,奇静脈は、英語の「azygos vein」に対応する解剖学用語です。
+hemiazygos_vein,半奇静脈,hemiazygos vein,vena hemiazyga,vein,thorax,basic_trunk,半奇静脈は、英語の「hemiazygos vein」に対応する解剖学用語です。
+posterior_intercostal_vein,後肋間静脈,posterior intercostal vein,vena intercostalis posterior,vein,thorax,basic_trunk,後肋間静脈は、英語の「posterior intercostal vein」に対応する解剖学用語です。
+ascending_lumbar_vein,上行腰静脈,ascending lumbar vein,vena lumbalis ascendens,vein,thorax,basic_trunk,上行腰静脈は、英語の「ascending lumbar vein」に対応する解剖学用語です。
+vertebral_venous_plexus,椎骨静脈叢,vertebral venous plexus,plexus venosus vertebralis,vein,thorax,basic_trunk,椎骨静脈叢は、英語の「vertebral venous plexus」に対応する解剖学用語です。
 pdf_kaibo3_1_cb34b4c7e2,骨,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
 pdf_kaibo3_1_5b61561472,骨格系,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
 pdf_kaibo3_1_46e8f27b39,骨部,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。

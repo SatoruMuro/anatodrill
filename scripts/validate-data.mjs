@@ -129,6 +129,10 @@ function normalizeTermReference(value) {
   return String(value ?? '').trim().toLowerCase();
 }
 
+function csvTermHasCompleteNames(term) {
+  return Boolean(term?.japanese?.trim() && term?.english?.trim() && term?.latin?.trim());
+}
+
 function resolveCsvTermReference(value, csvTerms) {
   const rawValue = String(value ?? '').trim();
   if (!rawValue) {
@@ -136,12 +140,28 @@ function resolveCsvTermReference(value, csvTerms) {
   }
 
   const normalizedValue = normalizeTermReference(rawValue);
+  const idMatches = csvTerms.filter((term) => normalizeTermReference(term.id) === normalizedValue);
+  if (idMatches.length === 1) {
+    return { status: 'resolved', rawValue, matches: idMatches };
+  }
+  if (idMatches.length > 1) {
+    return { status: 'ambiguous', rawValue, matches: idMatches };
+  }
+
   const matches = new Map();
   for (const term of csvTerms) {
-    const searchableValues = [term.id, term.japanese, term.english, term.latin].map(normalizeTermReference);
+    const searchableValues = [term.japanese, term.english, term.latin].map(normalizeTermReference);
     if (searchableValues.includes(normalizedValue)) {
       matches.set(term.id, term);
     }
+  }
+
+  const completeMatches = [...matches.values()].filter(csvTermHasCompleteNames);
+  if (completeMatches.length === 1) {
+    return { status: 'resolved', rawValue, matches: completeMatches };
+  }
+  if (completeMatches.length > 1) {
+    return { status: 'ambiguous', rawValue, matches: completeMatches };
   }
 
   if (matches.size === 1) {
@@ -176,7 +196,7 @@ function validateCsvImageLabelTermReferences(csvTerms, csvImageLabels) {
   }
 }
 
-function validateCsvImageSuggestions(csvSuggestions, validImageIds) {
+function validateCsvImageSuggestions(csvSuggestions, validImageIds, csvTerms) {
   const seenImageIds = new Set();
 
   for (const row of csvSuggestions) {
@@ -218,6 +238,22 @@ function validateCsvImageSuggestions(csvSuggestions, validImageIds) {
         addError(`${suggestionContext}: duplicate suggestion "${item}".`);
       }
       seenSuggestions.add(key);
+
+      const japanese = normalizeTermReference(parts[0]);
+      const english = normalizeTermReference(parts[1]);
+      const matches = csvTerms.filter(
+        (term) =>
+          csvTermHasCompleteNames(term) &&
+          normalizeTermReference(term.japanese) === japanese &&
+          normalizeTermReference(term.english) === english,
+      );
+      if (matches.length !== 1) {
+        addError(
+          `${suggestionContext}: "${item}" must match exactly one complete term in terms.csv. Matches: ${matches
+            .map((term) => term.id)
+            .join(', ') || 'none'}.`,
+        );
+      }
     });
   }
 }
@@ -315,7 +351,7 @@ const questionCountsByTestSet = new Map();
 const numberedQuestionsByLabel = new Map();
 
 validateCsvImageLabelTermReferences(csvTerms, csvImageLabels);
-validateCsvImageSuggestions(csvImageSuggestions, imageIds);
+validateCsvImageSuggestions(csvImageSuggestions, imageIds, csvTerms);
 
 for (const term of terms) {
   const context = `Term ${term?.id ?? '(missing id)'}`;
@@ -542,14 +578,19 @@ for (const image of images) {
     }
     suggestionKeys.add(key);
 
-    if (suggestion.termId !== undefined) {
-      if (typeof suggestion.termId !== 'string' || !termIds.has(suggestion.termId)) {
-        addError(`${suggestionContext}: termId "${suggestion.termId}" does not exist.`);
-      } else {
-        const term = termById.get(suggestion.termId);
-        if (!term?.japanese?.trim() || !term?.english?.trim() || !term?.latin?.trim()) {
-          addError(`${suggestionContext}: registered suggestion term needs Japanese, English, and Latin names.`);
-        }
+    if (typeof suggestion.termId !== 'string' || !termIds.has(suggestion.termId)) {
+      addError(`${suggestionContext}: every image suggestion must have a registered termId.`);
+    } else {
+      const term = termById.get(suggestion.termId);
+      if (!term?.japanese?.trim() || !term?.english?.trim() || !term?.latin?.trim()) {
+        addError(`${suggestionContext}: registered suggestion term needs Japanese, English, and Latin names.`);
+      } else if (
+        normalizeTermReference(term.japanese) !== normalizeTermReference(suggestion.japanese) ||
+        normalizeTermReference(term.english) !== normalizeTermReference(suggestion.english)
+      ) {
+        addError(
+          `${suggestionContext}: termId "${suggestion.termId}" does not match the suggestion's Japanese/English pair.`,
+        );
       }
     }
   });

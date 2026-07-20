@@ -744,7 +744,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                 ))}
               </div>
               <p className="image-suggestion-footnote">
-                「未登録」は入力欄への補助入力のみです。採用する場合は、先に terms.csv へ3言語の用語を登録してください。
+                候補は3言語の用語として登録済みです。画像を確認し、正しい候補だけを使用してください。
               </p>
             </section>
           ) : null}

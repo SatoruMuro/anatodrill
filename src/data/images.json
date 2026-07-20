@@ -1393,7 +1393,8 @@
       },
       {
         "japanese": "趾骨",
-        "english": "phalanges of foot"
+        "english": "phalanges of foot",
+        "termId": "phalanges_of_foot"
       }
     ],
     "editionYear": 1918
@@ -1483,15 +1484,18 @@
       },
       {
         "japanese": "第1中足骨",
-        "english": "first metatarsal bone"
+        "english": "first metatarsal bone",
+        "termId": "first_metatarsal_bone"
       },
       {
         "japanese": "距骨下関節",
-        "english": "subtalar joint"
+        "english": "subtalar joint",
+        "termId": "subtalar_joint"
       },
       {
         "japanese": "載距突起",
-        "english": "sustentaculum tali"
+        "english": "sustentaculum tali",
+        "termId": "sustentaculum_tali"
       }
     ],
     "editionYear": 1918
@@ -1602,7 +1606,8 @@
       },
       {
         "japanese": "第5中足骨",
-        "english": "fifth metatarsal bone"
+        "english": "fifth metatarsal bone",
+        "termId": "fifth_metatarsal_bone"
       },
       {
         "japanese": "腓骨",
@@ -1611,7 +1616,8 @@
       },
       {
         "japanese": "距骨下関節",
-        "english": "subtalar joint"
+        "english": "subtalar joint",
+        "termId": "subtalar_joint"
       }
     ],
     "editionYear": 1918
@@ -1631,35 +1637,43 @@
     "suggestions": [
       {
         "japanese": "上腕動脈",
-        "english": "brachial artery"
+        "english": "brachial artery",
+        "termId": "brachial_artery"
       },
       {
         "japanese": "上腕深動脈",
-        "english": "deep brachial artery"
+        "english": "deep brachial artery",
+        "termId": "deep_brachial_artery"
       },
       {
         "japanese": "上尺側側副動脈",
-        "english": "superior ulnar collateral artery"
+        "english": "superior ulnar collateral artery",
+        "termId": "superior_ulnar_collateral_artery"
       },
       {
         "japanese": "下尺側側副動脈",
-        "english": "inferior ulnar collateral artery"
+        "english": "inferior ulnar collateral artery",
+        "termId": "inferior_ulnar_collateral_artery"
       },
       {
         "japanese": "橈骨動脈",
-        "english": "radial artery"
+        "english": "radial artery",
+        "termId": "radial_artery"
       },
       {
         "japanese": "尺骨動脈",
-        "english": "ulnar artery"
+        "english": "ulnar artery",
+        "termId": "ulnar_artery"
       },
       {
-        "japanese": "橈側反回動脈",
-        "english": "radial recurrent artery"
+        "japanese": "橈骨反回動脈",
+        "english": "radial recurrent artery",
+        "termId": "radial_recurrent_artery"
       },
       {
-        "japanese": "尺側反回動脈",
-        "english": "ulnar recurrent artery"
+        "japanese": "尺骨反回動脈",
+        "english": "ulnar recurrent artery",
+        "termId": "ulnar_recurrent_artery"
       }
     ],
     "editionYear": 1918
@@ -1679,43 +1693,53 @@
     "suggestions": [
       {
         "japanese": "上前頭回",
-        "english": "superior frontal gyrus"
+        "english": "superior frontal gyrus",
+        "termId": "superior_frontal_gyrus"
       },
       {
         "japanese": "中前頭回",
-        "english": "middle frontal gyrus"
+        "english": "middle frontal gyrus",
+        "termId": "middle_frontal_gyrus"
       },
       {
         "japanese": "下前頭回",
-        "english": "inferior frontal gyrus"
+        "english": "inferior frontal gyrus",
+        "termId": "inferior_frontal_gyrus"
       },
       {
         "japanese": "中心前回",
-        "english": "precentral gyrus"
+        "english": "precentral gyrus",
+        "termId": "precentral_gyrus"
       },
       {
         "japanese": "中心後回",
-        "english": "postcentral gyrus"
+        "english": "postcentral gyrus",
+        "termId": "postcentral_gyrus"
       },
       {
         "japanese": "上頭頂小葉",
-        "english": "superior parietal lobule"
+        "english": "superior parietal lobule",
+        "termId": "superior_parietal_lobule"
       },
       {
         "japanese": "下頭頂小葉",
-        "english": "inferior parietal lobule"
+        "english": "inferior parietal lobule",
+        "termId": "inferior_parietal_lobule"
       },
       {
         "japanese": "上側頭回",
-        "english": "superior temporal gyrus"
+        "english": "superior temporal gyrus",
+        "termId": "superior_temporal_gyrus"
       },
       {
         "japanese": "中側頭回",
-        "english": "middle temporal gyrus"
+        "english": "middle temporal gyrus",
+        "termId": "middle_temporal_gyrus"
       },
       {
         "japanese": "下側頭回",
-        "english": "inferior temporal gyrus"
+        "english": "inferior temporal gyrus",
+        "termId": "inferior_temporal_gyrus"
       }
     ],
     "editionYear": 1918
@@ -1735,35 +1759,43 @@
     "suggestions": [
       {
         "japanese": "上行大動脈",
-        "english": "ascending aorta"
+        "english": "ascending aorta",
+        "termId": "ascending_aorta"
       },
       {
         "japanese": "大動脈弓",
-        "english": "aortic arch"
+        "english": "aortic arch",
+        "termId": "aortic_arch"
       },
       {
         "japanese": "肺動脈幹",
-        "english": "pulmonary trunk"
+        "english": "pulmonary trunk",
+        "termId": "pulmonary_trunk"
       },
       {
         "japanese": "右肺動脈",
-        "english": "right pulmonary artery"
+        "english": "right pulmonary artery",
+        "termId": "right_pulmonary_artery"
       },
       {
         "japanese": "左肺動脈",
-        "english": "left pulmonary artery"
+        "english": "left pulmonary artery",
+        "termId": "left_pulmonary_artery"
       },
       {
         "japanese": "上大静脈",
-        "english": "superior vena cava"
+        "english": "superior vena cava",
+        "termId": "superior_vena_cava"
       },
       {
         "japanese": "心臓",
-        "english": "heart"
+        "english": "heart",
+        "termId": "heart"
       },
       {
         "japanese": "肺",
-        "english": "lung"
+        "english": "lung",
+        "termId": "lung"
       }
     ],
     "editionYear": 1918
@@ -1783,31 +1815,38 @@
     "suggestions": [
       {
         "japanese": "右心房",
-        "english": "right atrium"
+        "english": "right atrium",
+        "termId": "right_atrium"
       },
       {
         "japanese": "上大静脈",
-        "english": "superior vena cava"
+        "english": "superior vena cava",
+        "termId": "superior_vena_cava"
       },
       {
         "japanese": "下大静脈",
-        "english": "inferior vena cava"
+        "english": "inferior vena cava",
+        "termId": "inferior_vena_cava"
       },
       {
         "japanese": "冠状静脈洞",
-        "english": "coronary sinus"
+        "english": "coronary sinus",
+        "termId": "coronary_sinus"
       },
       {
         "japanese": "卵円窩",
-        "english": "fossa ovalis"
+        "english": "fossa ovalis",
+        "termId": "fossa_ovalis"
       },
       {
         "japanese": "右房室口",
-        "english": "right atrioventricular orifice"
+        "english": "right atrioventricular orifice",
+        "termId": "right_atrioventricular_orifice"
       },
       {
         "japanese": "三尖弁",
-        "english": "tricuspid valve"
+        "english": "tricuspid valve",
+        "termId": "tricuspid_valve"
       }
     ],
     "editionYear": 1918
@@ -1827,35 +1866,43 @@
     "suggestions": [
       {
         "japanese": "右冠状動脈",
-        "english": "right coronary artery"
+        "english": "right coronary artery",
+        "termId": "right_coronary_artery"
       },
       {
         "japanese": "左冠状動脈",
-        "english": "left coronary artery"
+        "english": "left coronary artery",
+        "termId": "left_coronary_artery"
       },
       {
         "japanese": "前室間枝",
-        "english": "anterior interventricular branch"
+        "english": "anterior interventricular branch",
+        "termId": "anterior_interventricular_branch"
       },
       {
         "japanese": "回旋枝",
-        "english": "circumflex branch"
+        "english": "circumflex branch",
+        "termId": "circumflex_branch"
       },
       {
         "japanese": "右縁枝",
-        "english": "right marginal branch"
+        "english": "right marginal branch",
+        "termId": "right_marginal_branch"
       },
       {
         "japanese": "後室間枝",
-        "english": "posterior interventricular branch"
+        "english": "posterior interventricular branch",
+        "termId": "posterior_interventricular_branch"
       },
       {
         "japanese": "冠状溝",
-        "english": "coronary sulcus"
+        "english": "coronary sulcus",
+        "termId": "coronary_sulcus"
       },
       {
         "japanese": "心尖",
-        "english": "apex of heart"
+        "english": "apex of heart",
+        "termId": "apex_of_heart"
       }
     ],
     "editionYear": 1918
@@ -1875,35 +1922,43 @@
     "suggestions": [
       {
         "japanese": "上行大動脈",
-        "english": "ascending aorta"
+        "english": "ascending aorta",
+        "termId": "ascending_aorta"
       },
       {
         "japanese": "大動脈弓",
-        "english": "aortic arch"
+        "english": "aortic arch",
+        "termId": "aortic_arch"
       },
       {
         "japanese": "腕頭動脈",
-        "english": "brachiocephalic trunk"
+        "english": "brachiocephalic trunk",
+        "termId": "brachiocephalic_trunk"
       },
       {
         "japanese": "総頸動脈",
-        "english": "common carotid artery"
+        "english": "common carotid artery",
+        "termId": "common_carotid_artery"
       },
       {
         "japanese": "鎖骨下動脈",
-        "english": "subclavian artery"
+        "english": "subclavian artery",
+        "termId": "subclavian_artery"
       },
       {
         "japanese": "上大静脈",
-        "english": "superior vena cava"
+        "english": "superior vena cava",
+        "termId": "superior_vena_cava"
       },
       {
         "japanese": "肺動脈",
-        "english": "pulmonary artery"
+        "english": "pulmonary artery",
+        "termId": "pulmonary_artery"
       },
       {
         "japanese": "肺静脈",
-        "english": "pulmonary vein"
+        "english": "pulmonary vein",
+        "termId": "pulmonary_vein"
       }
     ],
     "editionYear": 1918
@@ -1923,35 +1978,43 @@
     "suggestions": [
       {
         "japanese": "総頸動脈",
-        "english": "common carotid artery"
+        "english": "common carotid artery",
+        "termId": "common_carotid_artery"
       },
       {
         "japanese": "外頸動脈",
-        "english": "external carotid artery"
+        "english": "external carotid artery",
+        "termId": "external_carotid_artery"
       },
       {
         "japanese": "内頸動脈",
-        "english": "internal carotid artery"
+        "english": "internal carotid artery",
+        "termId": "internal_carotid_artery"
       },
       {
         "japanese": "鎖骨下動脈",
-        "english": "subclavian artery"
+        "english": "subclavian artery",
+        "termId": "subclavian_artery"
       },
       {
         "japanese": "腕頭動脈",
-        "english": "brachiocephalic trunk"
+        "english": "brachiocephalic trunk",
+        "termId": "brachiocephalic_trunk"
       },
       {
         "japanese": "椎骨動脈",
-        "english": "vertebral artery"
+        "english": "vertebral artery",
+        "termId": "vertebral_artery"
       },
       {
         "japanese": "甲状腺",
-        "english": "thyroid gland"
+        "english": "thyroid gland",
+        "termId": "thyroid_gland"
       },
       {
         "japanese": "喉頭",
-        "english": "larynx"
+        "english": "larynx",
+        "termId": "larynx"
       }
     ],
     "editionYear": 1918
@@ -1971,35 +2034,43 @@
     "suggestions": [
       {
         "japanese": "外頸動脈",
-        "english": "external carotid artery"
+        "english": "external carotid artery",
+        "termId": "external_carotid_artery"
       },
       {
         "japanese": "上甲状腺動脈",
-        "english": "superior thyroid artery"
+        "english": "superior thyroid artery",
+        "termId": "superior_thyroid_artery"
       },
       {
         "japanese": "舌動脈",
-        "english": "lingual artery"
+        "english": "lingual artery",
+        "termId": "lingual_artery"
       },
       {
         "japanese": "顔面動脈",
-        "english": "facial artery"
+        "english": "facial artery",
+        "termId": "facial_artery"
       },
       {
         "japanese": "後頭動脈",
-        "english": "occipital artery"
+        "english": "occipital artery",
+        "termId": "occipital_artery"
       },
       {
         "japanese": "後耳介動脈",
-        "english": "posterior auricular artery"
+        "english": "posterior auricular artery",
+        "termId": "posterior_auricular_artery"
       },
       {
         "japanese": "顎動脈",
-        "english": "maxillary artery"
+        "english": "maxillary artery",
+        "termId": "maxillary_artery"
       },
       {
         "japanese": "浅側頭動脈",
-        "english": "superficial temporal artery"
+        "english": "superficial temporal artery",
+        "termId": "superficial_temporal_artery"
       }
     ],
     "editionYear": 1918
@@ -2019,31 +2090,38 @@
     "suggestions": [
       {
         "japanese": "顎動脈",
-        "english": "maxillary artery"
+        "english": "maxillary artery",
+        "termId": "maxillary_artery"
       },
       {
         "japanese": "中硬膜動脈",
-        "english": "middle meningeal artery"
+        "english": "middle meningeal artery",
+        "termId": "middle_meningeal_artery"
       },
       {
         "japanese": "下歯槽動脈",
-        "english": "inferior alveolar artery"
+        "english": "inferior alveolar artery",
+        "termId": "inferior_alveolar_artery"
       },
       {
         "japanese": "眼窩下動脈",
-        "english": "infraorbital artery"
+        "english": "infraorbital artery",
+        "termId": "infraorbital_artery"
       },
       {
         "japanese": "蝶口蓋動脈",
-        "english": "sphenopalatine artery"
+        "english": "sphenopalatine artery",
+        "termId": "sphenopalatine_artery"
       },
       {
         "japanese": "深側頭動脈",
-        "english": "deep temporal artery"
+        "english": "deep temporal artery",
+        "termId": "deep_temporal_artery"
       },
       {
         "japanese": "頬動脈",
-        "english": "buccal artery"
+        "english": "buccal artery",
+        "termId": "buccal_artery"
       }
     ],
     "editionYear": 1918
@@ -2068,27 +2146,33 @@
       },
       {
         "japanese": "顎下腺",
-        "english": "submandibular gland"
+        "english": "submandibular gland",
+        "termId": "submandibular_gland"
       },
       {
         "japanese": "顎二腹筋",
-        "english": "digastric muscle"
+        "english": "digastric muscle",
+        "termId": "digastric_muscle"
       },
       {
         "japanese": "顎舌骨筋",
-        "english": "mylohyoid muscle"
+        "english": "mylohyoid muscle",
+        "termId": "mylohyoid_muscle"
       },
       {
         "japanese": "舌骨舌筋",
-        "english": "hyoglossus muscle"
+        "english": "hyoglossus muscle",
+        "termId": "hyoglossus_muscle"
       },
       {
         "japanese": "顔面動脈",
-        "english": "facial artery"
+        "english": "facial artery",
+        "termId": "facial_artery"
       },
       {
         "japanese": "顎下三角",
-        "english": "submandibular triangle"
+        "english": "submandibular triangle",
+        "termId": "submandibular_triangle"
       }
     ],
     "editionYear": 1918
@@ -2108,23 +2192,28 @@
     "suggestions": [
       {
         "japanese": "総頸動脈",
-        "english": "common carotid artery"
+        "english": "common carotid artery",
+        "termId": "common_carotid_artery"
       },
       {
         "japanese": "内頸動脈",
-        "english": "internal carotid artery"
+        "english": "internal carotid artery",
+        "termId": "internal_carotid_artery"
       },
       {
         "japanese": "外頸動脈",
-        "english": "external carotid artery"
+        "english": "external carotid artery",
+        "termId": "external_carotid_artery"
       },
       {
         "japanese": "頸動脈洞",
-        "english": "carotid sinus"
+        "english": "carotid sinus",
+        "termId": "carotid_sinus"
       },
       {
         "japanese": "椎骨動脈",
-        "english": "vertebral artery"
+        "english": "vertebral artery",
+        "termId": "vertebral_artery"
       },
       {
         "japanese": "頸椎",
@@ -2133,7 +2222,8 @@
       },
       {
         "japanese": "咽頭",
-        "english": "pharynx"
+        "english": "pharynx",
+        "termId": "pharynx"
       }
     ],
     "editionYear": 1918
@@ -2153,35 +2243,43 @@
     "suggestions": [
       {
         "japanese": "眼動脈",
-        "english": "ophthalmic artery"
+        "english": "ophthalmic artery",
+        "termId": "ophthalmic_artery"
       },
       {
         "japanese": "網膜中心動脈",
-        "english": "central retinal artery"
+        "english": "central retinal artery",
+        "termId": "central_retinal_artery"
       },
       {
         "japanese": "涙腺動脈",
-        "english": "lacrimal artery"
+        "english": "lacrimal artery",
+        "termId": "lacrimal_artery"
       },
       {
         "japanese": "眼窩上動脈",
-        "english": "supraorbital artery"
+        "english": "supraorbital artery",
+        "termId": "supraorbital_artery"
       },
       {
         "japanese": "滑車上動脈",
-        "english": "supratrochlear artery"
+        "english": "supratrochlear artery",
+        "termId": "supratrochlear_artery"
       },
       {
         "japanese": "鼻背動脈",
-        "english": "dorsal nasal artery"
+        "english": "dorsal nasal artery",
+        "termId": "dorsal_nasal_artery"
       },
       {
         "japanese": "前篩骨動脈",
-        "english": "anterior ethmoidal artery"
+        "english": "anterior ethmoidal artery",
+        "termId": "anterior_ethmoidal_artery"
       },
       {
         "japanese": "後篩骨動脈",
-        "english": "posterior ethmoidal artery"
+        "english": "posterior ethmoidal artery",
+        "termId": "posterior_ethmoidal_artery"
       }
     ],
     "editionYear": 1918
@@ -2201,35 +2299,43 @@
     "suggestions": [
       {
         "japanese": "眼動脈",
-        "english": "ophthalmic artery"
+        "english": "ophthalmic artery",
+        "termId": "ophthalmic_artery"
       },
       {
         "japanese": "網膜中心動脈",
-        "english": "central retinal artery"
+        "english": "central retinal artery",
+        "termId": "central_retinal_artery"
       },
       {
         "japanese": "涙腺動脈",
-        "english": "lacrimal artery"
+        "english": "lacrimal artery",
+        "termId": "lacrimal_artery"
       },
       {
         "japanese": "眼窩上動脈",
-        "english": "supraorbital artery"
+        "english": "supraorbital artery",
+        "termId": "supraorbital_artery"
       },
       {
         "japanese": "滑車上動脈",
-        "english": "supratrochlear artery"
+        "english": "supratrochlear artery",
+        "termId": "supratrochlear_artery"
       },
       {
         "japanese": "鼻背動脈",
-        "english": "dorsal nasal artery"
+        "english": "dorsal nasal artery",
+        "termId": "dorsal_nasal_artery"
       },
       {
         "japanese": "前篩骨動脈",
-        "english": "anterior ethmoidal artery"
+        "english": "anterior ethmoidal artery",
+        "termId": "anterior_ethmoidal_artery"
       },
       {
         "japanese": "後篩骨動脈",
-        "english": "posterior ethmoidal artery"
+        "english": "posterior ethmoidal artery",
+        "termId": "posterior_ethmoidal_artery"
       }
     ],
     "editionYear": 1918
@@ -2249,39 +2355,48 @@
     "suggestions": [
       {
         "japanese": "内頸動脈",
-        "english": "internal carotid artery"
+        "english": "internal carotid artery",
+        "termId": "internal_carotid_artery"
       },
       {
         "japanese": "椎骨動脈",
-        "english": "vertebral artery"
+        "english": "vertebral artery",
+        "termId": "vertebral_artery"
       },
       {
         "japanese": "脳底動脈",
-        "english": "basilar artery"
+        "english": "basilar artery",
+        "termId": "basilar_artery"
       },
       {
         "japanese": "前大脳動脈",
-        "english": "anterior cerebral artery"
+        "english": "anterior cerebral artery",
+        "termId": "anterior_cerebral_artery"
       },
       {
         "japanese": "中大脳動脈",
-        "english": "middle cerebral artery"
+        "english": "middle cerebral artery",
+        "termId": "middle_cerebral_artery"
       },
       {
         "japanese": "後大脳動脈",
-        "english": "posterior cerebral artery"
+        "english": "posterior cerebral artery",
+        "termId": "posterior_cerebral_artery"
       },
       {
         "japanese": "前交通動脈",
-        "english": "anterior communicating artery"
+        "english": "anterior communicating artery",
+        "termId": "anterior_communicating_artery"
       },
       {
         "japanese": "後交通動脈",
-        "english": "posterior communicating artery"
+        "english": "posterior communicating artery",
+        "termId": "posterior_communicating_artery"
       },
       {
         "japanese": "上小脳動脈",
-        "english": "superior cerebellar artery"
+        "english": "superior cerebellar artery",
+        "termId": "superior_cerebellar_artery"
       }
     ],
     "editionYear": 1918
@@ -2301,31 +2416,38 @@
     "suggestions": [
       {
         "japanese": "帯状回",
-        "english": "cingulate gyrus"
+        "english": "cingulate gyrus",
+        "termId": "cingulate_gyrus"
       },
       {
         "japanese": "中心傍小葉",
-        "english": "paracentral lobule"
+        "english": "paracentral lobule",
+        "termId": "paracentral_lobule"
       },
       {
         "japanese": "楔前部",
-        "english": "precuneus"
+        "english": "precuneus",
+        "termId": "precuneus"
       },
       {
         "japanese": "楔部",
-        "english": "cuneus"
+        "english": "cuneus",
+        "termId": "cuneus"
       },
       {
         "japanese": "舌状回",
-        "english": "lingual gyrus"
+        "english": "lingual gyrus",
+        "termId": "lingual_gyrus"
       },
       {
         "japanese": "海馬傍回",
-        "english": "parahippocampal gyrus"
+        "english": "parahippocampal gyrus",
+        "termId": "parahippocampal_gyrus"
       },
       {
         "japanese": "脳梁",
-        "english": "corpus callosum"
+        "english": "corpus callosum",
+        "termId": "corpus_callosum"
       }
     ],
     "editionYear": 1918
@@ -2345,35 +2467,43 @@
     "suggestions": [
       {
         "japanese": "鎖骨下動脈",
-        "english": "subclavian artery"
+        "english": "subclavian artery",
+        "termId": "subclavian_artery"
       },
       {
         "japanese": "総頸動脈",
-        "english": "common carotid artery"
+        "english": "common carotid artery",
+        "termId": "common_carotid_artery"
       },
       {
         "japanese": "椎骨動脈",
-        "english": "vertebral artery"
+        "english": "vertebral artery",
+        "termId": "vertebral_artery"
       },
       {
         "japanese": "甲状頸動脈幹",
-        "english": "thyrocervical trunk"
+        "english": "thyrocervical trunk",
+        "termId": "thyrocervical_trunk"
       },
       {
         "japanese": "下甲状腺動脈",
-        "english": "inferior thyroid artery"
+        "english": "inferior thyroid artery",
+        "termId": "inferior_thyroid_artery"
       },
       {
         "japanese": "頸横動脈",
-        "english": "transverse cervical artery"
+        "english": "transverse cervical artery",
+        "termId": "transverse_cervical_artery"
       },
       {
         "japanese": "肩甲上動脈",
-        "english": "suprascapular artery"
+        "english": "suprascapular artery",
+        "termId": "suprascapular_artery"
       },
       {
         "japanese": "腕神経叢",
-        "english": "brachial plexus"
+        "english": "brachial plexus",
+        "termId": "brachial_plexus"
       }
     ],
     "editionYear": 1918
@@ -2393,27 +2523,33 @@
     "suggestions": [
       {
         "japanese": "肩甲上動脈",
-        "english": "suprascapular artery"
+        "english": "suprascapular artery",
+        "termId": "suprascapular_artery"
       },
       {
         "japanese": "肩甲回旋動脈",
-        "english": "circumflex scapular artery"
+        "english": "circumflex scapular artery",
+        "termId": "circumflex_scapular_artery"
       },
       {
         "japanese": "肩甲背動脈",
-        "english": "dorsal scapular artery"
+        "english": "dorsal scapular artery",
+        "termId": "dorsal_scapular_artery"
       },
       {
         "japanese": "肩甲下動脈",
-        "english": "subscapular artery"
+        "english": "subscapular artery",
+        "termId": "subscapular_artery"
       },
       {
         "japanese": "胸背動脈",
-        "english": "thoracodorsal artery"
+        "english": "thoracodorsal artery",
+        "termId": "thoracodorsal_artery"
       },
       {
         "japanese": "上腕回旋動脈",
-        "english": "circumflex humeral artery"
+        "english": "circumflex humeral artery",
+        "termId": "circumflex_humeral_artery"
       }
     ],
     "editionYear": 1918
@@ -2433,19 +2569,23 @@
     "suggestions": [
       {
         "japanese": "内胸動脈",
-        "english": "internal thoracic artery"
+        "english": "internal thoracic artery",
+        "termId": "internal_thoracic_artery"
       },
       {
         "japanese": "前肋間動脈",
-        "english": "anterior intercostal artery"
+        "english": "anterior intercostal artery",
+        "termId": "anterior_intercostal_artery"
       },
       {
         "japanese": "筋横隔動脈",
-        "english": "musculophrenic artery"
+        "english": "musculophrenic artery",
+        "termId": "musculophrenic_artery"
       },
       {
         "japanese": "上腹壁動脈",
-        "english": "superior epigastric artery"
+        "english": "superior epigastric artery",
+        "termId": "superior_epigastric_artery"
       },
       {
         "japanese": "胸骨",
@@ -2475,35 +2615,43 @@
     "suggestions": [
       {
         "japanese": "腋窩動脈",
-        "english": "axillary artery"
+        "english": "axillary artery",
+        "termId": "axillary_artery"
       },
       {
         "japanese": "鎖骨下動脈",
-        "english": "subclavian artery"
+        "english": "subclavian artery",
+        "termId": "subclavian_artery"
       },
       {
         "japanese": "上腕動脈",
-        "english": "brachial artery"
+        "english": "brachial artery",
+        "termId": "brachial_artery"
       },
       {
         "japanese": "胸肩峰動脈",
-        "english": "thoracoacromial artery"
+        "english": "thoracoacromial artery",
+        "termId": "thoracoacromial_artery"
       },
       {
         "japanese": "外側胸動脈",
-        "english": "lateral thoracic artery"
+        "english": "lateral thoracic artery",
+        "termId": "lateral_thoracic_artery"
       },
       {
         "japanese": "肩甲下動脈",
-        "english": "subscapular artery"
+        "english": "subscapular artery",
+        "termId": "subscapular_artery"
       },
       {
         "japanese": "前上腕回旋動脈",
-        "english": "anterior circumflex humeral artery"
+        "english": "anterior circumflex humeral artery",
+        "termId": "anterior_circumflex_humeral_artery"
       },
       {
         "japanese": "後上腕回旋動脈",
-        "english": "posterior circumflex humeral artery"
+        "english": "posterior circumflex humeral artery",
+        "termId": "posterior_circumflex_humeral_artery"
       }
     ],
     "editionYear": 1918
@@ -2523,27 +2671,33 @@
     "suggestions": [
       {
         "japanese": "肩甲上動脈",
-        "english": "suprascapular artery"
+        "english": "suprascapular artery",
+        "termId": "suprascapular_artery"
       },
       {
         "japanese": "肩甲回旋動脈",
-        "english": "circumflex scapular artery"
+        "english": "circumflex scapular artery",
+        "termId": "circumflex_scapular_artery"
       },
       {
         "japanese": "肩甲背動脈",
-        "english": "dorsal scapular artery"
+        "english": "dorsal scapular artery",
+        "termId": "dorsal_scapular_artery"
       },
       {
         "japanese": "肩甲下動脈",
-        "english": "subscapular artery"
+        "english": "subscapular artery",
+        "termId": "subscapular_artery"
       },
       {
         "japanese": "胸背動脈",
-        "english": "thoracodorsal artery"
+        "english": "thoracodorsal artery",
+        "termId": "thoracodorsal_artery"
       },
       {
         "japanese": "上腕回旋動脈",
-        "english": "circumflex humeral artery"
+        "english": "circumflex humeral artery",
+        "termId": "circumflex_humeral_artery"
       }
     ],
     "editionYear": 1918
@@ -2563,27 +2717,33 @@
     "suggestions": [
       {
         "japanese": "上腕動脈",
-        "english": "brachial artery"
+        "english": "brachial artery",
+        "termId": "brachial_artery"
       },
       {
         "japanese": "上腕深動脈",
-        "english": "deep brachial artery"
+        "english": "deep brachial artery",
+        "termId": "deep_brachial_artery"
       },
       {
         "japanese": "上尺側側副動脈",
-        "english": "superior ulnar collateral artery"
+        "english": "superior ulnar collateral artery",
+        "termId": "superior_ulnar_collateral_artery"
       },
       {
         "japanese": "下尺側側副動脈",
-        "english": "inferior ulnar collateral artery"
+        "english": "inferior ulnar collateral artery",
+        "termId": "inferior_ulnar_collateral_artery"
       },
       {
         "japanese": "橈骨動脈",
-        "english": "radial artery"
+        "english": "radial artery",
+        "termId": "radial_artery"
       },
       {
         "japanese": "尺骨動脈",
-        "english": "ulnar artery"
+        "english": "ulnar artery",
+        "termId": "ulnar_artery"
       }
     ],
     "editionYear": 1918
@@ -2603,31 +2763,38 @@
     "suggestions": [
       {
         "japanese": "橈骨動脈",
-        "english": "radial artery"
+        "english": "radial artery",
+        "termId": "radial_artery"
       },
       {
         "japanese": "尺骨動脈",
-        "english": "ulnar artery"
+        "english": "ulnar artery",
+        "termId": "ulnar_artery"
       },
       {
         "japanese": "総骨間動脈",
-        "english": "common interosseous artery"
+        "english": "common interosseous artery",
+        "termId": "common_interosseous_artery"
       },
       {
         "japanese": "前骨間動脈",
-        "english": "anterior interosseous artery"
+        "english": "anterior interosseous artery",
+        "termId": "anterior_interosseous_artery"
       },
       {
         "japanese": "後骨間動脈",
-        "english": "posterior interosseous artery"
+        "english": "posterior interosseous artery",
+        "termId": "posterior_interosseous_artery"
       },
       {
         "japanese": "橈骨反回動脈",
-        "english": "radial recurrent artery"
+        "english": "radial recurrent artery",
+        "termId": "radial_recurrent_artery"
       },
       {
         "japanese": "尺骨反回動脈",
-        "english": "ulnar recurrent artery"
+        "english": "ulnar recurrent artery",
+        "termId": "ulnar_recurrent_artery"
       }
     ],
     "editionYear": 1918
@@ -2647,27 +2814,33 @@
     "suggestions": [
       {
         "japanese": "胸大動脈",
-        "english": "thoracic aorta"
+        "english": "thoracic aorta",
+        "termId": "thoracic_aorta"
       },
       {
         "japanese": "後肋間動脈",
-        "english": "posterior intercostal artery"
+        "english": "posterior intercostal artery",
+        "termId": "posterior_intercostal_artery"
       },
       {
         "japanese": "気管支動脈",
-        "english": "bronchial artery"
+        "english": "bronchial artery",
+        "termId": "bronchial_artery"
       },
       {
         "japanese": "食道動脈",
-        "english": "esophageal artery"
+        "english": "esophageal artery",
+        "termId": "esophageal_artery"
       },
       {
         "japanese": "心膜枝",
-        "english": "pericardial branch"
+        "english": "pericardial branch",
+        "termId": "pericardial_branch"
       },
       {
         "japanese": "縦隔枝",
-        "english": "mediastinal branch"
+        "english": "mediastinal branch",
+        "termId": "mediastinal_branch"
       },
       {
         "japanese": "横隔膜",
@@ -2692,31 +2865,38 @@
     "suggestions": [
       {
         "japanese": "腹大動脈",
-        "english": "abdominal aorta"
+        "english": "abdominal aorta",
+        "termId": "abdominal_aorta"
       },
       {
         "japanese": "腹腔動脈",
-        "english": "celiac trunk"
+        "english": "celiac trunk",
+        "termId": "celiac_trunk"
       },
       {
         "japanese": "上腸間膜動脈",
-        "english": "superior mesenteric artery"
+        "english": "superior mesenteric artery",
+        "termId": "superior_mesenteric_artery"
       },
       {
         "japanese": "腎動脈",
-        "english": "renal artery"
+        "english": "renal artery",
+        "termId": "renal_artery"
       },
       {
         "japanese": "性腺動脈",
-        "english": "gonadal artery"
+        "english": "gonadal artery",
+        "termId": "gonadal_artery"
       },
       {
         "japanese": "下腸間膜動脈",
-        "english": "inferior mesenteric artery"
+        "english": "inferior mesenteric artery",
+        "termId": "inferior_mesenteric_artery"
       },
       {
         "japanese": "総腸骨動脈",
-        "english": "common iliac artery"
+        "english": "common iliac artery",
+        "termId": "common_iliac_artery"
       }
     ],
     "editionYear": 1918
@@ -2736,35 +2916,43 @@
     "suggestions": [
       {
         "japanese": "腹腔動脈",
-        "english": "celiac trunk"
+        "english": "celiac trunk",
+        "termId": "celiac_trunk"
       },
       {
         "japanese": "左胃動脈",
-        "english": "left gastric artery"
+        "english": "left gastric artery",
+        "termId": "left_gastric_artery"
       },
       {
         "japanese": "脾動脈",
-        "english": "splenic artery"
+        "english": "splenic artery",
+        "termId": "splenic_artery"
       },
       {
         "japanese": "総肝動脈",
-        "english": "common hepatic artery"
+        "english": "common hepatic artery",
+        "termId": "common_hepatic_artery"
       },
       {
         "japanese": "固有肝動脈",
-        "english": "proper hepatic artery"
+        "english": "proper hepatic artery",
+        "termId": "proper_hepatic_artery"
       },
       {
         "japanese": "胃十二指腸動脈",
-        "english": "gastroduodenal artery"
+        "english": "gastroduodenal artery",
+        "termId": "gastroduodenal_artery"
       },
       {
         "japanese": "胃大網動脈",
-        "english": "gastro-omental artery"
+        "english": "gastro-omental artery",
+        "termId": "gastro_omental_artery"
       },
       {
         "japanese": "胆嚢動脈",
-        "english": "cystic artery"
+        "english": "cystic artery",
+        "termId": "cystic_artery"
       }
     ],
     "editionYear": 1918
@@ -2784,31 +2972,38 @@
     "suggestions": [
       {
         "japanese": "腹腔動脈",
-        "english": "celiac trunk"
+        "english": "celiac trunk",
+        "termId": "celiac_trunk"
       },
       {
         "japanese": "脾動脈",
-        "english": "splenic artery"
+        "english": "splenic artery",
+        "termId": "splenic_artery"
       },
       {
         "japanese": "総肝動脈",
-        "english": "common hepatic artery"
+        "english": "common hepatic artery",
+        "termId": "common_hepatic_artery"
       },
       {
         "japanese": "左胃動脈",
-        "english": "left gastric artery"
+        "english": "left gastric artery",
+        "termId": "left_gastric_artery"
       },
       {
         "japanese": "上腸間膜動脈",
-        "english": "superior mesenteric artery"
+        "english": "superior mesenteric artery",
+        "termId": "superior_mesenteric_artery"
       },
       {
         "japanese": "膵十二指腸動脈",
-        "english": "pancreaticoduodenal artery"
+        "english": "pancreaticoduodenal artery",
+        "termId": "pancreaticoduodenal_artery"
       },
       {
         "japanese": "胃十二指腸動脈",
-        "english": "gastroduodenal artery"
+        "english": "gastroduodenal artery",
+        "termId": "gastroduodenal_artery"
       }
     ],
     "editionYear": 1918
@@ -2828,27 +3023,33 @@
     "suggestions": [
       {
         "japanese": "下腸間膜動脈",
-        "english": "inferior mesenteric artery"
+        "english": "inferior mesenteric artery",
+        "termId": "inferior_mesenteric_artery"
       },
       {
         "japanese": "左結腸動脈",
-        "english": "left colic artery"
+        "english": "left colic artery",
+        "termId": "left_colic_artery"
       },
       {
         "japanese": "S状結腸動脈",
-        "english": "sigmoid arteries"
+        "english": "sigmoid arteries",
+        "termId": "sigmoid_arteries"
       },
       {
         "japanese": "上直腸動脈",
-        "english": "superior rectal artery"
+        "english": "superior rectal artery",
+        "termId": "superior_rectal_artery"
       },
       {
         "japanese": "辺縁動脈",
-        "english": "marginal artery"
+        "english": "marginal artery",
+        "termId": "marginal_artery"
       },
       {
         "japanese": "中結腸動脈",
-        "english": "middle colic artery"
+        "english": "middle colic artery",
+        "termId": "middle_colic_artery"
       }
     ],
     "editionYear": 1918
@@ -2868,35 +3069,43 @@
     "suggestions": [
       {
         "japanese": "内腸骨動脈",
-        "english": "internal iliac artery"
+        "english": "internal iliac artery",
+        "termId": "internal_iliac_artery"
       },
       {
         "japanese": "上殿動脈",
-        "english": "superior gluteal artery"
+        "english": "superior gluteal artery",
+        "termId": "superior_gluteal_artery"
       },
       {
         "japanese": "下殿動脈",
-        "english": "inferior gluteal artery"
+        "english": "inferior gluteal artery",
+        "termId": "inferior_gluteal_artery"
       },
       {
         "japanese": "内陰部動脈",
-        "english": "internal pudendal artery"
+        "english": "internal pudendal artery",
+        "termId": "internal_pudendal_artery"
       },
       {
         "japanese": "閉鎖動脈",
-        "english": "obturator artery"
+        "english": "obturator artery",
+        "termId": "obturator_artery"
       },
       {
         "japanese": "臍動脈",
-        "english": "umbilical artery"
+        "english": "umbilical artery",
+        "termId": "umbilical_artery"
       },
       {
         "japanese": "下膀胱動脈",
-        "english": "inferior vesical artery"
+        "english": "inferior vesical artery",
+        "termId": "inferior_vesical_artery"
       },
       {
         "japanese": "中直腸動脈",
-        "english": "middle rectal artery"
+        "english": "middle rectal artery",
+        "termId": "middle_rectal_artery"
       }
     ],
     "editionYear": 1918
@@ -2916,31 +3125,38 @@
     "suggestions": [
       {
         "japanese": "子宮動脈",
-        "english": "uterine artery"
+        "english": "uterine artery",
+        "termId": "uterine_artery"
       },
       {
         "japanese": "卵巣動脈",
-        "english": "ovarian artery"
+        "english": "ovarian artery",
+        "termId": "ovarian_artery"
       },
       {
         "japanese": "腟動脈",
-        "english": "vaginal artery"
+        "english": "vaginal artery",
+        "termId": "vaginal_artery"
       },
       {
         "japanese": "内腸骨動脈",
-        "english": "internal iliac artery"
+        "english": "internal iliac artery",
+        "termId": "internal_iliac_artery"
       },
       {
         "japanese": "卵管枝",
-        "english": "tubal branch"
+        "english": "tubal branch",
+        "termId": "tubal_branch"
       },
       {
         "japanese": "卵巣枝",
-        "english": "ovarian branch"
+        "english": "ovarian branch",
+        "termId": "ovarian_branch"
       },
       {
         "japanese": "子宮底枝",
-        "english": "fundal branch"
+        "english": "fundal branch",
+        "termId": "fundal_branch"
       }
     ],
     "editionYear": 1918
@@ -2960,31 +3176,38 @@
     "suggestions": [
       {
         "japanese": "内陰部動脈",
-        "english": "internal pudendal artery"
+        "english": "internal pudendal artery",
+        "termId": "internal_pudendal_artery"
       },
       {
         "japanese": "下直腸動脈",
-        "english": "inferior rectal artery"
+        "english": "inferior rectal artery",
+        "termId": "inferior_rectal_artery"
       },
       {
         "japanese": "会陰動脈",
-        "english": "perineal artery"
+        "english": "perineal artery",
+        "termId": "perineal_artery"
       },
       {
         "japanese": "後陰嚢動脈",
-        "english": "posterior scrotal artery"
+        "english": "posterior scrotal artery",
+        "termId": "posterior_scrotal_artery"
       },
       {
         "japanese": "尿道球動脈",
-        "english": "artery of bulb"
+        "english": "artery of bulb",
+        "termId": "artery_of_bulb"
       },
       {
         "japanese": "陰茎深動脈",
-        "english": "deep artery of penis"
+        "english": "deep artery of penis",
+        "termId": "deep_artery_of_penis"
       },
       {
         "japanese": "陰茎背動脈",
-        "english": "dorsal artery of penis"
+        "english": "dorsal artery of penis",
+        "termId": "dorsal_artery_of_penis"
       }
     ],
     "editionYear": 1918
@@ -3004,31 +3227,38 @@
     "suggestions": [
       {
         "japanese": "膝窩動脈",
-        "english": "popliteal artery"
+        "english": "popliteal artery",
+        "termId": "popliteal_artery"
       },
       {
         "japanese": "上内側膝動脈",
-        "english": "superior medial genicular artery"
+        "english": "superior medial genicular artery",
+        "termId": "superior_medial_genicular_artery"
       },
       {
         "japanese": "上外側膝動脈",
-        "english": "superior lateral genicular artery"
+        "english": "superior lateral genicular artery",
+        "termId": "superior_lateral_genicular_artery"
       },
       {
         "japanese": "下内側膝動脈",
-        "english": "inferior medial genicular artery"
+        "english": "inferior medial genicular artery",
+        "termId": "inferior_medial_genicular_artery"
       },
       {
         "japanese": "下外側膝動脈",
-        "english": "inferior lateral genicular artery"
+        "english": "inferior lateral genicular artery",
+        "termId": "inferior_lateral_genicular_artery"
       },
       {
         "japanese": "中膝動脈",
-        "english": "middle genicular artery"
+        "english": "middle genicular artery",
+        "termId": "middle_genicular_artery"
       },
       {
         "japanese": "腓腹動脈",
-        "english": "sural artery"
+        "english": "sural artery",
+        "termId": "sural_artery"
       }
     ],
     "editionYear": 1918
@@ -3048,27 +3278,33 @@
     "suggestions": [
       {
         "japanese": "上殿動脈",
-        "english": "superior gluteal artery"
+        "english": "superior gluteal artery",
+        "termId": "superior_gluteal_artery"
       },
       {
         "japanese": "下殿動脈",
-        "english": "inferior gluteal artery"
+        "english": "inferior gluteal artery",
+        "termId": "inferior_gluteal_artery"
       },
       {
         "japanese": "内陰部動脈",
-        "english": "internal pudendal artery"
+        "english": "internal pudendal artery",
+        "termId": "internal_pudendal_artery"
       },
       {
         "japanese": "坐骨神経",
-        "english": "sciatic nerve"
+        "english": "sciatic nerve",
+        "termId": "sciatic_nerve"
       },
       {
         "japanese": "梨状筋",
-        "english": "piriformis muscle"
+        "english": "piriformis muscle",
+        "termId": "piriformis_muscle"
       },
       {
         "japanese": "大坐骨孔",
-        "english": "greater sciatic foramen"
+        "english": "greater sciatic foramen",
+        "termId": "greater_sciatic_foramen"
       }
     ],
     "editionYear": 1918
@@ -3088,31 +3324,38 @@
     "suggestions": [
       {
         "japanese": "外腸骨動脈",
-        "english": "external iliac artery"
+        "english": "external iliac artery",
+        "termId": "external_iliac_artery"
       },
       {
         "japanese": "大腿動脈",
-        "english": "femoral artery"
+        "english": "femoral artery",
+        "termId": "femoral_artery"
       },
       {
         "japanese": "大腿深動脈",
-        "english": "deep femoral artery"
+        "english": "deep femoral artery",
+        "termId": "deep_femoral_artery"
       },
       {
         "japanese": "浅腹壁動脈",
-        "english": "superficial epigastric artery"
+        "english": "superficial epigastric artery",
+        "termId": "superficial_epigastric_artery"
       },
       {
         "japanese": "浅腸骨回旋動脈",
-        "english": "superficial circumflex iliac artery"
+        "english": "superficial circumflex iliac artery",
+        "termId": "superficial_circumflex_iliac_artery"
       },
       {
         "japanese": "外陰部動脈",
-        "english": "external pudendal artery"
+        "english": "external pudendal artery",
+        "termId": "external_pudendal_artery"
       },
       {
         "japanese": "大伏在静脈",
-        "english": "great saphenous vein"
+        "english": "great saphenous vein",
+        "termId": "great_saphenous_vein"
       }
     ],
     "editionYear": 1918
@@ -3132,31 +3375,38 @@
     "suggestions": [
       {
         "japanese": "外腸骨動脈",
-        "english": "external iliac artery"
+        "english": "external iliac artery",
+        "termId": "external_iliac_artery"
       },
       {
         "japanese": "大腿動脈",
-        "english": "femoral artery"
+        "english": "femoral artery",
+        "termId": "femoral_artery"
       },
       {
         "japanese": "大腿深動脈",
-        "english": "deep femoral artery"
+        "english": "deep femoral artery",
+        "termId": "deep_femoral_artery"
       },
       {
         "japanese": "浅腹壁動脈",
-        "english": "superficial epigastric artery"
+        "english": "superficial epigastric artery",
+        "termId": "superficial_epigastric_artery"
       },
       {
         "japanese": "浅腸骨回旋動脈",
-        "english": "superficial circumflex iliac artery"
+        "english": "superficial circumflex iliac artery",
+        "termId": "superficial_circumflex_iliac_artery"
       },
       {
         "japanese": "外陰部動脈",
-        "english": "external pudendal artery"
+        "english": "external pudendal artery",
+        "termId": "external_pudendal_artery"
       },
       {
         "japanese": "大伏在静脈",
-        "english": "great saphenous vein"
+        "english": "great saphenous vein",
+        "termId": "great_saphenous_vein"
       }
     ],
     "editionYear": 1918
@@ -3176,31 +3426,38 @@
     "suggestions": [
       {
         "japanese": "外腸骨動脈",
-        "english": "external iliac artery"
+        "english": "external iliac artery",
+        "termId": "external_iliac_artery"
       },
       {
         "japanese": "大腿動脈",
-        "english": "femoral artery"
+        "english": "femoral artery",
+        "termId": "femoral_artery"
       },
       {
         "japanese": "大腿深動脈",
-        "english": "deep femoral artery"
+        "english": "deep femoral artery",
+        "termId": "deep_femoral_artery"
       },
       {
         "japanese": "浅腹壁動脈",
-        "english": "superficial epigastric artery"
+        "english": "superficial epigastric artery",
+        "termId": "superficial_epigastric_artery"
       },
       {
         "japanese": "浅腸骨回旋動脈",
-        "english": "superficial circumflex iliac artery"
+        "english": "superficial circumflex iliac artery",
+        "termId": "superficial_circumflex_iliac_artery"
       },
       {
         "japanese": "外陰部動脈",
-        "english": "external pudendal artery"
+        "english": "external pudendal artery",
+        "termId": "external_pudendal_artery"
       },
       {
         "japanese": "大伏在静脈",
-        "english": "great saphenous vein"
+        "english": "great saphenous vein",
+        "termId": "great_saphenous_vein"
       }
     ],
     "editionYear": 1918
@@ -3220,31 +3477,38 @@
     "suggestions": [
       {
         "japanese": "膝窩動脈",
-        "english": "popliteal artery"
+        "english": "popliteal artery",
+        "termId": "popliteal_artery"
       },
       {
         "japanese": "上内側膝動脈",
-        "english": "superior medial genicular artery"
+        "english": "superior medial genicular artery",
+        "termId": "superior_medial_genicular_artery"
       },
       {
         "japanese": "上外側膝動脈",
-        "english": "superior lateral genicular artery"
+        "english": "superior lateral genicular artery",
+        "termId": "superior_lateral_genicular_artery"
       },
       {
         "japanese": "下内側膝動脈",
-        "english": "inferior medial genicular artery"
+        "english": "inferior medial genicular artery",
+        "termId": "inferior_medial_genicular_artery"
       },
       {
         "japanese": "下外側膝動脈",
-        "english": "inferior lateral genicular artery"
+        "english": "inferior lateral genicular artery",
+        "termId": "inferior_lateral_genicular_artery"
       },
       {
         "japanese": "中膝動脈",
-        "english": "middle genicular artery"
+        "english": "middle genicular artery",
+        "termId": "middle_genicular_artery"
       },
       {
         "japanese": "腓腹動脈",
-        "english": "sural artery"
+        "english": "sural artery",
+        "termId": "sural_artery"
       }
     ],
     "editionYear": 1918
@@ -3264,27 +3528,33 @@
     "suggestions": [
       {
         "japanese": "後脛骨動脈",
-        "english": "posterior tibial artery"
+        "english": "posterior tibial artery",
+        "termId": "posterior_tibial_artery"
       },
       {
         "japanese": "腓骨動脈",
-        "english": "fibular artery"
+        "english": "fibular artery",
+        "termId": "fibular_artery"
       },
       {
         "japanese": "内側足底動脈",
-        "english": "medial plantar artery"
+        "english": "medial plantar artery",
+        "termId": "medial_plantar_artery"
       },
       {
         "japanese": "外側足底動脈",
-        "english": "lateral plantar artery"
+        "english": "lateral plantar artery",
+        "termId": "lateral_plantar_artery"
       },
       {
         "japanese": "脛骨神経",
-        "english": "tibial nerve"
+        "english": "tibial nerve",
+        "termId": "tibial_nerve"
       },
       {
         "japanese": "踵骨枝",
-        "english": "calcaneal branch"
+        "english": "calcaneal branch",
+        "termId": "calcaneal_branch"
       }
     ],
     "editionYear": 1918
@@ -3304,27 +3574,33 @@
     "suggestions": [
       {
         "japanese": "前脛骨動脈",
-        "english": "anterior tibial artery"
+        "english": "anterior tibial artery",
+        "termId": "anterior_tibial_artery"
       },
       {
         "japanese": "足背動脈",
-        "english": "dorsalis pedis artery"
+        "english": "dorsalis pedis artery",
+        "termId": "dorsalis_pedis_artery"
       },
       {
         "japanese": "内側足根動脈",
-        "english": "medial tarsal artery"
+        "english": "medial tarsal artery",
+        "termId": "medial_tarsal_artery"
       },
       {
         "japanese": "外側足根動脈",
-        "english": "lateral tarsal artery"
+        "english": "lateral tarsal artery",
+        "termId": "lateral_tarsal_artery"
       },
       {
         "japanese": "弓状動脈",
-        "english": "arcuate artery"
+        "english": "arcuate artery",
+        "termId": "arcuate_artery"
       },
       {
         "japanese": "深足底枝",
-        "english": "deep plantar branch"
+        "english": "deep plantar branch",
+        "termId": "deep_plantar_branch"
       }
     ],
     "editionYear": 1918
@@ -3344,27 +3620,33 @@
     "suggestions": [
       {
         "japanese": "内側足底動脈",
-        "english": "medial plantar artery"
+        "english": "medial plantar artery",
+        "termId": "medial_plantar_artery"
       },
       {
         "japanese": "外側足底動脈",
-        "english": "lateral plantar artery"
+        "english": "lateral plantar artery",
+        "termId": "lateral_plantar_artery"
       },
       {
         "japanese": "足底動脈弓",
-        "english": "plantar arterial arch"
+        "english": "plantar arterial arch",
+        "termId": "plantar_arterial_arch"
       },
       {
         "japanese": "深足底枝",
-        "english": "deep plantar branch"
+        "english": "deep plantar branch",
+        "termId": "deep_plantar_branch"
       },
       {
         "japanese": "足底中足動脈",
-        "english": "plantar metatarsal artery"
+        "english": "plantar metatarsal artery",
+        "termId": "plantar_metatarsal_artery"
       },
       {
         "japanese": "固有底側趾動脈",
-        "english": "proper plantar digital artery"
+        "english": "proper plantar digital artery",
+        "termId": "proper_plantar_digital_artery"
       }
     ],
     "editionYear": 1918
@@ -3384,31 +3666,38 @@
     "suggestions": [
       {
         "japanese": "顔面静脈",
-        "english": "facial vein"
+        "english": "facial vein",
+        "termId": "facial_vein"
       },
       {
         "japanese": "下顎後静脈",
-        "english": "retromandibular vein"
+        "english": "retromandibular vein",
+        "termId": "retromandibular_vein"
       },
       {
         "japanese": "外頸静脈",
-        "english": "external jugular vein"
+        "english": "external jugular vein",
+        "termId": "external_jugular_vein"
       },
       {
         "japanese": "内頸静脈",
-        "english": "internal jugular vein"
+        "english": "internal jugular vein",
+        "termId": "internal_jugular_vein"
       },
       {
         "japanese": "浅側頭静脈",
-        "english": "superficial temporal vein"
+        "english": "superficial temporal vein",
+        "termId": "superficial_temporal_vein"
       },
       {
         "japanese": "顎静脈",
-        "english": "maxillary vein"
+        "english": "maxillary vein",
+        "termId": "maxillary_vein"
       },
       {
         "japanese": "舌静脈",
-        "english": "lingual vein"
+        "english": "lingual vein",
+        "termId": "lingual_vein"
       }
     ],
     "editionYear": 1918
@@ -3428,27 +3717,33 @@
     "suggestions": [
       {
         "japanese": "内頸静脈",
-        "english": "internal jugular vein"
+        "english": "internal jugular vein",
+        "termId": "internal_jugular_vein"
       },
       {
         "japanese": "外頸静脈",
-        "english": "external jugular vein"
+        "english": "external jugular vein",
+        "termId": "external_jugular_vein"
       },
       {
         "japanese": "前頸静脈",
-        "english": "anterior jugular vein"
+        "english": "anterior jugular vein",
+        "termId": "anterior_jugular_vein"
       },
       {
         "japanese": "鎖骨下静脈",
-        "english": "subclavian vein"
+        "english": "subclavian vein",
+        "termId": "subclavian_vein"
       },
       {
         "japanese": "椎骨静脈",
-        "english": "vertebral vein"
+        "english": "vertebral vein",
+        "termId": "vertebral_vein"
       },
       {
         "japanese": "総顔面静脈",
-        "english": "common facial vein"
+        "english": "common facial vein",
+        "termId": "common_facial_vein"
       }
     ],
     "editionYear": 1918
@@ -3468,31 +3763,38 @@
     "suggestions": [
       {
         "japanese": "上甲状腺静脈",
-        "english": "superior thyroid vein"
+        "english": "superior thyroid vein",
+        "termId": "superior_thyroid_vein"
       },
       {
         "japanese": "中甲状腺静脈",
-        "english": "middle thyroid vein"
+        "english": "middle thyroid vein",
+        "termId": "middle_thyroid_vein"
       },
       {
         "japanese": "下甲状腺静脈",
-        "english": "inferior thyroid vein"
+        "english": "inferior thyroid vein",
+        "termId": "inferior_thyroid_vein"
       },
       {
         "japanese": "内頸静脈",
-        "english": "internal jugular vein"
+        "english": "internal jugular vein",
+        "termId": "internal_jugular_vein"
       },
       {
         "japanese": "腕頭静脈",
-        "english": "brachiocephalic vein"
+        "english": "brachiocephalic vein",
+        "termId": "brachiocephalic_vein"
       },
       {
         "japanese": "上大静脈",
-        "english": "superior vena cava"
+        "english": "superior vena cava",
+        "termId": "superior_vena_cava"
       },
       {
         "japanese": "甲状腺",
-        "english": "thyroid gland"
+        "english": "thyroid gland",
+        "termId": "thyroid_gland"
       }
     ],
     "editionYear": 1918
@@ -3512,35 +3814,43 @@
     "suggestions": [
       {
         "japanese": "上矢状静脈洞",
-        "english": "superior sagittal sinus"
+        "english": "superior sagittal sinus",
+        "termId": "superior_sagittal_sinus"
       },
       {
         "japanese": "直静脈洞",
-        "english": "straight sinus"
+        "english": "straight sinus",
+        "termId": "straight_sinus"
       },
       {
         "japanese": "横静脈洞",
-        "english": "transverse sinus"
+        "english": "transverse sinus",
+        "termId": "transverse_sinus"
       },
       {
         "japanese": "S状静脈洞",
-        "english": "sigmoid sinus"
+        "english": "sigmoid sinus",
+        "termId": "sigmoid_sinus"
       },
       {
         "japanese": "海綿静脈洞",
-        "english": "cavernous sinus"
+        "english": "cavernous sinus",
+        "termId": "cavernous_sinus"
       },
       {
         "japanese": "上錐体静脈洞",
-        "english": "superior petrosal sinus"
+        "english": "superior petrosal sinus",
+        "termId": "superior_petrosal_sinus"
       },
       {
         "japanese": "下錐体静脈洞",
-        "english": "inferior petrosal sinus"
+        "english": "inferior petrosal sinus",
+        "termId": "inferior_petrosal_sinus"
       },
       {
         "japanese": "後頭静脈洞",
-        "english": "occipital sinus"
+        "english": "occipital sinus",
+        "termId": "occipital_sinus"
       }
     ],
     "editionYear": 1918
@@ -3560,27 +3870,33 @@
     "suggestions": [
       {
         "japanese": "橈側皮静脈",
-        "english": "cephalic vein"
+        "english": "cephalic vein",
+        "termId": "cephalic_vein"
       },
       {
         "japanese": "尺側皮静脈",
-        "english": "basilic vein"
+        "english": "basilic vein",
+        "termId": "basilic_vein"
       },
       {
         "japanese": "肘正中皮静脈",
-        "english": "median cubital vein"
+        "english": "median cubital vein",
+        "termId": "median_cubital_vein"
       },
       {
         "japanese": "上腕静脈",
-        "english": "brachial vein"
+        "english": "brachial vein",
+        "termId": "brachial_vein"
       },
       {
         "japanese": "腋窩静脈",
-        "english": "axillary vein"
+        "english": "axillary vein",
+        "termId": "axillary_vein"
       },
       {
         "japanese": "鎖骨下静脈",
-        "english": "subclavian vein"
+        "english": "subclavian vein",
+        "termId": "subclavian_vein"
       }
     ],
     "editionYear": 1918
@@ -3600,27 +3916,33 @@
     "suggestions": [
       {
         "japanese": "腋窩静脈",
-        "english": "axillary vein"
+        "english": "axillary vein",
+        "termId": "axillary_vein"
       },
       {
         "japanese": "上腕静脈",
-        "english": "brachial vein"
+        "english": "brachial vein",
+        "termId": "brachial_vein"
       },
       {
         "japanese": "橈側皮静脈",
-        "english": "cephalic vein"
+        "english": "cephalic vein",
+        "termId": "cephalic_vein"
       },
       {
         "japanese": "尺側皮静脈",
-        "english": "basilic vein"
+        "english": "basilic vein",
+        "termId": "basilic_vein"
       },
       {
         "japanese": "外側胸静脈",
-        "english": "lateral thoracic vein"
+        "english": "lateral thoracic vein",
+        "termId": "lateral_thoracic_vein"
       },
       {
         "japanese": "肩甲下静脈",
-        "english": "subscapular vein"
+        "english": "subscapular vein",
+        "termId": "subscapular_vein"
       }
     ],
     "editionYear": 1918
@@ -3640,27 +3962,33 @@
     "suggestions": [
       {
         "japanese": "下大静脈",
-        "english": "inferior vena cava"
+        "english": "inferior vena cava",
+        "termId": "inferior_vena_cava"
       },
       {
         "japanese": "総腸骨静脈",
-        "english": "common iliac vein"
+        "english": "common iliac vein",
+        "termId": "common_iliac_vein"
       },
       {
         "japanese": "腎静脈",
-        "english": "renal vein"
+        "english": "renal vein",
+        "termId": "renal_vein"
       },
       {
         "japanese": "肝静脈",
-        "english": "hepatic vein"
+        "english": "hepatic vein",
+        "termId": "hepatic_vein"
       },
       {
         "japanese": "性腺静脈",
-        "english": "gonadal vein"
+        "english": "gonadal vein",
+        "termId": "gonadal_vein"
       },
       {
         "japanese": "腰静脈",
-        "english": "lumbar vein"
+        "english": "lumbar vein",
+        "termId": "lumbar_vein"
       }
     ],
     "editionYear": 1918
@@ -3680,31 +4008,38 @@
     "suggestions": [
       {
         "japanese": "大伏在静脈",
-        "english": "great saphenous vein"
+        "english": "great saphenous vein",
+        "termId": "great_saphenous_vein"
       },
       {
         "japanese": "小伏在静脈",
-        "english": "small saphenous vein"
+        "english": "small saphenous vein",
+        "termId": "small_saphenous_vein"
       },
       {
         "japanese": "足背静脈弓",
-        "english": "dorsal venous arch"
+        "english": "dorsal venous arch",
+        "termId": "dorsal_venous_arch"
       },
       {
         "japanese": "大腿静脈",
-        "english": "femoral vein"
+        "english": "femoral vein",
+        "termId": "femoral_vein"
       },
       {
         "japanese": "膝窩静脈",
-        "english": "popliteal vein"
+        "english": "popliteal vein",
+        "termId": "popliteal_vein"
       },
       {
         "japanese": "前脛骨静脈",
-        "english": "anterior tibial vein"
+        "english": "anterior tibial vein",
+        "termId": "anterior_tibial_vein"
       },
       {
         "japanese": "後脛骨静脈",
-        "english": "posterior tibial vein"
+        "english": "posterior tibial vein",
+        "termId": "posterior_tibial_vein"
       }
     ],
     "editionYear": 1918
@@ -3724,31 +4059,38 @@
     "suggestions": [
       {
         "japanese": "大伏在静脈",
-        "english": "great saphenous vein"
+        "english": "great saphenous vein",
+        "termId": "great_saphenous_vein"
       },
       {
         "japanese": "小伏在静脈",
-        "english": "small saphenous vein"
+        "english": "small saphenous vein",
+        "termId": "small_saphenous_vein"
       },
       {
         "japanese": "足背静脈弓",
-        "english": "dorsal venous arch"
+        "english": "dorsal venous arch",
+        "termId": "dorsal_venous_arch"
       },
       {
         "japanese": "大腿静脈",
-        "english": "femoral vein"
+        "english": "femoral vein",
+        "termId": "femoral_vein"
       },
       {
         "japanese": "膝窩静脈",
-        "english": "popliteal vein"
+        "english": "popliteal vein",
+        "termId": "popliteal_vein"
       },
       {
         "japanese": "前脛骨静脈",
-        "english": "anterior tibial vein"
+        "english": "anterior tibial vein",
+        "termId": "anterior_tibial_vein"
       },
       {
         "japanese": "後脛骨静脈",
-        "english": "posterior tibial vein"
+        "english": "posterior tibial vein",
+        "termId": "posterior_tibial_vein"
       }
     ],
     "editionYear": 1918
@@ -3768,35 +4110,43 @@
     "suggestions": [
       {
         "japanese": "内腸骨静脈",
-        "english": "internal iliac vein"
+        "english": "internal iliac vein",
+        "termId": "internal_iliac_vein"
       },
       {
         "japanese": "外腸骨静脈",
-        "english": "external iliac vein"
+        "english": "external iliac vein",
+        "termId": "external_iliac_vein"
       },
       {
         "japanese": "総腸骨静脈",
-        "english": "common iliac vein"
+        "english": "common iliac vein",
+        "termId": "common_iliac_vein"
       },
       {
         "japanese": "前立腺静脈叢",
-        "english": "prostatic venous plexus"
+        "english": "prostatic venous plexus",
+        "termId": "prostatic_venous_plexus"
       },
       {
         "japanese": "膀胱静脈叢",
-        "english": "vesical venous plexus"
+        "english": "vesical venous plexus",
+        "termId": "vesical_venous_plexus"
       },
       {
         "japanese": "内陰部静脈",
-        "english": "internal pudendal vein"
+        "english": "internal pudendal vein",
+        "termId": "internal_pudendal_vein"
       },
       {
         "japanese": "上殿静脈",
-        "english": "superior gluteal vein"
+        "english": "superior gluteal vein",
+        "termId": "superior_gluteal_vein"
       },
       {
         "japanese": "下殿静脈",
-        "english": "inferior gluteal vein"
+        "english": "inferior gluteal vein",
+        "termId": "inferior_gluteal_vein"
       }
     ],
     "editionYear": 1918
@@ -3816,27 +4166,33 @@
     "suggestions": [
       {
         "japanese": "臍動脈",
-        "english": "umbilical arteries"
+        "english": "umbilical artery",
+        "termId": "umbilical_artery"
       },
       {
         "japanese": "臍静脈",
-        "english": "umbilical vein"
+        "english": "umbilical vein",
+        "termId": "umbilical_vein"
       },
       {
         "japanese": "絨毛膜血管",
-        "english": "chorionic vessels"
+        "english": "chorionic vessels",
+        "termId": "chorionic_vessels"
       },
       {
         "japanese": "絨毛間腔",
-        "english": "intervillous space"
+        "english": "intervillous space",
+        "termId": "intervillous_space"
       },
       {
         "japanese": "胎盤",
-        "english": "placenta"
+        "english": "placenta",
+        "termId": "placenta"
       },
       {
         "japanese": "臍帯",
-        "english": "umbilical cord"
+        "english": "umbilical cord",
+        "termId": "umbilical_cord"
       }
     ],
     "editionYear": 1918
@@ -3856,35 +4212,43 @@
     "suggestions": [
       {
         "japanese": "門脈",
-        "english": "portal vein"
+        "english": "portal vein",
+        "termId": "portal_vein"
       },
       {
         "japanese": "脾静脈",
-        "english": "splenic vein"
+        "english": "splenic vein",
+        "termId": "splenic_vein"
       },
       {
         "japanese": "上腸間膜静脈",
-        "english": "superior mesenteric vein"
+        "english": "superior mesenteric vein",
+        "termId": "superior_mesenteric_vein"
       },
       {
         "japanese": "下腸間膜静脈",
-        "english": "inferior mesenteric vein"
+        "english": "inferior mesenteric vein",
+        "termId": "inferior_mesenteric_vein"
       },
       {
         "japanese": "胃静脈",
-        "english": "gastric vein"
+        "english": "gastric vein",
+        "termId": "gastric_vein"
       },
       {
         "japanese": "肝臓",
-        "english": "liver"
+        "english": "liver",
+        "termId": "liver"
       },
       {
         "japanese": "膵臓",
-        "english": "pancreas"
+        "english": "pancreas",
+        "termId": "pancreas"
       },
       {
         "japanese": "脾臓",
-        "english": "spleen"
+        "english": "spleen",
+        "termId": "spleen"
       }
     ],
     "editionYear": 1918
@@ -3904,27 +4268,33 @@
     "suggestions": [
       {
         "japanese": "奇静脈",
-        "english": "azygos vein"
+        "english": "azygos vein",
+        "termId": "azygos_vein"
       },
       {
         "japanese": "半奇静脈",
-        "english": "hemiazygos vein"
+        "english": "hemiazygos vein",
+        "termId": "hemiazygos_vein"
       },
       {
         "japanese": "後肋間静脈",
-        "english": "posterior intercostal vein"
+        "english": "posterior intercostal vein",
+        "termId": "posterior_intercostal_vein"
       },
       {
         "japanese": "上行腰静脈",
-        "english": "ascending lumbar vein"
+        "english": "ascending lumbar vein",
+        "termId": "ascending_lumbar_vein"
       },
       {
         "japanese": "椎骨静脈叢",
-        "english": "vertebral venous plexus"
+        "english": "vertebral venous plexus",
+        "termId": "vertebral_venous_plexus"
       },
       {
         "japanese": "下大静脈",
-        "english": "inferior vena cava"
+        "english": "inferior vena cava",
+        "termId": "inferior_vena_cava"
       }
     ],
     "editionYear": 1918
@@ -3944,27 +4314,33 @@
     "suggestions": [
       {
         "japanese": "下腸間膜動脈",
-        "english": "inferior mesenteric artery"
+        "english": "inferior mesenteric artery",
+        "termId": "inferior_mesenteric_artery"
       },
       {
         "japanese": "左結腸動脈",
-        "english": "left colic artery"
+        "english": "left colic artery",
+        "termId": "left_colic_artery"
       },
       {
         "japanese": "S状結腸動脈",
-        "english": "sigmoid arteries"
+        "english": "sigmoid arteries",
+        "termId": "sigmoid_arteries"
       },
       {
         "japanese": "上直腸動脈",
-        "english": "superior rectal artery"
+        "english": "superior rectal artery",
+        "termId": "superior_rectal_artery"
       },
       {
         "japanese": "辺縁動脈",
-        "english": "marginal artery"
+        "english": "marginal artery",
+        "termId": "marginal_artery"
       },
       {
         "japanese": "中結腸動脈",
-        "english": "middle colic artery"
+        "english": "middle colic artery",
+        "termId": "middle_colic_artery"
       }
     ],
     "editionYear": 1918

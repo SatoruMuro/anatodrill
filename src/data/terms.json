@@ -657,6 +657,2636 @@
     "explanation": "恥骨は寛骨の前下部を構成する骨で、左右の恥骨は恥骨結合で連結する。"
   },
   {
+    "id": "phalanges_of_foot",
+    "japanese": "趾骨",
+    "english": "phalanges of foot",
+    "latin": "phalanges pedis",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "趾骨は、英語の「phalanges of foot」に対応する解剖学用語です。"
+  },
+  {
+    "id": "first_metatarsal_bone",
+    "japanese": "第1中足骨",
+    "english": "first metatarsal bone",
+    "latin": "os metatarsale I",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "第1中足骨は、英語の「first metatarsal bone」に対応する解剖学用語です。"
+  },
+  {
+    "id": "subtalar_joint",
+    "japanese": "距骨下関節",
+    "english": "subtalar joint",
+    "latin": "articulatio subtalaris",
+    "category": "joint",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "距骨下関節は、英語の「subtalar joint」に対応する解剖学用語です。"
+  },
+  {
+    "id": "sustentaculum_tali",
+    "japanese": "載距突起",
+    "english": "sustentaculum tali",
+    "latin": "sustentaculum tali",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "載距突起は、英語の「sustentaculum tali」に対応する解剖学用語です。"
+  },
+  {
+    "id": "fifth_metatarsal_bone",
+    "japanese": "第5中足骨",
+    "english": "fifth metatarsal bone",
+    "latin": "os metatarsale V",
+    "category": "bone",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "第5中足骨は、英語の「fifth metatarsal bone」に対応する解剖学用語です。"
+  },
+  {
+    "id": "brachial_artery",
+    "japanese": "上腕動脈",
+    "english": "brachial artery",
+    "latin": "arteria brachialis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "上腕動脈は、英語の「brachial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "deep_brachial_artery",
+    "japanese": "上腕深動脈",
+    "english": "deep brachial artery",
+    "latin": "arteria profunda brachii",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "上腕深動脈は、英語の「deep brachial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_ulnar_collateral_artery",
+    "japanese": "上尺側側副動脈",
+    "english": "superior ulnar collateral artery",
+    "latin": "arteria collateralis ulnaris superior",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "上尺側側副動脈は、英語の「superior ulnar collateral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_ulnar_collateral_artery",
+    "japanese": "下尺側側副動脈",
+    "english": "inferior ulnar collateral artery",
+    "latin": "arteria collateralis ulnaris inferior",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "下尺側側副動脈は、英語の「inferior ulnar collateral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "radial_artery",
+    "japanese": "橈骨動脈",
+    "english": "radial artery",
+    "latin": "arteria radialis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "橈骨動脈は、英語の「radial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ulnar_artery",
+    "japanese": "尺骨動脈",
+    "english": "ulnar artery",
+    "latin": "arteria ulnaris",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "尺骨動脈は、英語の「ulnar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "radial_recurrent_artery",
+    "japanese": "橈骨反回動脈",
+    "english": "radial recurrent artery",
+    "latin": "arteria recurrens radialis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "橈骨反回動脈は、英語の「radial recurrent artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ulnar_recurrent_artery",
+    "japanese": "尺骨反回動脈",
+    "english": "ulnar recurrent artery",
+    "latin": "arteria recurrens ulnaris",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "尺骨反回動脈は、英語の「ulnar recurrent artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_frontal_gyrus",
+    "japanese": "上前頭回",
+    "english": "superior frontal gyrus",
+    "latin": "gyrus frontalis superior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上前頭回は、英語の「superior frontal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_frontal_gyrus",
+    "japanese": "中前頭回",
+    "english": "middle frontal gyrus",
+    "latin": "gyrus frontalis medius",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中前頭回は、英語の「middle frontal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_frontal_gyrus",
+    "japanese": "下前頭回",
+    "english": "inferior frontal gyrus",
+    "latin": "gyrus frontalis inferior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下前頭回は、英語の「inferior frontal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "precentral_gyrus",
+    "japanese": "中心前回",
+    "english": "precentral gyrus",
+    "latin": "gyrus precentralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中心前回は、英語の「precentral gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "postcentral_gyrus",
+    "japanese": "中心後回",
+    "english": "postcentral gyrus",
+    "latin": "gyrus postcentralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中心後回は、英語の「postcentral gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_parietal_lobule",
+    "japanese": "上頭頂小葉",
+    "english": "superior parietal lobule",
+    "latin": "lobulus parietalis superior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上頭頂小葉は、英語の「superior parietal lobule」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_parietal_lobule",
+    "japanese": "下頭頂小葉",
+    "english": "inferior parietal lobule",
+    "latin": "lobulus parietalis inferior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下頭頂小葉は、英語の「inferior parietal lobule」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_temporal_gyrus",
+    "japanese": "上側頭回",
+    "english": "superior temporal gyrus",
+    "latin": "gyrus temporalis superior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上側頭回は、英語の「superior temporal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_temporal_gyrus",
+    "japanese": "中側頭回",
+    "english": "middle temporal gyrus",
+    "latin": "gyrus temporalis medius",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中側頭回は、英語の「middle temporal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_temporal_gyrus",
+    "japanese": "下側頭回",
+    "english": "inferior temporal gyrus",
+    "latin": "gyrus temporalis inferior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下側頭回は、英語の「inferior temporal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ascending_aorta",
+    "japanese": "上行大動脈",
+    "english": "ascending aorta",
+    "latin": "aorta ascendens",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "上行大動脈は、英語の「ascending aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "aortic_arch",
+    "japanese": "大動脈弓",
+    "english": "aortic arch",
+    "latin": "arcus aortae",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "大動脈弓は、英語の「aortic arch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pulmonary_trunk",
+    "japanese": "肺動脈幹",
+    "english": "pulmonary trunk",
+    "latin": "truncus pulmonalis",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "肺動脈幹は、英語の「pulmonary trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "right_pulmonary_artery",
+    "japanese": "右肺動脈",
+    "english": "right pulmonary artery",
+    "latin": "arteria pulmonalis dextra",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右肺動脈は、英語の「right pulmonary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "left_pulmonary_artery",
+    "japanese": "左肺動脈",
+    "english": "left pulmonary artery",
+    "latin": "arteria pulmonalis sinistra",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "左肺動脈は、英語の「left pulmonary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_vena_cava",
+    "japanese": "上大静脈",
+    "english": "superior vena cava",
+    "latin": "vena cava superior",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "上大静脈は、英語の「superior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "heart",
+    "japanese": "心臓",
+    "english": "heart",
+    "latin": "cor",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "心臓は、英語の「heart」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lung",
+    "japanese": "肺",
+    "english": "lung",
+    "latin": "pulmo",
+    "category": "organ",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "肺は、英語の「lung」に対応する解剖学用語です。"
+  },
+  {
+    "id": "right_atrium",
+    "japanese": "右心房",
+    "english": "right atrium",
+    "latin": "atrium dextrum",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右心房は、英語の「right atrium」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_vena_cava",
+    "japanese": "下大静脈",
+    "english": "inferior vena cava",
+    "latin": "vena cava inferior",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "下大静脈は、英語の「inferior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "coronary_sinus",
+    "japanese": "冠状静脈洞",
+    "english": "coronary sinus",
+    "latin": "sinus coronarius",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "冠状静脈洞は、英語の「coronary sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "fossa_ovalis",
+    "japanese": "卵円窩",
+    "english": "fossa ovalis",
+    "latin": "fossa ovalis atrii dextri",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "卵円窩は、英語の「fossa ovalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "right_atrioventricular_orifice",
+    "japanese": "右房室口",
+    "english": "right atrioventricular orifice",
+    "latin": "ostium atrioventriculare dextrum",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右房室口は、英語の「right atrioventricular orifice」に対応する解剖学用語です。"
+  },
+  {
+    "id": "tricuspid_valve",
+    "japanese": "三尖弁",
+    "english": "tricuspid valve",
+    "latin": "valva tricuspidalis",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "三尖弁は、英語の「tricuspid valve」に対応する解剖学用語です。"
+  },
+  {
+    "id": "right_coronary_artery",
+    "japanese": "右冠状動脈",
+    "english": "right coronary artery",
+    "latin": "arteria coronaria dextra",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右冠状動脈は、英語の「right coronary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "left_coronary_artery",
+    "japanese": "左冠状動脈",
+    "english": "left coronary artery",
+    "latin": "arteria coronaria sinistra",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "左冠状動脈は、英語の「left coronary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_interventricular_branch",
+    "japanese": "前室間枝",
+    "english": "anterior interventricular branch",
+    "latin": "ramus interventricularis anterior",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "前室間枝は、英語の「anterior interventricular branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "circumflex_branch",
+    "japanese": "回旋枝",
+    "english": "circumflex branch",
+    "latin": "ramus circumflexus",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "回旋枝は、英語の「circumflex branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "right_marginal_branch",
+    "japanese": "右縁枝",
+    "english": "right marginal branch",
+    "latin": "ramus marginalis dexter",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右縁枝は、英語の「right marginal branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_interventricular_branch",
+    "japanese": "後室間枝",
+    "english": "posterior interventricular branch",
+    "latin": "ramus interventricularis posterior",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "後室間枝は、英語の「posterior interventricular branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "coronary_sulcus",
+    "japanese": "冠状溝",
+    "english": "coronary sulcus",
+    "latin": "sulcus coronarius",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "冠状溝は、英語の「coronary sulcus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "apex_of_heart",
+    "japanese": "心尖",
+    "english": "apex of heart",
+    "latin": "apex cordis",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "心尖は、英語の「apex of heart」に対応する解剖学用語です。"
+  },
+  {
+    "id": "brachiocephalic_trunk",
+    "japanese": "腕頭動脈",
+    "english": "brachiocephalic trunk",
+    "latin": "truncus brachiocephalicus",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "腕頭動脈は、英語の「brachiocephalic trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "common_carotid_artery",
+    "japanese": "総頸動脈",
+    "english": "common carotid artery",
+    "latin": "carotis communis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "subclavian_artery",
+    "japanese": "鎖骨下動脈",
+    "english": "subclavian artery",
+    "latin": "arteria subclavia",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pulmonary_artery",
+    "japanese": "肺動脈",
+    "english": "pulmonary artery",
+    "latin": "arteria pulmonalis",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "肺動脈は、英語の「pulmonary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pulmonary_vein",
+    "japanese": "肺静脈",
+    "english": "pulmonary vein",
+    "latin": "vena pulmonalis",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "external_carotid_artery",
+    "japanese": "外頸動脈",
+    "english": "external carotid artery",
+    "latin": "carotis externa",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_carotid_artery",
+    "japanese": "内頸動脈",
+    "english": "internal carotid artery",
+    "latin": "carotis interna",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "内頸動脈は、英語の「internal carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "vertebral_artery",
+    "japanese": "椎骨動脈",
+    "english": "vertebral artery",
+    "latin": "arteria vertebralis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "椎骨動脈は、英語の「vertebral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "thyroid_gland",
+    "japanese": "甲状腺",
+    "english": "thyroid gland",
+    "latin": "glandula thyreoidea",
+    "category": "gland",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "甲状腺は、英語の「thyroid gland」に対応する解剖学用語です。"
+  },
+  {
+    "id": "larynx",
+    "japanese": "喉頭",
+    "english": "larynx",
+    "latin": "larynx",
+    "category": "organ",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "喉頭は、英語の「larynx」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_thyroid_artery",
+    "japanese": "上甲状腺動脈",
+    "english": "superior thyroid artery",
+    "latin": "arteria thyreoidea superior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上甲状腺動脈は、英語の「superior thyroid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lingual_artery",
+    "japanese": "舌動脈",
+    "english": "lingual artery",
+    "latin": "arteria lingualis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "舌動脈は、英語の「lingual artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "facial_artery",
+    "japanese": "顔面動脈",
+    "english": "facial artery",
+    "latin": "arteria facialis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "顔面動脈は、英語の「facial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "occipital_artery",
+    "japanese": "後頭動脈",
+    "english": "occipital artery",
+    "latin": "arteria occipitalis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後頭動脈は、英語の「occipital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_auricular_artery",
+    "japanese": "後耳介動脈",
+    "english": "posterior auricular artery",
+    "latin": "arteria auricularis posterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後耳介動脈は、英語の「posterior auricular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "maxillary_artery",
+    "japanese": "顎動脈",
+    "english": "maxillary artery",
+    "latin": "arteria maxillaris",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "顎動脈は、英語の「maxillary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superficial_temporal_artery",
+    "japanese": "浅側頭動脈",
+    "english": "superficial temporal artery",
+    "latin": "arteria temporalis superficialis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "浅側頭動脈は、英語の「superficial temporal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_meningeal_artery",
+    "japanese": "中硬膜動脈",
+    "english": "middle meningeal artery",
+    "latin": "arteria meningea media",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中硬膜動脈は、英語の「middle meningeal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_alveolar_artery",
+    "japanese": "下歯槽動脈",
+    "english": "inferior alveolar artery",
+    "latin": "arteria alveolaris inferior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下歯槽動脈は、英語の「inferior alveolar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "infraorbital_artery",
+    "japanese": "眼窩下動脈",
+    "english": "infraorbital artery",
+    "latin": "arteria infraorbitalis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼窩下動脈は、英語の「infraorbital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "sphenopalatine_artery",
+    "japanese": "蝶口蓋動脈",
+    "english": "sphenopalatine artery",
+    "latin": "arteria sphenopalatina",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "蝶口蓋動脈は、英語の「sphenopalatine artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "deep_temporal_artery",
+    "japanese": "深側頭動脈",
+    "english": "deep temporal artery",
+    "latin": "arteria temporalis profunda",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "深側頭動脈は、英語の「deep temporal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "buccal_artery",
+    "japanese": "頬動脈",
+    "english": "buccal artery",
+    "latin": "arteria buccalis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頬動脈は、英語の「buccal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "submandibular_gland",
+    "japanese": "顎下腺",
+    "english": "submandibular gland",
+    "latin": "glandula submandibularis",
+    "category": "gland",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "顎下腺は、英語の「submandibular gland」に対応する解剖学用語です。"
+  },
+  {
+    "id": "digastric_muscle",
+    "japanese": "顎二腹筋",
+    "english": "digastric muscle",
+    "latin": "musculus digastricus",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "顎二腹筋は、英語の「digastric muscle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "mylohyoid_muscle",
+    "japanese": "顎舌骨筋",
+    "english": "mylohyoid muscle",
+    "latin": "musculus mylohyoideus",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "顎舌骨筋は、英語の「mylohyoid muscle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "hyoglossus_muscle",
+    "japanese": "舌骨舌筋",
+    "english": "hyoglossus muscle",
+    "latin": "musculus hyoglossus",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "舌骨舌筋は、英語の「hyoglossus muscle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "submandibular_triangle",
+    "japanese": "顎下三角",
+    "english": "submandibular triangle",
+    "latin": "trigonum submandibulare",
+    "category": "region",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "顎下三角は、英語の「submandibular triangle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "carotid_sinus",
+    "japanese": "頸動脈洞",
+    "english": "carotid sinus",
+    "latin": "sinus carotidis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頸動脈洞は、英語の「carotid sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pharynx",
+    "japanese": "咽頭",
+    "english": "pharynx",
+    "latin": "pharynx",
+    "category": "organ",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "咽頭は、英語の「pharynx」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ophthalmic_artery",
+    "japanese": "眼動脈",
+    "english": "ophthalmic artery",
+    "latin": "arteria ophthalmica",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼動脈は、英語の「ophthalmic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "central_retinal_artery",
+    "japanese": "網膜中心動脈",
+    "english": "central retinal artery",
+    "latin": "arteria centralis retinae",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "網膜中心動脈は、英語の「central retinal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lacrimal_artery",
+    "japanese": "涙腺動脈",
+    "english": "lacrimal artery",
+    "latin": "arteria lacrimalis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "涙腺動脈は、英語の「lacrimal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "supraorbital_artery",
+    "japanese": "眼窩上動脈",
+    "english": "supraorbital artery",
+    "latin": "arteria supraorbitalis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼窩上動脈は、英語の「supraorbital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "supratrochlear_artery",
+    "japanese": "滑車上動脈",
+    "english": "supratrochlear artery",
+    "latin": "arteria supratrochlearis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "滑車上動脈は、英語の「supratrochlear artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "dorsal_nasal_artery",
+    "japanese": "鼻背動脈",
+    "english": "dorsal nasal artery",
+    "latin": "arteria dorsalis nasi",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "鼻背動脈は、英語の「dorsal nasal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_ethmoidal_artery",
+    "japanese": "前篩骨動脈",
+    "english": "anterior ethmoidal artery",
+    "latin": "arteria ethmoidalis anterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前篩骨動脈は、英語の「anterior ethmoidal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_ethmoidal_artery",
+    "japanese": "後篩骨動脈",
+    "english": "posterior ethmoidal artery",
+    "latin": "arteria ethmoidalis posterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後篩骨動脈は、英語の「posterior ethmoidal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "basilar_artery",
+    "japanese": "脳底動脈",
+    "english": "basilar artery",
+    "latin": "arteria basilaris",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳底動脈は、英語の「basilar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_cerebral_artery",
+    "japanese": "前大脳動脈",
+    "english": "anterior cerebral artery",
+    "latin": "arteria cerebri anterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前大脳動脈は、英語の「anterior cerebral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_cerebral_artery",
+    "japanese": "中大脳動脈",
+    "english": "middle cerebral artery",
+    "latin": "arteria cerebri media",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中大脳動脈は、英語の「middle cerebral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_cerebral_artery",
+    "japanese": "後大脳動脈",
+    "english": "posterior cerebral artery",
+    "latin": "arteria cerebri posterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後大脳動脈は、英語の「posterior cerebral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_communicating_artery",
+    "japanese": "前交通動脈",
+    "english": "anterior communicating artery",
+    "latin": "arteria communicans anterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前交通動脈は、英語の「anterior communicating artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_communicating_artery",
+    "japanese": "後交通動脈",
+    "english": "posterior communicating artery",
+    "latin": "arteria communicans posterior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後交通動脈は、英語の「posterior communicating artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_cerebellar_artery",
+    "japanese": "上小脳動脈",
+    "english": "superior cerebellar artery",
+    "latin": "arteria cerebelli superior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上小脳動脈は、英語の「superior cerebellar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cingulate_gyrus",
+    "japanese": "帯状回",
+    "english": "cingulate gyrus",
+    "latin": "gyrus cinguli",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "帯状回は、英語の「cingulate gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "paracentral_lobule",
+    "japanese": "中心傍小葉",
+    "english": "paracentral lobule",
+    "latin": "lobulus paracentralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中心傍小葉は、英語の「paracentral lobule」に対応する解剖学用語です。"
+  },
+  {
+    "id": "precuneus",
+    "japanese": "楔前部",
+    "english": "precuneus",
+    "latin": "precuneus",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "楔前部は、英語の「precuneus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cuneus",
+    "japanese": "楔部",
+    "english": "cuneus",
+    "latin": "cuneus",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "楔部は、英語の「cuneus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lingual_gyrus",
+    "japanese": "舌状回",
+    "english": "lingual gyrus",
+    "latin": "gyrus lingualis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "舌状回は、英語の「lingual gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "parahippocampal_gyrus",
+    "japanese": "海馬傍回",
+    "english": "parahippocampal gyrus",
+    "latin": "gyrus parahippocampalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "海馬傍回は、英語の「parahippocampal gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "corpus_callosum",
+    "japanese": "脳梁",
+    "english": "corpus callosum",
+    "latin": "corpus callosum",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳梁は、英語の「corpus callosum」に対応する解剖学用語です。"
+  },
+  {
+    "id": "thyrocervical_trunk",
+    "japanese": "甲状頸動脈幹",
+    "english": "thyrocervical trunk",
+    "latin": "truncus thyrocervicalis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "甲状頸動脈幹は、英語の「thyrocervical trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_thyroid_artery",
+    "japanese": "下甲状腺動脈",
+    "english": "inferior thyroid artery",
+    "latin": "arteria thyreoidea inferior",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下甲状腺動脈は、英語の「inferior thyroid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "transverse_cervical_artery",
+    "japanese": "頸横動脈",
+    "english": "transverse cervical artery",
+    "latin": "arteria transversa cervicis",
+    "category": "artery",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頸横動脈は、英語の「transverse cervical artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "suprascapular_artery",
+    "japanese": "肩甲上動脈",
+    "english": "suprascapular artery",
+    "latin": "arteria suprascapularis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "肩甲上動脈は、英語の「suprascapular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "brachial_plexus",
+    "japanese": "腕神経叢",
+    "english": "brachial plexus",
+    "latin": "plexus brachialis",
+    "category": "nerve",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "腕神経叢は、英語の「brachial plexus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "circumflex_scapular_artery",
+    "japanese": "肩甲回旋動脈",
+    "english": "circumflex scapular artery",
+    "latin": "arteria circumflexa scapulae",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "肩甲回旋動脈は、英語の「circumflex scapular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "dorsal_scapular_artery",
+    "japanese": "肩甲背動脈",
+    "english": "dorsal scapular artery",
+    "latin": "arteria dorsalis scapulae",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "肩甲背動脈は、英語の「dorsal scapular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "subscapular_artery",
+    "japanese": "肩甲下動脈",
+    "english": "subscapular artery",
+    "latin": "arteria subscapularis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "肩甲下動脈は、英語の「subscapular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "thoracodorsal_artery",
+    "japanese": "胸背動脈",
+    "english": "thoracodorsal artery",
+    "latin": "arteria thoracodorsalis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "胸背動脈は、英語の「thoracodorsal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "circumflex_humeral_artery",
+    "japanese": "上腕回旋動脈",
+    "english": "circumflex humeral artery",
+    "latin": "arteria circumflexa humeri",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "上腕回旋動脈は、英語の「circumflex humeral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_thoracic_artery",
+    "japanese": "内胸動脈",
+    "english": "internal thoracic artery",
+    "latin": "arteria thoracica interna",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "内胸動脈は、英語の「internal thoracic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_intercostal_artery",
+    "japanese": "前肋間動脈",
+    "english": "anterior intercostal artery",
+    "latin": "arteria intercostalis anterior",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "前肋間動脈は、英語の「anterior intercostal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "musculophrenic_artery",
+    "japanese": "筋横隔動脈",
+    "english": "musculophrenic artery",
+    "latin": "arteria musculophrenica",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "筋横隔動脈は、英語の「musculophrenic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_epigastric_artery",
+    "japanese": "上腹壁動脈",
+    "english": "superior epigastric artery",
+    "latin": "arteria epigastrica superior",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "上腹壁動脈は、英語の「superior epigastric artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "axillary_artery",
+    "japanese": "腋窩動脈",
+    "english": "axillary artery",
+    "latin": "arteria axillaris",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "腋窩動脈は、英語の「axillary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "thoracoacromial_artery",
+    "japanese": "胸肩峰動脈",
+    "english": "thoracoacromial artery",
+    "latin": "arteria thoracoacromialis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "胸肩峰動脈は、英語の「thoracoacromial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lateral_thoracic_artery",
+    "japanese": "外側胸動脈",
+    "english": "lateral thoracic artery",
+    "latin": "arteria thoracica lateralis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "外側胸動脈は、英語の「lateral thoracic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_circumflex_humeral_artery",
+    "japanese": "前上腕回旋動脈",
+    "english": "anterior circumflex humeral artery",
+    "latin": "arteria circumflexa anterior humeri",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "前上腕回旋動脈は、英語の「anterior circumflex humeral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_circumflex_humeral_artery",
+    "japanese": "後上腕回旋動脈",
+    "english": "posterior circumflex humeral artery",
+    "latin": "arteria circumflexa posterior humeri",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "後上腕回旋動脈は、英語の「posterior circumflex humeral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "common_interosseous_artery",
+    "japanese": "総骨間動脈",
+    "english": "common interosseous artery",
+    "latin": "arteria interossea communis",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "総骨間動脈は、英語の「common interosseous artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_interosseous_artery",
+    "japanese": "前骨間動脈",
+    "english": "anterior interosseous artery",
+    "latin": "arteria interossea anterior",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "前骨間動脈は、英語の「anterior interosseous artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_interosseous_artery",
+    "japanese": "後骨間動脈",
+    "english": "posterior interosseous artery",
+    "latin": "arteria interossea posterior",
+    "category": "artery",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "後骨間動脈は、英語の「posterior interosseous artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "thoracic_aorta",
+    "japanese": "胸大動脈",
+    "english": "thoracic aorta",
+    "latin": "aorta thoracica",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "胸大動脈は、英語の「thoracic aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_intercostal_artery",
+    "japanese": "後肋間動脈",
+    "english": "posterior intercostal artery",
+    "latin": "arteria intercostalis posterior",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "後肋間動脈は、英語の「posterior intercostal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "bronchial_artery",
+    "japanese": "気管支動脈",
+    "english": "bronchial artery",
+    "latin": "arteria bronchialis",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "気管支動脈は、英語の「bronchial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "esophageal_artery",
+    "japanese": "食道動脈",
+    "english": "esophageal artery",
+    "latin": "arteria oesophagea",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "食道動脈は、英語の「esophageal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pericardial_branch",
+    "japanese": "心膜枝",
+    "english": "pericardial branch",
+    "latin": "ramus pericardiacus",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "心膜枝は、英語の「pericardial branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "mediastinal_branch",
+    "japanese": "縦隔枝",
+    "english": "mediastinal branch",
+    "latin": "ramus mediastinalis",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "縦隔枝は、英語の「mediastinal branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "abdominal_aorta",
+    "japanese": "腹大動脈",
+    "english": "abdominal aorta",
+    "latin": "aorta abdominalis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "腹大動脈は、英語の「abdominal aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "celiac_trunk",
+    "japanese": "腹腔動脈",
+    "english": "celiac trunk",
+    "latin": "truncus coeliacus",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "腹腔動脈は、英語の「celiac trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_mesenteric_artery",
+    "japanese": "上腸間膜動脈",
+    "english": "superior mesenteric artery",
+    "latin": "arteria mesenterica superior",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "上腸間膜動脈は、英語の「superior mesenteric artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "renal_artery",
+    "japanese": "腎動脈",
+    "english": "renal artery",
+    "latin": "arteria renalis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "腎動脈は、英語の「renal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "gonadal_artery",
+    "japanese": "性腺動脈",
+    "english": "gonadal artery",
+    "latin": "arteria gonadalis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "性腺動脈は、英語の「gonadal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_mesenteric_artery",
+    "japanese": "下腸間膜動脈",
+    "english": "inferior mesenteric artery",
+    "latin": "arteria mesenterica inferior",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "下腸間膜動脈は、英語の「inferior mesenteric artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "common_iliac_artery",
+    "japanese": "総腸骨動脈",
+    "english": "common iliac artery",
+    "latin": "arteria iliaca communis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "総腸骨動脈は、英語の「common iliac artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "left_gastric_artery",
+    "japanese": "左胃動脈",
+    "english": "left gastric artery",
+    "latin": "arteria gastrica sinistra",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "左胃動脈は、英語の「left gastric artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "splenic_artery",
+    "japanese": "脾動脈",
+    "english": "splenic artery",
+    "latin": "arteria splenica",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "脾動脈は、英語の「splenic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "common_hepatic_artery",
+    "japanese": "総肝動脈",
+    "english": "common hepatic artery",
+    "latin": "arteria hepatica communis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "総肝動脈は、英語の「common hepatic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "proper_hepatic_artery",
+    "japanese": "固有肝動脈",
+    "english": "proper hepatic artery",
+    "latin": "arteria hepatica propria",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "固有肝動脈は、英語の「proper hepatic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "gastroduodenal_artery",
+    "japanese": "胃十二指腸動脈",
+    "english": "gastroduodenal artery",
+    "latin": "arteria gastroduodenalis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "胃十二指腸動脈は、英語の「gastroduodenal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "gastro_omental_artery",
+    "japanese": "胃大網動脈",
+    "english": "gastro-omental artery",
+    "latin": "arteria gastroomentalis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "胃大網動脈は、英語の「gastro-omental artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cystic_artery",
+    "japanese": "胆嚢動脈",
+    "english": "cystic artery",
+    "latin": "arteria cystica",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "胆嚢動脈は、英語の「cystic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pancreaticoduodenal_artery",
+    "japanese": "膵十二指腸動脈",
+    "english": "pancreaticoduodenal artery",
+    "latin": "arteria pancreaticoduodenalis",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "膵十二指腸動脈は、英語の「pancreaticoduodenal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "left_colic_artery",
+    "japanese": "左結腸動脈",
+    "english": "left colic artery",
+    "latin": "arteria colica sinistra",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "左結腸動脈は、英語の「left colic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "sigmoid_arteries",
+    "japanese": "S状結腸動脈",
+    "english": "sigmoid arteries",
+    "latin": "arteriae sigmoideae",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "S状結腸動脈は、英語の「sigmoid arteries」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_rectal_artery",
+    "japanese": "上直腸動脈",
+    "english": "superior rectal artery",
+    "latin": "arteria rectalis superior",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "上直腸動脈は、英語の「superior rectal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "marginal_artery",
+    "japanese": "辺縁動脈",
+    "english": "marginal artery",
+    "latin": "arteria marginalis coli",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "辺縁動脈は、英語の「marginal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_colic_artery",
+    "japanese": "中結腸動脈",
+    "english": "middle colic artery",
+    "latin": "arteria colica media",
+    "category": "artery",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "中結腸動脈は、英語の「middle colic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_iliac_artery",
+    "japanese": "内腸骨動脈",
+    "english": "internal iliac artery",
+    "latin": "arteria iliaca interna",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "内腸骨動脈は、英語の「internal iliac artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_gluteal_artery",
+    "japanese": "上殿動脈",
+    "english": "superior gluteal artery",
+    "latin": "arteria glutea superior",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "上殿動脈は、英語の「superior gluteal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_gluteal_artery",
+    "japanese": "下殿動脈",
+    "english": "inferior gluteal artery",
+    "latin": "arteria glutea inferior",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "下殿動脈は、英語の「inferior gluteal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_pudendal_artery",
+    "japanese": "内陰部動脈",
+    "english": "internal pudendal artery",
+    "latin": "arteria pudenda interna",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "内陰部動脈は、英語の「internal pudendal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "obturator_artery",
+    "japanese": "閉鎖動脈",
+    "english": "obturator artery",
+    "latin": "arteria obturatoria",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "閉鎖動脈は、英語の「obturator artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "umbilical_artery",
+    "japanese": "臍動脈",
+    "english": "umbilical artery",
+    "latin": "arteria umbilicalis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "臍動脈は、英語の「umbilical artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_vesical_artery",
+    "japanese": "下膀胱動脈",
+    "english": "inferior vesical artery",
+    "latin": "arteria vesicalis inferior",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "下膀胱動脈は、英語の「inferior vesical artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_rectal_artery",
+    "japanese": "中直腸動脈",
+    "english": "middle rectal artery",
+    "latin": "arteria rectalis media",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "中直腸動脈は、英語の「middle rectal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "uterine_artery",
+    "japanese": "子宮動脈",
+    "english": "uterine artery",
+    "latin": "arteria uterina",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "子宮動脈は、英語の「uterine artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ovarian_artery",
+    "japanese": "卵巣動脈",
+    "english": "ovarian artery",
+    "latin": "arteria ovarica",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "卵巣動脈は、英語の「ovarian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "vaginal_artery",
+    "japanese": "腟動脈",
+    "english": "vaginal artery",
+    "latin": "arteria vaginalis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "腟動脈は、英語の「vaginal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "tubal_branch",
+    "japanese": "卵管枝",
+    "english": "tubal branch",
+    "latin": "ramus tubarius arteriae uterinae",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "卵管枝は、英語の「tubal branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ovarian_branch",
+    "japanese": "卵巣枝",
+    "english": "ovarian branch",
+    "latin": "ramus ovaricus arteriae uterinae",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "卵巣枝は、英語の「ovarian branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "fundal_branch",
+    "japanese": "子宮底枝",
+    "english": "fundal branch",
+    "latin": "ramus fundalis arteriae uterinae",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "子宮底枝は、英語の「fundal branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_rectal_artery",
+    "japanese": "下直腸動脈",
+    "english": "inferior rectal artery",
+    "latin": "arteria rectalis inferior",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "下直腸動脈は、英語の「inferior rectal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "perineal_artery",
+    "japanese": "会陰動脈",
+    "english": "perineal artery",
+    "latin": "arteria perinealis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "会陰動脈は、英語の「perineal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_scrotal_artery",
+    "japanese": "後陰嚢動脈",
+    "english": "posterior scrotal artery",
+    "latin": "arteria scrotalis posterior",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "後陰嚢動脈は、英語の「posterior scrotal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "artery_of_bulb",
+    "japanese": "尿道球動脈",
+    "english": "artery of bulb",
+    "latin": "arteria bulbi penis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "尿道球動脈は、英語の「artery of bulb」に対応する解剖学用語です。"
+  },
+  {
+    "id": "deep_artery_of_penis",
+    "japanese": "陰茎深動脈",
+    "english": "deep artery of penis",
+    "latin": "arteria profunda penis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "陰茎深動脈は、英語の「deep artery of penis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "dorsal_artery_of_penis",
+    "japanese": "陰茎背動脈",
+    "english": "dorsal artery of penis",
+    "latin": "arteria dorsalis penis",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "陰茎背動脈は、英語の「dorsal artery of penis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "popliteal_artery",
+    "japanese": "膝窩動脈",
+    "english": "popliteal artery",
+    "latin": "arteria poplitea",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "膝窩動脈は、英語の「popliteal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_medial_genicular_artery",
+    "japanese": "上内側膝動脈",
+    "english": "superior medial genicular artery",
+    "latin": "arteria superior medialis genus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "上内側膝動脈は、英語の「superior medial genicular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_lateral_genicular_artery",
+    "japanese": "上外側膝動脈",
+    "english": "superior lateral genicular artery",
+    "latin": "arteria superior lateralis genus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "上外側膝動脈は、英語の「superior lateral genicular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_medial_genicular_artery",
+    "japanese": "下内側膝動脈",
+    "english": "inferior medial genicular artery",
+    "latin": "arteria inferior medialis genus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "下内側膝動脈は、英語の「inferior medial genicular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_lateral_genicular_artery",
+    "japanese": "下外側膝動脈",
+    "english": "inferior lateral genicular artery",
+    "latin": "arteria inferior lateralis genus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "下外側膝動脈は、英語の「inferior lateral genicular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_genicular_artery",
+    "japanese": "中膝動脈",
+    "english": "middle genicular artery",
+    "latin": "arteria media genus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "中膝動脈は、英語の「middle genicular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "sural_artery",
+    "japanese": "腓腹動脈",
+    "english": "sural artery",
+    "latin": "arteria suralis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "腓腹動脈は、英語の「sural artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "sciatic_nerve",
+    "japanese": "坐骨神経",
+    "english": "sciatic nerve",
+    "latin": "nervus ischiadicus",
+    "category": "nerve",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "坐骨神経は、英語の「sciatic nerve」に対応する解剖学用語です。"
+  },
+  {
+    "id": "piriformis_muscle",
+    "japanese": "梨状筋",
+    "english": "piriformis muscle",
+    "latin": "musculus piriformis",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "梨状筋は、英語の「piriformis muscle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "greater_sciatic_foramen",
+    "japanese": "大坐骨孔",
+    "english": "greater sciatic foramen",
+    "latin": "foramen ischiadicum majus",
+    "category": "landmark",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "大坐骨孔は、英語の「greater sciatic foramen」に対応する解剖学用語です。"
+  },
+  {
+    "id": "external_iliac_artery",
+    "japanese": "外腸骨動脈",
+    "english": "external iliac artery",
+    "latin": "arteria iliaca externa",
+    "category": "artery",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "外腸骨動脈は、英語の「external iliac artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "femoral_artery",
+    "japanese": "大腿動脈",
+    "english": "femoral artery",
+    "latin": "arteria femoralis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "大腿動脈は、英語の「femoral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "deep_femoral_artery",
+    "japanese": "大腿深動脈",
+    "english": "deep femoral artery",
+    "latin": "arteria profunda femoris",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "大腿深動脈は、英語の「deep femoral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superficial_epigastric_artery",
+    "japanese": "浅腹壁動脈",
+    "english": "superficial epigastric artery",
+    "latin": "arteria epigastrica superficialis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "浅腹壁動脈は、英語の「superficial epigastric artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superficial_circumflex_iliac_artery",
+    "japanese": "浅腸骨回旋動脈",
+    "english": "superficial circumflex iliac artery",
+    "latin": "arteria circumflexa iliaca superficialis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "浅腸骨回旋動脈は、英語の「superficial circumflex iliac artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "external_pudendal_artery",
+    "japanese": "外陰部動脈",
+    "english": "external pudendal artery",
+    "latin": "arteria pudenda externa",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "外陰部動脈は、英語の「external pudendal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "great_saphenous_vein",
+    "japanese": "大伏在静脈",
+    "english": "great saphenous vein",
+    "latin": "vena saphena magna",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "大伏在静脈は、英語の「great saphenous vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_tibial_artery",
+    "japanese": "後脛骨動脈",
+    "english": "posterior tibial artery",
+    "latin": "arteria tibialis posterior",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "後脛骨動脈は、英語の「posterior tibial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "fibular_artery",
+    "japanese": "腓骨動脈",
+    "english": "fibular artery",
+    "latin": "arteria fibularis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "腓骨動脈は、英語の「fibular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "medial_plantar_artery",
+    "japanese": "内側足底動脈",
+    "english": "medial plantar artery",
+    "latin": "arteria plantaris medialis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "内側足底動脈は、英語の「medial plantar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lateral_plantar_artery",
+    "japanese": "外側足底動脈",
+    "english": "lateral plantar artery",
+    "latin": "arteria plantaris lateralis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "外側足底動脈は、英語の「lateral plantar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "tibial_nerve",
+    "japanese": "脛骨神経",
+    "english": "tibial nerve",
+    "latin": "nervus tibialis",
+    "category": "nerve",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "脛骨神経は、英語の「tibial nerve」に対応する解剖学用語です。"
+  },
+  {
+    "id": "calcaneal_branch",
+    "japanese": "踵骨枝",
+    "english": "calcaneal branch",
+    "latin": "ramus calcaneus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "踵骨枝は、英語の「calcaneal branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_tibial_artery",
+    "japanese": "前脛骨動脈",
+    "english": "anterior tibial artery",
+    "latin": "arteria tibialis anterior",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "前脛骨動脈は、英語の「anterior tibial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "dorsalis_pedis_artery",
+    "japanese": "足背動脈",
+    "english": "dorsalis pedis artery",
+    "latin": "arteria dorsalis pedis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "足背動脈は、英語の「dorsalis pedis artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "medial_tarsal_artery",
+    "japanese": "内側足根動脈",
+    "english": "medial tarsal artery",
+    "latin": "arteria tarsalis medialis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "内側足根動脈は、英語の「medial tarsal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lateral_tarsal_artery",
+    "japanese": "外側足根動脈",
+    "english": "lateral tarsal artery",
+    "latin": "arteria tarsalis lateralis",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "外側足根動脈は、英語の「lateral tarsal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "arcuate_artery",
+    "japanese": "弓状動脈",
+    "english": "arcuate artery",
+    "latin": "arteria arcuata",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "弓状動脈は、英語の「arcuate artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "deep_plantar_branch",
+    "japanese": "深足底枝",
+    "english": "deep plantar branch",
+    "latin": "ramus plantaris profundus",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "深足底枝は、英語の「deep plantar branch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "plantar_arterial_arch",
+    "japanese": "足底動脈弓",
+    "english": "plantar arterial arch",
+    "latin": "arcus plantaris",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "足底動脈弓は、英語の「plantar arterial arch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "plantar_metatarsal_artery",
+    "japanese": "足底中足動脈",
+    "english": "plantar metatarsal artery",
+    "latin": "arteria metatarsea plantaris",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "足底中足動脈は、英語の「plantar metatarsal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "proper_plantar_digital_artery",
+    "japanese": "固有底側趾動脈",
+    "english": "proper plantar digital artery",
+    "latin": "arteria digitalis plantaris propria",
+    "category": "artery",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "固有底側趾動脈は、英語の「proper plantar digital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "facial_vein",
+    "japanese": "顔面静脈",
+    "english": "facial vein",
+    "latin": "vena facialis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "顔面静脈は、英語の「facial vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "retromandibular_vein",
+    "japanese": "下顎後静脈",
+    "english": "retromandibular vein",
+    "latin": "vena retromandibularis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下顎後静脈は、英語の「retromandibular vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "external_jugular_vein",
+    "japanese": "外頸静脈",
+    "english": "external jugular vein",
+    "latin": "vena jugularis externa",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "外頸静脈は、英語の「external jugular vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_jugular_vein",
+    "japanese": "内頸静脈",
+    "english": "internal jugular vein",
+    "latin": "vena jugularis interna",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "内頸静脈は、英語の「internal jugular vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superficial_temporal_vein",
+    "japanese": "浅側頭静脈",
+    "english": "superficial temporal vein",
+    "latin": "vena temporalis superficialis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "浅側頭静脈は、英語の「superficial temporal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "maxillary_vein",
+    "japanese": "顎静脈",
+    "english": "maxillary vein",
+    "latin": "vena maxillaris",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "顎静脈は、英語の「maxillary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lingual_vein",
+    "japanese": "舌静脈",
+    "english": "lingual vein",
+    "latin": "vena lingualis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "舌静脈は、英語の「lingual vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_jugular_vein",
+    "japanese": "前頸静脈",
+    "english": "anterior jugular vein",
+    "latin": "vena jugularis anterior",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前頸静脈は、英語の「anterior jugular vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "subclavian_vein",
+    "japanese": "鎖骨下静脈",
+    "english": "subclavian vein",
+    "latin": "vena subclavia",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "鎖骨下静脈は、英語の「subclavian vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "vertebral_vein",
+    "japanese": "椎骨静脈",
+    "english": "vertebral vein",
+    "latin": "vena vertebralis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "椎骨静脈は、英語の「vertebral vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "common_facial_vein",
+    "japanese": "総顔面静脈",
+    "english": "common facial vein",
+    "latin": "vena facialis communis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "総顔面静脈は、英語の「common facial vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_thyroid_vein",
+    "japanese": "上甲状腺静脈",
+    "english": "superior thyroid vein",
+    "latin": "vena thyreoidea superior",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上甲状腺静脈は、英語の「superior thyroid vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "middle_thyroid_vein",
+    "japanese": "中甲状腺静脈",
+    "english": "middle thyroid vein",
+    "latin": "vena thyreoidea media",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中甲状腺静脈は、英語の「middle thyroid vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_thyroid_vein",
+    "japanese": "下甲状腺静脈",
+    "english": "inferior thyroid vein",
+    "latin": "vena thyreoidea inferior",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下甲状腺静脈は、英語の「inferior thyroid vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "brachiocephalic_vein",
+    "japanese": "腕頭静脈",
+    "english": "brachiocephalic vein",
+    "latin": "vena brachiocephalica",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "腕頭静脈は、英語の「brachiocephalic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_sagittal_sinus",
+    "japanese": "上矢状静脈洞",
+    "english": "superior sagittal sinus",
+    "latin": "sinus sagittalis superior",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上矢状静脈洞は、英語の「superior sagittal sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "straight_sinus",
+    "japanese": "直静脈洞",
+    "english": "straight sinus",
+    "latin": "sinus rectus",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "直静脈洞は、英語の「straight sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "transverse_sinus",
+    "japanese": "横静脈洞",
+    "english": "transverse sinus",
+    "latin": "sinus transversus",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "横静脈洞は、英語の「transverse sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "sigmoid_sinus",
+    "japanese": "S状静脈洞",
+    "english": "sigmoid sinus",
+    "latin": "sinus sigmoideus",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "S状静脈洞は、英語の「sigmoid sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cavernous_sinus",
+    "japanese": "海綿静脈洞",
+    "english": "cavernous sinus",
+    "latin": "sinus cavernosus",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "海綿静脈洞は、英語の「cavernous sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_petrosal_sinus",
+    "japanese": "上錐体静脈洞",
+    "english": "superior petrosal sinus",
+    "latin": "sinus petrosus superior",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上錐体静脈洞は、英語の「superior petrosal sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_petrosal_sinus",
+    "japanese": "下錐体静脈洞",
+    "english": "inferior petrosal sinus",
+    "latin": "sinus petrosus inferior",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下錐体静脈洞は、英語の「inferior petrosal sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "occipital_sinus",
+    "japanese": "後頭静脈洞",
+    "english": "occipital sinus",
+    "latin": "sinus occipitalis",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後頭静脈洞は、英語の「occipital sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cephalic_vein",
+    "japanese": "橈側皮静脈",
+    "english": "cephalic vein",
+    "latin": "vena cephalica",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "橈側皮静脈は、英語の「cephalic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "basilic_vein",
+    "japanese": "尺側皮静脈",
+    "english": "basilic vein",
+    "latin": "vena basilica",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "尺側皮静脈は、英語の「basilic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "median_cubital_vein",
+    "japanese": "肘正中皮静脈",
+    "english": "median cubital vein",
+    "latin": "vena mediana cubiti",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "肘正中皮静脈は、英語の「median cubital vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "brachial_vein",
+    "japanese": "上腕静脈",
+    "english": "brachial vein",
+    "latin": "venae brachiales",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "上腕静脈は、英語の「brachial vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "axillary_vein",
+    "japanese": "腋窩静脈",
+    "english": "axillary vein",
+    "latin": "vena axillaris",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "腋窩静脈は、英語の「axillary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lateral_thoracic_vein",
+    "japanese": "外側胸静脈",
+    "english": "lateral thoracic vein",
+    "latin": "vena thoracica lateralis",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "外側胸静脈は、英語の「lateral thoracic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "subscapular_vein",
+    "japanese": "肩甲下静脈",
+    "english": "subscapular vein",
+    "latin": "vena subscapularis",
+    "category": "vein",
+    "region": "upper limb",
+    "testSet": "basic_upper",
+    "explanation": "肩甲下静脈は、英語の「subscapular vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "common_iliac_vein",
+    "japanese": "総腸骨静脈",
+    "english": "common iliac vein",
+    "latin": "vena iliaca communis",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "総腸骨静脈は、英語の「common iliac vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "renal_vein",
+    "japanese": "腎静脈",
+    "english": "renal vein",
+    "latin": "vena renalis",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "腎静脈は、英語の「renal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "hepatic_vein",
+    "japanese": "肝静脈",
+    "english": "hepatic vein",
+    "latin": "venae hepaticae",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "肝静脈は、英語の「hepatic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "gonadal_vein",
+    "japanese": "性腺静脈",
+    "english": "gonadal vein",
+    "latin": "vena gonadalis",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "性腺静脈は、英語の「gonadal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lumbar_vein",
+    "japanese": "腰静脈",
+    "english": "lumbar vein",
+    "latin": "venae lumbales",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "腰静脈は、英語の「lumbar vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "small_saphenous_vein",
+    "japanese": "小伏在静脈",
+    "english": "small saphenous vein",
+    "latin": "vena saphena parva",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "小伏在静脈は、英語の「small saphenous vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "dorsal_venous_arch",
+    "japanese": "足背静脈弓",
+    "english": "dorsal venous arch",
+    "latin": "arcus venosus dorsalis pedis",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "足背静脈弓は、英語の「dorsal venous arch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "femoral_vein",
+    "japanese": "大腿静脈",
+    "english": "femoral vein",
+    "latin": "vena femoralis",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "大腿静脈は、英語の「femoral vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "popliteal_vein",
+    "japanese": "膝窩静脈",
+    "english": "popliteal vein",
+    "latin": "vena poplitea",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "膝窩静脈は、英語の「popliteal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_tibial_vein",
+    "japanese": "前脛骨静脈",
+    "english": "anterior tibial vein",
+    "latin": "venae tibiales anteriores",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "前脛骨静脈は、英語の「anterior tibial vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_tibial_vein",
+    "japanese": "後脛骨静脈",
+    "english": "posterior tibial vein",
+    "latin": "venae tibiales posteriores",
+    "category": "vein",
+    "region": "lower limb",
+    "testSet": "basic_lower",
+    "explanation": "後脛骨静脈は、英語の「posterior tibial vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_iliac_vein",
+    "japanese": "内腸骨静脈",
+    "english": "internal iliac vein",
+    "latin": "vena iliaca interna",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "内腸骨静脈は、英語の「internal iliac vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "external_iliac_vein",
+    "japanese": "外腸骨静脈",
+    "english": "external iliac vein",
+    "latin": "vena iliaca externa",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "外腸骨静脈は、英語の「external iliac vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "prostatic_venous_plexus",
+    "japanese": "前立腺静脈叢",
+    "english": "prostatic venous plexus",
+    "latin": "plexus venosus prostaticus",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "前立腺静脈叢は、英語の「prostatic venous plexus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "vesical_venous_plexus",
+    "japanese": "膀胱静脈叢",
+    "english": "vesical venous plexus",
+    "latin": "plexus venosus vesicalis",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "膀胱静脈叢は、英語の「vesical venous plexus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "internal_pudendal_vein",
+    "japanese": "内陰部静脈",
+    "english": "internal pudendal vein",
+    "latin": "vena pudenda interna",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "内陰部静脈は、英語の「internal pudendal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_gluteal_vein",
+    "japanese": "上殿静脈",
+    "english": "superior gluteal vein",
+    "latin": "vena glutea superior",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "上殿静脈は、英語の「superior gluteal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_gluteal_vein",
+    "japanese": "下殿静脈",
+    "english": "inferior gluteal vein",
+    "latin": "vena glutea inferior",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "下殿静脈は、英語の「inferior gluteal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "umbilical_vein",
+    "japanese": "臍静脈",
+    "english": "umbilical vein",
+    "latin": "vena umbilicalis",
+    "category": "vein",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "臍静脈は、英語の「umbilical vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "chorionic_vessels",
+    "japanese": "絨毛膜血管",
+    "english": "chorionic vessels",
+    "latin": "vasa chorionica",
+    "category": "vessel",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "絨毛膜血管は、英語の「chorionic vessels」に対応する解剖学用語です。"
+  },
+  {
+    "id": "intervillous_space",
+    "japanese": "絨毛間腔",
+    "english": "intervillous space",
+    "latin": "spatium intervillosum",
+    "category": "region",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "絨毛間腔は、英語の「intervillous space」に対応する解剖学用語です。"
+  },
+  {
+    "id": "placenta",
+    "japanese": "胎盤",
+    "english": "placenta",
+    "latin": "placenta",
+    "category": "organ",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "胎盤は、英語の「placenta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "umbilical_cord",
+    "japanese": "臍帯",
+    "english": "umbilical cord",
+    "latin": "funiculus umbilicalis",
+    "category": "structure",
+    "region": "pelvis",
+    "testSet": "basic_lower",
+    "explanation": "臍帯は、英語の「umbilical cord」に対応する解剖学用語です。"
+  },
+  {
+    "id": "portal_vein",
+    "japanese": "門脈",
+    "english": "portal vein",
+    "latin": "vena portae hepatis",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "門脈は、英語の「portal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "splenic_vein",
+    "japanese": "脾静脈",
+    "english": "splenic vein",
+    "latin": "vena splenica",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "脾静脈は、英語の「splenic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_mesenteric_vein",
+    "japanese": "上腸間膜静脈",
+    "english": "superior mesenteric vein",
+    "latin": "vena mesenterica superior",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "上腸間膜静脈は、英語の「superior mesenteric vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "inferior_mesenteric_vein",
+    "japanese": "下腸間膜静脈",
+    "english": "inferior mesenteric vein",
+    "latin": "vena mesenterica inferior",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "下腸間膜静脈は、英語の「inferior mesenteric vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "gastric_vein",
+    "japanese": "胃静脈",
+    "english": "gastric vein",
+    "latin": "vena gastrica",
+    "category": "vein",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "胃静脈は、英語の「gastric vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "liver",
+    "japanese": "肝臓",
+    "english": "liver",
+    "latin": "hepar",
+    "category": "organ",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "肝臓は、英語の「liver」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pancreas",
+    "japanese": "膵臓",
+    "english": "pancreas",
+    "latin": "pancreas",
+    "category": "organ",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "膵臓は、英語の「pancreas」に対応する解剖学用語です。"
+  },
+  {
+    "id": "spleen",
+    "japanese": "脾臓",
+    "english": "spleen",
+    "latin": "splen",
+    "category": "organ",
+    "region": "abdomen",
+    "testSet": "basic_trunk",
+    "explanation": "脾臓は、英語の「spleen」に対応する解剖学用語です。"
+  },
+  {
+    "id": "azygos_vein",
+    "japanese": "奇静脈",
+    "english": "azygos vein",
+    "latin": "vena azyga",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "奇静脈は、英語の「azygos vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "hemiazygos_vein",
+    "japanese": "半奇静脈",
+    "english": "hemiazygos vein",
+    "latin": "vena hemiazyga",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "半奇静脈は、英語の「hemiazygos vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_intercostal_vein",
+    "japanese": "後肋間静脈",
+    "english": "posterior intercostal vein",
+    "latin": "vena intercostalis posterior",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "後肋間静脈は、英語の「posterior intercostal vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "ascending_lumbar_vein",
+    "japanese": "上行腰静脈",
+    "english": "ascending lumbar vein",
+    "latin": "vena lumbalis ascendens",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "上行腰静脈は、英語の「ascending lumbar vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "vertebral_venous_plexus",
+    "japanese": "椎骨静脈叢",
+    "english": "vertebral venous plexus",
+    "latin": "plexus venosus vertebralis",
+    "category": "vein",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "椎骨静脈叢は、英語の「vertebral venous plexus」に対応する解剖学用語です。"
+  },
+  {
     "id": "pdf_kaibo3_1_cb34b4c7e2",
     "japanese": "骨",
     "english": "",

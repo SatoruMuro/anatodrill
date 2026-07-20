@@ -2,7 +2,7 @@ imageId,suggestions
 gray269_foot_plantar_plate,踵骨::calcaneus|距骨::talus|舟状骨::navicular bone|立方骨::cuboid bone|内側楔状骨::medial cuneiform bone|中間楔状骨::intermediate cuneiform bone|外側楔状骨::lateral cuneiform bone|中足骨::metatarsal bones|趾骨::phalanges of foot
 gray290_foot_medial_plate,距骨::talus|踵骨::calcaneus|舟状骨::navicular bone|内側楔状骨::medial cuneiform bone|第1中足骨::first metatarsal bone|距骨下関節::subtalar joint|載距突起::sustentaculum tali
 gray291_foot_lateral_plate,距骨::talus|踵骨::calcaneus|舟状骨::navicular bone|立方骨::cuboid bone|第5中足骨::fifth metatarsal bone|腓骨::fibula|距骨下関節::subtalar joint
-brachial_a_plate,上腕動脈::brachial artery|上腕深動脈::deep brachial artery|上尺側側副動脈::superior ulnar collateral artery|下尺側側副動脈::inferior ulnar collateral artery|橈骨動脈::radial artery|尺骨動脈::ulnar artery|橈側反回動脈::radial recurrent artery|尺側反回動脈::ulnar recurrent artery
+brachial_a_plate,上腕動脈::brachial artery|上腕深動脈::deep brachial artery|上尺側側副動脈::superior ulnar collateral artery|下尺側側副動脈::inferior ulnar collateral artery|橈骨動脈::radial artery|尺骨動脈::ulnar artery|橈骨反回動脈::radial recurrent artery|尺骨反回動脈::ulnar recurrent artery
 grays_anatomy_plate_517_brain_plate,上前頭回::superior frontal gyrus|中前頭回::middle frontal gyrus|下前頭回::inferior frontal gyrus|中心前回::precentral gyrus|中心後回::postcentral gyrus|上頭頂小葉::superior parietal lobule|下頭頂小葉::inferior parietal lobule|上側頭回::superior temporal gyrus|中側頭回::middle temporal gyrus|下側頭回::inferior temporal gyrus
 gray490blanco_plate,上行大動脈::ascending aorta|大動脈弓::aortic arch|肺動脈幹::pulmonary trunk|右肺動脈::right pulmonary artery|左肺動脈::left pulmonary artery|上大静脈::superior vena cava|心臓::heart|肺::lung
 gray491_az_plate,右心房::right atrium|上大静脈::superior vena cava|下大静脈::inferior vena cava|冠状静脈洞::coronary sinus|卵円窩::fossa ovalis|右房室口::right atrioventricular orifice|三尖弁::tricuspid valve
@@ -51,7 +51,7 @@ gray577_plate,下大静脈::inferior vena cava|総腸骨静脈::common iliac vei
 gray581_plate,大伏在静脈::great saphenous vein|小伏在静脈::small saphenous vein|足背静脈弓::dorsal venous arch|大腿静脈::femoral vein|膝窩静脈::popliteal vein|前脛骨静脈::anterior tibial vein|後脛骨静脈::posterior tibial vein
 gray582_plate,大伏在静脈::great saphenous vein|小伏在静脈::small saphenous vein|足背静脈弓::dorsal venous arch|大腿静脈::femoral vein|膝窩静脈::popliteal vein|前脛骨静脈::anterior tibial vein|後脛骨静脈::posterior tibial vein
 gray585_plate,内腸骨静脈::internal iliac vein|外腸骨静脈::external iliac vein|総腸骨静脈::common iliac vein|前立腺静脈叢::prostatic venous plexus|膀胱静脈叢::vesical venous plexus|内陰部静脈::internal pudendal vein|上殿静脈::superior gluteal vein|下殿静脈::inferior gluteal vein
-gray589_az_plate,臍動脈::umbilical arteries|臍静脈::umbilical vein|絨毛膜血管::chorionic vessels|絨毛間腔::intervillous space|胎盤::placenta|臍帯::umbilical cord
+gray589_az_plate,臍動脈::umbilical artery|臍静脈::umbilical vein|絨毛膜血管::chorionic vessels|絨毛間腔::intervillous space|胎盤::placenta|臍帯::umbilical cord
 gray591_plate,門脈::portal vein|脾静脈::splenic vein|上腸間膜静脈::superior mesenteric vein|下腸間膜静脈::inferior mesenteric vein|胃静脈::gastric vein|肝臓::liver|膵臓::pancreas|脾臓::spleen
 gray599_cropped4_plate,奇静脈::azygos vein|半奇静脈::hemiazygos vein|後肋間静脈::posterior intercostal vein|上行腰静脈::ascending lumbar vein|椎骨静脈叢::vertebral venous plexus|下大静脈::inferior vena cava
 image534_plate,下腸間膜動脈::inferior mesenteric artery|左結腸動脈::left colic artery|S状結腸動脈::sigmoid arteries|上直腸動脈::superior rectal artery|辺縁動脈::marginal artery|中結腸動脈::middle colic artery
