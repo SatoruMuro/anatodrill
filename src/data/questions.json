@@ -2678,5 +2678,101 @@
     "imageId": "gray291_foot_lateral_plate",
     "targetLabel": "10",
     "explanation": "番号10は末節骨を示しています。足の末節骨は足趾の先端を構成する最も遠位の趾骨です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_1_brachial_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "brachial_artery",
+    "choices": [
+      "brachial_artery",
+      "radial_artery",
+      "ulnar_artery",
+      "humerus"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上腕動脈を示しています。上腕動脈は、英語の「brachial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_2_radial_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "radial_artery",
+    "choices": [
+      "radial_artery",
+      "ulnar_artery",
+      "humerus",
+      "radius"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は橈骨動脈を示しています。橈骨動脈は、英語の「radial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_3_ulnar_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "ulnar_artery",
+    "choices": [
+      "ulnar_artery",
+      "humerus",
+      "radius",
+      "ulna"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は尺骨動脈を示しています。尺骨動脈は、英語の「ulnar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_4_humerus",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "humerus",
+    "choices": [
+      "humerus",
+      "radius",
+      "ulna",
+      "brachial_artery"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は上腕骨を示しています。上腕骨は肩から肘までを構成する長骨です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_5_radius",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "radius",
+    "choices": [
+      "radius",
+      "ulna",
+      "brachial_artery",
+      "radial_artery"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は橈骨を示しています。橈骨は前腕の母指側にある骨で、回内回外運動に関わります。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_6_ulna",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "ulna",
+    "choices": [
+      "ulna",
+      "brachial_artery",
+      "radial_artery",
+      "ulnar_artery"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は尺骨を示しています。尺骨は前腕の小指側にある骨で、肘関節の形成に重要です。"
   }
 ]

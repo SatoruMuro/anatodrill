@@ -1633,7 +1633,50 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brachial_a.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "brachial_artery",
+        "x": 0.5761,
+        "y": 0.319,
+        "note": "上腕動脈"
+      },
+      {
+        "label": "2",
+        "termId": "radial_artery",
+        "x": 0.3916,
+        "y": 0.8286,
+        "note": "橈骨動脈"
+      },
+      {
+        "label": "3",
+        "termId": "ulnar_artery",
+        "x": 0.5372,
+        "y": 0.8333,
+        "note": "尺骨動脈"
+      },
+      {
+        "label": "4",
+        "termId": "humerus",
+        "x": 0.4984,
+        "y": 0.1952,
+        "note": "上腕骨"
+      },
+      {
+        "label": "5",
+        "termId": "radius",
+        "x": 0.479,
+        "y": 0.8452,
+        "note": "橈骨"
+      },
+      {
+        "label": "6",
+        "termId": "ulna",
+        "x": 0.3948,
+        "y": 0.7476,
+        "note": "尺骨"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "上腕動脈",

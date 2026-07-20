@@ -134,3 +134,9 @@ gray291_foot_lateral_plate,7,metatarsal_bone,0.3722,0.5214,中足骨
 gray291_foot_lateral_plate,8,proximal_phalanx_of_foot,0.2621,0.5881,基節骨
 gray291_foot_lateral_plate,9,middle_phalanx_of_foot,0.1909,0.5952,中節骨
 gray291_foot_lateral_plate,10,distal_phalanx_of_foot,0.1521,0.5976,末節骨
+brachial_a_plate,1,brachial_artery,0.5761,0.319,上腕動脈
+brachial_a_plate,2,radial_artery,0.3916,0.8286,橈骨動脈
+brachial_a_plate,3,ulnar_artery,0.5372,0.8333,尺骨動脈
+brachial_a_plate,4,humerus,0.4984,0.1952,上腕骨
+brachial_a_plate,5,radius,0.479,0.8452,橈骨
+brachial_a_plate,6,ulna,0.3948,0.7476,尺骨
