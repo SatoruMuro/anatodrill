@@ -1507,7 +1507,78 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray291_he.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "calcaneus",
+        "x": 0.8576,
+        "y": 0.5286,
+        "note": "踵骨"
+      },
+      {
+        "label": "2",
+        "termId": "talus",
+        "x": 0.7605,
+        "y": 0.4286,
+        "note": "距骨"
+      },
+      {
+        "label": "3",
+        "termId": "cuboid_bone",
+        "x": 0.6214,
+        "y": 0.519,
+        "note": "立方骨"
+      },
+      {
+        "label": "4",
+        "termId": "navicular_bone",
+        "x": 0.5987,
+        "y": 0.4357,
+        "note": "舟状骨"
+      },
+      {
+        "label": "5",
+        "termId": "lateral_cuneiform_bone",
+        "x": 0.5502,
+        "y": 0.4714,
+        "note": "外側楔状骨"
+      },
+      {
+        "label": "6",
+        "termId": "intermediate_cuneiform_bone",
+        "x": 0.5307,
+        "y": 0.4333,
+        "note": "中間楔状骨"
+      },
+      {
+        "label": "7",
+        "termId": "metatarsal_bone",
+        "x": 0.3722,
+        "y": 0.5214,
+        "note": "中足骨"
+      },
+      {
+        "label": "8",
+        "termId": "proximal_phalanx_of_foot",
+        "x": 0.2621,
+        "y": 0.5881,
+        "note": "基節骨"
+      },
+      {
+        "label": "9",
+        "termId": "middle_phalanx_of_foot",
+        "x": 0.1909,
+        "y": 0.5952,
+        "note": "中節骨"
+      },
+      {
+        "label": "10",
+        "termId": "distal_phalanx_of_foot",
+        "x": 0.1521,
+        "y": 0.5976,
+        "note": "末節骨"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "距骨",

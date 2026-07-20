@@ -124,3 +124,13 @@ gray290_foot_medial_plate,4,medial_cuneiform_bone,0.5049,0.5024,内側楔状骨
 gray290_foot_medial_plate,5,metatarsal_bone,0.657,0.5452,第1中足骨
 gray290_foot_medial_plate,6,proximal_phalanx_of_foot,0.8285,0.5952,基節骨
 gray290_foot_medial_plate,7,distal_phalanx_of_foot,0.945,0.6119,末節骨
+gray291_foot_lateral_plate,1,calcaneus,0.8576,0.5286,踵骨
+gray291_foot_lateral_plate,2,talus,0.7605,0.4286,距骨
+gray291_foot_lateral_plate,3,cuboid_bone,0.6214,0.519,立方骨
+gray291_foot_lateral_plate,4,navicular_bone,0.5987,0.4357,舟状骨
+gray291_foot_lateral_plate,5,lateral_cuneiform_bone,0.5502,0.4714,外側楔状骨
+gray291_foot_lateral_plate,6,intermediate_cuneiform_bone,0.5307,0.4333,中間楔状骨
+gray291_foot_lateral_plate,7,metatarsal_bone,0.3722,0.5214,中足骨
+gray291_foot_lateral_plate,8,proximal_phalanx_of_foot,0.2621,0.5881,基節骨
+gray291_foot_lateral_plate,9,middle_phalanx_of_foot,0.1909,0.5952,中節骨
+gray291_foot_lateral_plate,10,distal_phalanx_of_foot,0.1521,0.5976,末節骨
