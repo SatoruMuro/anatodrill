@@ -16742,14 +16742,14 @@
     "explanation": "kaibo4.pdf から追加した解剖学用語です。"
   },
   {
-    "id": "pdf_kaibo4_48b6bb57a6",
+    "id": "omohyoid_muscle",
     "japanese": "肩甲舌骨筋",
-    "english": "",
-    "latin": "",
+    "english": "omohyoid muscle",
+    "latin": "musculus omohyoideus",
     "category": "muscle",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo4.pdf から追加した解剖学用語です。"
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "肩甲舌骨筋は肩甲骨から舌骨へ向かう舌骨下筋で、上腹と下腹が中間腱で連結されます。"
   },
   {
     "id": "pdf_kaibo4_1a191a0acd",
@@ -35572,14 +35572,14 @@
     "explanation": "kaibo6.pdf から追加した解剖学用語です。"
   },
   {
-    "id": "pdf_kaibo6_c798d97baf",
+    "id": "right_auricle",
     "japanese": "右心耳",
-    "english": "",
-    "latin": "",
-    "category": "vascular",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo6.pdf から追加した解剖学用語です。"
+    "english": "right auricle of heart",
+    "latin": "auricula dextra cordis",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右心耳は右心房から前方へ突出する耳介状の部分で、右心房の容量を補います。"
   },
   {
     "id": "pdf_kaibo6_7b113b67b1",
@@ -35962,14 +35962,14 @@
     "explanation": "kaibo6.pdf から追加した解剖学用語です。"
   },
   {
-    "id": "pdf_kaibo6_9e28467711",
+    "id": "left_ventricle",
     "japanese": "左心室",
-    "english": "",
-    "latin": "",
-    "category": "vascular",
-    "region": "general",
-    "testSet": "pdf_reference_terms",
-    "explanation": "kaibo6.pdf から追加した解剖学用語です。"
+    "english": "left ventricle",
+    "latin": "ventriculus sinister",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "左心室は左心房から受け取った血液を大動脈へ送り出す心腔です。"
   },
   {
     "id": "pdf_kaibo6_91ee8b713d",
@@ -74960,6 +74960,16 @@
     "region": "head and neck",
     "testSet": "basic_head",
     "explanation": "視神経は、英語の「optic nerve」、ラテン語の「nervus opticus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "vagus_nerve",
+    "japanese": "迷走神経",
+    "english": "vagus nerve",
+    "latin": "nervus vagus",
+    "category": "nerve",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "迷走神経は第10脳神経で、頸部・胸部・腹部の臓器へ広く分布する副交感神経線維を含みます。"
   },
   {
     "id": "pituitary_gland",

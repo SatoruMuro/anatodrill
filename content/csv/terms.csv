@@ -1666,7 +1666,7 @@ pdf_kaibo4_3765cdd1c0,顎舌骨筋,,,muscle,general,pdf_reference_terms,kaibo4.p
 pdf_kaibo4_ef7d96e647,オトガイ舌骨筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_f41f94137c,舌骨下筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_1aeee395f7,胸骨舌骨筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
-pdf_kaibo4_48b6bb57a6,肩甲舌骨筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
+omohyoid_muscle,肩甲舌骨筋,omohyoid muscle,musculus omohyoideus,muscle,head and neck,basic_muscle,肩甲舌骨筋は肩甲骨から舌骨へ向かう舌骨下筋で、上腹と下腹が中間腱で連結されます。
 pdf_kaibo4_1a191a0acd,上腹,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_4eb22efa62,下腹,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_9b49565a15,胸骨甲状筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
@@ -3549,7 +3549,7 @@ pdf_kaibo6_9e3d58cc5a,房室束,,,vascular,general,pdf_reference_terms,kaibo6.pd
 pdf_kaibo6_3b585d5b6d,心内膜下枝,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_f01373b841,心内膜,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_9985dbfdf0,右心房,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
-pdf_kaibo6_c798d97baf,右心耳,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
+right_auricle,右心耳,right auricle of heart,auricula dextra cordis,heart,thorax,basic_trunk,右心耳は右心房から前方へ突出する耳介状の部分で、右心房の容量を補います。
 pdf_kaibo6_7b113b67b1,状筋,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_37f5e2f99d,分界稜,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_3f9a401f5f,大静脈洞,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
@@ -3588,7 +3588,7 @@ pdf_kaibo6_bb0b34ddd8,左心耳,,,vascular,general,pdf_reference_terms,kaibo6.pd
 pdf_kaibo6_6abfa95149,肺静脈口,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_9def42d3a1,卵円孔弁,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_3690e40aee,中隔鎌,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
-pdf_kaibo6_9e28467711,左心室,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
+left_ventricle,左心室,left ventricle,ventriculus sinister,heart,thorax,basic_trunk,左心室は左心房から受け取った血液を大動脈へ送り出す心腔です。
 pdf_kaibo6_91ee8b713d,左房室口,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_81351e093b,左房室弁,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_cf656b5960,僧帽弁,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
@@ -7488,6 +7488,7 @@ olfactory_bulb,嗅球,olfactory bulb,bulbus olfactorius,brain,head and neck,basi
 olfactory_tract,嗅索,olfactory tract,tractus olfactorius,brain,head and neck,basic_head,嗅索は、英語の「olfactory tract」、ラテン語の「tractus olfactorius」に対応する解剖学用語です。
 orbital_gyri,眼窩回,orbital gyri,gyri orbitales,brain,head and neck,basic_head,眼窩回は、英語の「orbital gyri」、ラテン語の「gyri orbitales」に対応する解剖学用語です。
 optic_nerve,視神経,optic nerve,nervus opticus,nerve,head and neck,basic_head,視神経は、英語の「optic nerve」、ラテン語の「nervus opticus」に対応する解剖学用語です。
+vagus_nerve,迷走神経,vagus nerve,nervus vagus,nerve,head and neck,basic_head,迷走神経は第10脳神経で、頸部・胸部・腹部の臓器へ広く分布する副交感神経線維を含みます。
 pituitary_gland,下垂体,pituitary gland,hypophysis,gland,head and neck,basic_head,下垂体は、英語の「pituitary gland」、ラテン語の「hypophysis」に対応する解剖学用語です。
 mammillary_body,乳頭体,mammillary body,corpus mamillare,brain,head and neck,basic_head,乳頭体は、英語の「mammillary body」、ラテン語の「corpus mamillare」に対応する解剖学用語です。
 midbrain,中脳,midbrain,mesencephalon,brain,head and neck,basic_head,中脳は、英語の「midbrain」、ラテン語の「mesencephalon」に対応する解剖学用語です。
