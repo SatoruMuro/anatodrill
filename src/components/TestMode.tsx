@@ -49,6 +49,7 @@ function makeCertificateId(): string {
 export function TestMode({ questions, termsById, imagesById, onRecordAnswer, onSaveAttempt }: TestModeProps) {
   const [phase, setPhase] = useState<Phase>('setup');
   const [participant, setParticipant] = useState<TestParticipant>({ name: '', studentId: '' });
+  const [hasNoStudentId, setHasNoStudentId] = useState(false);
   const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
   const [queue, setQueue] = useState<Question[]>([]);
   const [index, setIndex] = useState(0);
@@ -75,7 +76,11 @@ export function TestMode({ questions, termsById, imagesById, onRecordAnswer, onS
 
   const startTest = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (!participant.name.trim() || !participant.studentId.trim() || languageEligibleQuestions.length === 0) {
+    if (
+      !participant.name.trim() ||
+      (!hasNoStudentId && !participant.studentId.trim()) ||
+      languageEligibleQuestions.length === 0
+    ) {
       return;
     }
 
@@ -101,7 +106,7 @@ export function TestMode({ questions, termsById, imagesById, onRecordAnswer, onS
     const attempt: TestAttempt = {
       id: `attempt-${completedAt.getTime()}`,
       name: participant.name.trim(),
-      studentId: participant.studentId.trim(),
+      studentId: hasNoStudentId ? '' : participant.studentId.trim(),
       testSetId: ALL_RANGE_TEST_ID,
       testSetTitleJa: ALL_RANGE_TEST_TITLE,
       testSetVersion: ALL_RANGE_TEST_VERSION,
@@ -159,16 +164,33 @@ export function TestMode({ questions, termsById, imagesById, onRecordAnswer, onS
               required
             />
           </label>
-          <label>
-            学籍番号
-            <input
-              name="studentId"
-              value={participant.studentId}
-              onChange={updateParticipant}
-              autoComplete="off"
-              required
-            />
-          </label>
+          <div className="student-id-field">
+            <label>
+              学籍番号
+              <input
+                name="studentId"
+                value={participant.studentId}
+                onChange={updateParticipant}
+                autoComplete="off"
+                disabled={hasNoStudentId}
+                required={!hasNoStudentId}
+              />
+            </label>
+            <label className="student-id-none-toggle">
+              <input
+                type="checkbox"
+                checked={hasNoStudentId}
+                onChange={(event) => {
+                  const checked = event.target.checked;
+                  setHasNoStudentId(checked);
+                  if (checked) {
+                    setParticipant((current) => ({ ...current, studentId: '' }));
+                  }
+                }}
+              />
+              <span>学籍番号なし</span>
+            </label>
+          </div>
           <label>
             テスト形式
             <select

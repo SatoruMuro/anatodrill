@@ -173,7 +173,7 @@ export function HistoryBackup({ data, terms, testSets, onImportData }: HistoryBa
                       </div>
                       <div>
                         <dt>studentId</dt>
-                        <dd>{attempt.studentId}</dd>
+                        <dd>{attempt.studentId || 'なし'}</dd>
                       </div>
                       <div>
                         <dt>出題範囲</dt>

@@ -79,7 +79,7 @@ function normalizeAttempt(value: unknown): TestAttempt | null {
   if (
     !id ||
     !name ||
-    !studentId ||
+    studentId === null ||
     !testSetId ||
     !testSetTitleJa ||
     !testSetVersion ||

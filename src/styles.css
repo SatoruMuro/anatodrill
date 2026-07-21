@@ -593,6 +593,35 @@ button.plate-marker {
   color: #17211e;
 }
 
+.setup-form input:disabled {
+  background: #eef2f0;
+  color: #7a8984;
+}
+
+.student-id-field {
+  display: grid;
+  gap: 10px;
+}
+
+.setup-form .student-id-none-toggle {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: 9px;
+  color: #53635e;
+  font-size: 0.92rem;
+  cursor: pointer;
+}
+
+.setup-form .student-id-none-toggle input {
+  width: 20px;
+  height: 20px;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+  accent-color: #0d6b5f;
+}
+
 .test-set-detail {
   padding: 16px;
   border: 1px solid #dce5e1;

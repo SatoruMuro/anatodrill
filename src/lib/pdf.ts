@@ -81,7 +81,7 @@ function certificateRows(payload: CertificatePayload, supportsJapanese: boolean)
   if (supportsJapanese) {
     return [
       ['氏名', payload.participant.name],
-      ['学籍番号', payload.participant.studentId],
+      ['学籍番号', payload.participant.studentId || 'なし'],
       ['出題範囲', payload.testSetTitleJa],
       ['出題範囲ID', payload.testSetId],
       ['Version', payload.testSetVersion],
@@ -99,7 +99,12 @@ function certificateRows(payload: CertificatePayload, supportsJapanese: boolean)
 
   return [
     ['Name', asciiFallback(payload.participant.name, 'Name contains non-Latin characters')],
-    ['Student ID', asciiFallback(payload.participant.studentId, 'Student ID contains non-Latin characters')],
+    [
+      'Student ID',
+      payload.participant.studentId
+        ? asciiFallback(payload.participant.studentId, 'Student ID contains non-Latin characters')
+        : 'Not provided',
+    ],
     ['Question scope', asciiFallback(payload.testSetTitleJa, 'Japanese scope name omitted')],
     ['Question scope ID', asciiFallback(payload.testSetId, 'Scope ID contains non-Latin characters')],
     ['Scope version', asciiFallback(payload.testSetVersion, 'Scope version contains non-Latin characters')],
