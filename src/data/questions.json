@@ -2902,5 +2902,181 @@
     "imageId": "gray490blanco_plate",
     "targetLabel": "14",
     "explanation": "番号14は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_1_ascending_aorta",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "ascending_aorta",
+    "choices": [
+      "ascending_aorta",
+      "pulmonary_artery",
+      "left_atrium",
+      "superior_vena_cava"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上行大動脈を示しています。上行大動脈は、英語の「ascending aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_2_pulmonary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "pulmonary_artery",
+    "choices": [
+      "pulmonary_artery",
+      "left_atrium",
+      "superior_vena_cava",
+      "inferior_vena_cava"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は肺動脈を示しています。肺動脈は、英語の「pulmonary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_3_left_atrium",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "left_atrium",
+    "choices": [
+      "left_atrium",
+      "superior_vena_cava",
+      "inferior_vena_cava",
+      "right_atrium"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は左心房を示しています。左心房は肺静脈から酸素化血を受け取り左心室へ送る心腔です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_5_superior_vena_cava",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "superior_vena_cava",
+    "choices": [
+      "superior_vena_cava",
+      "inferior_vena_cava",
+      "right_atrium",
+      "coronary_sinus"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は上大静脈を示しています。上大静脈は、英語の「superior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_6_inferior_vena_cava",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "inferior_vena_cava",
+    "choices": [
+      "inferior_vena_cava",
+      "right_atrium",
+      "coronary_sinus",
+      "pulmonary_vein"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は下大静脈を示しています。下大静脈は、英語の「inferior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_7_right_atrium",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "right_atrium",
+    "choices": [
+      "right_atrium",
+      "coronary_sinus",
+      "pulmonary_vein",
+      "ascending_aorta"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は右心房を示しています。右心房は、英語の「right atrium」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_8_coronary_sinus",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "coronary_sinus",
+    "choices": [
+      "coronary_sinus",
+      "pulmonary_vein",
+      "ascending_aorta",
+      "pulmonary_artery"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は冠状静脈洞を示しています。冠状静脈洞は、英語の「coronary sinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_9_pulmonary_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "pulmonary_vein",
+    "choices": [
+      "pulmonary_vein",
+      "ascending_aorta",
+      "pulmonary_artery",
+      "left_atrium"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は肺静脈を示しています。肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_10_pulmonary_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "pulmonary_vein",
+    "choices": [
+      "pulmonary_vein",
+      "ascending_aorta",
+      "pulmonary_artery",
+      "left_atrium"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は肺静脈を示しています。肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_11_pulmonary_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "pulmonary_vein",
+    "choices": [
+      "pulmonary_vein",
+      "ascending_aorta",
+      "pulmonary_artery",
+      "left_atrium"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は肺静脈を示しています。肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray491_az_plate_label_12_pulmonary_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "pulmonary_vein",
+    "choices": [
+      "pulmonary_vein",
+      "ascending_aorta",
+      "pulmonary_artery",
+      "left_atrium"
+    ],
+    "imageId": "gray491_az_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は肺静脈を示しています。肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。"
   }
 ]

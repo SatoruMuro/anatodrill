@@ -1910,7 +1910,85 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray491_az.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "ascending_aorta",
+        "x": 0.6026,
+        "y": 0.1339,
+        "note": "上行大動脈"
+      },
+      {
+        "label": "2",
+        "termId": "pulmonary_artery",
+        "x": 0.5472,
+        "y": 0.212,
+        "note": "肺動脈"
+      },
+      {
+        "label": "3",
+        "termId": "left_atrium",
+        "x": 0.5635,
+        "y": 0.476,
+        "note": "左心房"
+      },
+      {
+        "label": "5",
+        "termId": "superior_vena_cava",
+        "x": 0.7524,
+        "y": 0.212,
+        "note": "上大静脈"
+      },
+      {
+        "label": "6",
+        "termId": "inferior_vena_cava",
+        "x": 0.7036,
+        "y": 0.7623,
+        "note": "下大静脈"
+      },
+      {
+        "label": "7",
+        "termId": "right_atrium",
+        "x": 0.772,
+        "y": 0.6247,
+        "note": "右心房"
+      },
+      {
+        "label": "8",
+        "termId": "coronary_sinus",
+        "x": 0.544,
+        "y": 0.6842,
+        "note": "冠状静脈洞"
+      },
+      {
+        "label": "9",
+        "termId": "pulmonary_vein",
+        "x": 0.3746,
+        "y": 0.3086,
+        "note": "肺静脈"
+      },
+      {
+        "label": "10",
+        "termId": "pulmonary_vein",
+        "x": 0.4365,
+        "y": 0.4537,
+        "note": "肺静脈"
+      },
+      {
+        "label": "11",
+        "termId": "pulmonary_vein",
+        "x": 0.7329,
+        "y": 0.3756,
+        "note": "肺静脈"
+      },
+      {
+        "label": "12",
+        "termId": "pulmonary_vein",
+        "x": 0.6938,
+        "y": 0.5169,
+        "note": "肺静脈"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "右心房",

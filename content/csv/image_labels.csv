@@ -148,3 +148,14 @@ gray490blanco_plate,11,subclavian_artery,0.3628,0.1196,鎖骨下動脈
 gray490blanco_plate,12,subclavian_artery,0.6221,0.1162,鎖骨下動脈
 gray490blanco_plate,13,common_carotid_artery,0.4295,0.0679,総頸動脈
 gray490blanco_plate,14,common_carotid_artery,0.5674,0.078,総頸動脈
+gray491_az_plate,1,ascending_aorta,0.6026,0.1339,上行大動脈
+gray491_az_plate,2,pulmonary_artery,0.5472,0.212,肺動脈
+gray491_az_plate,3,left_atrium,0.5635,0.476,左心房
+gray491_az_plate,5,superior_vena_cava,0.7524,0.212,上大静脈
+gray491_az_plate,6,inferior_vena_cava,0.7036,0.7623,下大静脈
+gray491_az_plate,7,right_atrium,0.772,0.6247,右心房
+gray491_az_plate,8,coronary_sinus,0.544,0.6842,冠状静脈洞
+gray491_az_plate,9,pulmonary_vein,0.3746,0.3086,肺静脈
+gray491_az_plate,10,pulmonary_vein,0.4365,0.4537,肺静脈
+gray491_az_plate,11,pulmonary_vein,0.7329,0.3756,肺静脈
+gray491_az_plate,12,pulmonary_vein,0.6938,0.5169,肺静脈
