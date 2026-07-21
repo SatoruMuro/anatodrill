@@ -1511,78 +1511,7 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray291_he.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [
-      {
-        "label": "1",
-        "termId": "calcaneus",
-        "x": 0.8576,
-        "y": 0.5286,
-        "note": "踵骨"
-      },
-      {
-        "label": "2",
-        "termId": "talus",
-        "x": 0.7605,
-        "y": 0.4286,
-        "note": "距骨"
-      },
-      {
-        "label": "3",
-        "termId": "cuboid_bone",
-        "x": 0.6214,
-        "y": 0.519,
-        "note": "立方骨"
-      },
-      {
-        "label": "4",
-        "termId": "navicular_bone",
-        "x": 0.5987,
-        "y": 0.4357,
-        "note": "舟状骨"
-      },
-      {
-        "label": "5",
-        "termId": "lateral_cuneiform_bone",
-        "x": 0.5502,
-        "y": 0.4714,
-        "note": "外側楔状骨"
-      },
-      {
-        "label": "6",
-        "termId": "intermediate_cuneiform_bone",
-        "x": 0.5307,
-        "y": 0.4333,
-        "note": "中間楔状骨"
-      },
-      {
-        "label": "7",
-        "termId": "metatarsal_bone",
-        "x": 0.3722,
-        "y": 0.5214,
-        "note": "中足骨"
-      },
-      {
-        "label": "8",
-        "termId": "proximal_phalanx_of_foot",
-        "x": 0.2621,
-        "y": 0.5881,
-        "note": "基節骨"
-      },
-      {
-        "label": "9",
-        "termId": "middle_phalanx_of_foot",
-        "x": 0.1909,
-        "y": 0.5952,
-        "note": "中節骨"
-      },
-      {
-        "label": "10",
-        "termId": "distal_phalanx_of_foot",
-        "x": 0.1521,
-        "y": 0.5976,
-        "note": "末節骨"
-      }
-    ],
+    "labels": [],
     "suggestions": [
       {
         "japanese": "距骨",
@@ -1633,50 +1562,7 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brachial_a.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [
-      {
-        "label": "1",
-        "termId": "brachial_artery",
-        "x": 0.5761,
-        "y": 0.319,
-        "note": "上腕動脈"
-      },
-      {
-        "label": "2",
-        "termId": "radial_artery",
-        "x": 0.3916,
-        "y": 0.8286,
-        "note": "橈骨動脈"
-      },
-      {
-        "label": "3",
-        "termId": "ulnar_artery",
-        "x": 0.5372,
-        "y": 0.8333,
-        "note": "尺骨動脈"
-      },
-      {
-        "label": "4",
-        "termId": "humerus",
-        "x": 0.4984,
-        "y": 0.1952,
-        "note": "上腕骨"
-      },
-      {
-        "label": "5",
-        "termId": "radius",
-        "x": 0.479,
-        "y": 0.8452,
-        "note": "橈骨"
-      },
-      {
-        "label": "6",
-        "termId": "ulna",
-        "x": 0.3948,
-        "y": 0.7476,
-        "note": "尺骨"
-      }
-    ],
+    "labels": [],
     "suggestions": [
       {
         "japanese": "上腕動脈",
@@ -1798,7 +1684,106 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray490blanco.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "ascending_aorta",
+        "x": 0.4208,
+        "y": 0.4136,
+        "note": "上行大動脈"
+      },
+      {
+        "label": "2",
+        "termId": "aortic_arch",
+        "x": 0.5444,
+        "y": 0.3474,
+        "note": "大動脈弓"
+      },
+      {
+        "label": "3",
+        "termId": "pulmonary_trunk",
+        "x": 0.5367,
+        "y": 0.4551,
+        "note": "肺動脈幹"
+      },
+      {
+        "label": "4",
+        "termId": "superior_vena_cava",
+        "x": 0.3387,
+        "y": 0.417,
+        "note": "上大静脈"
+      },
+      {
+        "label": "5",
+        "termId": "brachiocephalic_vein",
+        "x": 0.3649,
+        "y": 0.2318,
+        "note": "腕頭静脈"
+      },
+      {
+        "label": "6",
+        "termId": "brachiocephalic_vein",
+        "x": 0.493,
+        "y": 0.2509,
+        "note": "腕頭静脈"
+      },
+      {
+        "label": "7",
+        "termId": "heart",
+        "x": 0.5652,
+        "y": 0.6493,
+        "note": "心臓"
+      },
+      {
+        "label": "8",
+        "termId": "lung",
+        "x": 0.1713,
+        "y": 0.4944,
+        "note": "肺"
+      },
+      {
+        "label": "9",
+        "termId": "lung",
+        "x": 0.7895,
+        "y": 0.4753,
+        "note": "肺"
+      },
+      {
+        "label": "10",
+        "termId": "brachiocephalic_trunk",
+        "x": 0.4634,
+        "y": 0.2004,
+        "note": "腕頭動脈"
+      },
+      {
+        "label": "11",
+        "termId": "subclavian_artery",
+        "x": 0.3628,
+        "y": 0.1196,
+        "note": "鎖骨下動脈"
+      },
+      {
+        "label": "12",
+        "termId": "subclavian_artery",
+        "x": 0.6221,
+        "y": 0.1162,
+        "note": "鎖骨下動脈"
+      },
+      {
+        "label": "13",
+        "termId": "common_carotid_artery",
+        "x": 0.4295,
+        "y": 0.0679,
+        "note": "総頸動脈"
+      },
+      {
+        "label": "14",
+        "termId": "common_carotid_artery",
+        "x": 0.5674,
+        "y": 0.078,
+        "note": "総頸動脈"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "上行大動脈",

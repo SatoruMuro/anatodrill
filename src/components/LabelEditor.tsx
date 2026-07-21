@@ -448,7 +448,21 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   };
 
   const handleImageClick = (event: MouseEvent<HTMLButtonElement>) => {
-    const rect = event.currentTarget.getBoundingClientRect();
+    const imageElement = event.currentTarget.querySelector('img');
+    if (!imageElement) {
+      return;
+    }
+
+    const rect = imageElement.getBoundingClientRect();
+    if (
+      event.clientX < rect.left ||
+      event.clientX > rect.right ||
+      event.clientY < rect.top ||
+      event.clientY > rect.bottom
+    ) {
+      return;
+    }
+
     const x = Math.min(1, Math.max(0, (event.clientX - rect.left) / rect.width));
     const y = Math.min(1, Math.max(0, (event.clientY - rect.top) / rect.height));
     setDraft((current) => ({

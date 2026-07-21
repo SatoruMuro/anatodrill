@@ -1267,7 +1267,6 @@ button.plate-marker {
   position: relative;
   display: block;
   width: 100%;
-  min-height: 420px;
   margin-top: 16px;
   overflow: hidden;
   padding: 0;
