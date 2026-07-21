@@ -140,3 +140,17 @@ brachial_a_plate,3,ulnar_artery,0.5372,0.8333,尺骨動脈
 brachial_a_plate,4,humerus,0.4984,0.1952,上腕骨
 brachial_a_plate,5,radius,0.479,0.8452,橈骨
 brachial_a_plate,6,ulna,0.3948,0.7476,尺骨
+gray490blanco_plate,1,ascending_aorta,0.4208,0.4136,上行大動脈
+gray490blanco_plate,2,aortic_arch,0.5444,0.3474,大動脈弓
+gray490blanco_plate,3,pulmonary_trunk,0.5367,0.4551,肺動脈幹
+gray490blanco_plate,4,superior_vena_cava,0.3387,0.417,上大静脈
+gray490blanco_plate,5,brachiocephalic_vein,0.3649,0.2318,腕頭静脈
+gray490blanco_plate,6,brachiocephalic_vein,0.493,0.2509,腕頭静脈
+gray490blanco_plate,7,heart,0.5652,0.6493,心臓
+gray490blanco_plate,8,lung,0.1713,0.4944,肺
+gray490blanco_plate,9,lung,0.7895,0.4753,肺
+gray490blanco_plate,10,brachiocephalic_trunk,0.4634,0.2004,腕頭動脈
+gray490blanco_plate,11,subclavian_artery,0.3628,0.1196,鎖骨下動脈
+gray490blanco_plate,12,subclavian_artery,0.6221,0.1162,鎖骨下動脈
+gray490blanco_plate,13,common_carotid_artery,0.4295,0.0679,総頸動脈
+gray490blanco_plate,14,common_carotid_artery,0.5674,0.078,総頸動脈

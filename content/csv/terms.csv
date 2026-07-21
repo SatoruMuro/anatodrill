@@ -965,7 +965,7 @@ pdf_kaibo3_1_37e2fa806e,尺骨頭,,,bone,general,pdf_reference_terms,kaibo3_1.pd
 pdf_kaibo3_1_bc4ef6fbf0,手の骨,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
 pdf_kaibo3_1_dfec084d61,手根骨,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
 pdf_kaibo3_1_aafb5e4f17,中心骨,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
-pdf_kaibo3_1_afdc92cc0b,手の舟状骨,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
+pdf_kaibo3_1_afdc92cc0b,手の舟状骨,scaphoid bone,os scaphoideum,bone,upper limb,pdf_reference_terms,手の舟状骨は手根骨の一つで、英語では scaphoid bone、ラテン語では os scaphoideum といいます。
 pdf_kaibo3_1_e3c3107ab0,舟状骨結節,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
 pdf_kaibo3_1_0e580de428,大菱形骨結節,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
 pdf_kaibo3_1_51883f025f,有鈎骨鈎,,,bone,general,pdf_reference_terms,kaibo3_1.pdf から追加した解剖学用語です。
@@ -1642,7 +1642,7 @@ pdf_kaibo4_456bb0bcbe,側頭筋膜,,,muscle,general,pdf_reference_terms,kaibo4.p
 pdf_kaibo4_da3c837231,浅葉,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_d44eb794e3,深葉,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_d49069201e,頸部の筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
-pdf_kaibo4_60dab04833,広頸筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
+pdf_kaibo4_60dab04833,広頸筋,platysma,platysma,muscle,head and neck,pdf_reference_terms,広頸筋は頸部前面の浅層に広がる皮筋です。
 pdf_kaibo4_a9ee8135f7,頸長筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_3f2f8364b5,頭長筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_0b217410c1,前頭直筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
@@ -1701,7 +1701,7 @@ pdf_kaibo4_7e216b6efe,固有背筋,,,muscle,general,pdf_reference_terms,kaibo4.p
 pdf_kaibo4_cecd2fe824,棘横突筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_49d1afc2ec,板状筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_0f32d239a8,頭板状筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
-pdf_kaibo4_a7f8c6925d,頸板状筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
+pdf_kaibo4_a7f8c6925d,頸板状筋,splenius cervicis,musculus splenius cervicis,muscle,head and neck,pdf_reference_terms,頸板状筋は頸部後面にある板状筋の一つです。
 pdf_kaibo4_492745467f,脊柱起立筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_a6696c3651,脊柱起立筋腱膜,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_2dfafa9bfa,筋間中隔,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
@@ -1931,12 +1931,12 @@ pdf_kaibo4_bda46a4568,腱間結合,,,muscle,general,pdf_reference_terms,kaibo4.p
 pdf_kaibo4_3251f10c5a,小指伸筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_e8f347721b,尺側手根伸筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_2cfbd528ca,長母指外転筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
-pdf_kaibo4_270b2d1cce,短母指伸筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
+pdf_kaibo4_270b2d1cce,短母指伸筋,extensor pollicis brevis,musculus extensor pollicis brevis,muscle,upper limb,pdf_reference_terms,短母指伸筋は母指を伸展する前腕後面の筋です。
 pdf_kaibo4_91b9d7a60c,長母指伸筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_42f15c413e,示指伸筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_a90568af7d,短掌筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_ebc4907eaf,短母指外転筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
-pdf_kaibo4_eb406ed874,短母指屈筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
+pdf_kaibo4_eb406ed874,短母指屈筋,flexor pollicis brevis,musculus flexor pollicis brevis,muscle,upper limb,pdf_reference_terms,短母指屈筋は母指を屈曲する母指球筋の一つです。
 pdf_kaibo4_3047d4de24,浅頭,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_4bf0be199d,母指対立筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
 pdf_kaibo4_fbde5779bd,母指内転筋,,,muscle,general,pdf_reference_terms,kaibo4.pdf から追加した解剖学用語です。
@@ -3949,8 +3949,8 @@ pdf_kaibo6_3237f7cf89,下行肩甲動,,,vascular,general,pdf_reference_terms,kai
 pdf_kaibo6_ebc7cdea08,肩甲背動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_2cb0afbe5d,下行,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_e48d9f9b47,肩甲動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
-pdf_kaibo6_eaa4f737d8,肋頸動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
-pdf_kaibo6_af50038d52,深頸動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
+pdf_kaibo6_eaa4f737d8,肋頸動脈,costocervical trunk,truncus costocervicalis,vascular,head and neck,pdf_reference_terms,肋頸動脈は鎖骨下動脈から分岐する動脈幹です。
+pdf_kaibo6_af50038d52,深頸動脈,deep cervical artery,arteria cervicalis profunda,vascular,head and neck,pdf_reference_terms,深頸動脈は肋頸動脈から分岐して深頸部へ向かう動脈です。
 pdf_kaibo6_773bcac6a6,最上肋間動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_ccbc27d213,第一肋間動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
 pdf_kaibo6_1fa390bc99,第二肋間動脈,,,vascular,general,pdf_reference_terms,kaibo6.pdf から追加した解剖学用語です。
@@ -7511,3 +7511,19 @@ superior_lobe_of_lung,上葉,superior lobe of lung,lobus superior pulmonis,organ
 middle_lobe_of_right_lung,中葉,middle lobe of right lung,lobus medius pulmonis dextri,organ,thorax,basic_trunk,中葉は右肺にのみ存在する肺葉です。
 inferior_lobe_of_lung,下葉,inferior lobe of lung,lobus inferior pulmonis,organ,thorax,basic_trunk,下葉は肺の下部を構成する肺葉です。
 left_atrium,左心房,left atrium,atrium sinistrum,heart,thorax,basic_trunk,左心房は肺静脈から酸素化血を受け取り左心室へ送る心腔です。
+stomach,胃,stomach,gaster,viscera,abdomen,pdf_reference_terms,胃は食道と十二指腸の間にある消化管の器官です。
+gallbladder,胆嚢,gallbladder,vesica biliaris,viscera,abdomen,pdf_reference_terms,胆嚢は胆汁を貯留して濃縮する器官です。
+lateral_circumflex_femoral_artery,外側大腿回旋動脈,lateral circumflex femoral artery,arteria circumflexa femoris lateralis,vascular,lower limb,pdf_reference_terms,外側大腿回旋動脈は大腿深動脈から分岐して大腿近位部を走る動脈です。
+extensor_hallucis_longus,長母趾伸筋,extensor hallucis longus,musculus extensor hallucis longus,muscle,lower limb,pdf_reference_terms,長母趾伸筋は母趾を伸展する下腿前面の筋です。
+extensor_digitorum_longus,長趾伸筋,extensor digitorum longus,musculus extensor digitorum longus,muscle,lower limb,pdf_reference_terms,長趾伸筋は第2から第5趾を伸展する下腿前面の筋です。
+flexor_hallucis_longus,長母趾屈筋,flexor hallucis longus,musculus flexor hallucis longus,muscle,lower limb,pdf_reference_terms,長母趾屈筋は母趾を屈曲する下腿後面深層の筋です。
+flexor_digitorum_brevis,短趾屈筋,flexor digitorum brevis,musculus flexor digitorum brevis,muscle,lower limb,pdf_reference_terms,短趾屈筋は第2から第5趾を屈曲する足底の筋です。
+long_head_of_triceps_brachii,上腕三頭筋の長頭,long head of triceps brachii,caput longum musculi tricipitis brachii,muscle,upper limb,pdf_reference_terms,上腕三頭筋の長頭は肩甲骨から起こる上腕三頭筋の一部です。
+levator_veli_palatini,口蓋帆挙筋,levator veli palatini,musculus levator veli palatini,muscle,head and neck,pdf_reference_terms,口蓋帆挙筋は軟口蓋を挙上する筋です。
+tensor_veli_palatini,口蓋帆張筋,tensor veli palatini,musculus tensor veli palatini,muscle,head and neck,pdf_reference_terms,口蓋帆張筋は軟口蓋を緊張させる筋です。
+common_tendinous_ring,外眼筋の総腱輪,common tendinous ring,anulus tendineus communis,muscle,head and neck,pdf_reference_terms,外眼筋の総腱輪は眼窩尖端で複数の外眼筋の起始となる腱性の輪です。
+flexor_digitorum_longus,長趾屈筋,flexor digitorum longus,musculus flexor digitorum longus,muscle,lower limb,pdf_reference_terms,長趾屈筋は第2から第5趾を屈曲する下腿後面深層の筋です。
+superior_branch_of_oculomotor_nerve,動眼神経の上枝,superior branch of oculomotor nerve,ramus superior nervi oculomotorii,nervous system,head and neck,pdf_reference_terms,動眼神経の上枝は上直筋と上眼瞼挙筋へ向かう枝です。
+inferior_branch_of_oculomotor_nerve,動眼神経の下枝,inferior branch of oculomotor nerve,ramus inferior nervi oculomotorii,nervous system,head and neck,pdf_reference_terms,動眼神経の下枝は下直筋・内側直筋・下斜筋などへ向かう枝です。
+arytenoid_cartilage,披裂軟骨,arytenoid cartilage,cartilago arytenoidea,viscera,head and neck,pdf_reference_terms,披裂軟骨は喉頭後部にある一対の喉頭軟骨です。
+cuneiform_cartilage,楔状軟骨,cuneiform cartilage,cartilago cuneiformis,viscera,head and neck,pdf_reference_terms,楔状軟骨は披裂喉頭蓋ヒダ内にある小さな喉頭軟骨です。

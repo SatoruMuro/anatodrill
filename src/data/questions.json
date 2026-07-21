@@ -2774,5 +2774,229 @@
     "imageId": "brachial_a_plate",
     "targetLabel": "6",
     "explanation": "番号6は尺骨を示しています。尺骨は前腕の小指側にある骨で、肘関節の形成に重要です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_1_ascending_aorta",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "ascending_aorta",
+    "choices": [
+      "ascending_aorta",
+      "aortic_arch",
+      "pulmonary_trunk",
+      "superior_vena_cava"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上行大動脈を示しています。上行大動脈は、英語の「ascending aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_2_aortic_arch",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "aortic_arch",
+    "choices": [
+      "aortic_arch",
+      "pulmonary_trunk",
+      "superior_vena_cava",
+      "brachiocephalic_vein"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は大動脈弓を示しています。大動脈弓は、英語の「aortic arch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_3_pulmonary_trunk",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "pulmonary_trunk",
+    "choices": [
+      "pulmonary_trunk",
+      "superior_vena_cava",
+      "brachiocephalic_vein",
+      "heart"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は肺動脈幹を示しています。肺動脈幹は、英語の「pulmonary trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_4_superior_vena_cava",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "superior_vena_cava",
+    "choices": [
+      "superior_vena_cava",
+      "brachiocephalic_vein",
+      "heart",
+      "lung"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は上大静脈を示しています。上大静脈は、英語の「superior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_5_brachiocephalic_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "brachiocephalic_vein",
+    "choices": [
+      "brachiocephalic_vein",
+      "heart",
+      "lung",
+      "brachiocephalic_trunk"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は腕頭静脈を示しています。腕頭静脈は、英語の「brachiocephalic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_6_brachiocephalic_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "brachiocephalic_vein",
+    "choices": [
+      "brachiocephalic_vein",
+      "heart",
+      "lung",
+      "brachiocephalic_trunk"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は腕頭静脈を示しています。腕頭静脈は、英語の「brachiocephalic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_7_heart",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "heart",
+    "choices": [
+      "heart",
+      "lung",
+      "brachiocephalic_trunk",
+      "subclavian_artery"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は心臓を示しています。心臓は、英語の「heart」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_8_lung",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "lung",
+    "choices": [
+      "lung",
+      "brachiocephalic_trunk",
+      "subclavian_artery",
+      "common_carotid_artery"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は肺を示しています。肺は、英語の「lung」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_9_lung",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "lung",
+    "choices": [
+      "lung",
+      "brachiocephalic_trunk",
+      "subclavian_artery",
+      "common_carotid_artery"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は肺を示しています。肺は、英語の「lung」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_10_brachiocephalic_trunk",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "brachiocephalic_trunk",
+    "choices": [
+      "brachiocephalic_trunk",
+      "subclavian_artery",
+      "common_carotid_artery",
+      "ascending_aorta"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は腕頭動脈を示しています。腕頭動脈は、英語の「brachiocephalic trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_11_subclavian_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "subclavian_artery",
+    "choices": [
+      "subclavian_artery",
+      "common_carotid_artery",
+      "ascending_aorta",
+      "aortic_arch"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は鎖骨下動脈を示しています。鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_12_subclavian_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "subclavian_artery",
+    "choices": [
+      "subclavian_artery",
+      "common_carotid_artery",
+      "ascending_aorta",
+      "aortic_arch"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は鎖骨下動脈を示しています。鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_13_common_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「13」で示す構造はどれか。",
+    "answerTermId": "common_carotid_artery",
+    "choices": [
+      "common_carotid_artery",
+      "ascending_aorta",
+      "aortic_arch",
+      "pulmonary_trunk"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "13",
+    "explanation": "番号13は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray490blanco_plate_label_14_common_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「14」で示す構造はどれか。",
+    "answerTermId": "common_carotid_artery",
+    "choices": [
+      "common_carotid_artery",
+      "ascending_aorta",
+      "aortic_arch",
+      "pulmonary_trunk"
+    ],
+    "imageId": "gray490blanco_plate",
+    "targetLabel": "14",
+    "explanation": "番号14は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
   }
 ]

@@ -9719,12 +9719,12 @@
   {
     "id": "pdf_kaibo3_1_afdc92cc0b",
     "japanese": "手の舟状骨",
-    "english": "",
-    "latin": "",
+    "english": "scaphoid bone",
+    "latin": "os scaphoideum",
     "category": "bone",
-    "region": "general",
+    "region": "upper limb",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo3_1.pdf から追加した解剖学用語です。"
+    "explanation": "手の舟状骨は手根骨の一つで、英語では scaphoid bone、ラテン語では os scaphoideum といいます。"
   },
   {
     "id": "pdf_kaibo3_1_e3c3107ab0",
@@ -16504,12 +16504,12 @@
   {
     "id": "pdf_kaibo4_60dab04833",
     "japanese": "広頸筋",
-    "english": "",
-    "latin": "",
+    "english": "platysma",
+    "latin": "platysma",
     "category": "muscle",
-    "region": "general",
+    "region": "head and neck",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo4.pdf から追加した解剖学用語です。"
+    "explanation": "広頸筋は頸部前面の浅層に広がる皮筋です。"
   },
   {
     "id": "pdf_kaibo4_a9ee8135f7",
@@ -17094,12 +17094,12 @@
   {
     "id": "pdf_kaibo4_a7f8c6925d",
     "japanese": "頸板状筋",
-    "english": "",
-    "latin": "",
+    "english": "splenius cervicis",
+    "latin": "musculus splenius cervicis",
     "category": "muscle",
-    "region": "general",
+    "region": "head and neck",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo4.pdf から追加した解剖学用語です。"
+    "explanation": "頸板状筋は頸部後面にある板状筋の一つです。"
   },
   {
     "id": "pdf_kaibo4_492745467f",
@@ -19394,12 +19394,12 @@
   {
     "id": "pdf_kaibo4_270b2d1cce",
     "japanese": "短母指伸筋",
-    "english": "",
-    "latin": "",
+    "english": "extensor pollicis brevis",
+    "latin": "musculus extensor pollicis brevis",
     "category": "muscle",
-    "region": "general",
+    "region": "upper limb",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo4.pdf から追加した解剖学用語です。"
+    "explanation": "短母指伸筋は母指を伸展する前腕後面の筋です。"
   },
   {
     "id": "pdf_kaibo4_91b9d7a60c",
@@ -19444,12 +19444,12 @@
   {
     "id": "pdf_kaibo4_eb406ed874",
     "japanese": "短母指屈筋",
-    "english": "",
-    "latin": "",
+    "english": "flexor pollicis brevis",
+    "latin": "musculus flexor pollicis brevis",
     "category": "muscle",
-    "region": "general",
+    "region": "upper limb",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo4.pdf から追加した解剖学用語です。"
+    "explanation": "短母指屈筋は母指を屈曲する母指球筋の一つです。"
   },
   {
     "id": "pdf_kaibo4_3047d4de24",
@@ -39574,22 +39574,22 @@
   {
     "id": "pdf_kaibo6_eaa4f737d8",
     "japanese": "肋頸動脈",
-    "english": "",
-    "latin": "",
+    "english": "costocervical trunk",
+    "latin": "truncus costocervicalis",
     "category": "vascular",
-    "region": "general",
+    "region": "head and neck",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo6.pdf から追加した解剖学用語です。"
+    "explanation": "肋頸動脈は鎖骨下動脈から分岐する動脈幹です。"
   },
   {
     "id": "pdf_kaibo6_af50038d52",
     "japanese": "深頸動脈",
-    "english": "",
-    "latin": "",
+    "english": "deep cervical artery",
+    "latin": "arteria cervicalis profunda",
     "category": "vascular",
-    "region": "general",
+    "region": "head and neck",
     "testSet": "pdf_reference_terms",
-    "explanation": "kaibo6.pdf から追加した解剖学用語です。"
+    "explanation": "深頸動脈は肋頸動脈から分岐して深頸部へ向かう動脈です。"
   },
   {
     "id": "pdf_kaibo6_773bcac6a6",
@@ -75190,5 +75190,165 @@
     "region": "thorax",
     "testSet": "basic_trunk",
     "explanation": "左心房は肺静脈から酸素化血を受け取り左心室へ送る心腔です。"
+  },
+  {
+    "id": "stomach",
+    "japanese": "胃",
+    "english": "stomach",
+    "latin": "gaster",
+    "category": "viscera",
+    "region": "abdomen",
+    "testSet": "pdf_reference_terms",
+    "explanation": "胃は食道と十二指腸の間にある消化管の器官です。"
+  },
+  {
+    "id": "gallbladder",
+    "japanese": "胆嚢",
+    "english": "gallbladder",
+    "latin": "vesica biliaris",
+    "category": "viscera",
+    "region": "abdomen",
+    "testSet": "pdf_reference_terms",
+    "explanation": "胆嚢は胆汁を貯留して濃縮する器官です。"
+  },
+  {
+    "id": "lateral_circumflex_femoral_artery",
+    "japanese": "外側大腿回旋動脈",
+    "english": "lateral circumflex femoral artery",
+    "latin": "arteria circumflexa femoris lateralis",
+    "category": "vascular",
+    "region": "lower limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "外側大腿回旋動脈は大腿深動脈から分岐して大腿近位部を走る動脈です。"
+  },
+  {
+    "id": "extensor_hallucis_longus",
+    "japanese": "長母趾伸筋",
+    "english": "extensor hallucis longus",
+    "latin": "musculus extensor hallucis longus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "長母趾伸筋は母趾を伸展する下腿前面の筋です。"
+  },
+  {
+    "id": "extensor_digitorum_longus",
+    "japanese": "長趾伸筋",
+    "english": "extensor digitorum longus",
+    "latin": "musculus extensor digitorum longus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "長趾伸筋は第2から第5趾を伸展する下腿前面の筋です。"
+  },
+  {
+    "id": "flexor_hallucis_longus",
+    "japanese": "長母趾屈筋",
+    "english": "flexor hallucis longus",
+    "latin": "musculus flexor hallucis longus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "長母趾屈筋は母趾を屈曲する下腿後面深層の筋です。"
+  },
+  {
+    "id": "flexor_digitorum_brevis",
+    "japanese": "短趾屈筋",
+    "english": "flexor digitorum brevis",
+    "latin": "musculus flexor digitorum brevis",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "短趾屈筋は第2から第5趾を屈曲する足底の筋です。"
+  },
+  {
+    "id": "long_head_of_triceps_brachii",
+    "japanese": "上腕三頭筋の長頭",
+    "english": "long head of triceps brachii",
+    "latin": "caput longum musculi tricipitis brachii",
+    "category": "muscle",
+    "region": "upper limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "上腕三頭筋の長頭は肩甲骨から起こる上腕三頭筋の一部です。"
+  },
+  {
+    "id": "levator_veli_palatini",
+    "japanese": "口蓋帆挙筋",
+    "english": "levator veli palatini",
+    "latin": "musculus levator veli palatini",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "口蓋帆挙筋は軟口蓋を挙上する筋です。"
+  },
+  {
+    "id": "tensor_veli_palatini",
+    "japanese": "口蓋帆張筋",
+    "english": "tensor veli palatini",
+    "latin": "musculus tensor veli palatini",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "口蓋帆張筋は軟口蓋を緊張させる筋です。"
+  },
+  {
+    "id": "common_tendinous_ring",
+    "japanese": "外眼筋の総腱輪",
+    "english": "common tendinous ring",
+    "latin": "anulus tendineus communis",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "外眼筋の総腱輪は眼窩尖端で複数の外眼筋の起始となる腱性の輪です。"
+  },
+  {
+    "id": "flexor_digitorum_longus",
+    "japanese": "長趾屈筋",
+    "english": "flexor digitorum longus",
+    "latin": "musculus flexor digitorum longus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "pdf_reference_terms",
+    "explanation": "長趾屈筋は第2から第5趾を屈曲する下腿後面深層の筋です。"
+  },
+  {
+    "id": "superior_branch_of_oculomotor_nerve",
+    "japanese": "動眼神経の上枝",
+    "english": "superior branch of oculomotor nerve",
+    "latin": "ramus superior nervi oculomotorii",
+    "category": "nervous system",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "動眼神経の上枝は上直筋と上眼瞼挙筋へ向かう枝です。"
+  },
+  {
+    "id": "inferior_branch_of_oculomotor_nerve",
+    "japanese": "動眼神経の下枝",
+    "english": "inferior branch of oculomotor nerve",
+    "latin": "ramus inferior nervi oculomotorii",
+    "category": "nervous system",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "動眼神経の下枝は下直筋・内側直筋・下斜筋などへ向かう枝です。"
+  },
+  {
+    "id": "arytenoid_cartilage",
+    "japanese": "披裂軟骨",
+    "english": "arytenoid cartilage",
+    "latin": "cartilago arytenoidea",
+    "category": "viscera",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "披裂軟骨は喉頭後部にある一対の喉頭軟骨です。"
+  },
+  {
+    "id": "cuneiform_cartilage",
+    "japanese": "楔状軟骨",
+    "english": "cuneiform cartilage",
+    "latin": "cartilago cuneiformis",
+    "category": "viscera",
+    "region": "head and neck",
+    "testSet": "pdf_reference_terms",
+    "explanation": "楔状軟骨は披裂喉頭蓋ヒダ内にある小さな喉頭軟骨です。"
   }
 ]
