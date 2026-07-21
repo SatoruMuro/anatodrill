@@ -74490,5 +74490,705 @@
     "region": "general",
     "testSet": "pdf_reference_terms",
     "explanation": "kaibo8.pdf から追加した解剖学用語です。"
+  },
+  {
+    "id": "basilar_venous_plexus",
+    "japanese": "脳底静脈叢",
+    "english": "basilar venous plexus",
+    "latin": "plexus venosus basilaris",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳底静脈叢は、英語の「basilar venous plexus」、ラテン語の「plexus venosus basilaris」に対応する解剖学用語です。"
+  },
+  {
+    "id": "tentorium_cerebelli",
+    "japanese": "小脳テント",
+    "english": "tentorium cerebelli",
+    "latin": "tentorium cerebelli",
+    "category": "meninges",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "小脳テントは、英語の「tentorium cerebelli」、ラテン語の「tentorium cerebelli」に対応する解剖学用語です。"
+  },
+  {
+    "id": "great_cerebral_vein",
+    "japanese": "大大脳静脈",
+    "english": "great cerebral vein",
+    "latin": "vena magna cerebri",
+    "category": "vein",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "大大脳静脈は、英語の「great cerebral vein」、ラテン語の「vena magna cerebri」に対応する解剖学用語です。"
+  },
+  {
+    "id": "precentral_sulcus",
+    "japanese": "中心前溝",
+    "english": "precentral sulcus",
+    "latin": "sulcus precentralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中心前溝は、英語の「precentral sulcus」、ラテン語の「sulcus precentralis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "central_sulcus",
+    "japanese": "中心溝",
+    "english": "central sulcus",
+    "latin": "sulcus centralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中心溝は、英語の「central sulcus」、ラテン語の「sulcus centralis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "postcentral_sulcus",
+    "japanese": "中心後溝",
+    "english": "postcentral sulcus",
+    "latin": "sulcus postcentralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中心後溝は、英語の「postcentral sulcus」、ラテン語の「sulcus postcentralis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "frontal_lobe",
+    "japanese": "前頭葉",
+    "english": "frontal lobe",
+    "latin": "lobus frontalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前頭葉は、英語の「frontal lobe」、ラテン語の「lobus frontalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "parietal_lobe",
+    "japanese": "頭頂葉",
+    "english": "parietal lobe",
+    "latin": "lobus parietalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頭頂葉は、英語の「parietal lobe」、ラテン語の「lobus parietalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "temporal_lobe",
+    "japanese": "側頭葉",
+    "english": "temporal lobe",
+    "latin": "lobus temporalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "側頭葉は、英語の「temporal lobe」、ラテン語の「lobus temporalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "occipital_lobe",
+    "japanese": "後頭葉",
+    "english": "occipital lobe",
+    "latin": "lobus occipitalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後頭葉は、英語の「occipital lobe」、ラテン語の「lobus occipitalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "intraparietal_sulcus",
+    "japanese": "頭頂内溝",
+    "english": "intraparietal sulcus",
+    "latin": "sulcus intraparietalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頭頂内溝は、英語の「intraparietal sulcus」、ラテン語の「sulcus intraparietalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "angular_gyrus",
+    "japanese": "角回",
+    "english": "angular gyrus",
+    "latin": "gyrus angularis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "角回は、英語の「angular gyrus」、ラテン語の「gyrus angularis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "supramarginal_gyrus",
+    "japanese": "縁上回",
+    "english": "supramarginal gyrus",
+    "latin": "gyrus supramarginalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "縁上回は、英語の「supramarginal gyrus」、ラテン語の「gyrus supramarginalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "opercular_part",
+    "japanese": "弁蓋部",
+    "english": "opercular part",
+    "latin": "pars opercularis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "弁蓋部は、英語の「opercular part」、ラテン語の「pars opercularis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "triangular_part",
+    "japanese": "三角部",
+    "english": "triangular part",
+    "latin": "pars triangularis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "三角部は、英語の「triangular part」、ラテン語の「pars triangularis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "orbital_part",
+    "japanese": "眼窩部",
+    "english": "orbital part",
+    "latin": "pars orbitalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼窩部は、英語の「orbital part」、ラテン語の「pars orbitalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "lateral_sulcus",
+    "japanese": "外側溝",
+    "english": "lateral sulcus",
+    "latin": "sulcus lateralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "外側溝は、英語の「lateral sulcus」、ラテン語の「sulcus lateralis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "temporal_gyri",
+    "japanese": "側頭回",
+    "english": "temporal gyri",
+    "latin": "gyri temporales",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "側頭回は、英語の「temporal gyri」、ラテン語の「gyri temporales」に対応する解剖学用語です。"
+  },
+  {
+    "id": "superior_temporal_sulcus",
+    "japanese": "上側頭溝",
+    "english": "superior temporal sulcus",
+    "latin": "sulcus temporalis superior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "上側頭溝は、英語の「superior temporal sulcus」、ラテン語の「sulcus temporalis superior」に対応する解剖学用語です。"
+  },
+  {
+    "id": "preoccipital_notch",
+    "japanese": "後頭前切痕",
+    "english": "pre-occipital notch",
+    "latin": "incisura preoccipitalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後頭前切痕は、英語の「pre-occipital notch」、ラテン語の「incisura preoccipitalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cerebellum",
+    "japanese": "小脳",
+    "english": "cerebellum",
+    "latin": "cerebellum",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "小脳は、英語の「cerebellum」、ラテン語の「cerebellum」に対応する解剖学用語です。"
+  },
+  {
+    "id": "metencephalon",
+    "japanese": "後脳",
+    "english": "metencephalon",
+    "latin": "metencephalon",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後脳は、英語の「metencephalon」、ラテン語の「metencephalon」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pons",
+    "japanese": "橋",
+    "english": "pons",
+    "latin": "pons",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "橋は、英語の「pons」、ラテン語の「pons」に対応する解剖学用語です。"
+  },
+  {
+    "id": "medulla_oblongata",
+    "japanese": "延髄",
+    "english": "medulla oblongata",
+    "latin": "medulla oblongata",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "延髄は、英語の「medulla oblongata」、ラテン語の「medulla oblongata」に対応する解剖学用語です。"
+  },
+  {
+    "id": "myelencephalon",
+    "japanese": "髄脳",
+    "english": "myelencephalon",
+    "latin": "myelencephalon",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "髄脳は、英語の「myelencephalon」、ラテン語の「myelencephalon」に対応する解剖学用語です。"
+  },
+  {
+    "id": "frontal_operculum",
+    "japanese": "前頭弁蓋",
+    "english": "frontal operculum",
+    "latin": "operculum frontale",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前頭弁蓋は、英語の「frontal operculum」、ラテン語の「operculum frontale」に対応する解剖学用語です。"
+  },
+  {
+    "id": "central_sulcus_of_insula",
+    "japanese": "島中心溝",
+    "english": "central sulcus of insula",
+    "latin": "sulcus centralis insulae",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "島中心溝は、英語の「central sulcus of insula」、ラテン語の「sulcus centralis insulae」に対応する解剖学用語です。"
+  },
+  {
+    "id": "parietal_operculum",
+    "japanese": "頭頂弁蓋",
+    "english": "parietal operculum",
+    "latin": "operculum parietale",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頭頂弁蓋は、英語の「parietal operculum」、ラテン語の「operculum parietale」に対応する解剖学用語です。"
+  },
+  {
+    "id": "circular_sulcus_of_insula",
+    "japanese": "島輪状溝",
+    "english": "circular sulcus of insula",
+    "latin": "sulcus circularis insulae",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "島輪状溝は、英語の「circular sulcus of insula」、ラテン語の「sulcus circularis insulae」に対応する解剖学用語です。"
+  },
+  {
+    "id": "short_gyri_of_insula",
+    "japanese": "島短回",
+    "english": "short gyri of insula",
+    "latin": "gyri breves insulae",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "島短回は、英語の「short gyri of insula」、ラテン語の「gyri breves insulae」に対応する解剖学用語です。"
+  },
+  {
+    "id": "long_gyri_of_insula",
+    "japanese": "島長回",
+    "english": "long gyri of insula",
+    "latin": "gyri longi insulae",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "島長回は、英語の「long gyri of insula」、ラテン語の「gyri longi insulae」に対応する解剖学用語です。"
+  },
+  {
+    "id": "temporal_operculum",
+    "japanese": "側頭弁蓋",
+    "english": "temporal operculum",
+    "latin": "operculum temporale",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "側頭弁蓋は、英語の「temporal operculum」、ラテン語の「operculum temporale」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cerebral_hemisphere",
+    "japanese": "大脳半球",
+    "english": "cerebral hemisphere",
+    "latin": "hemispherium cerebri",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "大脳半球は、英語の「cerebral hemisphere」、ラテン語の「hemispherium cerebri」に対応する解剖学用語です。"
+  },
+  {
+    "id": "telencephalon",
+    "japanese": "終脳",
+    "english": "telencephalon",
+    "latin": "telencephalon",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "終脳は、英語の「telencephalon」、ラテン語の「telencephalon」に対応する解剖学用語です。"
+  },
+  {
+    "id": "longitudinal_cerebral_fissure",
+    "japanese": "大脳縦裂",
+    "english": "longitudinal cerebral fissure",
+    "latin": "fissura longitudinalis cerebri",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "大脳縦裂は、英語の「longitudinal cerebral fissure」、ラテン語の「fissura longitudinalis cerebri」に対応する解剖学用語です。"
+  },
+  {
+    "id": "frontal_pole",
+    "japanese": "前頭極",
+    "english": "frontal pole",
+    "latin": "polus frontalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前頭極は、英語の「frontal pole」、ラテン語の「polus frontalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "orbital_sulci",
+    "japanese": "眼窩溝",
+    "english": "orbital sulci",
+    "latin": "sulci orbitales",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼窩溝は、英語の「orbital sulci」、ラテン語の「sulci orbitales」に対応する解剖学用語です。"
+  },
+  {
+    "id": "temporal_pole",
+    "japanese": "側頭極",
+    "english": "temporal pole",
+    "latin": "polus temporalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "側頭極は、英語の「temporal pole」、ラテン語の「polus temporalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "uncus",
+    "japanese": "鉤",
+    "english": "uncus",
+    "latin": "uncus",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "鉤は、英語の「uncus」、ラテン語の「uncus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "occipitotemporal_gyri",
+    "japanese": "後頭側頭回",
+    "english": "occipitotemporal gyri",
+    "latin": "gyri occipitotemporales",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後頭側頭回は、英語の「occipitotemporal gyri」、ラテン語の「gyri occipitotemporales」に対応する解剖学用語です。"
+  },
+  {
+    "id": "collateral_sulcus",
+    "japanese": "側副溝",
+    "english": "collateral sulcus",
+    "latin": "sulcus collateralis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "側副溝は、英語の「collateral sulcus」、ラテン語の「sulcus collateralis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "calcarine_sulcus",
+    "japanese": "鳥距溝",
+    "english": "calcarine sulcus",
+    "latin": "sulcus calcarinus",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "鳥距溝は、英語の「calcarine sulcus」、ラテン語の「sulcus calcarinus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "isthmus_of_cingulate_gyrus",
+    "japanese": "帯状回峡",
+    "english": "isthmus of cingulate gyrus",
+    "latin": "isthmus gyri cingularis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "帯状回峡は、英語の「isthmus of cingulate gyrus」、ラテン語の「isthmus gyri cingularis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "olfactory_bulb",
+    "japanese": "嗅球",
+    "english": "olfactory bulb",
+    "latin": "bulbus olfactorius",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "嗅球は、英語の「olfactory bulb」、ラテン語の「bulbus olfactorius」に対応する解剖学用語です。"
+  },
+  {
+    "id": "olfactory_tract",
+    "japanese": "嗅索",
+    "english": "olfactory tract",
+    "latin": "tractus olfactorius",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "嗅索は、英語の「olfactory tract」、ラテン語の「tractus olfactorius」に対応する解剖学用語です。"
+  },
+  {
+    "id": "orbital_gyri",
+    "japanese": "眼窩回",
+    "english": "orbital gyri",
+    "latin": "gyri orbitales",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼窩回は、英語の「orbital gyri」、ラテン語の「gyri orbitales」に対応する解剖学用語です。"
+  },
+  {
+    "id": "optic_nerve",
+    "japanese": "視神経",
+    "english": "optic nerve",
+    "latin": "nervus opticus",
+    "category": "nerve",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "視神経は、英語の「optic nerve」、ラテン語の「nervus opticus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "pituitary_gland",
+    "japanese": "下垂体",
+    "english": "pituitary gland",
+    "latin": "hypophysis",
+    "category": "gland",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "下垂体は、英語の「pituitary gland」、ラテン語の「hypophysis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "mammillary_body",
+    "japanese": "乳頭体",
+    "english": "mammillary body",
+    "latin": "corpus mamillare",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "乳頭体は、英語の「mammillary body」、ラテン語の「corpus mamillare」に対応する解剖学用語です。"
+  },
+  {
+    "id": "midbrain",
+    "japanese": "中脳",
+    "english": "midbrain",
+    "latin": "mesencephalon",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "中脳は、英語の「midbrain」、ラテン語の「mesencephalon」に対応する解剖学用語です。"
+  },
+  {
+    "id": "occipital_pole",
+    "japanese": "後頭極",
+    "english": "occipital pole",
+    "latin": "polus occipitalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後頭極は、英語の「occipital pole」、ラテン語の「polus occipitalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "cingulate_sulcus",
+    "japanese": "帯状溝",
+    "english": "cingulate sulcus",
+    "latin": "sulcus cingularis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "帯状溝は、英語の「cingulate sulcus」、ラテン語の「sulcus cingularis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "septum_pellucidum",
+    "japanese": "透明中隔",
+    "english": "septum pellucidum",
+    "latin": "septum pellucidum",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "透明中隔は、英語の「septum pellucidum」、ラテン語の「septum pellucidum」に対応する解剖学用語です。"
+  },
+  {
+    "id": "genu_of_corpus_callosum",
+    "japanese": "脳梁膝",
+    "english": "genu of corpus callosum",
+    "latin": "genu corporis callosi",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳梁膝は、英語の「genu of corpus callosum」、ラテン語の「genu corporis callosi」に対応する解剖学用語です。"
+  },
+  {
+    "id": "rostrum_of_corpus_callosum",
+    "japanese": "脳梁吻",
+    "english": "rostrum of corpus callosum",
+    "latin": "rostrum corporis callosi",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳梁吻は、英語の「rostrum of corpus callosum」、ラテン語の「rostrum corporis callosi」に対応する解剖学用語です。"
+  },
+  {
+    "id": "anterior_commissure",
+    "japanese": "前交連",
+    "english": "anterior commissure",
+    "latin": "commissura anterior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "前交連は、英語の「anterior commissure」、ラテン語の「commissura anterior」に対応する解剖学用語です。"
+  },
+  {
+    "id": "body_of_corpus_callosum",
+    "japanese": "脳梁幹",
+    "english": "body of corpus callosum",
+    "latin": "truncus corporis callosi",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳梁幹は、英語の「body of corpus callosum」、ラテン語の「truncus corporis callosi」に対応する解剖学用語です。"
+  },
+  {
+    "id": "fornix",
+    "japanese": "脳弓",
+    "english": "fornix",
+    "latin": "fornix",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳弓は、英語の「fornix」、ラテン語の「fornix」に対応する解剖学用語です。"
+  },
+  {
+    "id": "marginal_sulcus",
+    "japanese": "辺縁溝",
+    "english": "marginal sulcus",
+    "latin": "sulcus marginalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "辺縁溝は、英語の「marginal sulcus」、ラテン語の「sulcus marginalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "interthalamic_adhesion",
+    "japanese": "視床間橋",
+    "english": "interthalamic adhesion",
+    "latin": "adhesio interthalamica",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "視床間橋は、英語の「interthalamic adhesion」、ラテン語の「adhesio interthalamica」に対応する解剖学用語です。"
+  },
+  {
+    "id": "thalamus",
+    "japanese": "視床",
+    "english": "thalamus",
+    "latin": "thalamus",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "視床は、英語の「thalamus」、ラテン語の「thalamus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "parieto_occipital_sulcus",
+    "japanese": "頭頂後頭溝",
+    "english": "parieto-occipital sulcus",
+    "latin": "sulcus parietooccipitalis",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "頭頂後頭溝は、英語の「parieto-occipital sulcus」、ラテン語の「sulcus parietooccipitalis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "choroid_plexus",
+    "japanese": "脈絡叢",
+    "english": "choroid plexus",
+    "latin": "plexus choroideus",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脈絡叢は、英語の「choroid plexus」、ラテン語の「plexus choroideus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "posterior_commissure",
+    "japanese": "後交連",
+    "english": "posterior commissure",
+    "latin": "commissura posterior",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "後交連は、英語の「posterior commissure」、ラテン語の「commissura posterior」に対応する解剖学用語です。"
+  },
+  {
+    "id": "splenium_of_corpus_callosum",
+    "japanese": "脳梁膨大",
+    "english": "splenium of corpus callosum",
+    "latin": "splenium corporis callosi",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "脳梁膨大は、英語の「splenium of corpus callosum」、ラテン語の「splenium corporis callosi」に対応する解剖学用語です。"
+  },
+  {
+    "id": "trachea",
+    "japanese": "気管",
+    "english": "trachea",
+    "latin": "trachea",
+    "category": "organ",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "気管は喉頭から左右の主気管支へ空気を導く管状の器官です。"
+  },
+  {
+    "id": "superior_lobe_of_lung",
+    "japanese": "上葉",
+    "english": "superior lobe of lung",
+    "latin": "lobus superior pulmonis",
+    "category": "organ",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "上葉は肺の上部を構成する肺葉です。"
+  },
+  {
+    "id": "middle_lobe_of_right_lung",
+    "japanese": "中葉",
+    "english": "middle lobe of right lung",
+    "latin": "lobus medius pulmonis dextri",
+    "category": "organ",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "中葉は右肺にのみ存在する肺葉です。"
+  },
+  {
+    "id": "inferior_lobe_of_lung",
+    "japanese": "下葉",
+    "english": "inferior lobe of lung",
+    "latin": "lobus inferior pulmonis",
+    "category": "organ",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "下葉は肺の下部を構成する肺葉です。"
+  },
+  {
+    "id": "left_atrium",
+    "japanese": "左心房",
+    "english": "left atrium",
+    "latin": "atrium sinistrum",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "左心房は肺静脈から酸素化血を受け取り左心室へ送る心腔です。"
   }
 ]
