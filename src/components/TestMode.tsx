@@ -19,6 +19,7 @@ import { generateCertificatePdf } from '../lib/pdf';
 import { takeRandom } from '../lib/random';
 import { buildCertificatePayload, downloadTestResultCsv, downloadTestResultJson } from '../lib/testResults';
 import { QuestionCard } from './QuestionCard';
+import { TestResultShare } from './TestResultShare';
 
 interface TestModeProps {
   questions: Question[];
@@ -280,6 +281,7 @@ export function TestMode({ questions, termsById, imagesById, onRecordAnswer, onS
             ) : null}
           </div>
         </section>
+        <TestResultShare attempt={result} />
       </main>
     );
   }
