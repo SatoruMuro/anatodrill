@@ -26,6 +26,30 @@ interface TermResolution {
   candidates: Term[];
 }
 
+interface PendingTermRegistration {
+  input: string;
+  suggestedId: string;
+  japanese: string;
+  english: string;
+  latin: string;
+  category: string;
+  region: string;
+  testSet: string;
+  explanation: string;
+  usedBy: string[];
+}
+
+interface LabelUpdateBundle {
+  format: 'anatodrill-label-update-v1';
+  images: Array<{
+    imageId: string;
+    title: string;
+    replaceExistingLabels: true;
+    labels: ImagePlateLabel[];
+  }>;
+  termsToRegister: PendingTermRegistration[];
+}
+
 interface StoredLabelDraft {
   baseFingerprint: string;
   labels: ImagePlateLabel[];
@@ -137,7 +161,7 @@ function resolveTermInput(input: string, terms: readonly Term[]): TermResolution
 
   const candidates = terms.filter((term) => termIsLabelReady(term) && termMatches(term, trimmedInput));
   return {
-    status: candidates.length > 0 ? 'ambiguous' : 'missing',
+    status: 'missing',
     input: trimmedInput,
     candidates,
   };
@@ -202,15 +226,19 @@ function labelsAreValid(labels: readonly EditableLabel[], terms: readonly Term[]
   return (
     duplicateLabelValues(labels).length === 0 &&
     labels.every(
-      (label) =>
-        label.label.trim() !== '' &&
-        resolveTermInput(label.termId, terms).status === 'resolved' &&
-        Number.isFinite(label.x) &&
-        label.x >= 0 &&
-        label.x <= 1 &&
-        Number.isFinite(label.y) &&
-        label.y >= 0 &&
-        label.y <= 1,
+      (label) => {
+        const resolution = resolveTermInput(label.termId, terms);
+        return (
+          label.label.trim() !== '' &&
+          (resolution.status === 'resolved' || resolution.status === 'missing') &&
+          Number.isFinite(label.x) &&
+          label.x >= 0 &&
+          label.x <= 1 &&
+          Number.isFinite(label.y) &&
+          label.y >= 0 &&
+          label.y <= 1
+        );
+      },
     )
   );
 }
@@ -232,6 +260,185 @@ function labelsToJson(labels: readonly EditableLabel[], terms: readonly Term[]):
     null,
     2,
   );
+}
+
+function plainLabel(label: EditableLabel, terms: readonly Term[]): ImagePlateLabel {
+  const resolution = resolveTermInput(label.termId, terms);
+  const termId = resolution.status === 'resolved' && resolution.term ? resolution.term.id : resolution.input;
+  const note = resolvedNote(label, resolution);
+  return {
+    label: label.label,
+    termId,
+    x: label.x,
+    y: label.y,
+    ...(note ? { note } : {}),
+  };
+}
+
+function containsJapanese(value: string): boolean {
+  return /[\u3040-\u30ff\u3400-\u9fff]/.test(value);
+}
+
+function suggestedTermId(value: string): string {
+  if (!value || containsJapanese(value)) {
+    return '';
+  }
+  return value
+    .normalize('NFKD')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '_')
+    .replace(/^_+|_+$/g, '');
+}
+
+function pendingRegistrationForLabel(
+  image: AnatomyImage,
+  label: EditableLabel,
+  terms: readonly Term[],
+): PendingTermRegistration | undefined {
+  const resolution = resolveTermInput(label.termId, terms);
+  if (resolution.status !== 'missing') {
+    return undefined;
+  }
+
+  const input = resolution.input;
+  const normalizedInput = normalizeTermText(input);
+  const suggestion = (image.suggestions ?? []).find((candidate) =>
+    [candidate.japanese, candidate.english].map(normalizeTermText).includes(normalizedInput),
+  );
+  const note = label.note?.trim() ?? '';
+  const japanese =
+    suggestion?.japanese ??
+    (containsJapanese(input) ? input : containsJapanese(note) ? note : '');
+  const english = suggestion?.english ?? (!containsJapanese(input) ? input : '');
+
+  return {
+    input,
+    suggestedId: suggestedTermId(english),
+    japanese: japanese || (containsJapanese(note) ? note : ''),
+    english,
+    latin: '',
+    category: '',
+    region: '',
+    testSet: '',
+    explanation: '',
+    usedBy: [`${image.id}:${label.label}`],
+  };
+}
+
+function createLabelUpdateBundle(
+  images: readonly AnatomyImage[],
+  labelsByImageId: Readonly<Record<string, EditableLabel[]>>,
+  terms: readonly Term[],
+): LabelUpdateBundle {
+  const termsToRegister = new Map<string, PendingTermRegistration>();
+  const imageEntries = images.map((image) => {
+    const imageLabels = labelsByImageId[image.id] ?? labelsFromImage(image);
+    for (const label of imageLabels) {
+      const pending = pendingRegistrationForLabel(image, label, terms);
+      if (!pending) {
+        continue;
+      }
+      const key = normalizeTermText(pending.input);
+      const existing = termsToRegister.get(key);
+      if (existing) {
+        existing.usedBy = [...new Set([...existing.usedBy, ...pending.usedBy])];
+        existing.suggestedId ||= pending.suggestedId;
+        existing.japanese ||= pending.japanese;
+        existing.english ||= pending.english;
+      } else {
+        termsToRegister.set(key, pending);
+      }
+    }
+
+    return {
+      imageId: image.id,
+      title: image.title,
+      replaceExistingLabels: true as const,
+      labels: imageLabels.map((label) => plainLabel(label, terms)),
+    };
+  });
+
+  return {
+    format: 'anatodrill-label-update-v1',
+    images: imageEntries,
+    termsToRegister: [...termsToRegister.values()],
+  };
+}
+
+function labelUpdateBundleToJson(bundle: LabelUpdateBundle): string {
+  return JSON.stringify(bundle, null, 2);
+}
+
+function labelUpdateBundleToCsv(bundle: LabelUpdateBundle, terms: readonly Term[]): string {
+  const header = [
+    'recordType',
+    'imageId',
+    'label',
+    'termId',
+    'x',
+    'y',
+    'note',
+    'registrationRequired',
+    'suggestedId',
+    'japanese',
+    'english',
+    'latin',
+    'category',
+    'region',
+    'testSet',
+    'explanation',
+    'usedBy',
+  ];
+  const rows: unknown[][] = [];
+
+  for (const image of bundle.images) {
+    for (const label of image.labels) {
+      const resolution = resolveTermInput(label.termId, terms);
+      rows.push([
+        'label',
+        image.imageId,
+        label.label,
+        label.termId,
+        formatCoordinate(label.x),
+        formatCoordinate(label.y),
+        label.note ?? '',
+        resolution.status === 'missing' ? 'true' : 'false',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+        '',
+      ]);
+    }
+  }
+
+  for (const pending of bundle.termsToRegister) {
+    rows.push([
+      'term_to_register',
+      '',
+      '',
+      pending.input,
+      '',
+      '',
+      '',
+      'true',
+      pending.suggestedId,
+      pending.japanese,
+      pending.english,
+      pending.latin,
+      pending.category,
+      pending.region,
+      pending.testSet,
+      pending.explanation,
+      pending.usedBy.join('|'),
+    ]);
+  }
+
+  return `${header.map(csvEscape).join(',')}\n${rows.map((row) => row.map(csvEscape).join(',')).join('\n')}${rows.length ? '\n' : ''}`;
 }
 
 function downloadText(fileName: string, content: string, mimeType: string): void {
@@ -280,9 +487,11 @@ function resolutionMessage(resolution: TermResolution): string {
     return `解決済み: ${resolution.term.japanese} / ${resolution.term.english} / ${resolution.term.id}`;
   }
   if (resolution.status === 'ambiguous') {
-    return '候補が複数あります。下の候補から選択してください。';
+    return '同名の登録済み用語が複数あります。下の候補から選択してください。';
   }
-  return '対応する用語が見つかりません。terms.csv に用語を追加してください。';
+  return resolution.candidates.length > 0
+    ? '完全一致する用語は未登録です。候補を選ぶか、「要登録」としてこのまま追加できます。'
+    : '未登録用語です。「要登録」としてこのままラベルへ追加できます。';
 }
 
 export function LabelEditor({ images, terms }: LabelEditorProps) {
@@ -363,8 +572,16 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     () => (draft.termInput.trim() ? resolveTermInput(draft.termInput, terms).candidates.slice(0, 24) : []),
     [draft.termInput, terms],
   );
-  const invalidLabels = useMemo(
-    () => labels.filter((label) => resolveTermInput(label.termId, terms).status !== 'resolved'),
+  const blockingLabels = useMemo(
+    () =>
+      labels.filter((label) => {
+        const status = resolveTermInput(label.termId, terms).status;
+        return status === 'empty' || status === 'ambiguous';
+      }),
+    [labels, terms],
+  );
+  const pendingLabels = useMemo(
+    () => labels.filter((label) => resolveTermInput(label.termId, terms).status === 'missing'),
     [labels, terms],
   );
   const duplicateLabels = useMemo(() => duplicateLabelValues(labels), [labels]);
@@ -399,11 +616,25 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   const draftLabelIsDuplicate = Boolean(
     draft.label.trim() && labels.some((label) => label.label.trim() === draft.label.trim()),
   );
-  const canExport = invalidLabels.length === 0 && labelsAreValid(labels, terms);
+  const canExport = blockingLabels.length === 0 && labelsAreValid(labels, terms);
   const canExportAll = useMemo(
     () => selectableImages.every((image) => labelsAreValid(labelsByImageId[image.id] ?? labelsFromImage(image), terms)),
     [labelsByImageId, selectableImages, terms],
   );
+  const currentBundle = useMemo(
+    () => createLabelUpdateBundle(selectedImage ? [selectedImage] : [], labelsByImageId, terms),
+    [labelsByImageId, selectedImage, terms],
+  );
+  const allBundle = useMemo(
+    () => createLabelUpdateBundle(selectableImages, labelsByImageId, terms),
+    [labelsByImageId, selectableImages, terms],
+  );
+  const canAddDraft =
+    draft.label.trim() !== '' &&
+    draft.x !== '' &&
+    draft.y !== '' &&
+    !draftLabelIsDuplicate &&
+    (draftResolution.status === 'resolved' || draftResolution.status === 'missing');
 
   const updateLabels = (nextLabels: EditableLabel[]) => {
     setLabelsByImageId((current) => ({
@@ -479,19 +710,26 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
       draft.y === '' ||
       !draft.label.trim() ||
       draftLabelIsDuplicate ||
-      draftResolution.status !== 'resolved' ||
-      !draftResolution.term
+      (draftResolution.status !== 'resolved' && draftResolution.status !== 'missing')
     ) {
       return;
     }
 
-    const note = draft.note.trim() || (draftResolution.input === draftResolution.term.japanese ? draftResolution.input : draftResolution.term.japanese);
+    const termId =
+      draftResolution.status === 'resolved' && draftResolution.term
+        ? draftResolution.term.id
+        : draftResolution.input;
+    const note =
+      draft.note.trim() ||
+      (draftResolution.status === 'resolved' && draftResolution.term
+        ? draftResolution.term.japanese
+        : draftResolution.input);
     const nextLabels = [
       ...labels,
       {
         id: `label-${Date.now()}`,
         label: draft.label.trim(),
-        termId: draftResolution.term.id,
+        termId,
         x: Number(draft.x),
         y: Number(draft.y),
         note,
@@ -500,7 +738,7 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     updateLabels(nextLabels);
     setDraft({
       label: nextLabelValue(nextLabels),
-      termInput: draftResolution.term.id,
+      termInput: termId,
       x: '',
       y: '',
       note: '',
@@ -554,8 +792,8 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
     if (!canExport) {
       return;
     }
-    await copyText(labelsToJson(labels, terms));
-    setCopyStatus('JSONをクリップボードにコピーしました。');
+    await copyText(labelUpdateBundleToJson(currentBundle));
+    setCopyStatus('ラベルと要登録リストを含む一括更新JSONをコピーしました。');
   };
 
   if (!selectedImage) {
@@ -570,14 +808,17 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
   }
 
   const jsonOutput = canExport
-    ? labelsToJson(labels, terms)
-    : '未解決または曖昧な用語があります。候補から選択するか、terms.csv に用語を追加してください。';
+    ? labelUpdateBundleToJson(currentBundle)
+    : '同名で曖昧な用語、重複番号、空欄、または不正な座標があります。';
   const csvOutput = canExport
-    ? labelsToCsvRows(selectedImage.id, labels, terms)
-    : '未解決または曖昧な用語があります。候補から選択するか、terms.csv に用語を追加してください。';
+    ? labelUpdateBundleToCsv(currentBundle, terms)
+    : '同名で曖昧な用語、重複番号、空欄、または不正な座標があります。';
   const allCsvOutput = canExportAll
-    ? allLabelsToCsvRows(selectableImages, labelsByImageId, terms)
-    : 'いずれかの画像に未解決用語、重複番号、または不正な座標があります。';
+    ? labelUpdateBundleToCsv(allBundle, terms)
+    : 'いずれかの画像に曖昧な用語、重複番号、空欄、または不正な座標があります。';
+  const labelsOnlyJsonOutput = labelsToJson(labels, terms);
+  const labelsOnlyCsvOutput = labelsToCsvRows(selectedImage.id, labels, terms);
+  const allLabelsOnlyCsvOutput = allLabelsToCsvRows(selectableImages, labelsByImageId, terms);
 
   return (
     <main className="page-shell label-editor-shell">
@@ -585,12 +826,12 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
         <div>
           <p className="eyebrow">Developer tool</p>
           <h2>ラベル作成</h2>
-          <p className="muted">画像をクリックして、image_labels.csv 用の番号ラベルを作成します。</p>
+          <p className="muted">登録済み・未登録を問わず、画像をクリックして番号ラベルを作成します。</p>
         </div>
       </section>
 
       <section className="warning-band">
-        作業内容はこの端末に自動保存されます。完成後にCSVをダウンロードし、image_labels.csv に反映してください。
+        作業内容はこの端末に自動保存されます。未登録語は「要登録」として保存され、一括更新JSON・CSVにラベル情報と一緒に含まれます。
       </section>
 
       <section className="label-editor-layout">
@@ -758,12 +999,20 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                 ))}
               </div>
               <p className="image-suggestion-footnote">
-                候補は3言語の用語として登録済みです。画像を確認し、正しい候補だけを使用してください。
+                登録済み候補はそのまま使用できます。未登録候補もラベルに使え、一括更新ファイルの要登録リストに含まれます。
               </p>
             </section>
           ) : null}
 
-          <p className={draftResolution.status === 'resolved' ? 'status-line' : 'error-text'}>
+          <p
+            className={
+              draftResolution.status === 'resolved'
+                ? 'status-line'
+                : draftResolution.status === 'missing'
+                  ? 'pending-registration-text'
+                  : 'error-text'
+            }
+          >
             {resolutionMessage(draftResolution)}
           </p>
           {draftLabelIsDuplicate ? (
@@ -792,9 +1041,9 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
             type="button"
             className="primary-button"
             onClick={addLabel}
-            disabled={draftResolution.status !== 'resolved' || draftLabelIsDuplicate}
+            disabled={!canAddDraft}
           >
-            ラベルを追加
+            {draftResolution.status === 'missing' ? '要登録としてラベルを追加' : 'ラベルを追加'}
           </button>
 
           <label className="term-search-box">
@@ -826,38 +1075,73 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
       <section className="panel label-table-panel">
         <div className="modal-heading">
           <div>
-            <p className="eyebrow">image_labels.csv rows</p>
+            <p className="eyebrow">Label update bundle</p>
             <h3>作成中のラベル</h3>
+            <p className="muted">要登録 {currentBundle.termsToRegister.length}件 / ラベル {labels.length}件</p>
           </div>
           <div className="button-row">
             <button type="button" className="secondary-button" disabled={!canExport} onClick={copyJson}>
-              JSONコピー
+              一括更新JSONコピー
             </button>
             <button
               type="button"
               className="secondary-button"
               disabled={!canExport}
-              onClick={() => downloadText(`${selectedImage.id}-labels.json`, jsonOutput, 'application/json')}
+              onClick={() =>
+                downloadText(`${selectedImage.id}-anatodrill-label-update.json`, jsonOutput, 'application/json')
+              }
             >
-              JSONダウンロード
+              一括更新JSON
             </button>
             <button
               type="button"
               className="secondary-button"
               disabled={!canExport}
-              onClick={() => downloadText(`${selectedImage.id}-image_labels.csv`, csvOutput, 'text/csv;charset=utf-8')}
+              onClick={() =>
+                downloadText(`${selectedImage.id}-anatodrill-label-update.csv`, csvOutput, 'text/csv;charset=utf-8')
+              }
             >
-              この画像のCSV
+              一括更新CSV
             </button>
             <button
               type="button"
               className="primary-button"
               disabled={!canExportAll}
               onClick={() =>
-                downloadText('anatodrill-image_labels-all.csv', allCsvOutput, 'text/csv;charset=utf-8')
+                downloadText('anatodrill-label-update-all.csv', allCsvOutput, 'text/csv;charset=utf-8')
               }
             >
-              全図版CSV
+              全図版一括CSV
+            </button>
+            <button
+              type="button"
+              className="secondary-button"
+              disabled={!canExport}
+              onClick={() => downloadText(`${selectedImage.id}-labels-only.json`, labelsOnlyJsonOutput, 'application/json')}
+            >
+              ラベルJSONのみ
+            </button>
+            <button
+              type="button"
+              className="secondary-button"
+              disabled={!canExport || pendingLabels.length > 0}
+              title={pendingLabels.length > 0 ? '要登録用語があるため、一括更新ファイルを使用してください。' : ''}
+              onClick={() =>
+                downloadText(`${selectedImage.id}-image_labels.csv`, labelsOnlyCsvOutput, 'text/csv;charset=utf-8')
+              }
+            >
+              image_labels.csvのみ
+            </button>
+            <button
+              type="button"
+              className="secondary-button"
+              disabled={!canExportAll || allBundle.termsToRegister.length > 0}
+              title={allBundle.termsToRegister.length > 0 ? '要登録用語があるため、全図版一括CSVを使用してください。' : ''}
+              onClick={() =>
+                downloadText('anatodrill-image_labels-all.csv', allLabelsOnlyCsvOutput, 'text/csv;charset=utf-8')
+              }
+            >
+              全image_labels.csv
             </button>
             <button type="button" className="secondary-button danger" onClick={resetCurrentDraft}>
               この画像を元に戻す
@@ -866,8 +1150,27 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
         </div>
         {!canExport ? (
           <p className="error-text">
-            未解決用語、重複番号、空欄、または不正な座標があります。修正後に出力してください。
+            同名で曖昧な用語、重複番号、空欄、または不正な座標があります。修正後に出力してください。
           </p>
+        ) : null}
+        {currentBundle.termsToRegister.length > 0 ? (
+          <section className="pending-term-panel" aria-labelledby="pending-term-title">
+            <div className="pending-term-heading">
+              <h4 id="pending-term-title">要登録リスト</h4>
+              <span>{currentBundle.termsToRegister.length}件</span>
+            </div>
+            <p>この用語は未登録ですが、ラベル作業を続けられます。一括更新JSON・CSVに登録情報として同梱されます。</p>
+            <div className="pending-term-list">
+              {currentBundle.termsToRegister.map((pending) => (
+                <article key={pending.input} className="pending-term-card">
+                  <strong>{pending.japanese || pending.input}</strong>
+                  <span>{pending.english || '英語：登録時に補完'}</span>
+                  <span>{pending.latin || 'ラテン語：登録時に補完'}</span>
+                  <small>候補ID: {pending.suggestedId || '登録時に決定'} / {pending.usedBy.join(', ')}</small>
+                </article>
+              ))}
+            </div>
+          </section>
         ) : null}
         {duplicateLabels.length > 0 ? (
           <p className="error-text">重複しているラベル番号: {duplicateLabels.join(', ')}</p>
@@ -926,6 +1229,8 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
                     <td>
                       {resolution.status === 'resolved' && term ? (
                         detailLabel(term)
+                      ) : resolution.status === 'missing' ? (
+                        <span className="pending-registration-text">要登録: {resolution.input}</span>
                       ) : (
                         <span className="error-text">{resolutionMessage(resolution)}</span>
                       )}
@@ -944,11 +1249,11 @@ export function LabelEditor({ images, terms }: LabelEditorProps) {
 
         <div className="label-output-grid">
           <label>
-            JSON
+            一括更新JSON
             <textarea readOnly value={jsonOutput} />
           </label>
           <label>
-            CSV
+            一括更新CSV
             <textarea readOnly value={csvOutput} />
           </label>
         </div>

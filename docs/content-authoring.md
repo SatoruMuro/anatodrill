@@ -186,17 +186,47 @@ Then click `ラベル作成`.
 
 This developer-only page is hidden unless `?dev=1` is present. It lists numbered-plate targets rather than isolated single-structure images, lets you click the image to place normalized `x` / `y` markers, search terms by ID/Japanese/English/Latin, edit labels, and export JSON or CSV rows.
 
-The editor also shows optional structure suggestions derived in advance from wording visible in each plate, its source-language labels, and the subject of the illustration. These are only authoring aids and must be checked against the image before use. Every suggestion must match exactly one quiz-ready term with Japanese, English, and Latin names, so a suggestion selects its registered term with one tap.
+The editor also shows optional structure suggestions derived in advance from wording visible in each plate, its source-language labels, and the subject of the illustration. These are only authoring aids and must be checked against the image before use. Registered suggestions select their quiz-ready term with one tap. An unregistered suggestion can still be used as a pending label and is included in the export bundle's registration list.
 
-In the `構造名 / termId` field, you can type a Japanese anatomical name such as `頸椎`, `胸椎`, `腰椎`, `仙骨`, or `尾骨`. The editor resolves it through the loaded term data from `terms.csv` / `terms.json`. If the input exactly matches one term, the label is resolved automatically. If multiple candidates match, select the correct candidate before exporting. If no candidate appears, add the term to `content/csv/terms.csv` first.
+In the `構造名 / termId` field, you can type a Japanese anatomical name such as `頸椎`, `胸椎`, `腰椎`, `仙骨`, or `尾骨`. The editor resolves it through the loaded term data from `terms.csv` / `terms.json`. If the input exactly matches one term, the label is resolved automatically. If multiple exact matches exist, select the correct candidate. If there is no exact match, use `要登録としてラベルを追加` and continue the labeling session without interrupting the work to edit `terms.csv`.
 
-CSV export writes the resolved internal `termId`. If `note` is empty and the original input was a Japanese term name, the Japanese name is preserved in the `note` column. Duplicate label numbers, unresolved terms, blank labels, and invalid coordinates block export until corrected.
+The recommended exports are `一括更新JSON` and `一括更新CSV`. Both contain the image labels and a de-duplicated `termsToRegister` / `term_to_register` list. A pending term records the entered name, any Japanese/English suggestion available from the plate, a suggested ID when one can be generated, and every image/label that uses it. This lets a single follow-up update register the missing terms in `terms.csv` and resolve the corresponding rows in `image_labels.csv` together.
+
+The bundle format is `anatodrill-label-update-v1`. Its JSON form has this shape:
+
+```json
+{
+  "format": "anatodrill-label-update-v1",
+  "images": [
+    {
+      "imageId": "example_plate",
+      "replaceExistingLabels": true,
+      "labels": [{ "label": "1", "termId": "未登録構造", "x": 0.5, "y": 0.4 }]
+    }
+  ],
+  "termsToRegister": [
+    {
+      "input": "未登録構造",
+      "suggestedId": "",
+      "japanese": "未登録構造",
+      "english": "",
+      "latin": "",
+      "usedBy": ["example_plate:1"]
+    }
+  ]
+}
+```
+
+The CSV bundle is a single table whose `recordType` is either `label` or `term_to_register`. It is an exchange file, not a direct replacement for `content/csv/image_labels.csv`. Complete the missing English, Latin, category, region, test set, and explanation fields while applying the bundle, register the terms, and then write the resolved term IDs to `image_labels.csv`.
+
+For backward compatibility, `ラベルJSONのみ` remains available. Direct `image_labels.csv` exports are enabled only when the selected labels contain no pending terms. Duplicate label numbers, ambiguous exact term matches, blank labels, and invalid coordinates still block export; an unregistered term does not.
 
 Added and edited labels are automatically saved in the current browser. A saved draft is used only while the source image labels are unchanged, so a newer deployed CSV safely supersedes stale local drafts. Use `全図版CSV` to download one complete replacement CSV containing every labeled plate, or reset the current image to its deployed CSV state.
 
-The tool does not write source files. Copy or download its CSV output and manually paste the rows into:
+The tool does not write source files. Apply the completed bundle to both:
 
 ```text
+content/csv/terms.csv
 content/csv/image_labels.csv
 ```
 

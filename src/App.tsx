@@ -78,7 +78,7 @@ export function App() {
       <Navigation current={view} onNavigate={setView} isDevMode={isEditorMode} />
       {isEditorMode ? (
         <aside className="dev-mode-notice">
-          <span>編集者モードです。ラベル作成ツールの出力を image_labels.csv に手動で反映してください。</span>
+          <span>編集者モードです。一括更新JSON・CSVには、ラベルと要登録用語が一緒に保存されます。</span>
           <button className="secondary-button" type="button" onClick={closeEditor}>
             閉じる
           </button>

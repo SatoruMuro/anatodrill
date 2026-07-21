@@ -1530,6 +1530,69 @@ button.plate-marker {
   font-size: 0.78rem;
 }
 
+.pending-registration-text {
+  color: #765500;
+  font-weight: 800;
+}
+
+.pending-term-panel {
+  display: grid;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 14px;
+  border: 1px solid #e1c363;
+  border-radius: 10px;
+  background: #fffaf0;
+}
+
+.pending-term-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pending-term-heading h4 {
+  margin: 0;
+  color: #4f3f00;
+}
+
+.pending-term-heading span {
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #fff0be;
+  color: #765500;
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.pending-term-panel > p {
+  color: #665720;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.pending-term-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 8px;
+}
+
+.pending-term-card {
+  display: grid;
+  gap: 3px;
+  padding: 10px;
+  border: 1px solid #ead795;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.pending-term-card span,
+.pending-term-card small {
+  color: #665f45;
+  overflow-wrap: anywhere;
+}
+
 .term-search-box {
   margin-top: 18px;
 }
