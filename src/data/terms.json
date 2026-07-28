@@ -75360,5 +75360,128 @@
     "region": "head and neck",
     "testSet": "pdf_reference_terms",
     "explanation": "楔状軟骨は披裂喉頭蓋ヒダ内にある小さな喉頭軟骨です。"
+  },
+  {
+    "id": "right_ventricle",
+    "japanese": "右心室",
+    "english": "right ventricle",
+    "latin": "ventriculus dexter",
+    "category": "heart",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "右心室は右心房から受け取った静脈血を肺動脈へ送り出す心腔です。"
+  },
+  {
+    "id": "descending_aorta",
+    "japanese": "下行大動脈",
+    "english": "descending aorta",
+    "latin": "aorta descendens",
+    "category": "artery",
+    "region": "thorax",
+    "testSet": "basic_trunk",
+    "explanation": "下行大動脈は大動脈弓から続き胸部と腹部を下行する大動脈の部分です。"
+  },
+  {
+    "id": "sternocleidomastoid_muscle",
+    "japanese": "胸鎖乳突筋",
+    "english": "sternocleidomastoid muscle",
+    "latin": "musculus sternocleidomastoideus",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "胸鎖乳突筋は胸骨・鎖骨から乳様突起へ向かい頭頸部の運動に関わる筋です。"
+  },
+  {
+    "id": "anterior_scalene_muscle",
+    "japanese": "前斜角筋",
+    "english": "anterior scalene muscle",
+    "latin": "musculus scalenus anterior",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "前斜角筋は頸椎横突起から第1肋骨へ向かい頸部の側屈や吸気を補助する筋です。"
+  },
+  {
+    "id": "hyoid_bone",
+    "japanese": "舌骨",
+    "english": "hyoid bone",
+    "latin": "os hyoideum",
+    "category": "bone",
+    "region": "head and neck",
+    "testSet": [
+      "basic_head",
+      "osteology_basic"
+    ],
+    "explanation": "舌骨は他の骨と直接関節せず舌や喉頭を支持する頸部の骨です。"
+  },
+  {
+    "id": "phrenic_nerve",
+    "japanese": "横隔神経",
+    "english": "phrenic nerve",
+    "latin": "nervus phrenicus",
+    "category": "nerve",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "横隔神経は主に第3から第5頸神経から起こり横隔膜を支配する神経です。"
+  },
+  {
+    "id": "hypoglossal_nerve",
+    "japanese": "舌下神経",
+    "english": "hypoglossal nerve",
+    "latin": "nervus hypoglossus",
+    "category": "nerve",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "舌下神経は第12脳神経で主に舌筋を運動支配します。"
+  },
+  {
+    "id": "masseter_muscle",
+    "japanese": "咬筋",
+    "english": "masseter muscle",
+    "latin": "masseter",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "咬筋は下顎骨を挙上して咀嚼に関わる咀嚼筋です。"
+  },
+  {
+    "id": "temporalis_muscle",
+    "japanese": "側頭筋",
+    "english": "temporalis muscle",
+    "latin": "musculus temporalis",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "側頭筋は下顎骨を挙上・後退させる扇状の咀嚼筋です。"
+  },
+  {
+    "id": "occipitalis_muscle",
+    "japanese": "後頭筋",
+    "english": "occipitalis muscle",
+    "latin": "musculus occipitalis",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "後頭筋は後頭部に位置し帽状腱膜を後方へ引く筋です。"
+  },
+  {
+    "id": "frontalis_muscle",
+    "japanese": "前頭筋",
+    "english": "frontalis muscle",
+    "latin": "musculus frontalis",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "前頭筋は眉を挙上し前額に横じわを作る表情筋です。"
+  },
+  {
+    "id": "orbicularis_oculi_muscle",
+    "japanese": "眼輪筋",
+    "english": "orbicularis oculi muscle",
+    "latin": "musculus orbicularis oculi",
+    "category": "muscle",
+    "region": "head and neck",
+    "testSet": "basic_muscle",
+    "explanation": "眼輪筋は眼裂を取り囲み閉眼に関わる表情筋です。"
   }
 ]

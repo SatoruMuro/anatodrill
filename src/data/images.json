@@ -1633,7 +1633,50 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brachial_a.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "brachial_artery",
+        "x": 0.5751,
+        "y": 0.2592,
+        "note": "上腕動脈"
+      },
+      {
+        "label": "2",
+        "termId": "radial_artery",
+        "x": 0.3961,
+        "y": 0.9417,
+        "note": "橈骨動脈"
+      },
+      {
+        "label": "3",
+        "termId": "ulnar_artery",
+        "x": 0.5279,
+        "y": 0.9354,
+        "note": "尺骨動脈"
+      },
+      {
+        "label": "4",
+        "termId": "humerus",
+        "x": 0.4961,
+        "y": 0.107,
+        "note": "上腕骨"
+      },
+      {
+        "label": "5",
+        "termId": "radius",
+        "x": 0.3774,
+        "y": 0.8766,
+        "note": "橈骨"
+      },
+      {
+        "label": "6",
+        "termId": "ulna",
+        "x": 0.4829,
+        "y": 0.9606,
+        "note": "尺骨"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "上腕動脈",
@@ -1689,7 +1732,36 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray's_Anatomy_plate_517_brain.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "central_sulcus",
+        "x": 0.5971,
+        "y": 0.1866,
+        "note": "中心溝"
+      },
+      {
+        "label": "2",
+        "termId": "precentral_gyrus",
+        "x": 0.5136,
+        "y": 0.2572,
+        "note": "中心前回"
+      },
+      {
+        "label": "3",
+        "termId": "postcentral_gyrus",
+        "x": 0.574,
+        "y": 0.3163,
+        "note": "中心後回"
+      },
+      {
+        "label": "4",
+        "termId": "lateral_sulcus",
+        "x": 0.3983,
+        "y": 0.6691,
+        "note": "外側溝"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "上前頭回",
@@ -2039,7 +2111,71 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray492_az.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "ascending_aorta",
+        "x": 0.3687,
+        "y": 0.1179,
+        "note": "上行大動脈"
+      },
+      {
+        "label": "2",
+        "termId": "pulmonary_artery",
+        "x": 0.5147,
+        "y": 0.1464,
+        "note": "肺動脈"
+      },
+      {
+        "label": "3",
+        "termId": "right_ventricle",
+        "x": 0.4796,
+        "y": 0.5979,
+        "note": "右心室"
+      },
+      {
+        "label": "4",
+        "termId": "left_ventricle",
+        "x": 0.7981,
+        "y": 0.6523,
+        "note": "左心室"
+      },
+      {
+        "label": "5",
+        "termId": "apex_of_heart",
+        "x": 0.831,
+        "y": 0.9572,
+        "note": "心尖"
+      },
+      {
+        "label": "6",
+        "termId": "right_auricle",
+        "x": 0.1929,
+        "y": 0.2606,
+        "note": "右心耳"
+      },
+      {
+        "label": "7",
+        "termId": "superior_vena_cava",
+        "x": 0.1501,
+        "y": 0.0712,
+        "note": "上大静脈"
+      },
+      {
+        "label": "8",
+        "termId": "right_coronary_artery",
+        "x": 0.2511,
+        "y": 0.3644,
+        "note": "右冠状動脈"
+      },
+      {
+        "label": "9",
+        "termId": "left_coronary_artery",
+        "x": 0.6531,
+        "y": 0.2269,
+        "note": "左冠状動脈"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "右冠状動脈",
@@ -2095,7 +2231,183 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray505_az.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "ascending_aorta",
+        "x": 0.3763,
+        "y": 0.4522,
+        "note": "上行大動脈"
+      },
+      {
+        "label": "2",
+        "termId": "aortic_arch",
+        "x": 0.5224,
+        "y": 0.346,
+        "note": "大動脈弓"
+      },
+      {
+        "label": "3",
+        "termId": "descending_aorta",
+        "x": 0.6103,
+        "y": 0.9235,
+        "note": "下行大動脈"
+      },
+      {
+        "label": "4",
+        "termId": "pulmonary_trunk",
+        "x": 0.5433,
+        "y": 0.559,
+        "note": "肺動脈幹"
+      },
+      {
+        "label": "5",
+        "termId": "brachiocephalic_vein",
+        "x": 0.2577,
+        "y": 0.2073,
+        "note": "腕頭静脈"
+      },
+      {
+        "label": "6",
+        "termId": "brachiocephalic_vein",
+        "x": 0.451,
+        "y": 0.2568,
+        "note": "腕頭静脈"
+      },
+      {
+        "label": "7",
+        "termId": "brachiocephalic_trunk",
+        "x": 0.372,
+        "y": 0.1719,
+        "note": "腕頭動脈"
+      },
+      {
+        "label": "8",
+        "termId": "common_carotid_artery",
+        "x": 0.3456,
+        "y": 0.0834,
+        "note": "総頸動脈"
+      },
+      {
+        "label": "9",
+        "termId": "common_carotid_artery",
+        "x": 0.5971,
+        "y": 0.1287,
+        "note": "総頸動脈"
+      },
+      {
+        "label": "10",
+        "termId": "subclavian_artery",
+        "x": 0.1787,
+        "y": 0.1344,
+        "note": "鎖骨下動脈"
+      },
+      {
+        "label": "11",
+        "termId": "subclavian_artery",
+        "x": 0.786,
+        "y": 0.1308,
+        "note": "鎖骨下動脈"
+      },
+      {
+        "label": "12",
+        "termId": "superior_vena_cava",
+        "x": 0.2511,
+        "y": 0.3715,
+        "note": "上大静脈"
+      },
+      {
+        "label": "13",
+        "termId": "pulmonary_artery",
+        "x": 0.6553,
+        "y": 0.4706,
+        "note": "肺動脈"
+      },
+      {
+        "label": "14",
+        "termId": "vagus_nerve",
+        "x": 0.294,
+        "y": 0.094,
+        "note": "迷走神経"
+      },
+      {
+        "label": "15",
+        "termId": "vagus_nerve",
+        "x": 0.6663,
+        "y": 0.0608,
+        "note": "迷走神経"
+      },
+      {
+        "label": "16",
+        "termId": "thyroid_gland",
+        "x": 0.4686,
+        "y": 0.0325,
+        "note": "甲状腺"
+      },
+      {
+        "label": "17",
+        "termId": "inferior_thyroid_vein",
+        "x": 0.4346,
+        "y": 0.1429,
+        "note": "下甲状腺静脈"
+      },
+      {
+        "label": "18",
+        "termId": "inferior_thyroid_vein",
+        "x": 0.5136,
+        "y": 0.1563,
+        "note": "下甲状腺静脈"
+      },
+      {
+        "label": "19",
+        "termId": "right_auricle",
+        "x": 0.3302,
+        "y": 0.5824,
+        "note": "右心耳"
+      },
+      {
+        "label": "20",
+        "termId": "right_atrium",
+        "x": 0.183,
+        "y": 0.5626,
+        "note": "右心房"
+      },
+      {
+        "label": "21",
+        "termId": "right_ventricle",
+        "x": 0.54,
+        "y": 0.7013,
+        "note": "右心室"
+      },
+      {
+        "label": "22",
+        "termId": "left_ventricle",
+        "x": 0.7651,
+        "y": 0.6164,
+        "note": "左心室"
+      },
+      {
+        "label": "23",
+        "termId": "right_coronary_artery",
+        "x": 0.4225,
+        "y": 0.5923,
+        "note": "右冠状動脈"
+      },
+      {
+        "label": "24",
+        "termId": "left_coronary_artery",
+        "x": 0.6465,
+        "y": 0.5838,
+        "note": "左冠状動脈"
+      },
+      {
+        "label": "25",
+        "termId": "inferior_vena_cava",
+        "x": 0.294,
+        "y": 0.8428,
+        "note": "下大静脈"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "上行大動脈",
@@ -2151,7 +2463,197 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray507.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "sternocleidomastoid_muscle",
+        "x": 0.4884,
+        "y": 0.3433,
+        "note": "胸鎖乳突筋"
+      },
+      {
+        "label": "2",
+        "termId": "trapezius",
+        "x": 0.218,
+        "y": 0.825,
+        "note": "僧帽筋"
+      },
+      {
+        "label": "3",
+        "termId": "clavicle",
+        "x": 0.435,
+        "y": 0.9035,
+        "note": "鎖骨"
+      },
+      {
+        "label": "4",
+        "termId": "omohyoid_muscle",
+        "x": 0.5961,
+        "y": 0.7337,
+        "note": "肩甲舌骨筋"
+      },
+      {
+        "label": "5",
+        "termId": "anterior_scalene_muscle",
+        "x": 0.559,
+        "y": 0.7128,
+        "note": "前斜角筋"
+      },
+      {
+        "label": "6",
+        "termId": "hyoid_bone",
+        "x": 0.822,
+        "y": 0.53,
+        "note": "舌骨"
+      },
+      {
+        "label": "7",
+        "termId": "digastric_muscle",
+        "x": 0.8656,
+        "y": 0.4685,
+        "note": "顎二腹筋"
+      },
+      {
+        "label": "8",
+        "termId": "thyroid_gland",
+        "x": 0.7144,
+        "y": 0.7625,
+        "note": "甲状腺"
+      },
+      {
+        "label": "9",
+        "termId": "trachea",
+        "x": 0.732,
+        "y": 0.8508,
+        "note": "気管"
+      },
+      {
+        "label": "10",
+        "termId": "common_carotid_artery",
+        "x": 0.6629,
+        "y": 0.7764,
+        "note": "総頸動脈"
+      },
+      {
+        "label": "11",
+        "termId": "external_carotid_artery",
+        "x": 0.664,
+        "y": 0.4943,
+        "note": "外頸動脈"
+      },
+      {
+        "label": "12",
+        "termId": "internal_carotid_artery",
+        "x": 0.6246,
+        "y": 0.5152,
+        "note": "内頸動脈"
+      },
+      {
+        "label": "13",
+        "termId": "subclavian_artery",
+        "x": 0.6158,
+        "y": 0.829,
+        "note": "鎖骨下動脈"
+      },
+      {
+        "label": "14",
+        "termId": "superior_thyroid_artery",
+        "x": 0.698,
+        "y": 0.54,
+        "note": "上甲状腺動脈"
+      },
+      {
+        "label": "15",
+        "termId": "lingual_artery",
+        "x": 0.6892,
+        "y": 0.4963,
+        "note": "舌動脈"
+      },
+      {
+        "label": "16",
+        "termId": "facial_artery",
+        "x": 0.7955,
+        "y": 0.4089,
+        "note": "顔面動脈"
+      },
+      {
+        "label": "17",
+        "termId": "maxillary_artery",
+        "x": 0.6399,
+        "y": 0.25,
+        "note": "顎動脈"
+      },
+      {
+        "label": "18",
+        "termId": "superficial_temporal_artery",
+        "x": 0.5796,
+        "y": 0.1457,
+        "note": "浅側頭動脈"
+      },
+      {
+        "label": "19",
+        "termId": "posterior_auricular_artery",
+        "x": 0.5018,
+        "y": 0.2589,
+        "note": "後耳介動脈"
+      },
+      {
+        "label": "20",
+        "termId": "internal_jugular_vein",
+        "x": 0.5994,
+        "y": 0.4099,
+        "note": "内頸静脈"
+      },
+      {
+        "label": "21",
+        "termId": "vertebral_artery",
+        "x": 0.6224,
+        "y": 0.7813,
+        "note": "椎骨動脈"
+      },
+      {
+        "label": "22",
+        "termId": "inferior_thyroid_artery",
+        "x": 0.6037,
+        "y": 0.7009,
+        "note": "下甲状腺動脈"
+      },
+      {
+        "label": "23",
+        "termId": "transverse_cervical_artery",
+        "x": 0.5347,
+        "y": 0.7962,
+        "note": "頸横動脈"
+      },
+      {
+        "label": "24",
+        "termId": "suprascapular_artery",
+        "x": 0.4405,
+        "y": 0.8677,
+        "note": "肩甲上動脈"
+      },
+      {
+        "label": "25",
+        "termId": "vagus_nerve",
+        "x": 0.6158,
+        "y": 0.6532,
+        "note": "迷走神経"
+      },
+      {
+        "label": "26",
+        "termId": "phrenic_nerve",
+        "x": 0.5709,
+        "y": 0.6274,
+        "note": "横隔神経"
+      },
+      {
+        "label": "27",
+        "termId": "hypoglossal_nerve",
+        "x": 0.7188,
+        "y": 0.4784,
+        "note": "舌下神経"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "総頸動脈",
@@ -2207,7 +2709,106 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray508.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "external_carotid_artery",
+        "x": 0.3929,
+        "y": 0.852,
+        "note": "外頸動脈"
+      },
+      {
+        "label": "2",
+        "termId": "facial_artery",
+        "x": 0.5299,
+        "y": 0.746,
+        "note": "顔面動脈"
+      },
+      {
+        "label": "3",
+        "termId": "occipital_artery",
+        "x": 0.0871,
+        "y": 0.4557,
+        "note": "後頭動脈"
+      },
+      {
+        "label": "4",
+        "termId": "posterior_auricular_artery",
+        "x": 0.2953,
+        "y": 0.5553,
+        "note": "後耳介動脈"
+      },
+      {
+        "label": "5",
+        "termId": "superficial_temporal_artery",
+        "x": 0.383,
+        "y": 0.3754,
+        "note": "浅側頭動脈"
+      },
+      {
+        "label": "6",
+        "termId": "occipital_artery",
+        "x": 0.3622,
+        "y": 0.7738,
+        "note": "後頭動脈"
+      },
+      {
+        "label": "7",
+        "termId": "trapezius",
+        "x": 0.1518,
+        "y": 0.7582,
+        "note": "僧帽筋"
+      },
+      {
+        "label": "8",
+        "termId": "maxillary_artery",
+        "x": 0.3896,
+        "y": 0.5715,
+        "note": "顎動脈"
+      },
+      {
+        "label": "9",
+        "termId": "sternocleidomastoid_muscle",
+        "x": 0.2471,
+        "y": 0.6165,
+        "note": "胸鎖乳突筋"
+      },
+      {
+        "label": "10",
+        "termId": "masseter_muscle",
+        "x": 0.4839,
+        "y": 0.5911,
+        "note": "咬筋"
+      },
+      {
+        "label": "11",
+        "termId": "temporalis_muscle",
+        "x": 0.3184,
+        "y": 0.2366,
+        "note": "側頭筋"
+      },
+      {
+        "label": "12",
+        "termId": "occipitalis_muscle",
+        "x": 0.0378,
+        "y": 0.4487,
+        "note": "後頭筋"
+      },
+      {
+        "label": "13",
+        "termId": "frontalis_muscle",
+        "x": 0.6823,
+        "y": 0.2312,
+        "note": "前頭筋"
+      },
+      {
+        "label": "14",
+        "termId": "orbicularis_oculi_muscle",
+        "x": 0.6176,
+        "y": 0.4369,
+        "note": "眼輪筋"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "外頸動脈",

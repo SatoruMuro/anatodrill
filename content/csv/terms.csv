@@ -7528,3 +7528,15 @@ superior_branch_of_oculomotor_nerve,動眼神経の上枝,superior branch of ocu
 inferior_branch_of_oculomotor_nerve,動眼神経の下枝,inferior branch of oculomotor nerve,ramus inferior nervi oculomotorii,nervous system,head and neck,pdf_reference_terms,動眼神経の下枝は下直筋・内側直筋・下斜筋などへ向かう枝です。
 arytenoid_cartilage,披裂軟骨,arytenoid cartilage,cartilago arytenoidea,viscera,head and neck,pdf_reference_terms,披裂軟骨は喉頭後部にある一対の喉頭軟骨です。
 cuneiform_cartilage,楔状軟骨,cuneiform cartilage,cartilago cuneiformis,viscera,head and neck,pdf_reference_terms,楔状軟骨は披裂喉頭蓋ヒダ内にある小さな喉頭軟骨です。
+right_ventricle,右心室,right ventricle,ventriculus dexter,heart,thorax,basic_trunk,右心室は右心房から受け取った静脈血を肺動脈へ送り出す心腔です。
+descending_aorta,下行大動脈,descending aorta,aorta descendens,artery,thorax,basic_trunk,下行大動脈は大動脈弓から続き胸部と腹部を下行する大動脈の部分です。
+sternocleidomastoid_muscle,胸鎖乳突筋,sternocleidomastoid muscle,musculus sternocleidomastoideus,muscle,head and neck,basic_muscle,胸鎖乳突筋は胸骨・鎖骨から乳様突起へ向かい頭頸部の運動に関わる筋です。
+anterior_scalene_muscle,前斜角筋,anterior scalene muscle,musculus scalenus anterior,muscle,head and neck,basic_muscle,前斜角筋は頸椎横突起から第1肋骨へ向かい頸部の側屈や吸気を補助する筋です。
+hyoid_bone,舌骨,hyoid bone,os hyoideum,bone,head and neck,basic_head|osteology_basic,舌骨は他の骨と直接関節せず舌や喉頭を支持する頸部の骨です。
+phrenic_nerve,横隔神経,phrenic nerve,nervus phrenicus,nerve,head and neck,basic_head,横隔神経は主に第3から第5頸神経から起こり横隔膜を支配する神経です。
+hypoglossal_nerve,舌下神経,hypoglossal nerve,nervus hypoglossus,nerve,head and neck,basic_head,舌下神経は第12脳神経で主に舌筋を運動支配します。
+masseter_muscle,咬筋,masseter muscle,masseter,muscle,head and neck,basic_muscle,咬筋は下顎骨を挙上して咀嚼に関わる咀嚼筋です。
+temporalis_muscle,側頭筋,temporalis muscle,musculus temporalis,muscle,head and neck,basic_muscle,側頭筋は下顎骨を挙上・後退させる扇状の咀嚼筋です。
+occipitalis_muscle,後頭筋,occipitalis muscle,musculus occipitalis,muscle,head and neck,basic_muscle,後頭筋は後頭部に位置し帽状腱膜を後方へ引く筋です。
+frontalis_muscle,前頭筋,frontalis muscle,musculus frontalis,muscle,head and neck,basic_muscle,前頭筋は眉を挙上し前額に横じわを作る表情筋です。
+orbicularis_oculi_muscle,眼輪筋,orbicularis oculi muscle,musculus orbicularis oculi,muscle,head and neck,basic_muscle,眼輪筋は眼裂を取り囲み閉眼に関わる表情筋です。

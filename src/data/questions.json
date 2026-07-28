@@ -2680,6 +2680,166 @@
     "explanation": "番号10は末節骨を示しています。足の末節骨は足趾の先端を構成する最も遠位の趾骨です。"
   },
   {
+    "id": "q_auto_brachial_a_plate_label_1_brachial_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "brachial_artery",
+    "choices": [
+      "brachial_artery",
+      "radial_artery",
+      "ulnar_artery",
+      "humerus"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上腕動脈を示しています。上腕動脈は、英語の「brachial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_2_radial_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "radial_artery",
+    "choices": [
+      "radial_artery",
+      "ulnar_artery",
+      "humerus",
+      "radius"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は橈骨動脈を示しています。橈骨動脈は、英語の「radial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_3_ulnar_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "ulnar_artery",
+    "choices": [
+      "ulnar_artery",
+      "humerus",
+      "radius",
+      "ulna"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は尺骨動脈を示しています。尺骨動脈は、英語の「ulnar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_4_humerus",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "humerus",
+    "choices": [
+      "humerus",
+      "radius",
+      "ulna",
+      "brachial_artery"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は上腕骨を示しています。上腕骨は肩から肘までを構成する長骨です。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_5_radius",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "radius",
+    "choices": [
+      "radius",
+      "ulna",
+      "brachial_artery",
+      "radial_artery"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は橈骨を示しています。橈骨は前腕の母指側にある骨で、回内回外運動に関わります。"
+  },
+  {
+    "id": "q_auto_brachial_a_plate_label_6_ulna",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "ulna",
+    "choices": [
+      "ulna",
+      "brachial_artery",
+      "radial_artery",
+      "ulnar_artery"
+    ],
+    "imageId": "brachial_a_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は尺骨を示しています。尺骨は前腕の小指側にある骨で、肘関節の形成に重要です。"
+  },
+  {
+    "id": "q_auto_grays_anatomy_plate_517_brain_plate_label_1_central_sulcus",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "central_sulcus",
+    "choices": [
+      "central_sulcus",
+      "precentral_gyrus",
+      "postcentral_gyrus",
+      "lateral_sulcus"
+    ],
+    "imageId": "grays_anatomy_plate_517_brain_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は中心溝を示しています。中心溝は、英語の「central sulcus」、ラテン語の「sulcus centralis」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_grays_anatomy_plate_517_brain_plate_label_2_precentral_gyrus",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "precentral_gyrus",
+    "choices": [
+      "precentral_gyrus",
+      "postcentral_gyrus",
+      "lateral_sulcus",
+      "central_sulcus"
+    ],
+    "imageId": "grays_anatomy_plate_517_brain_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は中心前回を示しています。中心前回は、英語の「precentral gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_grays_anatomy_plate_517_brain_plate_label_3_postcentral_gyrus",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "postcentral_gyrus",
+    "choices": [
+      "postcentral_gyrus",
+      "lateral_sulcus",
+      "central_sulcus",
+      "precentral_gyrus"
+    ],
+    "imageId": "grays_anatomy_plate_517_brain_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は中心後回を示しています。中心後回は、英語の「postcentral gyrus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_grays_anatomy_plate_517_brain_plate_label_4_lateral_sulcus",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "lateral_sulcus",
+    "choices": [
+      "lateral_sulcus",
+      "central_sulcus",
+      "precentral_gyrus",
+      "postcentral_gyrus"
+    ],
+    "imageId": "grays_anatomy_plate_517_brain_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は外側溝を示しています。外側溝は、英語の「lateral sulcus」、ラテン語の「sulcus lateralis」に対応する解剖学用語です。"
+  },
+  {
     "id": "q_auto_gray490blanco_plate_label_1_ascending_aorta",
     "type": "image_number_mcq",
     "testSet": "basic_trunk",
@@ -3078,5 +3238,1205 @@
     "imageId": "gray491_az_plate",
     "targetLabel": "12",
     "explanation": "番号12は肺静脈を示しています。肺静脈は、英語の「pulmonary vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_1_ascending_aorta",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "ascending_aorta",
+    "choices": [
+      "ascending_aorta",
+      "pulmonary_artery",
+      "right_ventricle",
+      "left_ventricle"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上行大動脈を示しています。上行大動脈は、英語の「ascending aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_2_pulmonary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "pulmonary_artery",
+    "choices": [
+      "pulmonary_artery",
+      "right_ventricle",
+      "left_ventricle",
+      "apex_of_heart"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は肺動脈を示しています。肺動脈は、英語の「pulmonary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_3_right_ventricle",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "right_ventricle",
+    "choices": [
+      "right_ventricle",
+      "left_ventricle",
+      "apex_of_heart",
+      "right_auricle"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は右心室を示しています。右心室は右心房から受け取った静脈血を肺動脈へ送り出す心腔です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_4_left_ventricle",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "left_ventricle",
+    "choices": [
+      "left_ventricle",
+      "apex_of_heart",
+      "right_auricle",
+      "superior_vena_cava"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は左心室を示しています。左心室は左心房から受け取った血液を大動脈へ送り出す心腔です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_5_apex_of_heart",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "apex_of_heart",
+    "choices": [
+      "apex_of_heart",
+      "right_auricle",
+      "superior_vena_cava",
+      "right_coronary_artery"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は心尖を示しています。心尖は、英語の「apex of heart」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_6_right_auricle",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "right_auricle",
+    "choices": [
+      "right_auricle",
+      "superior_vena_cava",
+      "right_coronary_artery",
+      "left_coronary_artery"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は右心耳を示しています。右心耳は右心房から前方へ突出する耳介状の部分で、右心房の容量を補います。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_7_superior_vena_cava",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "superior_vena_cava",
+    "choices": [
+      "superior_vena_cava",
+      "right_coronary_artery",
+      "left_coronary_artery",
+      "ascending_aorta"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は上大静脈を示しています。上大静脈は、英語の「superior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_8_right_coronary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "right_coronary_artery",
+    "choices": [
+      "right_coronary_artery",
+      "left_coronary_artery",
+      "ascending_aorta",
+      "pulmonary_artery"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は右冠状動脈を示しています。右冠状動脈は、英語の「right coronary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray492_az_plate_label_9_left_coronary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "left_coronary_artery",
+    "choices": [
+      "left_coronary_artery",
+      "ascending_aorta",
+      "pulmonary_artery",
+      "right_ventricle"
+    ],
+    "imageId": "gray492_az_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は左冠状動脈を示しています。左冠状動脈は、英語の「left coronary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_1_ascending_aorta",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "ascending_aorta",
+    "choices": [
+      "ascending_aorta",
+      "aortic_arch",
+      "descending_aorta",
+      "pulmonary_trunk"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上行大動脈を示しています。上行大動脈は、英語の「ascending aorta」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_2_aortic_arch",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "aortic_arch",
+    "choices": [
+      "aortic_arch",
+      "descending_aorta",
+      "pulmonary_trunk",
+      "brachiocephalic_vein"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は大動脈弓を示しています。大動脈弓は、英語の「aortic arch」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_3_descending_aorta",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "descending_aorta",
+    "choices": [
+      "descending_aorta",
+      "pulmonary_trunk",
+      "brachiocephalic_vein",
+      "brachiocephalic_trunk"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は下行大動脈を示しています。下行大動脈は大動脈弓から続き胸部と腹部を下行する大動脈の部分です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_4_pulmonary_trunk",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "pulmonary_trunk",
+    "choices": [
+      "pulmonary_trunk",
+      "brachiocephalic_vein",
+      "brachiocephalic_trunk",
+      "common_carotid_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は肺動脈幹を示しています。肺動脈幹は、英語の「pulmonary trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_5_brachiocephalic_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "brachiocephalic_vein",
+    "choices": [
+      "brachiocephalic_vein",
+      "brachiocephalic_trunk",
+      "common_carotid_artery",
+      "subclavian_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は腕頭静脈を示しています。腕頭静脈は、英語の「brachiocephalic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_6_brachiocephalic_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "brachiocephalic_vein",
+    "choices": [
+      "brachiocephalic_vein",
+      "brachiocephalic_trunk",
+      "common_carotid_artery",
+      "subclavian_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は腕頭静脈を示しています。腕頭静脈は、英語の「brachiocephalic vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_7_brachiocephalic_trunk",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "brachiocephalic_trunk",
+    "choices": [
+      "brachiocephalic_trunk",
+      "common_carotid_artery",
+      "subclavian_artery",
+      "superior_vena_cava"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は腕頭動脈を示しています。腕頭動脈は、英語の「brachiocephalic trunk」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_8_common_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "common_carotid_artery",
+    "choices": [
+      "common_carotid_artery",
+      "subclavian_artery",
+      "superior_vena_cava",
+      "pulmonary_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_9_common_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "common_carotid_artery",
+    "choices": [
+      "common_carotid_artery",
+      "subclavian_artery",
+      "superior_vena_cava",
+      "pulmonary_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_10_subclavian_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "subclavian_artery",
+    "choices": [
+      "subclavian_artery",
+      "superior_vena_cava",
+      "pulmonary_artery",
+      "vagus_nerve"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は鎖骨下動脈を示しています。鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_11_subclavian_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "subclavian_artery",
+    "choices": [
+      "subclavian_artery",
+      "superior_vena_cava",
+      "pulmonary_artery",
+      "vagus_nerve"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は鎖骨下動脈を示しています。鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_12_superior_vena_cava",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "superior_vena_cava",
+    "choices": [
+      "superior_vena_cava",
+      "pulmonary_artery",
+      "vagus_nerve",
+      "thyroid_gland"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は上大静脈を示しています。上大静脈は、英語の「superior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_13_pulmonary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「13」で示す構造はどれか。",
+    "answerTermId": "pulmonary_artery",
+    "choices": [
+      "pulmonary_artery",
+      "vagus_nerve",
+      "thyroid_gland",
+      "inferior_thyroid_vein"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "13",
+    "explanation": "番号13は肺動脈を示しています。肺動脈は、英語の「pulmonary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_14_vagus_nerve",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「14」で示す構造はどれか。",
+    "answerTermId": "vagus_nerve",
+    "choices": [
+      "vagus_nerve",
+      "thyroid_gland",
+      "inferior_thyroid_vein",
+      "right_auricle"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "14",
+    "explanation": "番号14は迷走神経を示しています。迷走神経は第10脳神経で、頸部・胸部・腹部の臓器へ広く分布する副交感神経線維を含みます。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_15_vagus_nerve",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「15」で示す構造はどれか。",
+    "answerTermId": "vagus_nerve",
+    "choices": [
+      "vagus_nerve",
+      "thyroid_gland",
+      "inferior_thyroid_vein",
+      "right_auricle"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "15",
+    "explanation": "番号15は迷走神経を示しています。迷走神経は第10脳神経で、頸部・胸部・腹部の臓器へ広く分布する副交感神経線維を含みます。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_16_thyroid_gland",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「16」で示す構造はどれか。",
+    "answerTermId": "thyroid_gland",
+    "choices": [
+      "thyroid_gland",
+      "inferior_thyroid_vein",
+      "right_auricle",
+      "right_atrium"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "16",
+    "explanation": "番号16は甲状腺を示しています。甲状腺は、英語の「thyroid gland」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_17_inferior_thyroid_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「17」で示す構造はどれか。",
+    "answerTermId": "inferior_thyroid_vein",
+    "choices": [
+      "inferior_thyroid_vein",
+      "right_auricle",
+      "right_atrium",
+      "right_ventricle"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "17",
+    "explanation": "番号17は下甲状腺静脈を示しています。下甲状腺静脈は、英語の「inferior thyroid vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_18_inferior_thyroid_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「18」で示す構造はどれか。",
+    "answerTermId": "inferior_thyroid_vein",
+    "choices": [
+      "inferior_thyroid_vein",
+      "right_auricle",
+      "right_atrium",
+      "right_ventricle"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "18",
+    "explanation": "番号18は下甲状腺静脈を示しています。下甲状腺静脈は、英語の「inferior thyroid vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_19_right_auricle",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「19」で示す構造はどれか。",
+    "answerTermId": "right_auricle",
+    "choices": [
+      "right_auricle",
+      "right_atrium",
+      "right_ventricle",
+      "left_ventricle"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "19",
+    "explanation": "番号19は右心耳を示しています。右心耳は右心房から前方へ突出する耳介状の部分で、右心房の容量を補います。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_20_right_atrium",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「20」で示す構造はどれか。",
+    "answerTermId": "right_atrium",
+    "choices": [
+      "right_atrium",
+      "right_ventricle",
+      "left_ventricle",
+      "right_coronary_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "20",
+    "explanation": "番号20は右心房を示しています。右心房は、英語の「right atrium」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_21_right_ventricle",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「21」で示す構造はどれか。",
+    "answerTermId": "right_ventricle",
+    "choices": [
+      "right_ventricle",
+      "left_ventricle",
+      "right_coronary_artery",
+      "left_coronary_artery"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "21",
+    "explanation": "番号21は右心室を示しています。右心室は右心房から受け取った静脈血を肺動脈へ送り出す心腔です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_22_left_ventricle",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「22」で示す構造はどれか。",
+    "answerTermId": "left_ventricle",
+    "choices": [
+      "left_ventricle",
+      "right_coronary_artery",
+      "left_coronary_artery",
+      "inferior_vena_cava"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "22",
+    "explanation": "番号22は左心室を示しています。左心室は左心房から受け取った血液を大動脈へ送り出す心腔です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_23_right_coronary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「23」で示す構造はどれか。",
+    "answerTermId": "right_coronary_artery",
+    "choices": [
+      "right_coronary_artery",
+      "left_coronary_artery",
+      "inferior_vena_cava",
+      "ascending_aorta"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "23",
+    "explanation": "番号23は右冠状動脈を示しています。右冠状動脈は、英語の「right coronary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_24_left_coronary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「24」で示す構造はどれか。",
+    "answerTermId": "left_coronary_artery",
+    "choices": [
+      "left_coronary_artery",
+      "inferior_vena_cava",
+      "ascending_aorta",
+      "aortic_arch"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "24",
+    "explanation": "番号24は左冠状動脈を示しています。左冠状動脈は、英語の「left coronary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray505_az_plate_label_25_inferior_vena_cava",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「25」で示す構造はどれか。",
+    "answerTermId": "inferior_vena_cava",
+    "choices": [
+      "inferior_vena_cava",
+      "ascending_aorta",
+      "aortic_arch",
+      "descending_aorta"
+    ],
+    "imageId": "gray505_az_plate",
+    "targetLabel": "25",
+    "explanation": "番号25は下大静脈を示しています。下大静脈は、英語の「inferior vena cava」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_1_sternocleidomastoid_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "sternocleidomastoid_muscle",
+    "choices": [
+      "sternocleidomastoid_muscle",
+      "trapezius",
+      "clavicle",
+      "omohyoid_muscle"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は胸鎖乳突筋を示しています。胸鎖乳突筋は胸骨・鎖骨から乳様突起へ向かい頭頸部の運動に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_2_trapezius",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "trapezius",
+    "choices": [
+      "trapezius",
+      "clavicle",
+      "omohyoid_muscle",
+      "anterior_scalene_muscle"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は僧帽筋を示しています。僧帽筋は肩甲骨の挙上、内転、回旋に関わる背部の筋です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_3_clavicle",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "clavicle",
+    "choices": [
+      "clavicle",
+      "omohyoid_muscle",
+      "anterior_scalene_muscle",
+      "hyoid_bone"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は鎖骨を示しています。鎖骨は胸骨と肩甲骨をつなぎ、上肢帯を体幹に連結します。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_4_omohyoid_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "omohyoid_muscle",
+    "choices": [
+      "omohyoid_muscle",
+      "anterior_scalene_muscle",
+      "hyoid_bone",
+      "digastric_muscle"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は肩甲舌骨筋を示しています。肩甲舌骨筋は肩甲骨から舌骨へ向かう舌骨下筋で、上腹と下腹が中間腱で連結されます。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_5_anterior_scalene_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "anterior_scalene_muscle",
+    "choices": [
+      "anterior_scalene_muscle",
+      "hyoid_bone",
+      "digastric_muscle",
+      "thyroid_gland"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は前斜角筋を示しています。前斜角筋は頸椎横突起から第1肋骨へ向かい頸部の側屈や吸気を補助する筋です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_6_hyoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "hyoid_bone",
+    "choices": [
+      "hyoid_bone",
+      "digastric_muscle",
+      "thyroid_gland",
+      "trachea"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は舌骨を示しています。舌骨は他の骨と直接関節せず舌や喉頭を支持する頸部の骨です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_7_digastric_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "digastric_muscle",
+    "choices": [
+      "digastric_muscle",
+      "thyroid_gland",
+      "trachea",
+      "common_carotid_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は顎二腹筋を示しています。顎二腹筋は、英語の「digastric muscle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_8_thyroid_gland",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "thyroid_gland",
+    "choices": [
+      "thyroid_gland",
+      "trachea",
+      "common_carotid_artery",
+      "external_carotid_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は甲状腺を示しています。甲状腺は、英語の「thyroid gland」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_9_trachea",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "trachea",
+    "choices": [
+      "trachea",
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は気管を示しています。気管は喉頭から左右の主気管支へ空気を導く管状の器官です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_10_common_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "common_carotid_artery",
+    "choices": [
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery",
+      "subclavian_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_11_external_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "external_carotid_artery",
+    "choices": [
+      "external_carotid_artery",
+      "internal_carotid_artery",
+      "subclavian_artery",
+      "superior_thyroid_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は外頸動脈を示しています。外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_12_internal_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "internal_carotid_artery",
+    "choices": [
+      "internal_carotid_artery",
+      "subclavian_artery",
+      "superior_thyroid_artery",
+      "lingual_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は内頸動脈を示しています。内頸動脈は、英語の「internal carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_13_subclavian_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「13」で示す構造はどれか。",
+    "answerTermId": "subclavian_artery",
+    "choices": [
+      "subclavian_artery",
+      "superior_thyroid_artery",
+      "lingual_artery",
+      "facial_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "13",
+    "explanation": "番号13は鎖骨下動脈を示しています。鎖骨下動脈は、英語の「subclavian artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_14_superior_thyroid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「14」で示す構造はどれか。",
+    "answerTermId": "superior_thyroid_artery",
+    "choices": [
+      "superior_thyroid_artery",
+      "lingual_artery",
+      "facial_artery",
+      "maxillary_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "14",
+    "explanation": "番号14は上甲状腺動脈を示しています。上甲状腺動脈は、英語の「superior thyroid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_15_lingual_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「15」で示す構造はどれか。",
+    "answerTermId": "lingual_artery",
+    "choices": [
+      "lingual_artery",
+      "facial_artery",
+      "maxillary_artery",
+      "superficial_temporal_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "15",
+    "explanation": "番号15は舌動脈を示しています。舌動脈は、英語の「lingual artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_16_facial_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「16」で示す構造はどれか。",
+    "answerTermId": "facial_artery",
+    "choices": [
+      "facial_artery",
+      "maxillary_artery",
+      "superficial_temporal_artery",
+      "posterior_auricular_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "16",
+    "explanation": "番号16は顔面動脈を示しています。顔面動脈は、英語の「facial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_17_maxillary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「17」で示す構造はどれか。",
+    "answerTermId": "maxillary_artery",
+    "choices": [
+      "maxillary_artery",
+      "superficial_temporal_artery",
+      "posterior_auricular_artery",
+      "internal_jugular_vein"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "17",
+    "explanation": "番号17は顎動脈を示しています。顎動脈は、英語の「maxillary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_18_superficial_temporal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「18」で示す構造はどれか。",
+    "answerTermId": "superficial_temporal_artery",
+    "choices": [
+      "superficial_temporal_artery",
+      "posterior_auricular_artery",
+      "internal_jugular_vein",
+      "vertebral_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "18",
+    "explanation": "番号18は浅側頭動脈を示しています。浅側頭動脈は、英語の「superficial temporal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_19_posterior_auricular_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「19」で示す構造はどれか。",
+    "answerTermId": "posterior_auricular_artery",
+    "choices": [
+      "posterior_auricular_artery",
+      "internal_jugular_vein",
+      "vertebral_artery",
+      "inferior_thyroid_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "19",
+    "explanation": "番号19は後耳介動脈を示しています。後耳介動脈は、英語の「posterior auricular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_20_internal_jugular_vein",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「20」で示す構造はどれか。",
+    "answerTermId": "internal_jugular_vein",
+    "choices": [
+      "internal_jugular_vein",
+      "vertebral_artery",
+      "inferior_thyroid_artery",
+      "transverse_cervical_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "20",
+    "explanation": "番号20は内頸静脈を示しています。内頸静脈は、英語の「internal jugular vein」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_21_vertebral_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「21」で示す構造はどれか。",
+    "answerTermId": "vertebral_artery",
+    "choices": [
+      "vertebral_artery",
+      "inferior_thyroid_artery",
+      "transverse_cervical_artery",
+      "suprascapular_artery"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "21",
+    "explanation": "番号21は椎骨動脈を示しています。椎骨動脈は、英語の「vertebral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_22_inferior_thyroid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「22」で示す構造はどれか。",
+    "answerTermId": "inferior_thyroid_artery",
+    "choices": [
+      "inferior_thyroid_artery",
+      "transverse_cervical_artery",
+      "suprascapular_artery",
+      "vagus_nerve"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "22",
+    "explanation": "番号22は下甲状腺動脈を示しています。下甲状腺動脈は、英語の「inferior thyroid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_23_transverse_cervical_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「23」で示す構造はどれか。",
+    "answerTermId": "transverse_cervical_artery",
+    "choices": [
+      "transverse_cervical_artery",
+      "suprascapular_artery",
+      "vagus_nerve",
+      "phrenic_nerve"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "23",
+    "explanation": "番号23は頸横動脈を示しています。頸横動脈は、英語の「transverse cervical artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_24_suprascapular_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「24」で示す構造はどれか。",
+    "answerTermId": "suprascapular_artery",
+    "choices": [
+      "suprascapular_artery",
+      "vagus_nerve",
+      "phrenic_nerve",
+      "hypoglossal_nerve"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "24",
+    "explanation": "番号24は肩甲上動脈を示しています。肩甲上動脈は、英語の「suprascapular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_25_vagus_nerve",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「25」で示す構造はどれか。",
+    "answerTermId": "vagus_nerve",
+    "choices": [
+      "vagus_nerve",
+      "phrenic_nerve",
+      "hypoglossal_nerve",
+      "sternocleidomastoid_muscle"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "25",
+    "explanation": "番号25は迷走神経を示しています。迷走神経は第10脳神経で、頸部・胸部・腹部の臓器へ広く分布する副交感神経線維を含みます。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_26_phrenic_nerve",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「26」で示す構造はどれか。",
+    "answerTermId": "phrenic_nerve",
+    "choices": [
+      "phrenic_nerve",
+      "hypoglossal_nerve",
+      "sternocleidomastoid_muscle",
+      "trapezius"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "26",
+    "explanation": "番号26は横隔神経を示しています。横隔神経は主に第3から第5頸神経から起こり横隔膜を支配する神経です。"
+  },
+  {
+    "id": "q_auto_gray507_plate_label_27_hypoglossal_nerve",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「27」で示す構造はどれか。",
+    "answerTermId": "hypoglossal_nerve",
+    "choices": [
+      "hypoglossal_nerve",
+      "sternocleidomastoid_muscle",
+      "trapezius",
+      "clavicle"
+    ],
+    "imageId": "gray507_plate",
+    "targetLabel": "27",
+    "explanation": "番号27は舌下神経を示しています。舌下神経は第12脳神経で主に舌筋を運動支配します。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_1_external_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "external_carotid_artery",
+    "choices": [
+      "external_carotid_artery",
+      "facial_artery",
+      "occipital_artery",
+      "posterior_auricular_artery"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は外頸動脈を示しています。外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_2_facial_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "facial_artery",
+    "choices": [
+      "facial_artery",
+      "occipital_artery",
+      "posterior_auricular_artery",
+      "superficial_temporal_artery"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は顔面動脈を示しています。顔面動脈は、英語の「facial artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_3_occipital_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "occipital_artery",
+    "choices": [
+      "occipital_artery",
+      "posterior_auricular_artery",
+      "superficial_temporal_artery",
+      "trapezius"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は後頭動脈を示しています。後頭動脈は、英語の「occipital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_4_posterior_auricular_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "posterior_auricular_artery",
+    "choices": [
+      "posterior_auricular_artery",
+      "superficial_temporal_artery",
+      "trapezius",
+      "maxillary_artery"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は後耳介動脈を示しています。後耳介動脈は、英語の「posterior auricular artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_5_superficial_temporal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "superficial_temporal_artery",
+    "choices": [
+      "superficial_temporal_artery",
+      "trapezius",
+      "maxillary_artery",
+      "sternocleidomastoid_muscle"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は浅側頭動脈を示しています。浅側頭動脈は、英語の「superficial temporal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_6_occipital_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "occipital_artery",
+    "choices": [
+      "occipital_artery",
+      "posterior_auricular_artery",
+      "superficial_temporal_artery",
+      "trapezius"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は後頭動脈を示しています。後頭動脈は、英語の「occipital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_7_trapezius",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "trapezius",
+    "choices": [
+      "trapezius",
+      "maxillary_artery",
+      "sternocleidomastoid_muscle",
+      "masseter_muscle"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は僧帽筋を示しています。僧帽筋は肩甲骨の挙上、内転、回旋に関わる背部の筋です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_8_maxillary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "maxillary_artery",
+    "choices": [
+      "maxillary_artery",
+      "sternocleidomastoid_muscle",
+      "masseter_muscle",
+      "temporalis_muscle"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は顎動脈を示しています。顎動脈は、英語の「maxillary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_9_sternocleidomastoid_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "sternocleidomastoid_muscle",
+    "choices": [
+      "sternocleidomastoid_muscle",
+      "masseter_muscle",
+      "temporalis_muscle",
+      "occipitalis_muscle"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は胸鎖乳突筋を示しています。胸鎖乳突筋は胸骨・鎖骨から乳様突起へ向かい頭頸部の運動に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_10_masseter_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "masseter_muscle",
+    "choices": [
+      "masseter_muscle",
+      "temporalis_muscle",
+      "occipitalis_muscle",
+      "frontalis_muscle"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は咬筋を示しています。咬筋は下顎骨を挙上して咀嚼に関わる咀嚼筋です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_11_temporalis_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "temporalis_muscle",
+    "choices": [
+      "temporalis_muscle",
+      "occipitalis_muscle",
+      "frontalis_muscle",
+      "orbicularis_oculi_muscle"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は側頭筋を示しています。側頭筋は下顎骨を挙上・後退させる扇状の咀嚼筋です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_12_occipitalis_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "occipitalis_muscle",
+    "choices": [
+      "occipitalis_muscle",
+      "frontalis_muscle",
+      "orbicularis_oculi_muscle",
+      "external_carotid_artery"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は後頭筋を示しています。後頭筋は後頭部に位置し帽状腱膜を後方へ引く筋です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_13_frontalis_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「13」で示す構造はどれか。",
+    "answerTermId": "frontalis_muscle",
+    "choices": [
+      "frontalis_muscle",
+      "orbicularis_oculi_muscle",
+      "external_carotid_artery",
+      "facial_artery"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "13",
+    "explanation": "番号13は前頭筋を示しています。前頭筋は眉を挙上し前額に横じわを作る表情筋です。"
+  },
+  {
+    "id": "q_auto_gray508_plate_label_14_orbicularis_oculi_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「14」で示す構造はどれか。",
+    "answerTermId": "orbicularis_oculi_muscle",
+    "choices": [
+      "orbicularis_oculi_muscle",
+      "external_carotid_artery",
+      "facial_artery",
+      "occipital_artery"
+    ],
+    "imageId": "gray508_plate",
+    "targetLabel": "14",
+    "explanation": "番号14は眼輪筋を示しています。眼輪筋は眼裂を取り囲み閉眼に関わる表情筋です。"
   }
 ]
