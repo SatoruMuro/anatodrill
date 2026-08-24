@@ -69,7 +69,7 @@ test('legacy progress migrates conservatively without deleting v1 data', async (
     }));
   });
   await page.goto('./');
-  await expect(page.getByRole('heading', { name: '忘れる頃に、もう一度。' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: '解剖学10問Challenge' })).toBeVisible();
 
   const stored = await page.evaluate(() => ({
     legacy: localStorage.getItem('anatodrill.learningData.v1'),
