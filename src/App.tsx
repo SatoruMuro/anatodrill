@@ -23,12 +23,15 @@ const testSets = testSetsJson as TestSet[];
 const terms = termsJson as Term[];
 const questions = questionsJson as Question[];
 const knownTermIds = new Set(terms.map((term) => term.id));
-const isDevMode = new URLSearchParams(window.location.search).get('dev') === '1';
+const initialSearchParams = new URLSearchParams(window.location.search);
+const isDevMode = initialSearchParams.get('dev') === '1';
+const isDirectChallenge = !isDevMode && initialSearchParams.get('challenge') === '10';
 
 export function App() {
-  const [view, setView] = useState<ViewKey>(() => (isDevMode ? 'label_editor' : 'home'));
+  const [view, setView] = useState<ViewKey>(() => (isDevMode ? 'label_editor' : isDirectChallenge ? 'drill' : 'home'));
   const [learningData, setLearningData] = useState<LearningData>(() => loadLearningData(knownTermIds));
   const [drillPreset, setDrillPreset] = useState<DrillPreset>('today10');
+  const [challengeMode, setChallengeMode] = useState(isDirectChallenge);
   const termsById = useMemo(() => buildTermMap(terms), []);
   const imagesById = useMemo(() => buildImageMap(images), []);
   const isEditorMode = isDevMode;
@@ -75,9 +78,20 @@ export function App() {
     window.location.assign(url.toString());
   };
 
+  const navigate = (nextView: ViewKey) => {
+    setChallengeMode(false);
+    setView(nextView);
+  };
+
+  const startDrill = (preset: DrillPreset, asChallenge = false) => {
+    setDrillPreset(preset);
+    setChallengeMode(asChallenge);
+    setView('drill');
+  };
+
   return (
     <>
-      <Navigation current={view} onNavigate={setView} isDevMode={isEditorMode} />
+      <Navigation current={view} onNavigate={navigate} isDevMode={isEditorMode} />
       {isEditorMode ? (
         <aside className="dev-mode-notice">
           <span>編集者モードです。一括更新JSON・CSVには、ラベルと要登録用語が一緒に保存されます。</span>
@@ -91,20 +105,20 @@ export function App() {
           terms={terms}
           questions={questions}
           data={learningData}
-          onNavigate={setView}
-          onStartDrill={(preset) => {
-            setDrillPreset(preset);
-            setView('drill');
-          }}
+          onNavigate={navigate}
+          onStartChallenge={() => startDrill('today10', true)}
+          onStartDrill={(preset) => startDrill(preset)}
         />
       ) : null}
       {view === 'drill' ? (
         <DrillMode
+          key={challengeMode ? 'challenge' : `drill-${drillPreset}`}
           questions={questions}
           termsById={termsById}
           imagesById={imagesById}
           data={learningData}
           initialPreset={drillPreset}
+          challengeMode={challengeMode}
           onRecordAnswer={recordAnswer}
         />
       ) : null}

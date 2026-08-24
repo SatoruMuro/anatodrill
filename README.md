@@ -2,6 +2,8 @@
 
 [Open AnatoDrill](https://satorumuro.github.io/anatodrill/)
 
+[Start the 10-question Challenge](https://satorumuro.github.io/anatodrill/?challenge=10)
+
 AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with focused 10/20-question drills, weak-item and unlearned-item practice, filtered randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation. Drill, review, and test choices can be displayed in Japanese/English/Latin together, Japanese only, English only, or Latin only.
 
 ## Tech Stack
@@ -111,6 +113,12 @@ The published URL should be:
 
 ```text
 https://SatoruMuro.github.io/anatodrill/
+```
+
+The social-media-friendly 10-question Challenge can be opened directly at:
+
+```text
+https://SatoruMuro.github.io/anatodrill/?challenge=10
 ```
 
 Editor-only tools can be opened online with the hidden query-string URL:

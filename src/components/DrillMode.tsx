@@ -21,6 +21,7 @@ import {
   type DrillCategory,
   type DrillRegion,
 } from '../lib/drill';
+import { buildChallengeXShareUrl } from '../lib/testShare';
 import { QuestionCard } from './QuestionCard';
 
 interface DrillModeProps {
@@ -29,7 +30,15 @@ interface DrillModeProps {
   imagesById: Map<string, AnatomyImage>;
   data: LearningData;
   initialPreset?: DrillPreset;
+  challengeMode?: boolean;
   onRecordAnswer: (record: AnswerRecord) => void;
+}
+
+function challengeMessage(correct: number): string {
+  if (correct === 10) return '全問正解';
+  if (correct >= 8) return 'かなり良い成績';
+  if (correct >= 6) return 'もう一歩';
+  return '復習して再挑戦';
 }
 
 export function DrillMode({
@@ -38,13 +47,28 @@ export function DrillMode({
   imagesById,
   data,
   initialPreset = 'today10',
+  challengeMode = false,
   onRecordAnswer,
 }: DrillModeProps) {
+  const initialChallengeQueue = () => buildDrillQueue(
+    filterDrillQuestions(questions, termsById, {
+      choiceLanguageMode: 'trilingual',
+      region: 'all',
+      category: 'all',
+      questionFormat: 'all',
+    }),
+    'today10',
+    data,
+    'trilingual',
+  );
   const [sessionId, setSessionId] = useState(1);
   const [index, setIndex] = useState(0);
-  const [started, setStarted] = useState(false);
+  const [started, setStarted] = useState(challengeMode);
   const [completed, setCompleted] = useState(false);
-  const [queue, setQueue] = useState<Question[]>([]);
+  const [queue, setQueue] = useState<Question[]>(initialChallengeQueue);
+  const [correctCount, setCorrectCount] = useState(0);
+  const [incorrectQuestionIds, setIncorrectQuestionIds] = useState<string[]>([]);
+  const [reviewingIncorrect, setReviewingIncorrect] = useState(false);
   const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
   const [preset, setPreset] = useState<DrillPreset>(initialPreset);
   const [region, setRegion] = useState<DrillRegion>('all');
@@ -70,6 +94,9 @@ export function DrillMode({
     setSessionId((value) => value + 1);
     setIndex(0);
     setCompleted(nextQueue.length === 0);
+    setCorrectCount(0);
+    setIncorrectQuestionIds([]);
+    setReviewingIncorrect(false);
     setStarted(true);
   };
 
@@ -79,7 +106,32 @@ export function DrillMode({
     setSessionId((value) => value + 1);
     setIndex(0);
     setCompleted(nextQueue.length === 0);
+    setCorrectCount(0);
+    setIncorrectQuestionIds([]);
+    setReviewingIncorrect(false);
     setStarted(true);
+  };
+
+  const reviewIncorrect = () => {
+    const incorrectIds = new Set(incorrectQuestionIds);
+    const nextQueue = queue.filter((question) => incorrectIds.has(question.id));
+    setQueue(nextQueue);
+    setSessionId((value) => value + 1);
+    setIndex(0);
+    setCompleted(nextQueue.length === 0);
+    setCorrectCount(0);
+    setIncorrectQuestionIds([]);
+    setReviewingIncorrect(true);
+    setStarted(true);
+  };
+
+  const recordSessionAnswer = (record: AnswerRecord) => {
+    if (record.correct) {
+      setCorrectCount((value) => value + 1);
+    } else {
+      setIncorrectQuestionIds((current) => [...current, record.questionId]);
+    }
+    onRecordAnswer(record);
   };
 
   if (questions.length === 0) {
@@ -145,6 +197,55 @@ export function DrillMode({
   }
 
   if (completed || queue.length === 0) {
+    if (challengeMode && queue.length && !reviewingIncorrect) {
+      return (
+        <main className="page-shell narrow">
+          <section className="result-hero challenge-result">
+            <p className="eyebrow">10問Challenge complete</p>
+            <h2>解剖学10問Challenge</h2>
+            <p className="challenge-score" aria-label={`${correctCount} / 10 正解`}>
+              <strong>{correctCount}</strong><span>/ 10</span>
+            </p>
+            <p className="challenge-result-message">{challengeMessage(correctCount)}</p>
+            <div className="button-row challenge-actions">
+              {incorrectQuestionIds.length ? (
+                <button type="button" className="primary-button" onClick={reviewIncorrect}>
+                  今回の間違いを復習
+                </button>
+              ) : null}
+              <button type="button" className={incorrectQuestionIds.length ? 'secondary-button' : 'primary-button'} onClick={restart}>
+                もう一度10問Challenge
+              </button>
+              <button
+                type="button"
+                className="secondary-button"
+                onClick={() => window.open(buildChallengeXShareUrl(correctCount), '_blank', 'noopener,noreferrer')}
+              >
+                Xで結果をシェア
+              </button>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    if (challengeMode && queue.length && reviewingIncorrect) {
+      return (
+        <main className="page-shell narrow">
+          <section className="result-hero challenge-result">
+            <p className="eyebrow">Review complete</p>
+            <h2>今回の間違いを復習しました</h2>
+            <p>{queue.length}問中 {correctCount}問正解</p>
+            <div className="button-row challenge-actions">
+              <button type="button" className="primary-button" onClick={restart}>
+                10問Challengeに再挑戦
+              </button>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
     return (
       <main className="page-shell">
         <section className="result-hero">
@@ -166,8 +267,8 @@ export function DrillMode({
     <main className="page-shell narrow">
       <section className="mode-heading">
         <div>
-          <p className="eyebrow">Drill mode</p>
-          <h2>{selectedPreset?.label}</h2>
+          <p className="eyebrow">{challengeMode ? '10問Challenge' : 'Drill mode'}</p>
+          <h2>{challengeMode ? '解剖学10問Challenge' : selectedPreset?.label}</h2>
           <p className="muted">選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
         </div>
         <span className="progress-pill">{index + 1} / {queue.length}</span>
@@ -180,7 +281,7 @@ export function DrillMode({
         sequenceLabel={`問題 ${index + 1}`}
         choiceLanguageMode={choiceLanguageMode}
         continueLabel={index + 1 === queue.length ? '完了' : '次へ'}
-        onAnswer={onRecordAnswer}
+        onAnswer={recordSessionAnswer}
         onContinue={() => index + 1 >= queue.length ? setCompleted(true) : setIndex((value) => value + 1)}
       />
     </main>

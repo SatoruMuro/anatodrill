@@ -9,10 +9,11 @@ interface HomeProps {
   questions: Question[];
   data: LearningData;
   onNavigate: (view: ViewKey) => void;
+  onStartChallenge: () => void;
   onStartDrill: (preset: DrillPreset) => void;
 }
 
-export function Home({ terms, questions, data, onNavigate, onStartDrill }: HomeProps) {
+export function Home({ terms, questions, data, onNavigate, onStartChallenge, onStartDrill }: HomeProps) {
   const summary = progressSummary(terms, data);
   const latestAttempt = data.attempts[0];
 
@@ -20,19 +21,13 @@ export function Home({ terms, questions, data, onNavigate, onStartDrill }: HomeP
     <main className="page-shell">
       <section className="dashboard-intro">
         <div>
-          <p className="eyebrow">あなたと通る、アナトドリル。</p>
-          <h2>忘れる頃に、もう一度。</h2>
-          <p>
-            正解が続くほど復習間隔を1日・3日・7日・14日・30日へと広げ、間違えた用語はその日の復習へ戻します。
-            忘却曲線の考え方を取り入れた間隔反復で、解剖学用語を記憶に定着させます。
-          </p>
-          <p className="intro-note">
-            進捗はこのブラウザに保存されます。端末を移るときは「履歴・バックアップ」から書き出せます。
-          </p>
+          <p className="eyebrow">AnatoDrill</p>
+          <h2>解剖学10問Challenge</h2>
+          <p className="challenge-copy">解剖学10問、何問いけますか？</p>
         </div>
         <div className="intro-actions">
-          <button type="button" className="primary-button" onClick={() => onStartDrill('today10')}>
-            今日の10問
+          <button type="button" className="primary-button challenge-button" onClick={onStartChallenge}>
+            10問Challengeを開始
           </button>
           <button type="button" className="secondary-button" onClick={() => onStartDrill('weak10')}>
             苦手10問
@@ -69,6 +64,9 @@ export function Home({ terms, questions, data, onNavigate, onStartDrill }: HomeP
       <section className="content-grid two-columns">
         <article className="panel">
           <h3>学習メニュー</h3>
+          <p className="muted learning-note">
+            間隔反復で、忘れる頃にもう一度。進捗はこのブラウザに保存されます。
+          </p>
           <div className="action-list">
             <button type="button" onClick={() => onStartDrill('today10')}>
               今日の10問

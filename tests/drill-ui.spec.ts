@@ -18,6 +18,42 @@ test('focused drill presets cap the session at 10 and 20 questions', async ({ pa
   await expect(page.getByText('1 / 20')).toBeVisible();
 });
 
+test('10-question Challenge is prominent on mobile and starts in one tap', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('./');
+
+  const challengeButton = page.getByRole('button', { name: '10問Challengeを開始' });
+  await expect(challengeButton).toBeVisible();
+  const box = await challengeButton.boundingBox();
+  expect(box?.y).toBeLessThan(844);
+
+  await challengeButton.click();
+  await expect(page.getByRole('heading', { name: '解剖学10問Challenge' })).toBeVisible();
+  await expect(page.getByText('1 / 10')).toBeVisible();
+});
+
+test('direct Challenge URL starts immediately and shows a scored result', async ({ page }) => {
+  await page.goto('./?challenge=10');
+  await expect(page.getByText('1 / 10')).toBeVisible();
+
+  for (let question = 1; question <= 10; question += 1) {
+    const choices = page.locator('.choice-button');
+    if (await choices.count()) {
+      await choices.first().click();
+    } else if (await page.locator('.hotspot-target').count()) {
+      await page.locator('.hotspot-target').click({ position: { x: 10, y: 10 } });
+    } else {
+      await page.getByRole('button', { name: '不正解として記録' }).click();
+    }
+    await page.getByRole('button', { name: question === 10 ? '完了' : '次へ' }).click();
+  }
+
+  await expect(page.getByText('10問Challenge complete')).toBeVisible();
+  await expect(page.locator('.challenge-score')).toContainText('/ 10');
+  await expect(page.getByRole('button', { name: 'もう一度10問Challenge' })).toBeVisible();
+  await expect(page.getByRole('button', { name: 'Xで結果をシェア' })).toBeVisible();
+});
+
 test('region, category, format, and language filters are available on mobile', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('./');

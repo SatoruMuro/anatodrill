@@ -2,6 +2,7 @@ import type { TestAttempt } from '../types/anatodrill';
 import { choiceLanguageModeLabel } from './choiceLanguage';
 
 export const ANATODRILL_HOME_URL = 'https://satorumuro.github.io/anatodrill/';
+export const ANATODRILL_CHALLENGE_URL = `${ANATODRILL_HOME_URL}?challenge=10`;
 export const ANATODRILL_SHARE_HASHTAG = '#AnatoDrill';
 
 const SHARE_CARD_SIZE = 1080;
@@ -34,6 +35,19 @@ export function buildTestResultShareText(attempt: TestAttempt, includeName: bool
 
 export function buildXShareUrl(attempt: TestAttempt, includeName: boolean): string {
   return `https://x.com/intent/tweet?text=${encodeURIComponent(buildTestResultShareText(attempt, includeName))}`;
+}
+
+export function buildChallengeResultShareText(correct: number): string {
+  return [
+    `解剖学10問Challenge、${correct}/10でした。`,
+    '',
+    ANATODRILL_CHALLENGE_URL,
+    ANATODRILL_SHARE_HASHTAG,
+  ].join('\n');
+}
+
+export function buildChallengeXShareUrl(correct: number): string {
+  return `https://x.com/intent/tweet?text=${encodeURIComponent(buildChallengeResultShareText(correct))}`;
 }
 
 export function buildThreadsShareUrl(attempt: TestAttempt, includeName: boolean): string {
