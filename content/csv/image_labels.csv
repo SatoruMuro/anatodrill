@@ -20,15 +20,6 @@ gray190_skull_anterior_plate,7,parietal_bone,0.0465,0.2245,頭頂骨
 gray190_skull_anterior_plate,8,temporal_bone,0.0498,0.4133,側頭骨
 gray190_skull_anterior_plate,9,sphenoid_bone,0.0924,0.4059,蝶形骨
 gray190_skull_anterior_plate,10,mandible,0.3549,0.9183,下顎骨
-gray164_pelvis_plate,1,frontal_bone,0.286,0.1551,前頭骨
-gray164_pelvis_plate,2,parietal_bone,0.8383,0.1008,頭頂骨
-gray164_pelvis_plate,3,temporal_bone,0.9138,0.4205,側頭骨
-gray164_pelvis_plate,4,sphenoid_bone,0.6742,0.4321,蝶形骨
-gray164_pelvis_plate,5,zygomatic_bone,0.5452,0.6467,頬骨
-gray164_pelvis_plate,6,lacrimal_bone,0.3287,0.4632,涙骨
-gray164_pelvis_plate,7,maxilla,0.2762,0.7448,上顎骨
-gray164_pelvis_plate,8,nasal_bone,0.1088,0.454,鼻骨
-gray164_pelvis_plate,9,ethmoid_bone,0.4129,0.43,篩骨
 gray188_temporal_bone_plate,1,frontal_bone,0.3604,0.2191,前頭骨
 gray188_temporal_bone_plate,2,parietal_bone,0.6863,0.2716,頭頂骨
 gray188_temporal_bone_plate,3,occipital_bone,0.7891,0.6126,後頭骨

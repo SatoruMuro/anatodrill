@@ -368,71 +368,7 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray164-ar.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [
-      {
-        "label": "1",
-        "termId": "frontal_bone",
-        "x": 0.286,
-        "y": 0.1551,
-        "note": "前頭骨"
-      },
-      {
-        "label": "2",
-        "termId": "parietal_bone",
-        "x": 0.8383,
-        "y": 0.1008,
-        "note": "頭頂骨"
-      },
-      {
-        "label": "3",
-        "termId": "temporal_bone",
-        "x": 0.9138,
-        "y": 0.4205,
-        "note": "側頭骨"
-      },
-      {
-        "label": "4",
-        "termId": "sphenoid_bone",
-        "x": 0.6742,
-        "y": 0.4321,
-        "note": "蝶形骨"
-      },
-      {
-        "label": "5",
-        "termId": "zygomatic_bone",
-        "x": 0.5452,
-        "y": 0.6467,
-        "note": "頬骨"
-      },
-      {
-        "label": "6",
-        "termId": "lacrimal_bone",
-        "x": 0.3287,
-        "y": 0.4632,
-        "note": "涙骨"
-      },
-      {
-        "label": "7",
-        "termId": "maxilla",
-        "x": 0.2762,
-        "y": 0.7448,
-        "note": "上顎骨"
-      },
-      {
-        "label": "8",
-        "termId": "nasal_bone",
-        "x": 0.1088,
-        "y": 0.454,
-        "note": "鼻骨"
-      },
-      {
-        "label": "9",
-        "termId": "ethmoid_bone",
-        "x": 0.4129,
-        "y": 0.43,
-        "note": "篩骨"
-      }
-    ],
+    "labels": [],
     "suggestions": [],
     "editionYear": 1918
   },
@@ -440,13 +376,13 @@
     "id": "gray188_temporal_bone_plate",
     "file": "/images/gray/plates/Gray188_no_text_color_temporal_r.jpg",
     "title": "Temporal bone, color no-text derivative",
-    "source": "Gray, Henry. Anatomy of the Human Body, 20th U.S. edition, 1918 / Wikimedia Commons",
-    "sourceType": "gray_anatomy",
-    "author": "Henry Vandyke Carter",
-    "license": "Public domain",
+    "source": "Welleschik, adapted from a Gray's Anatomy public-domain image / Wikimedia Commons",
+    "sourceType": "wikimedia_commons",
+    "author": "Welleschik",
+    "license": "CC BY-SA 3.0 / GFDL 1.2+",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray188_no_text_color_temporal_r.jpg",
     "modified": true,
-    "modificationDescription": "Downloaded as a modified/derivative Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
+    "modificationDescription": "Text retouched out and temporal bone colored by Welleschik; AnatoDrill adds numbered overlays at runtime.",
     "labels": [
       {
         "label": "1",
@@ -527,7 +463,7 @@
       }
     ],
     "suggestions": [],
-    "editionYear": 1918
+    "editionYear": 2009
   },
   {
     "id": "gray190_skull_anterior_plate",
