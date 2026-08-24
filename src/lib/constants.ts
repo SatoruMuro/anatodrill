@@ -1,2 +1,2 @@
 export const APP_NAME = 'AnatoDrill';
-export const APP_VERSION = '0.3.24';
+export const APP_VERSION = '0.4.0';

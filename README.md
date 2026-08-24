@@ -2,7 +2,7 @@
 
 [Open AnatoDrill](https://satorumuro.github.io/anatodrill/)
 
-AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation. Drill, review, and test choices can be displayed in Japanese/English/Latin together, Japanese only, English only, or Latin only.
+AnatoDrill is a browser-only self-study app for memorizing anatomy terminology with focused 10/20-question drills, weak-item and unlearned-item practice, filtered randomized drills, spaced repetition reviews, image-based questions, self-check tests, local backup, and PDF certificate generation. Drill, review, and test choices can be displayed in Japanese/English/Latin together, Japanese only, English only, or Latin only.
 
 ## Tech Stack
 
@@ -12,6 +12,7 @@ AnatoDrill is a browser-only self-study app for memorizing anatomy terminology w
 - CSS
 - localStorage persistence
 - jsPDF certificate generation
+- Playwright responsive UI regression tests
 
 The app does not require authentication, a backend, a database, server-side processing, or external APIs.
 
@@ -32,6 +33,7 @@ http://localhost:5173/anatodrill/
 
 ```bash
 npm run build
+npm run test:ui
 ```
 
 The static output is generated in `dist/`.
@@ -119,13 +121,14 @@ https://SatoruMuro.github.io/anatodrill/?dev=1
 
 The editor page has no password gate. Anyone who knows the hidden `?dev=1` URL can open it, so do not place private source material or secrets in the deployed app. The app still has no backend, login system, or external API dependency.
 
-The deployment workflow runs:
+The deployment workflow runs build/data validation plus Playwright checks at iPhone, tablet, and desktop viewports before publishing.
 
 ```bash
 npm ci
 npm run build:data
 npm run validate:data
 npm run build
+npm run test:ui
 ```
 
 The GitHub Actions workflow is:
@@ -159,6 +162,8 @@ jobs:
       - run: npm run build:data
       - run: npm run validate:data
       - run: npm run build
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:ui
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -274,7 +279,7 @@ The History / Backup page keeps the full localStorage backup/import flow and add
 
 ## Learning Data
 
-Progress and test attempts are stored in the current browser's `localStorage`. Progress is tracked separately for trilingual, Japanese-only, English-only, and Latin-only study. Correct answers expand the review interval through 1, 3, 7, 14, and 30 days; a wrong answer resets the item for immediate review. This is a simple spaced-repetition schedule inspired by the forgetting-curve principle, not an individualized mathematical model of a learner's memory. Legacy Japanese/English progress remains preserved as the old bilingual mode. Use the History / Backup screen to export learning data as JSON before clearing browser data or moving to another device.
+Progress and test attempts are stored in the current browser's `localStorage`. Progress is tracked separately by term, language-choice mode, and text/image modality. Correct answers expand the review interval through 1, 3, 7, 14, and 30 days; a wrong answer resets the item for immediate review. Version 1 progress is migrated conservatively into text records because the old schema did not retain question modality; image progress starts unlearned rather than receiving unsupported mastery. The original v1 key is left untouched. Legacy Japanese/English progress remains preserved as the old bilingual mode. Use the History / Backup screen to export learning data as JSON before clearing browser data or moving to another device.
 
 ## Japanese PDF Fonts
 
