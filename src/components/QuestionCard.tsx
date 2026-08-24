@@ -4,6 +4,7 @@ import { shuffle } from '../lib/random';
 import { assetUrl, detailLabel } from '../lib/questions';
 import { termChoiceLabel } from '../lib/choiceLanguage';
 import { ImagePlate } from './ImagePlate';
+import { questionModality } from '../lib/modality';
 
 interface QuestionCardProps {
   question: Question;
@@ -100,6 +101,7 @@ export function QuestionCard({
       questionId: question.id,
       termId: question.answerTermId,
       choiceLanguageMode,
+      modality: questionModality(question),
       correct: state.correct,
     });
   };
@@ -148,7 +150,12 @@ export function QuestionCard({
       {imagePath ? (
         <div className={question.type === 'single_image_mcq' ? 'image-question single-image-question' : 'image-question'}>
           {question.type === 'image_number_mcq' && imageCredit ? (
-            <ImagePlate image={imageCredit} activeLabel={targetPlateLabel?.label} altText="問題画像" />
+            <ImagePlate
+              image={imageCredit}
+              activeLabel={targetPlateLabel?.label}
+              feedbackLabel={answerState ? targetPlateLabel?.label : undefined}
+              altText="問題画像"
+            />
           ) : question.type === 'image_hotspot' ? (
             <button
               type="button"
@@ -158,6 +165,23 @@ export function QuestionCard({
               aria-label="画像内の構造をクリックして解答"
             >
               <img src={assetUrl(imagePath)} alt="問題画像" />
+              {answerState
+                ? (question.hotspots ?? [])
+                    .filter((hotspot) => !hotspot.termId || hotspot.termId === question.answerTermId)
+                    .map((hotspot, hotspotIndex) => (
+                      <span
+                        aria-label="正解領域"
+                        className="hotspot-correct-region"
+                        key={`${hotspot.x}-${hotspot.y}-${hotspotIndex}`}
+                        style={{
+                          left: `${hotspot.x - hotspot.radius}%`,
+                          top: `${hotspot.y - hotspot.radius}%`,
+                          width: `${hotspot.radius * 2}%`,
+                          height: `${hotspot.radius * 2}%`,
+                        }}
+                      />
+                    ))
+                : null}
               {answerState?.point ? (
                 <span
                   className={answerState.correct ? 'click-marker correct' : 'click-marker wrong'}
@@ -166,7 +190,16 @@ export function QuestionCard({
               ) : null}
             </button>
           ) : (
-            <img src={assetUrl(imagePath)} alt="問題画像" />
+            <div className="answer-location-image">
+              <img src={assetUrl(imagePath)} alt="問題画像" />
+              {answerState && targetPlateLabel ? (
+                <span
+                  className="answer-location-marker"
+                  aria-label="正解位置"
+                  style={{ left: `${targetPlateLabel.x * 100}%`, top: `${targetPlateLabel.y * 100}%` }}
+                />
+              ) : null}
+            </div>
           )}
         </div>
       ) : null}

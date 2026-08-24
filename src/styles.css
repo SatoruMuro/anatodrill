@@ -212,7 +212,7 @@ button:disabled {
 
 .stat-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 12px;
   margin-top: 18px;
 }
@@ -466,6 +466,19 @@ button.plate-marker {
   box-shadow: 0 0 0 5px rgba(216, 88, 63, 0.24);
 }
 
+.plate-marker.answer-highlight {
+  z-index: 4;
+}
+
+.plate-marker.answer-highlight .plate-marker-visual {
+  width: var(--marker-active-size);
+  height: var(--marker-active-size);
+  border-color: #ffffff;
+  background: #0d6b5f;
+  font-size: var(--marker-active-font-size);
+  box-shadow: 0 0 0 5px rgba(13, 107, 95, 0.3), 0 0 0 9px rgba(255, 255, 255, 0.85);
+}
+
 .plate-marker.selected {
   color: #17211e;
   z-index: 2;
@@ -492,6 +505,16 @@ button.plate-marker {
   background: transparent;
 }
 
+.hotspot-correct-region {
+  position: absolute;
+  z-index: 1;
+  border: 3px solid #0d6b5f;
+  border-radius: 50%;
+  background: rgba(13, 107, 95, 0.2);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.9);
+  pointer-events: none;
+}
+
 .click-marker {
   position: absolute;
   width: 22px;
@@ -500,6 +523,34 @@ button.plate-marker {
   transform: translate(-50%, -50%);
   border: 4px solid #ffffff;
   box-shadow: 0 0 0 3px currentColor;
+  z-index: 2;
+}
+
+.answer-location-image {
+  position: relative;
+  display: grid;
+  width: 100%;
+  place-items: center;
+}
+
+.single-image-question .answer-location-image {
+  width: min(100%, 560px);
+}
+
+.single-image-question .answer-location-image img {
+  width: 100%;
+}
+
+.answer-location-marker {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+  background: rgba(13, 107, 95, 0.36);
+  box-shadow: 0 0 0 4px #0d6b5f;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .click-marker.correct {
@@ -572,6 +623,16 @@ button.plate-marker {
   display: grid;
   gap: 16px;
   padding: clamp(18px, 4vw, 28px);
+}
+
+.drill-setup-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.drill-format-filter {
+  grid-column: 1 / -1;
 }
 
 .setup-form label {
@@ -1708,6 +1769,14 @@ button.plate-marker {
   .question-browser-counts,
   .question-review-card {
     grid-template-columns: 1fr;
+  }
+
+  .drill-setup-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .drill-format-filter {
+    grid-column: auto;
   }
 
   .question-review-side {

@@ -1,4 +1,4 @@
-import type { LearningData, Question, Term, ViewKey } from '../types/anatodrill';
+import type { DrillPreset, LearningData, Question, Term, ViewKey } from '../types/anatodrill';
 import { APP_VERSION } from '../lib/constants';
 import { progressSummary } from '../lib/progress';
 import { formatDateTime } from '../lib/dates';
@@ -9,9 +9,10 @@ interface HomeProps {
   questions: Question[];
   data: LearningData;
   onNavigate: (view: ViewKey) => void;
+  onStartDrill: (preset: DrillPreset) => void;
 }
 
-export function Home({ terms, questions, data, onNavigate }: HomeProps) {
+export function Home({ terms, questions, data, onNavigate, onStartDrill }: HomeProps) {
   const summary = progressSummary(terms, data);
   const latestAttempt = data.attempts[0];
 
@@ -30,8 +31,11 @@ export function Home({ terms, questions, data, onNavigate }: HomeProps) {
           </p>
         </div>
         <div className="intro-actions">
-          <button type="button" className="primary-button" onClick={() => onNavigate('drill')}>
-            ドリルを開始
+          <button type="button" className="primary-button" onClick={() => onStartDrill('today10')}>
+            今日の10問
+          </button>
+          <button type="button" className="secondary-button" onClick={() => onStartDrill('weak10')}>
+            苦手10問
           </button>
           <button type="button" className="secondary-button" onClick={() => onNavigate('review')}>
             今日の復習
@@ -49,6 +53,10 @@ export function Home({ terms, questions, data, onNavigate }: HomeProps) {
           <strong>{questions.length}</strong>
         </article>
         <article className="stat-card attention">
+          <span>苦手項目</span>
+          <strong>{summary.weak}</strong>
+        </article>
+        <article className="stat-card attention">
           <span>今日の復習</span>
           <strong>{summary.due}</strong>
         </article>
@@ -62,8 +70,11 @@ export function Home({ terms, questions, data, onNavigate }: HomeProps) {
         <article className="panel">
           <h3>学習メニュー</h3>
           <div className="action-list">
-            <button type="button" onClick={() => onNavigate('drill')}>
-              ランダムドリル
+            <button type="button" onClick={() => onStartDrill('today10')}>
+              今日の10問
+            </button>
+            <button type="button" onClick={() => onStartDrill('weak10')}>
+              苦手10問
             </button>
             <button type="button" onClick={() => onNavigate('review')}>
               期限が来た復習

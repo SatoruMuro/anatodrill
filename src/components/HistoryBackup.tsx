@@ -25,6 +25,8 @@ export function HistoryBackup({ data, terms, testSets, onImportData }: HistoryBa
   const languageSummaries = CHOICE_LANGUAGE_OPTIONS.map((option) => ({
     option,
     summary: progressSummary(terms, data, option.value),
+    textSummary: progressSummary(terms, data, option.value, 'text'),
+    imageSummary: progressSummary(terms, data, option.value, 'image'),
   }));
 
   const exportBackup = () => {
@@ -115,11 +117,15 @@ export function HistoryBackup({ data, terms, testSets, onImportData }: HistoryBa
       <section className="panel">
         <h3>言語別の習熟状況</h3>
         <dl className="compact-list">
-          {languageSummaries.map(({ option, summary: languageSummary }) => (
+          {languageSummaries.map(({ option, summary: languageSummary, textSummary, imageSummary }) => (
             <div key={option.value}>
               <dt>{option.label}</dt>
               <dd>
-                解答済み {languageSummary.answered} / 習熟 {languageSummary.mastered} / 復習期限 {languageSummary.due}
+                全体: 解答済み {languageSummary.answered} / 習熟 {languageSummary.mastered} / 復習期限 {languageSummary.due}
+                <br />
+                文字: 解答済み {textSummary.answered} / 習熟 {textSummary.mastered} / 復習期限 {textSummary.due}
+                <br />
+                画像: 解答済み {imageSummary.answered} / 習熟 {imageSummary.mastered} / 復習期限 {imageSummary.due}
               </dd>
             </div>
           ))}

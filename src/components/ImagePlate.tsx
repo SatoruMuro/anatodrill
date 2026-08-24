@@ -4,12 +4,13 @@ import { assetUrl } from '../lib/questions';
 interface ImagePlateProps {
   image: AnatomyImage;
   activeLabel?: string;
+  feedbackLabel?: string;
   selectedLabel?: string;
   altText?: string;
   onSelectLabel?: (label: ImagePlateLabel) => void;
 }
 
-export function ImagePlate({ image, activeLabel, selectedLabel, altText, onSelectLabel }: ImagePlateProps) {
+export function ImagePlate({ image, activeLabel, feedbackLabel, selectedLabel, altText, onSelectLabel }: ImagePlateProps) {
   return (
     <div className="plate-viewer">
       <img src={assetUrl(image.file)} alt={altText ?? image.title} />
@@ -17,7 +18,8 @@ export function ImagePlate({ image, activeLabel, selectedLabel, altText, onSelec
         {image.labels.map((label) => {
           const isActive = label.label === activeLabel;
           const isSelected = label.label === selectedLabel;
-          const markerClass = ['plate-marker', isActive ? 'active' : '', isSelected ? 'selected' : '']
+          const isFeedback = label.label === feedbackLabel;
+          const markerClass = ['plate-marker', isActive ? 'active' : '', isFeedback ? 'answer-highlight' : '', isSelected ? 'selected' : '']
             .filter(Boolean)
             .join(' ');
 
@@ -28,6 +30,8 @@ export function ImagePlate({ image, activeLabel, selectedLabel, altText, onSelec
                 type="button"
                 className={markerClass}
                 style={{ left: `${label.x * 100}%`, top: `${label.y * 100}%` }}
+                data-normalized-x={label.x}
+                data-normalized-y={label.y}
                 onClick={() => onSelectLabel(label)}
                 aria-label={`ラベル ${label.label}`}
               >
@@ -41,6 +45,8 @@ export function ImagePlate({ image, activeLabel, selectedLabel, altText, onSelec
               key={label.label}
               className={markerClass}
               style={{ left: `${label.x * 100}%`, top: `${label.y * 100}%` }}
+              data-normalized-x={label.x}
+              data-normalized-y={label.y}
               aria-label={`ラベル ${label.label}`}
             >
               <span className="plate-marker-visual">{label.label}</span>

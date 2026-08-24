@@ -9,6 +9,12 @@ export type ChoiceLanguageMode = 'trilingual' | 'japanese' | 'english' | 'latin'
 
 export type SelectableChoiceLanguageMode = Exclude<ChoiceLanguageMode, 'bilingual'>;
 
+export type LearningModality = 'text' | 'image';
+
+export type DrillPreset = 'today10' | 'twenty' | 'weak10' | 'unlearned10' | 'all';
+
+export type DrillQuestionFormat = 'all' | 'text' | 'image' | 'numbered_plate' | 'hotspot';
+
 export type ImageSourceType = 'placeholder' | 'gray_anatomy' | 'openstax' | 'wikimedia_commons' | 'other';
 
 export interface Term {
@@ -91,9 +97,11 @@ export interface TestSet {
 export interface TermProgress {
   termId: string;
   choiceLanguageMode: ChoiceLanguageMode;
+  modality: LearningModality;
   correctCount: number;
   wrongCount: number;
   lastAnsweredAt: string | null;
+  lastWrongAt: string | null;
   nextReviewAt: string | null;
   level: number;
 }
@@ -137,6 +145,7 @@ export interface TestResultRecord {
 }
 
 export interface LearningData {
+  schemaVersion: 2;
   progress: Record<string, TermProgress>;
   attempts: TestAttempt[];
 }
@@ -145,6 +154,7 @@ export interface AnswerRecord {
   questionId: string;
   termId: string;
   choiceLanguageMode: ChoiceLanguageMode;
+  modality: LearningModality;
   correct: boolean;
 }
 

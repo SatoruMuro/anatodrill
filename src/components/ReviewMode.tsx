@@ -10,6 +10,7 @@ import type {
 import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
 import { dueQuestions, progressKey } from '../lib/progress';
 import { QuestionCard } from './QuestionCard';
+import { questionModality } from '../lib/modality';
 
 interface ReviewModeProps {
   questions: Question[];
@@ -97,7 +98,7 @@ export function ReviewMode({ questions, terms, termsById, imagesById, data, onRe
   }
 
   const current = queue[index];
-  const progress = data.progress[progressKey(current.answerTermId, choiceLanguageMode)];
+  const progress = data.progress[progressKey(current.answerTermId, choiceLanguageMode, questionModality(current))];
 
   return (
     <main className="page-shell narrow">

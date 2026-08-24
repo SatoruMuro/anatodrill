@@ -1,56 +1,90 @@
 import { useMemo, useState, type FormEvent } from 'react';
-import type { AnatomyImage, AnswerRecord, Question, SelectableChoiceLanguageMode, Term } from '../types/anatodrill';
+import type {
+  AnatomyImage,
+  AnswerRecord,
+  DrillPreset,
+  DrillQuestionFormat,
+  LearningData,
+  Question,
+  SelectableChoiceLanguageMode,
+  Term,
+} from '../types/anatodrill';
+import { CHOICE_LANGUAGE_OPTIONS, choiceLanguageModeLabel } from '../lib/choiceLanguage';
 import {
-  CHOICE_LANGUAGE_OPTIONS,
-  choiceLanguageModeLabel,
-  questionSupportsChoiceLanguage,
-} from '../lib/choiceLanguage';
-import { shuffle } from '../lib/random';
+  buildDrillQueue,
+  CATEGORY_OPTIONS,
+  countDrillCandidates,
+  DRILL_PRESET_OPTIONS,
+  filterDrillQuestions,
+  QUESTION_FORMAT_OPTIONS,
+  REGION_OPTIONS,
+  type DrillCategory,
+  type DrillRegion,
+} from '../lib/drill';
 import { QuestionCard } from './QuestionCard';
 
 interface DrillModeProps {
   questions: Question[];
   termsById: Map<string, Term>;
   imagesById: Map<string, AnatomyImage>;
+  data: LearningData;
+  initialPreset?: DrillPreset;
   onRecordAnswer: (record: AnswerRecord) => void;
 }
 
-export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: DrillModeProps) {
+export function DrillMode({
+  questions,
+  termsById,
+  imagesById,
+  data,
+  initialPreset = 'today10',
+  onRecordAnswer,
+}: DrillModeProps) {
   const [sessionId, setSessionId] = useState(1);
   const [index, setIndex] = useState(0);
   const [started, setStarted] = useState(false);
   const [completed, setCompleted] = useState(false);
+  const [queue, setQueue] = useState<Question[]>([]);
   const [choiceLanguageMode, setChoiceLanguageMode] = useState<SelectableChoiceLanguageMode>('trilingual');
+  const [preset, setPreset] = useState<DrillPreset>(initialPreset);
+  const [region, setRegion] = useState<DrillRegion>('all');
+  const [category, setCategory] = useState<DrillCategory>('all');
+  const [questionFormat, setQuestionFormat] = useState<DrillQuestionFormat>('all');
+
   const eligibleQuestions = useMemo(
-    () => questions.filter((question) => questionSupportsChoiceLanguage(question, choiceLanguageMode, termsById)),
-    [choiceLanguageMode, questions, termsById],
+    () => filterDrillQuestions(questions, termsById, { choiceLanguageMode, region, category, questionFormat }),
+    [category, choiceLanguageMode, questionFormat, questions, region, termsById],
   );
-  const queue = useMemo(() => shuffle(eligibleQuestions), [eligibleQuestions, sessionId]);
-  const selectedLanguageOption = CHOICE_LANGUAGE_OPTIONS.find((option) => option.value === choiceLanguageMode);
+  const candidateCount = useMemo(
+    () => countDrillCandidates(eligibleQuestions, preset, data, choiceLanguageMode),
+    [choiceLanguageMode, data, eligibleQuestions, preset],
+  );
+  const selectedPreset = DRILL_PRESET_OPTIONS.find((option) => option.value === preset);
+
+  const createQueue = () => buildDrillQueue(eligibleQuestions, preset, data, choiceLanguageMode);
 
   const start = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const nextQueue = createQueue();
+    setQueue(nextQueue);
     setSessionId((value) => value + 1);
     setIndex(0);
-    setCompleted(false);
+    setCompleted(nextQueue.length === 0);
     setStarted(true);
   };
 
   const restart = () => {
+    const nextQueue = createQueue();
+    setQueue(nextQueue);
     setSessionId((value) => value + 1);
     setIndex(0);
-    setCompleted(false);
+    setCompleted(nextQueue.length === 0);
     setStarted(true);
   };
 
   if (questions.length === 0) {
     return (
-      <main className="page-shell">
-        <section className="empty-state">
-          <h2>ドリル問題がありません</h2>
-          <p>questions.json に問題を追加してください。</p>
-        </section>
-      </main>
+      <main className="page-shell"><section className="empty-state"><h2>ドリル問題がありません</h2></section></main>
     );
   }
 
@@ -58,57 +92,69 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
     return (
       <main className="page-shell narrow">
         <section className="mode-heading">
-          <div>
-            <p className="eyebrow">Drill mode</p>
-            <h2>ドリルを選択</h2>
-          </div>
-          <span className="progress-pill">対象 {eligibleQuestions.length}問</span>
+          <div><p className="eyebrow">Drill mode</p><h2>ドリルを選択</h2></div>
+          <span className="progress-pill">出題 {candidateCount}問</span>
         </section>
 
         <form className="setup-form" onSubmit={start}>
-          <label>
-            ドリル形式
-            <select
-              value={choiceLanguageMode}
-              onChange={(event) => setChoiceLanguageMode(event.target.value as SelectableChoiceLanguageMode)}
-            >
-              {CHOICE_LANGUAGE_OPTIONS.map((option) => (
-                <option key={option.value} value={option.value}>
-                  {option.drillLabel}
-                </option>
-              ))}
-            </select>
-          </label>
+          <div className="drill-setup-grid">
+            <label>
+              問題数・出題方式
+              <select value={preset} onChange={(event) => setPreset(event.target.value as DrillPreset)}>
+                {DRILL_PRESET_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+              </select>
+            </label>
+            <label>
+              表示言語
+              <select value={choiceLanguageMode} onChange={(event) => setChoiceLanguageMode(event.target.value as SelectableChoiceLanguageMode)}>
+                {CHOICE_LANGUAGE_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.drillLabel}</option>)}
+              </select>
+            </label>
+            <label>
+              解剖学的部位
+              <select value={region} onChange={(event) => setRegion(event.target.value as DrillRegion)}>
+                {REGION_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+              </select>
+            </label>
+            <label>
+              構造カテゴリ
+              <select value={category} onChange={(event) => setCategory(event.target.value as DrillCategory)}>
+                {CATEGORY_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+              </select>
+            </label>
+            <label className="drill-format-filter">
+              問題形式
+              <select value={questionFormat} onChange={(event) => setQuestionFormat(event.target.value as DrillQuestionFormat)}>
+                {QUESTION_FORMAT_OPTIONS.map((option) => <option key={option.value} value={option.value}>{option.label}</option>)}
+              </select>
+            </label>
+          </div>
 
-          <section className="test-set-detail" aria-label="選択中のドリル形式">
-            <h3>{selectedLanguageOption?.drillLabel}</h3>
-            <p>{selectedLanguageOption?.description}</p>
-            <p>この形式で出題可能: {eligibleQuestions.length}問</p>
+          <section className="test-set-detail" aria-label="選択中のドリル設定">
+            <h3>{selectedPreset?.label}</h3>
+            <p>{selectedPreset?.description}</p>
+            <p>フィルタ対象 {eligibleQuestions.length}問 / 今回の出題 {candidateCount}問</p>
+            {preset === 'weak10' && candidateCount === 0 ? <p>この条件の苦手履歴はまだありません。</p> : null}
+            {preset === 'unlearned10' && candidateCount === 0 ? <p>この条件の未学習項目はありません。</p> : null}
           </section>
 
-          <button type="submit" className="primary-button" disabled={eligibleQuestions.length === 0}>
-            ドリル開始
-          </button>
+          <button type="submit" className="primary-button" disabled={candidateCount === 0}>ドリル開始</button>
         </form>
       </main>
     );
   }
 
-  if (completed) {
+  if (completed || queue.length === 0) {
     return (
       <main className="page-shell">
         <section className="result-hero">
           <p className="eyebrow">Drill complete</p>
-          <h2>このセットのドリルが終わりました。</h2>
-          <p>{queue.length} 問を解答しました。もう一度開始すると出題順が再シャッフルされます。</p>
+          <h2>{queue.length ? 'このセットのドリルが終わりました。' : '出題できる問題がありません。'}</h2>
+          <p>{queue.length}問を解答しました。</p>
           <p>選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
           <div className="button-row">
-            <button type="button" className="primary-button" onClick={restart}>
-              同じ形式でもう一度
-            </button>
-            <button type="button" className="secondary-button" onClick={() => setStarted(false)}>
-              形式を選び直す
-            </button>
+            {queue.length ? <button type="button" className="primary-button" onClick={restart}>同じ条件でもう一度</button> : null}
+            <button type="button" className="secondary-button" onClick={() => setStarted(false)}>条件を選び直す</button>
           </div>
         </section>
       </main>
@@ -116,20 +162,16 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
   }
 
   const current = queue[index];
-
   return (
     <main className="page-shell narrow">
       <section className="mode-heading">
         <div>
           <p className="eyebrow">Drill mode</p>
-          <h2>ランダムドリル</h2>
+          <h2>{selectedPreset?.label}</h2>
           <p className="muted">選択肢: {choiceLanguageModeLabel(choiceLanguageMode)}</p>
         </div>
-        <span className="progress-pill">
-          {index + 1} / {queue.length}
-        </span>
+        <span className="progress-pill">{index + 1} / {queue.length}</span>
       </section>
-
       <QuestionCard
         key={`${current.id}-${sessionId}-${index}`}
         question={current}
@@ -139,13 +181,7 @@ export function DrillMode({ questions, termsById, imagesById, onRecordAnswer }: 
         choiceLanguageMode={choiceLanguageMode}
         continueLabel={index + 1 === queue.length ? '完了' : '次へ'}
         onAnswer={onRecordAnswer}
-        onContinue={() => {
-          if (index + 1 >= queue.length) {
-            setCompleted(true);
-          } else {
-            setIndex((value) => value + 1);
-          }
-        }}
+        onContinue={() => index + 1 >= queue.length ? setCompleted(true) : setIndex((value) => value + 1)}
       />
     </main>
   );

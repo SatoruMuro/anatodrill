@@ -13,7 +13,7 @@ import { PlateStudy } from './components/PlateStudy';
 import { QuestionBrowser } from './components/QuestionBrowser';
 import { ReviewMode } from './components/ReviewMode';
 import { TestMode } from './components/TestMode';
-import type { AnatomyImage, AnswerRecord, LearningData, Question, Term, TestAttempt, TestSet, ViewKey } from './types/anatodrill';
+import type { AnatomyImage, AnswerRecord, DrillPreset, LearningData, Question, Term, TestAttempt, TestSet, ViewKey } from './types/anatodrill';
 import { progressKey, updateProgressRecord } from './lib/progress';
 import { buildImageMap, buildTermMap } from './lib/questions';
 import { loadLearningData, saveLearningData } from './lib/storage';
@@ -28,6 +28,7 @@ const isDevMode = new URLSearchParams(window.location.search).get('dev') === '1'
 export function App() {
   const [view, setView] = useState<ViewKey>(() => (isDevMode ? 'label_editor' : 'home'));
   const [learningData, setLearningData] = useState<LearningData>(() => loadLearningData(knownTermIds));
+  const [drillPreset, setDrillPreset] = useState<DrillPreset>('today10');
   const termsById = useMemo(() => buildTermMap(terms), []);
   const imagesById = useMemo(() => buildImageMap(images), []);
   const isEditorMode = isDevMode;
@@ -38,7 +39,7 @@ export function App() {
 
   const recordAnswer = (record: AnswerRecord) => {
     setLearningData((current) => {
-      const key = progressKey(record.termId, record.choiceLanguageMode);
+      const key = progressKey(record.termId, record.choiceLanguageMode, record.modality);
       return {
         ...current,
         progress: {
@@ -47,6 +48,7 @@ export function App() {
             current.progress[key],
             record.termId,
             record.choiceLanguageMode,
+            record.modality,
             record.correct,
           ),
         },
@@ -84,9 +86,27 @@ export function App() {
           </button>
         </aside>
       ) : null}
-      {view === 'home' ? <Home terms={terms} questions={questions} data={learningData} onNavigate={setView} /> : null}
+      {view === 'home' ? (
+        <Home
+          terms={terms}
+          questions={questions}
+          data={learningData}
+          onNavigate={setView}
+          onStartDrill={(preset) => {
+            setDrillPreset(preset);
+            setView('drill');
+          }}
+        />
+      ) : null}
       {view === 'drill' ? (
-        <DrillMode questions={questions} termsById={termsById} imagesById={imagesById} onRecordAnswer={recordAnswer} />
+        <DrillMode
+          questions={questions}
+          termsById={termsById}
+          imagesById={imagesById}
+          data={learningData}
+          initialPreset={drillPreset}
+          onRecordAnswer={recordAnswer}
+        />
       ) : null}
       {view === 'review' ? (
         <ReviewMode
