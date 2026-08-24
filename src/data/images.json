@@ -1410,7 +1410,57 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray290_he.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray’s Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "talus",
+        "x": 0.2964,
+        "y": 0.2363,
+        "note": "距骨"
+      },
+      {
+        "label": "2",
+        "termId": "calcaneus",
+        "x": 0.143,
+        "y": 0.5458,
+        "note": "踵骨"
+      },
+      {
+        "label": "3",
+        "termId": "navicular_bone",
+        "x": 0.428,
+        "y": 0.4095,
+        "note": "舟状骨"
+      },
+      {
+        "label": "4",
+        "termId": "medial_cuneiform_bone",
+        "x": 0.4948,
+        "y": 0.4805,
+        "note": "内側楔状骨"
+      },
+      {
+        "label": "5",
+        "termId": "metatarsal_bone",
+        "x": 0.6549,
+        "y": 0.6537,
+        "note": "中足骨"
+      },
+      {
+        "label": "6",
+        "termId": "proximal_phalanx_of_foot",
+        "x": 0.8303,
+        "y": 0.8317,
+        "note": "基節骨"
+      },
+      {
+        "label": "7",
+        "termId": "distal_phalanx_of_foot",
+        "x": 0.9443,
+        "y": 0.8913,
+        "note": "末節骨"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "距骨",
@@ -2814,7 +2864,78 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray510.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "maxillary_artery",
+        "x": 0.2252,
+        "y": 0.487,
+        "note": "顎動脈"
+      },
+      {
+        "label": "2",
+        "termId": "middle_meningeal_artery",
+        "x": 0.2548,
+        "y": 0.4307,
+        "note": "中硬膜動脈"
+      },
+      {
+        "label": "3",
+        "termId": "inferior_alveolar_artery",
+        "x": 0.3085,
+        "y": 0.5971,
+        "note": "下歯槽動脈"
+      },
+      {
+        "label": "4",
+        "termId": "infraorbital_artery",
+        "x": 0.5003,
+        "y": 0.3085,
+        "note": "眼窩下動脈"
+      },
+      {
+        "label": "5",
+        "termId": "deep_temporal_artery",
+        "x": 0.3403,
+        "y": 0.432,
+        "note": "深側頭動脈"
+      },
+      {
+        "label": "6",
+        "termId": "buccal_artery",
+        "x": 0.4554,
+        "y": 0.4964,
+        "note": "頬動脈"
+      },
+      {
+        "label": "7",
+        "termId": "superficial_temporal_artery",
+        "x": 0.1627,
+        "y": 0.2924,
+        "note": "浅側頭動脈"
+      },
+      {
+        "label": "8",
+        "termId": "external_carotid_artery",
+        "x": 0.2241,
+        "y": 0.645,
+        "note": "外頸動脈"
+      },
+      {
+        "label": "9",
+        "termId": "pdf_kaibo4_e8046f5ece",
+        "x": 0.599,
+        "y": 0.6839,
+        "note": "頬筋"
+      },
+      {
+        "label": "10",
+        "termId": "pdf_kaibo4_3c7ad64ba3",
+        "x": 0.7196,
+        "y": 0.6128,
+        "note": "口輪筋"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "顎動脈",
@@ -2865,7 +2986,57 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray512_regio_submand.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "sternocleidomastoid_muscle",
+        "x": 0.5497,
+        "y": 0.4897,
+        "note": "胸鎖乳突筋"
+      },
+      {
+        "label": "2",
+        "termId": "trapezius",
+        "x": 0.7217,
+        "y": 0.7074,
+        "note": "僧帽筋"
+      },
+      {
+        "label": "3",
+        "termId": "mandible",
+        "x": 0.4148,
+        "y": 0.2665,
+        "note": "下顎骨"
+      },
+      {
+        "label": "4",
+        "termId": "hyoid_bone",
+        "x": 0.3622,
+        "y": 0.4057,
+        "note": "舌骨"
+      },
+      {
+        "label": "5",
+        "termId": "digastric_muscle",
+        "x": 0.3414,
+        "y": 0.353,
+        "note": "顎二腹筋"
+      },
+      {
+        "label": "6",
+        "termId": "omohyoid_muscle",
+        "x": 0.4291,
+        "y": 0.5188,
+        "note": "肩甲舌骨筋"
+      },
+      {
+        "label": "7",
+        "termId": "pdf_kaibo4_a0aada50c6",
+        "x": 0.519,
+        "y": 0.2947,
+        "note": "茎突舌骨筋"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "下顎骨",

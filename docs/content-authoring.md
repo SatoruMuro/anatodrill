@@ -219,6 +219,8 @@ The bundle format is `anatodrill-label-update-v1`. Its JSON form has this shape:
 
 The CSV bundle is a single table whose `recordType` is either `label` or `term_to_register`. It is an exchange file, not a direct replacement for `content/csv/image_labels.csv`. Complete the missing English, Latin, category, region, test set, and explanation fields while applying the bundle, register the terms, and then write the resolved term IDs to `image_labels.csv`.
 
+If a label resolves to an existing reference-only term whose three-language names are not yet complete, it remains available in the plate viewer but does not generate a multiple-choice question until the term is quiz-ready.
+
 For backward compatibility, `ラベルJSONのみ` remains available. Direct `image_labels.csv` exports are enabled only when the selected labels contain no pending terms. Duplicate label numbers, ambiguous exact term matches, blank labels, and invalid coordinates still block export; an unregistered term does not.
 
 Added and edited labels are automatically saved in the current browser. A saved draft is used only while the source image labels are unchanged, so a newer deployed CSV safely supersedes stale local drafts. Use `全図版CSV` to download one complete replacement CSV containing every labeled plate, or reset the current image to its deployed CSV state.

@@ -539,14 +539,22 @@ for (const image of images) {
     } else {
       const term = termById.get(label.termId);
       if (!term?.japanese?.trim() || !term?.english?.trim() || !term?.latin?.trim()) {
-        addError(`${labelContext}: the referenced term needs non-empty Japanese, English, and Latin names.`);
+        addWarning(
+          `${labelContext}: the referenced term is plate-only until its Japanese, English, and Latin names are complete.`,
+        );
       }
     }
 
     const labelKey = `${image.id}:${label.label}`;
     const matchingQuestions = numberedQuestionsByLabel.get(labelKey) ?? [];
-    if (matchingQuestions.length === 0) {
+    const labelTerm = termById.get(label.termId);
+    const labelTermIsQuizReady = Boolean(
+      labelTerm?.japanese?.trim() && labelTerm?.english?.trim() && labelTerm?.latin?.trim(),
+    );
+    if (labelTermIsQuizReady && matchingQuestions.length === 0) {
       addError(`${labelContext}: no image_number_mcq was generated for this label.`);
+    } else if (!labelTermIsQuizReady && matchingQuestions.length > 0) {
+      addError(`${labelContext}: a plate-only label must not have an image_number_mcq.`);
     }
 
     if (typeof label.x !== 'number' || label.x < 0 || label.x > 1) {

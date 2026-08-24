@@ -2408,6 +2408,118 @@
     "explanation": "番号10は中節骨を示しています。足の中節骨は第2趾から第5趾で基節骨と末節骨の間に位置します。"
   },
   {
+    "id": "q_auto_gray290_foot_medial_plate_label_1_talus",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "talus",
+    "choices": [
+      "talus",
+      "calcaneus",
+      "navicular_bone",
+      "medial_cuneiform_bone"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は距骨を示しています。距骨は下腿骨と踵骨・舟状骨の間に位置し、足関節を構成する足根骨です。"
+  },
+  {
+    "id": "q_auto_gray290_foot_medial_plate_label_2_calcaneus",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "calcaneus",
+    "choices": [
+      "calcaneus",
+      "navicular_bone",
+      "medial_cuneiform_bone",
+      "metatarsal_bone"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は踵骨を示しています。踵骨は足根骨の一つで、かかとの骨格を作ります。"
+  },
+  {
+    "id": "q_auto_gray290_foot_medial_plate_label_3_navicular_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "navicular_bone",
+    "choices": [
+      "navicular_bone",
+      "medial_cuneiform_bone",
+      "metatarsal_bone",
+      "proximal_phalanx_of_foot"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は舟状骨を示しています。舟状骨は距骨と3個の楔状骨の間に位置する足根骨です。"
+  },
+  {
+    "id": "q_auto_gray290_foot_medial_plate_label_4_medial_cuneiform_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "medial_cuneiform_bone",
+    "choices": [
+      "medial_cuneiform_bone",
+      "metatarsal_bone",
+      "proximal_phalanx_of_foot",
+      "distal_phalanx_of_foot"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は内側楔状骨を示しています。内側楔状骨は足根骨遠位列の最内側にあり、舟状骨と第1中足骨の間に位置します。"
+  },
+  {
+    "id": "q_auto_gray290_foot_medial_plate_label_5_metatarsal_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "metatarsal_bone",
+    "choices": [
+      "metatarsal_bone",
+      "proximal_phalanx_of_foot",
+      "distal_phalanx_of_foot",
+      "talus"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は中足骨を示しています。中足骨は足根骨と趾骨の間に並ぶ5本の骨です。"
+  },
+  {
+    "id": "q_auto_gray290_foot_medial_plate_label_6_proximal_phalanx_of_foot",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "proximal_phalanx_of_foot",
+    "choices": [
+      "proximal_phalanx_of_foot",
+      "distal_phalanx_of_foot",
+      "talus",
+      "calcaneus"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は基節骨を示しています。足の基節骨は中足骨に続く足趾の最も近位の趾骨です。"
+  },
+  {
+    "id": "q_auto_gray290_foot_medial_plate_label_7_distal_phalanx_of_foot",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "distal_phalanx_of_foot",
+    "choices": [
+      "distal_phalanx_of_foot",
+      "talus",
+      "calcaneus",
+      "navicular_bone"
+    ],
+    "imageId": "gray290_foot_medial_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は末節骨を示しています。足の末節骨は足趾の先端を構成する最も遠位の趾骨です。"
+  },
+  {
     "id": "q_auto_gray291_foot_lateral_plate_label_1_talus",
     "type": "image_number_mcq",
     "testSet": "basic_lower",
@@ -4326,5 +4438,229 @@
     "imageId": "gray508_plate",
     "targetLabel": "14",
     "explanation": "番号14は眼輪筋を示しています。眼輪筋は眼裂を取り囲み閉眼に関わる表情筋です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_1_maxillary_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "maxillary_artery",
+    "choices": [
+      "maxillary_artery",
+      "middle_meningeal_artery",
+      "inferior_alveolar_artery",
+      "infraorbital_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は顎動脈を示しています。顎動脈は、英語の「maxillary artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_2_middle_meningeal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "middle_meningeal_artery",
+    "choices": [
+      "middle_meningeal_artery",
+      "inferior_alveolar_artery",
+      "infraorbital_artery",
+      "deep_temporal_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は中硬膜動脈を示しています。中硬膜動脈は、英語の「middle meningeal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_3_inferior_alveolar_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "inferior_alveolar_artery",
+    "choices": [
+      "inferior_alveolar_artery",
+      "infraorbital_artery",
+      "deep_temporal_artery",
+      "buccal_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は下歯槽動脈を示しています。下歯槽動脈は、英語の「inferior alveolar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_4_infraorbital_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "infraorbital_artery",
+    "choices": [
+      "infraorbital_artery",
+      "deep_temporal_artery",
+      "buccal_artery",
+      "superficial_temporal_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は眼窩下動脈を示しています。眼窩下動脈は、英語の「infraorbital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_5_deep_temporal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "deep_temporal_artery",
+    "choices": [
+      "deep_temporal_artery",
+      "buccal_artery",
+      "superficial_temporal_artery",
+      "external_carotid_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は深側頭動脈を示しています。深側頭動脈は、英語の「deep temporal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_6_buccal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "buccal_artery",
+    "choices": [
+      "buccal_artery",
+      "superficial_temporal_artery",
+      "external_carotid_artery",
+      "maxillary_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は頬動脈を示しています。頬動脈は、英語の「buccal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_7_superficial_temporal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "superficial_temporal_artery",
+    "choices": [
+      "superficial_temporal_artery",
+      "external_carotid_artery",
+      "maxillary_artery",
+      "middle_meningeal_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は浅側頭動脈を示しています。浅側頭動脈は、英語の「superficial temporal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_8_external_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "external_carotid_artery",
+    "choices": [
+      "external_carotid_artery",
+      "maxillary_artery",
+      "middle_meningeal_artery",
+      "inferior_alveolar_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は外頸動脈を示しています。外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray512_regio_submand_plate_label_1_sternocleidomastoid_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "sternocleidomastoid_muscle",
+    "choices": [
+      "sternocleidomastoid_muscle",
+      "trapezius",
+      "mandible",
+      "hyoid_bone"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は胸鎖乳突筋を示しています。胸鎖乳突筋は胸骨・鎖骨から乳様突起へ向かい頭頸部の運動に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray512_regio_submand_plate_label_2_trapezius",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "trapezius",
+    "choices": [
+      "trapezius",
+      "mandible",
+      "hyoid_bone",
+      "digastric_muscle"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は僧帽筋を示しています。僧帽筋は肩甲骨の挙上、内転、回旋に関わる背部の筋です。"
+  },
+  {
+    "id": "q_auto_gray512_regio_submand_plate_label_3_mandible",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "mandible",
+    "choices": [
+      "mandible",
+      "hyoid_bone",
+      "digastric_muscle",
+      "omohyoid_muscle"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は下顎骨を示しています。下顎骨は顔面頭蓋で唯一大きく可動する骨です。"
+  },
+  {
+    "id": "q_auto_gray512_regio_submand_plate_label_4_hyoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "hyoid_bone",
+    "choices": [
+      "hyoid_bone",
+      "digastric_muscle",
+      "omohyoid_muscle",
+      "sternocleidomastoid_muscle"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は舌骨を示しています。舌骨は他の骨と直接関節せず舌や喉頭を支持する頸部の骨です。"
+  },
+  {
+    "id": "q_auto_gray512_regio_submand_plate_label_5_digastric_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "digastric_muscle",
+    "choices": [
+      "digastric_muscle",
+      "omohyoid_muscle",
+      "sternocleidomastoid_muscle",
+      "trapezius"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は顎二腹筋を示しています。顎二腹筋は、英語の「digastric muscle」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray512_regio_submand_plate_label_6_omohyoid_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "omohyoid_muscle",
+    "choices": [
+      "omohyoid_muscle",
+      "sternocleidomastoid_muscle",
+      "trapezius",
+      "mandible"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は肩甲舌骨筋を示しています。肩甲舌骨筋は肩甲骨から舌骨へ向かう舌骨下筋で、上腹と下腹が中間腱で連結されます。"
   }
 ]

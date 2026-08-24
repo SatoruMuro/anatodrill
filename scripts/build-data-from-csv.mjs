@@ -288,7 +288,12 @@ function isReferenceOnlyTerm(term) {
 }
 
 function generatedChoiceIds(answerTermId, image, terms) {
-  const imageTermIds = uniqueValues(image.labels.map((label) => label.termId));
+  const quizReadyTermIds = new Set(
+    terms.filter((term) => termHasCompleteNames(term) && !isReferenceOnlyTerm(term)).map((term) => term.id),
+  );
+  const imageTermIds = uniqueValues(image.labels.map((label) => label.termId)).filter((termId) =>
+    quizReadyTermIds.has(termId),
+  );
   const answerIndex = imageTermIds.indexOf(answerTermId);
   const rotatedImageTerms =
     answerIndex >= 0
@@ -357,9 +362,9 @@ function buildQuestions(terms, images) {
         throw new Error(`Image label ${labelKey}: termId "${label.termId}" does not exist.`);
       }
       if (!termHasCompleteNames(answerTerm)) {
-        throw new Error(
-          `Image label ${labelKey}: term "${answerTerm.id}" needs Japanese, English, and Latin before a question can be generated.`,
-        );
+        // Reference-only terms are still valid plate labels. They become quiz
+        // questions only after their Japanese, English, and Latin names are complete.
+        continue;
       }
 
       const choices = generatedChoiceIds(answerTerm.id, image, terms);
