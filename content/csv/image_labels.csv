@@ -261,3 +261,15 @@ gray512_regio_submand_plate,4,hyoid_bone,0.3622,0.4057,舌骨
 gray512_regio_submand_plate,5,digastric_muscle,0.3414,0.353,顎二腹筋
 gray512_regio_submand_plate,6,omohyoid_muscle,0.4291,0.5188,肩甲舌骨筋
 gray512_regio_submand_plate,7,pdf_kaibo4_a0aada50c6,0.519,0.2947,茎突舌骨筋
+gray513_plate,1,common_carotid_artery,0.5201,0.7309,総頸動脈
+gray513_plate,2,external_carotid_artery,0.5529,0.534,外頸動脈
+gray513_plate,3,internal_carotid_artery,0.5025,0.5031,内頸動脈
+gray513_plate,4,vertebral_artery,0.4357,0.7674,椎骨動脈
+gray513_plate,5,hyoid_bone,0.6779,0.5622,舌骨
+gray513_plate,6,pdf_kaibo5_10897a17c4,0.6472,0.6581,甲状軟骨
+gray513_plate,7,pdf_kaibo5_e2b5b42961,0.6077,0.7276,輪状軟骨
+gray513_plate,8,trachea,0.5814,0.7898,気管
+gray513_plate,9,pdf_kaibo5_b6f476e9ae,0.485,0.7992,食道
+gray513_plate,10,lingual_artery,0.7831,0.4754,舌動脈
+gray513_plate,11,basilar_artery,0.3776,0.2958,脳底動脈
+gray513_plate,12,pdf_kaibo5_d3125fa7dd,0.8401,0.4924,舌下腺

@@ -3087,7 +3087,92 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray513.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "common_carotid_artery",
+        "x": 0.5201,
+        "y": 0.7309,
+        "note": "総頸動脈"
+      },
+      {
+        "label": "2",
+        "termId": "external_carotid_artery",
+        "x": 0.5529,
+        "y": 0.534,
+        "note": "外頸動脈"
+      },
+      {
+        "label": "3",
+        "termId": "internal_carotid_artery",
+        "x": 0.5025,
+        "y": 0.5031,
+        "note": "内頸動脈"
+      },
+      {
+        "label": "4",
+        "termId": "vertebral_artery",
+        "x": 0.4357,
+        "y": 0.7674,
+        "note": "椎骨動脈"
+      },
+      {
+        "label": "5",
+        "termId": "hyoid_bone",
+        "x": 0.6779,
+        "y": 0.5622,
+        "note": "舌骨"
+      },
+      {
+        "label": "6",
+        "termId": "pdf_kaibo5_10897a17c4",
+        "x": 0.6472,
+        "y": 0.6581,
+        "note": "甲状軟骨"
+      },
+      {
+        "label": "7",
+        "termId": "pdf_kaibo5_e2b5b42961",
+        "x": 0.6077,
+        "y": 0.7276,
+        "note": "輪状軟骨"
+      },
+      {
+        "label": "8",
+        "termId": "trachea",
+        "x": 0.5814,
+        "y": 0.7898,
+        "note": "気管"
+      },
+      {
+        "label": "9",
+        "termId": "pdf_kaibo5_b6f476e9ae",
+        "x": 0.485,
+        "y": 0.7992,
+        "note": "食道"
+      },
+      {
+        "label": "10",
+        "termId": "lingual_artery",
+        "x": 0.7831,
+        "y": 0.4754,
+        "note": "舌動脈"
+      },
+      {
+        "label": "11",
+        "termId": "basilar_artery",
+        "x": 0.3776,
+        "y": 0.2958,
+        "note": "脳底動脈"
+      },
+      {
+        "label": "12",
+        "termId": "pdf_kaibo5_d3125fa7dd",
+        "x": 0.8401,
+        "y": 0.4924,
+        "note": "舌下腺"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "総頸動脈",

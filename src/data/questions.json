@@ -4662,5 +4662,133 @@
     "imageId": "gray512_regio_submand_plate",
     "targetLabel": "6",
     "explanation": "番号6は肩甲舌骨筋を示しています。肩甲舌骨筋は肩甲骨から舌骨へ向かう舌骨下筋で、上腹と下腹が中間腱で連結されます。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_1_common_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "common_carotid_artery",
+    "choices": [
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery",
+      "vertebral_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は総頸動脈を示しています。総頸動脈は、英語の「common carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_2_external_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "external_carotid_artery",
+    "choices": [
+      "external_carotid_artery",
+      "internal_carotid_artery",
+      "vertebral_artery",
+      "hyoid_bone"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は外頸動脈を示しています。外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_3_internal_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "internal_carotid_artery",
+    "choices": [
+      "internal_carotid_artery",
+      "vertebral_artery",
+      "hyoid_bone",
+      "trachea"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は内頸動脈を示しています。内頸動脈は、英語の「internal carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_4_vertebral_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "vertebral_artery",
+    "choices": [
+      "vertebral_artery",
+      "hyoid_bone",
+      "trachea",
+      "lingual_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は椎骨動脈を示しています。椎骨動脈は、英語の「vertebral artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_5_hyoid_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "hyoid_bone",
+    "choices": [
+      "hyoid_bone",
+      "trachea",
+      "lingual_artery",
+      "basilar_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は舌骨を示しています。舌骨は他の骨と直接関節せず舌や喉頭を支持する頸部の骨です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_8_trachea",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "trachea",
+    "choices": [
+      "trachea",
+      "lingual_artery",
+      "basilar_artery",
+      "common_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は気管を示しています。気管は喉頭から左右の主気管支へ空気を導く管状の器官です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_10_lingual_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "lingual_artery",
+    "choices": [
+      "lingual_artery",
+      "basilar_artery",
+      "common_carotid_artery",
+      "external_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は舌動脈を示しています。舌動脈は、英語の「lingual artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_11_basilar_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "basilar_artery",
+    "choices": [
+      "basilar_artery",
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は脳底動脈を示しています。脳底動脈は、英語の「basilar artery」に対応する解剖学用語です。"
   }
 ]
