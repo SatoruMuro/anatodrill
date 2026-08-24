@@ -6,14 +6,14 @@ test('focused drill presets cap the session at 10 and 20 questions', async ({ pa
   await page.getByRole('button', { name: 'ドリル' }).click();
 
   await expect(page.getByLabel('問題数・出題方式')).toHaveValue('today10');
-  await expect(page.getByText('出題 10問')).toBeVisible();
+  await expect(page.getByText('出題 10問', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'ドリル開始' }).click();
   await expect(page.getByText('1 / 10')).toBeVisible();
 
   await page.getByRole('button', { name: 'ホーム' }).click();
   await page.getByRole('button', { name: 'ドリル' }).click();
   await page.getByLabel('問題数・出題方式').selectOption('twenty');
-  await expect(page.getByText('出題 20問')).toBeVisible();
+  await expect(page.getByText('出題 20問', { exact: true })).toBeVisible();
   await page.getByRole('button', { name: 'ドリル開始' }).click();
   await expect(page.getByText('1 / 20')).toBeVisible();
 });

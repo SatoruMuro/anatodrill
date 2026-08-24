@@ -10,7 +10,7 @@ for (const viewport of viewports) {
   test(`number labels keep normalized image positions on ${viewport.name}`, async ({ page }) => {
     await page.setViewportSize(viewport);
     await page.goto('./');
-    await page.getByRole('button', { name: '図版学習' }).click();
+    await page.getByRole('button', { name: '図版学習', exact: true }).click();
 
     const viewer = page.locator('.plate-viewer').first();
     await expect(viewer).toBeVisible();
