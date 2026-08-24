@@ -4568,6 +4568,38 @@
     "explanation": "番号8は外頸動脈を示しています。外頸動脈は、英語の「external carotid artery」に対応する解剖学用語です。"
   },
   {
+    "id": "q_auto_gray510_plate_label_9_pdf_kaibo4_e8046f5ece",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo4_e8046f5ece",
+    "choices": [
+      "pdf_kaibo4_e8046f5ece",
+      "maxillary_artery",
+      "middle_meningeal_artery",
+      "inferior_alveolar_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は頬筋を示しています。kaibo4.pdf から追加した解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray510_plate_label_10_pdf_kaibo4_3c7ad64ba3",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo4_3c7ad64ba3",
+    "choices": [
+      "pdf_kaibo4_3c7ad64ba3",
+      "maxillary_artery",
+      "middle_meningeal_artery",
+      "inferior_alveolar_artery"
+    ],
+    "imageId": "gray510_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は口輪筋を示しています。kaibo4.pdf から追加した解剖学用語です。"
+  },
+  {
     "id": "q_auto_gray512_regio_submand_plate_label_1_sternocleidomastoid_muscle",
     "type": "image_number_mcq",
     "testSet": "basic_muscle",
@@ -4664,6 +4696,22 @@
     "explanation": "番号6は肩甲舌骨筋を示しています。肩甲舌骨筋は肩甲骨から舌骨へ向かう舌骨下筋で、上腹と下腹が中間腱で連結されます。"
   },
   {
+    "id": "q_auto_gray512_regio_submand_plate_label_7_pdf_kaibo4_a0aada50c6",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo4_a0aada50c6",
+    "choices": [
+      "pdf_kaibo4_a0aada50c6",
+      "sternocleidomastoid_muscle",
+      "trapezius",
+      "mandible"
+    ],
+    "imageId": "gray512_regio_submand_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は茎突舌骨筋を示しています。kaibo4.pdf から追加した解剖学用語です。"
+  },
+  {
     "id": "q_auto_gray513_plate_label_1_common_carotid_artery",
     "type": "image_number_mcq",
     "testSet": "basic_head",
@@ -4744,6 +4792,38 @@
     "explanation": "番号5は舌骨を示しています。舌骨は他の骨と直接関節せず舌や喉頭を支持する頸部の骨です。"
   },
   {
+    "id": "q_auto_gray513_plate_label_6_pdf_kaibo5_10897a17c4",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo5_10897a17c4",
+    "choices": [
+      "pdf_kaibo5_10897a17c4",
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は甲状軟骨を示しています。kaibo5.pdf から追加した解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_7_pdf_kaibo5_e2b5b42961",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo5_e2b5b42961",
+    "choices": [
+      "pdf_kaibo5_e2b5b42961",
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は輪状軟骨を示しています。kaibo5.pdf から追加した解剖学用語です。"
+  },
+  {
     "id": "q_auto_gray513_plate_label_8_trachea",
     "type": "image_number_mcq",
     "testSet": "basic_trunk",
@@ -4758,6 +4838,22 @@
     "imageId": "gray513_plate",
     "targetLabel": "8",
     "explanation": "番号8は気管を示しています。気管は喉頭から左右の主気管支へ空気を導く管状の器官です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_9_pdf_kaibo5_b6f476e9ae",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo5_b6f476e9ae",
+    "choices": [
+      "pdf_kaibo5_b6f476e9ae",
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は食道を示しています。kaibo5.pdf から追加した解剖学用語です。"
   },
   {
     "id": "q_auto_gray513_plate_label_10_lingual_artery",
@@ -4790,5 +4886,21 @@
     "imageId": "gray513_plate",
     "targetLabel": "11",
     "explanation": "番号11は脳底動脈を示しています。脳底動脈は、英語の「basilar artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray513_plate_label_12_pdf_kaibo5_d3125fa7dd",
+    "type": "image_number_mcq",
+    "testSet": "osteology_basic",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "pdf_kaibo5_d3125fa7dd",
+    "choices": [
+      "pdf_kaibo5_d3125fa7dd",
+      "common_carotid_artery",
+      "external_carotid_artery",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray513_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は舌下腺を示しています。kaibo5.pdf から追加した解剖学用語です。"
   }
 ]
