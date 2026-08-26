@@ -4758,5 +4758,453 @@
     "imageId": "gray513_plate",
     "targetLabel": "12",
     "explanation": "番号12は舌下腺を示しています。kaibo5.pdf から追加した解剖学用語です。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_1_humerus",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "humerus",
+    "choices": [
+      "humerus",
+      "scapula",
+      "supraspinatus",
+      "infraspinatus"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は上腕骨を示しています。上腕骨は肩から肘までを構成する長骨です。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_2_scapula",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "scapula",
+    "choices": [
+      "scapula",
+      "supraspinatus",
+      "infraspinatus",
+      "teres_minor"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は肩甲骨を示しています。肩甲骨は肩の後面にある平たい骨で、上腕骨や鎖骨と関節を作ります。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_3_supraspinatus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "supraspinatus",
+    "choices": [
+      "supraspinatus",
+      "infraspinatus",
+      "teres_minor",
+      "teres_major"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は棘上筋を示しています。棘上筋は肩甲骨の棘上窩から起こり、肩関節の外転初期に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_4_infraspinatus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "infraspinatus",
+    "choices": [
+      "infraspinatus",
+      "teres_minor",
+      "teres_major",
+      "triceps_brachii"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は棘下筋を示しています。棘下筋は肩甲骨の棘下窩から起こり、肩関節の外旋に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_5_teres_minor",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "teres_minor",
+    "choices": [
+      "teres_minor",
+      "teres_major",
+      "triceps_brachii",
+      "humerus"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は小円筋を示しています。小円筋は肩甲骨外側縁から起こり、肩関節の外旋と内転に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_6_teres_major",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "teres_major",
+    "choices": [
+      "teres_major",
+      "triceps_brachii",
+      "humerus",
+      "scapula"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は大円筋を示しています。大円筋は肩甲骨下角付近から起こり、上腕の内転・内旋・伸展に関わる筋です。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_7_triceps_brachii",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "triceps_brachii",
+    "choices": [
+      "triceps_brachii",
+      "humerus",
+      "scapula",
+      "supraspinatus"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は上腕三頭筋を示しています。上腕三頭筋は主に肘関節伸展に働きます。"
+  },
+  {
+    "id": "q_auto_arm_muscles_back_plate_label_8_long_head_of_triceps_brachii",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "long_head_of_triceps_brachii",
+    "choices": [
+      "long_head_of_triceps_brachii",
+      "humerus",
+      "scapula",
+      "supraspinatus"
+    ],
+    "imageId": "arm_muscles_back_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は上腕三頭筋の長頭を示しています。上腕三頭筋の長頭は肩甲骨から起こる上腕三頭筋の一部です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_1_trapezius",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "trapezius",
+    "choices": [
+      "trapezius",
+      "deltoid",
+      "latissimus_dorsi",
+      "infraspinatus"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は僧帽筋を示しています。僧帽筋は肩甲骨の挙上、内転、回旋に関わる背部の筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_2_deltoid",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "deltoid",
+    "choices": [
+      "deltoid",
+      "latissimus_dorsi",
+      "infraspinatus",
+      "teres_major"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は三角筋を示しています。三角筋は肩関節の外転を中心に、屈曲や伸展にも関わります。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_3_latissimus_dorsi",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "latissimus_dorsi",
+    "choices": [
+      "latissimus_dorsi",
+      "infraspinatus",
+      "teres_major",
+      "sternocleidomastoid_muscle"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は広背筋を示しています。広背筋は背部の広い範囲から起こり、上腕の内転・内旋・伸展に関わる大きな筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_4_infraspinatus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "infraspinatus",
+    "choices": [
+      "infraspinatus",
+      "teres_major",
+      "sternocleidomastoid_muscle",
+      "splenius_capitis"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は棘下筋を示しています。棘下筋は肩甲骨の棘下窩から起こり、肩関節の外旋に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_5_teres_major",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "teres_major",
+    "choices": [
+      "teres_major",
+      "sternocleidomastoid_muscle",
+      "splenius_capitis",
+      "levator_scapulae"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は大円筋を示しています。大円筋は肩甲骨下角付近から起こり、上腕の内転・内旋・伸展に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_6_sternocleidomastoid_muscle",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "sternocleidomastoid_muscle",
+    "choices": [
+      "sternocleidomastoid_muscle",
+      "splenius_capitis",
+      "levator_scapulae",
+      "rhomboid_minor"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は胸鎖乳突筋を示しています。胸鎖乳突筋は胸骨・鎖骨から乳様突起へ向かい頭頸部の運動に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_7_splenius_capitis",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "splenius_capitis",
+    "choices": [
+      "splenius_capitis",
+      "levator_scapulae",
+      "rhomboid_minor",
+      "rhomboid_major"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は頭板状筋を示しています。頭板状筋は後頸部にあり、頭部の伸展や同側回旋に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_8_levator_scapulae",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "levator_scapulae",
+    "choices": [
+      "levator_scapulae",
+      "rhomboid_minor",
+      "rhomboid_major",
+      "supraspinatus"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は肩甲挙筋を示しています。肩甲挙筋は頸椎から肩甲骨上角へ向かい、肩甲骨の挙上に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_9_rhomboid_minor",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "rhomboid_minor",
+    "choices": [
+      "rhomboid_minor",
+      "rhomboid_major",
+      "supraspinatus",
+      "serratus_posterior_inferior"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は小菱形筋を示しています。小菱形筋は肩甲骨を内側上方へ引き、肩甲骨の固定に関わる背部の筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_10_rhomboid_major",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "rhomboid_major",
+    "choices": [
+      "rhomboid_major",
+      "supraspinatus",
+      "serratus_posterior_inferior",
+      "external_oblique"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は大菱形筋を示しています。大菱形筋は肩甲骨を脊柱側へ引き寄せ、肩甲骨の内転と固定に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_11_supraspinatus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "supraspinatus",
+    "choices": [
+      "supraspinatus",
+      "serratus_posterior_inferior",
+      "external_oblique",
+      "serratus_anterior"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は棘上筋を示しています。棘上筋は肩甲骨の棘上窩から起こり、肩関節の外転初期に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_12_infraspinatus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "infraspinatus",
+    "choices": [
+      "infraspinatus",
+      "teres_major",
+      "sternocleidomastoid_muscle",
+      "splenius_capitis"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は棘下筋を示しています。棘下筋は肩甲骨の棘下窩から起こり、肩関節の外旋に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_13_serratus_posterior_inferior",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「13」で示す構造はどれか。",
+    "answerTermId": "serratus_posterior_inferior",
+    "choices": [
+      "serratus_posterior_inferior",
+      "external_oblique",
+      "serratus_anterior",
+      "thoracolumbar_fascia"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "13",
+    "explanation": "番号13は下後鋸筋を示しています。下後鋸筋は下位肋骨に付着し、呼吸運動を補助する背部の薄い筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_14_external_oblique",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「14」で示す構造はどれか。",
+    "answerTermId": "external_oblique",
+    "choices": [
+      "external_oblique",
+      "serratus_anterior",
+      "thoracolumbar_fascia",
+      "clavicle"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "14",
+    "explanation": "番号14は外腹斜筋を示しています。外腹斜筋は腹壁外側を構成し、体幹の屈曲・回旋や腹圧形成に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_15_serratus_anterior",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「15」で示す構造はどれか。",
+    "answerTermId": "serratus_anterior",
+    "choices": [
+      "serratus_anterior",
+      "thoracolumbar_fascia",
+      "clavicle",
+      "scapula"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "15",
+    "explanation": "番号15は前鋸筋を示しています。前鋸筋は肋骨から肩甲骨内側縁へ向かい、肩甲骨の外転と上方回旋に関わる筋です。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_16_thoracolumbar_fascia",
+    "type": "image_number_mcq",
+    "testSet": "basic_trunk",
+    "prompt": "図中の「16」で示す構造はどれか。",
+    "answerTermId": "thoracolumbar_fascia",
+    "choices": [
+      "thoracolumbar_fascia",
+      "clavicle",
+      "scapula",
+      "hip_bone"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "16",
+    "explanation": "番号16は胸腰筋膜を示しています。胸腰筋膜は背部から腰部に広がる強い筋膜で、背筋群や腹壁筋と連結します。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_17_clavicle",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「17」で示す構造はどれか。",
+    "answerTermId": "clavicle",
+    "choices": [
+      "clavicle",
+      "scapula",
+      "hip_bone",
+      "sacrum"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "17",
+    "explanation": "番号17は鎖骨を示しています。鎖骨は胸骨と肩甲骨をつなぎ、上肢帯を体幹に連結します。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_18_scapula",
+    "type": "image_number_mcq",
+    "testSet": "basic_upper",
+    "prompt": "図中の「18」で示す構造はどれか。",
+    "answerTermId": "scapula",
+    "choices": [
+      "scapula",
+      "hip_bone",
+      "sacrum",
+      "trapezius"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "18",
+    "explanation": "番号18は肩甲骨を示しています。肩甲骨は肩の後面にある平たい骨で、上腕骨や鎖骨と関節を作ります。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_19_hip_bone",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「19」で示す構造はどれか。",
+    "answerTermId": "hip_bone",
+    "choices": [
+      "hip_bone",
+      "sacrum",
+      "trapezius",
+      "deltoid"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "19",
+    "explanation": "番号19は寛骨を示しています。寛骨は腸骨・坐骨・恥骨が癒合した骨で、骨盤の側壁を作ります。"
+  },
+  {
+    "id": "q_auto_gray409_heb_plate_label_20_sacrum",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「20」で示す構造はどれか。",
+    "answerTermId": "sacrum",
+    "choices": [
+      "sacrum",
+      "trapezius",
+      "deltoid",
+      "latissimus_dorsi"
+    ],
+    "imageId": "gray409_heb_plate",
+    "targetLabel": "20",
+    "explanation": "番号20は仙骨を示しています。仙骨は骨盤後壁を構成する骨で、複数の仙椎が癒合して形成される。"
   }
 ]

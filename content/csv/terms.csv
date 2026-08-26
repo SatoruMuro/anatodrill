@@ -7540,3 +7540,16 @@ temporalis_muscle,側頭筋,temporalis muscle,musculus temporalis,muscle,head an
 occipitalis_muscle,後頭筋,occipitalis muscle,musculus occipitalis,muscle,head and neck,basic_muscle,後頭筋は後頭部に位置し帽状腱膜を後方へ引く筋です。
 frontalis_muscle,前頭筋,frontalis muscle,musculus frontalis,muscle,head and neck,basic_muscle,前頭筋は眉を挙上し前額に横じわを作る表情筋です。
 orbicularis_oculi_muscle,眼輪筋,orbicularis oculi muscle,musculus orbicularis oculi,muscle,head and neck,basic_muscle,眼輪筋は眼裂を取り囲み閉眼に関わる表情筋です。
+supraspinatus,棘上筋,supraspinatus,musculus supraspinatus,muscle,shoulder,basic_muscle,棘上筋は肩甲骨の棘上窩から起こり、肩関節の外転初期に関わる回旋筋腱板の筋です。
+infraspinatus,棘下筋,infraspinatus,musculus infraspinatus,muscle,shoulder,basic_muscle,棘下筋は肩甲骨の棘下窩から起こり、肩関節の外旋に関わる回旋筋腱板の筋です。
+teres_minor,小円筋,teres minor,musculus teres minor,muscle,shoulder,basic_muscle,小円筋は肩甲骨外側縁から起こり、肩関節の外旋と内転に関わる回旋筋腱板の筋です。
+teres_major,大円筋,teres major,musculus teres major,muscle,shoulder,basic_muscle,大円筋は肩甲骨下角付近から起こり、上腕の内転・内旋・伸展に関わる筋です。
+latissimus_dorsi,広背筋,latissimus dorsi,musculus latissimus dorsi,muscle,back,basic_muscle,広背筋は背部の広い範囲から起こり、上腕の内転・内旋・伸展に関わる大きな筋です。
+splenius_capitis,頭板状筋,splenius capitis,musculus splenius capitis,muscle,neck,basic_muscle,頭板状筋は後頸部にあり、頭部の伸展や同側回旋に関わる筋です。
+levator_scapulae,肩甲挙筋,levator scapulae,musculus levator scapulae,muscle,back,basic_muscle,肩甲挙筋は頸椎から肩甲骨上角へ向かい、肩甲骨の挙上に関わる筋です。
+rhomboid_minor,小菱形筋,rhomboid minor,musculus rhomboideus minor,muscle,back,basic_muscle,小菱形筋は肩甲骨を内側上方へ引き、肩甲骨の固定に関わる背部の筋です。
+rhomboid_major,大菱形筋,rhomboid major,musculus rhomboideus major,muscle,back,basic_muscle,大菱形筋は肩甲骨を脊柱側へ引き寄せ、肩甲骨の内転と固定に関わる筋です。
+serratus_posterior_inferior,下後鋸筋,serratus posterior inferior,musculus serratus posterior inferior,muscle,back,basic_muscle,下後鋸筋は下位肋骨に付着し、呼吸運動を補助する背部の薄い筋です。
+external_oblique,外腹斜筋,external oblique,musculus obliquus externus abdominis,muscle,abdomen,basic_muscle,外腹斜筋は腹壁外側を構成し、体幹の屈曲・回旋や腹圧形成に関わる筋です。
+serratus_anterior,前鋸筋,serratus anterior,musculus serratus anterior,muscle,thorax,basic_muscle,前鋸筋は肋骨から肩甲骨内側縁へ向かい、肩甲骨の外転と上方回旋に関わる筋です。
+thoracolumbar_fascia,胸腰筋膜,thoracolumbar fascia,fascia thoracolumbalis,fascia,back,basic_muscle,胸腰筋膜は背部から腰部に広がる強い筋膜で、背筋群や腹壁筋と連結します。

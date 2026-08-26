@@ -5276,7 +5276,64 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arm_muscles_back.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "humerus",
+        "x": 0.4188,
+        "y": 0.2235,
+        "note": "上腕骨"
+      },
+      {
+        "label": "2",
+        "termId": "scapula",
+        "x": 0.7263,
+        "y": 0.0988,
+        "note": "肩甲骨"
+      },
+      {
+        "label": "3",
+        "termId": "supraspinatus",
+        "x": 0.8065,
+        "y": 0.0757,
+        "note": "棘上筋"
+      },
+      {
+        "label": "4",
+        "termId": "infraspinatus",
+        "x": 0.7681,
+        "y": 0.2617,
+        "note": "棘下筋"
+      },
+      {
+        "label": "5",
+        "termId": "teres_minor",
+        "x": 0.6528,
+        "y": 0.2697,
+        "note": "小円筋"
+      },
+      {
+        "label": "6",
+        "termId": "teres_major",
+        "x": 0.7318,
+        "y": 0.4592,
+        "note": "大円筋"
+      },
+      {
+        "label": "7",
+        "termId": "triceps_brachii",
+        "x": 0.2969,
+        "y": 0.6378,
+        "note": "上腕三頭筋"
+      },
+      {
+        "label": "8",
+        "termId": "long_head_of_triceps_brachii",
+        "x": 0.533,
+        "y": 0.3367,
+        "note": "上腕三頭筋の長頭"
+      }
+    ],
     "suggestions": [],
     "editionYear": 1918
   },
@@ -5471,7 +5528,148 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray409.heb.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "trapezius",
+        "x": 0.4023,
+        "y": 0.2943,
+        "note": "僧帽筋"
+      },
+      {
+        "label": "2",
+        "termId": "deltoid",
+        "x": 0.1179,
+        "y": 0.3145,
+        "note": "三角筋"
+      },
+      {
+        "label": "3",
+        "termId": "latissimus_dorsi",
+        "x": 0.3683,
+        "y": 0.5963,
+        "note": "広背筋"
+      },
+      {
+        "label": "4",
+        "termId": "infraspinatus",
+        "x": 0.298,
+        "y": 0.4233,
+        "note": "棘下筋"
+      },
+      {
+        "label": "5",
+        "termId": "teres_major",
+        "x": 0.2057,
+        "y": 0.4196,
+        "note": "大円筋"
+      },
+      {
+        "label": "6",
+        "termId": "sternocleidomastoid_muscle",
+        "x": 0.4298,
+        "y": 0.1039,
+        "note": "胸鎖乳突筋"
+      },
+      {
+        "label": "7",
+        "termId": "splenius_capitis",
+        "x": 0.5956,
+        "y": 0.1132,
+        "note": "頭板状筋"
+      },
+      {
+        "label": "8",
+        "termId": "levator_scapulae",
+        "x": 0.6582,
+        "y": 0.2258,
+        "note": "肩甲挙筋"
+      },
+      {
+        "label": "9",
+        "termId": "rhomboid_minor",
+        "x": 0.644,
+        "y": 0.2989,
+        "note": "小菱形筋"
+      },
+      {
+        "label": "10",
+        "termId": "rhomboid_major",
+        "x": 0.6407,
+        "y": 0.3665,
+        "note": "大菱形筋"
+      },
+      {
+        "label": "11",
+        "termId": "supraspinatus",
+        "x": 0.7835,
+        "y": 0.3019,
+        "note": "棘上筋"
+      },
+      {
+        "label": "12",
+        "termId": "infraspinatus",
+        "x": 0.8428,
+        "y": 0.3809,
+        "note": "棘下筋"
+      },
+      {
+        "label": "13",
+        "termId": "serratus_posterior_inferior",
+        "x": 0.6319,
+        "y": 0.593,
+        "note": "下後鋸筋"
+      },
+      {
+        "label": "14",
+        "termId": "external_oblique",
+        "x": 0.7725,
+        "y": 0.7198,
+        "note": "外腹斜筋"
+      },
+      {
+        "label": "15",
+        "termId": "serratus_anterior",
+        "x": 0.8362,
+        "y": 0.4988,
+        "note": "前鋸筋"
+      },
+      {
+        "label": "16",
+        "termId": "thoracolumbar_fascia",
+        "x": 0.5902,
+        "y": 0.7439,
+        "note": "胸腰筋膜"
+      },
+      {
+        "label": "17",
+        "termId": "clavicle",
+        "x": 0.7538,
+        "y": 0.2634,
+        "note": "鎖骨"
+      },
+      {
+        "label": "18",
+        "termId": "scapula",
+        "x": 0.8065,
+        "y": 0.3242,
+        "note": "肩甲骨"
+      },
+      {
+        "label": "19",
+        "termId": "hip_bone",
+        "x": 0.3639,
+        "y": 0.8628,
+        "note": "寛骨"
+      },
+      {
+        "label": "20",
+        "termId": "sacrum",
+        "x": 0.4825,
+        "y": 0.9645,
+        "note": "仙骨"
+      }
+    ],
     "suggestions": [],
     "editionYear": 1918
   },

@@ -75483,5 +75483,135 @@
     "region": "head and neck",
     "testSet": "basic_muscle",
     "explanation": "眼輪筋は眼裂を取り囲み閉眼に関わる表情筋です。"
+  },
+  {
+    "id": "supraspinatus",
+    "japanese": "棘上筋",
+    "english": "supraspinatus",
+    "latin": "musculus supraspinatus",
+    "category": "muscle",
+    "region": "shoulder",
+    "testSet": "basic_muscle",
+    "explanation": "棘上筋は肩甲骨の棘上窩から起こり、肩関節の外転初期に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "infraspinatus",
+    "japanese": "棘下筋",
+    "english": "infraspinatus",
+    "latin": "musculus infraspinatus",
+    "category": "muscle",
+    "region": "shoulder",
+    "testSet": "basic_muscle",
+    "explanation": "棘下筋は肩甲骨の棘下窩から起こり、肩関節の外旋に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "teres_minor",
+    "japanese": "小円筋",
+    "english": "teres minor",
+    "latin": "musculus teres minor",
+    "category": "muscle",
+    "region": "shoulder",
+    "testSet": "basic_muscle",
+    "explanation": "小円筋は肩甲骨外側縁から起こり、肩関節の外旋と内転に関わる回旋筋腱板の筋です。"
+  },
+  {
+    "id": "teres_major",
+    "japanese": "大円筋",
+    "english": "teres major",
+    "latin": "musculus teres major",
+    "category": "muscle",
+    "region": "shoulder",
+    "testSet": "basic_muscle",
+    "explanation": "大円筋は肩甲骨下角付近から起こり、上腕の内転・内旋・伸展に関わる筋です。"
+  },
+  {
+    "id": "latissimus_dorsi",
+    "japanese": "広背筋",
+    "english": "latissimus dorsi",
+    "latin": "musculus latissimus dorsi",
+    "category": "muscle",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "広背筋は背部の広い範囲から起こり、上腕の内転・内旋・伸展に関わる大きな筋です。"
+  },
+  {
+    "id": "splenius_capitis",
+    "japanese": "頭板状筋",
+    "english": "splenius capitis",
+    "latin": "musculus splenius capitis",
+    "category": "muscle",
+    "region": "neck",
+    "testSet": "basic_muscle",
+    "explanation": "頭板状筋は後頸部にあり、頭部の伸展や同側回旋に関わる筋です。"
+  },
+  {
+    "id": "levator_scapulae",
+    "japanese": "肩甲挙筋",
+    "english": "levator scapulae",
+    "latin": "musculus levator scapulae",
+    "category": "muscle",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "肩甲挙筋は頸椎から肩甲骨上角へ向かい、肩甲骨の挙上に関わる筋です。"
+  },
+  {
+    "id": "rhomboid_minor",
+    "japanese": "小菱形筋",
+    "english": "rhomboid minor",
+    "latin": "musculus rhomboideus minor",
+    "category": "muscle",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "小菱形筋は肩甲骨を内側上方へ引き、肩甲骨の固定に関わる背部の筋です。"
+  },
+  {
+    "id": "rhomboid_major",
+    "japanese": "大菱形筋",
+    "english": "rhomboid major",
+    "latin": "musculus rhomboideus major",
+    "category": "muscle",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "大菱形筋は肩甲骨を脊柱側へ引き寄せ、肩甲骨の内転と固定に関わる筋です。"
+  },
+  {
+    "id": "serratus_posterior_inferior",
+    "japanese": "下後鋸筋",
+    "english": "serratus posterior inferior",
+    "latin": "musculus serratus posterior inferior",
+    "category": "muscle",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "下後鋸筋は下位肋骨に付着し、呼吸運動を補助する背部の薄い筋です。"
+  },
+  {
+    "id": "external_oblique",
+    "japanese": "外腹斜筋",
+    "english": "external oblique",
+    "latin": "musculus obliquus externus abdominis",
+    "category": "muscle",
+    "region": "abdomen",
+    "testSet": "basic_muscle",
+    "explanation": "外腹斜筋は腹壁外側を構成し、体幹の屈曲・回旋や腹圧形成に関わる筋です。"
+  },
+  {
+    "id": "serratus_anterior",
+    "japanese": "前鋸筋",
+    "english": "serratus anterior",
+    "latin": "musculus serratus anterior",
+    "category": "muscle",
+    "region": "thorax",
+    "testSet": "basic_muscle",
+    "explanation": "前鋸筋は肋骨から肩甲骨内側縁へ向かい、肩甲骨の外転と上方回旋に関わる筋です。"
+  },
+  {
+    "id": "thoracolumbar_fascia",
+    "japanese": "胸腰筋膜",
+    "english": "thoracolumbar fascia",
+    "latin": "fascia thoracolumbalis",
+    "category": "fascia",
+    "region": "back",
+    "testSet": "basic_muscle",
+    "explanation": "胸腰筋膜は背部から腰部に広がる強い筋膜で、背筋群や腹壁筋と連結します。"
   }
 ]
