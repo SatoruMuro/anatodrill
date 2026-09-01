@@ -1,4 +1,4 @@
-import { useMemo, useState, type MouseEvent } from 'react';
+import { useId, useMemo, useState, type MouseEvent } from 'react';
 import type { AnatomyImage, AnswerRecord, ChoiceLanguageMode, Question, Term } from '../types/anatodrill';
 import { shuffle } from '../lib/random';
 import { assetUrl, detailLabel } from '../lib/questions';
@@ -25,6 +25,12 @@ interface AnswerState {
     y: number;
   };
 }
+
+const ANSWER_PROMPT_QUESTION_TYPES = new Set<Question['type']>([
+  'image_number_mcq',
+  'image_label_mcq',
+  'single_image_mcq',
+]);
 
 function questionTypeLabel(type: Question['type']): string {
   if (type === 'single_image_mcq') {
@@ -69,6 +75,7 @@ export function QuestionCard({
   onAnswer,
   onContinue,
 }: QuestionCardProps) {
+  const answerPromptId = useId();
   const answerTerm = termsById.get(question.answerTermId);
   const imageCredit = question.imageId ? imagesById.get(question.imageId) : undefined;
   const imagePath = imageCredit?.file ?? question.image;
@@ -76,6 +83,10 @@ export function QuestionCard({
   const targetPlateLabel =
     imageCredit?.labels.find((label) => label.label === question.targetLabel) ??
     imageCredit?.labels.find((label) => label.termId === question.answerTermId);
+  const showAnswerPrompt = Boolean(imagePath) && ANSWER_PROMPT_QUESTION_TYPES.has(question.type);
+  const answerPrompt = question.type === 'image_number_mcq' && targetPlateLabel
+    ? `「${targetPlateLabel.label}」で示す構造はどれか？`
+    : displayPrompt.replace(/か。$/, 'か？');
   const [answerState, setAnswerState] = useState<AnswerState | null>(null);
 
   const choices = useMemo(() => {
@@ -204,6 +215,12 @@ export function QuestionCard({
         </div>
       ) : null}
 
+      {showAnswerPrompt ? (
+        <p className="answer-prompt" id={answerPromptId}>
+          {answerPrompt}
+        </p>
+      ) : null}
+
       {question.type === 'image_hotspot' && (!question.hotspots || question.hotspots.length === 0) ? (
         <div className="placeholder-support">
           <p>このホットスポット問題には判定範囲が未設定です。</p>
@@ -229,7 +246,12 @@ export function QuestionCard({
       ) : null}
 
       {question.type !== 'image_hotspot' ? (
-        <div className="choice-grid" role="list" aria-label="解答選択肢">
+        <div
+          className="choice-grid"
+          role="list"
+          aria-label={showAnswerPrompt ? undefined : '解答選択肢'}
+          aria-labelledby={showAnswerPrompt ? answerPromptId : undefined}
+        >
           {choices.map((term) => {
             const isSelected = answerState?.selectedTermId === term.id;
             const isCorrectChoice = term.id === question.answerTermId;

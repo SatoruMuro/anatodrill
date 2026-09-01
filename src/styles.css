@@ -398,6 +398,18 @@ dd {
   object-fit: contain;
 }
 
+.answer-prompt {
+  margin: 0 0 10px;
+  padding: 10px 12px;
+  border-left: 3px solid #7caea5;
+  border-radius: 0 6px 6px 0;
+  background: #f2f7f5;
+  color: #2d3b37;
+  font-size: 1rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
 .plate-viewer {
   position: relative;
   overflow: hidden;
@@ -1894,6 +1906,11 @@ button.plate-marker {
 
   .privacy-badge {
     align-self: flex-start;
+  }
+
+  .answer-prompt {
+    padding: 9px 10px;
+    font-size: 0.96rem;
   }
 
   .compact-list div,
