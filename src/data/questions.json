@@ -4760,6 +4760,166 @@
     "explanation": "番号12は舌下腺を示しています。kaibo5.pdf から追加した解剖学用語です。"
   },
   {
+    "id": "q_auto_gray514_updated_plate_label_2_optic_chiasm",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "optic_chiasm",
+    "choices": [
+      "optic_chiasm",
+      "optic_nerve",
+      "internal_carotid_artery",
+      "ophthalmic_artery"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は視交叉を示しています。視交叉は左右の視神経の線維が部分的に交叉する脳底部の構造です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_3_optic_nerve",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "optic_nerve",
+    "choices": [
+      "optic_nerve",
+      "internal_carotid_artery",
+      "ophthalmic_artery",
+      "lacrimal_artery"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は視神経を示しています。視神経は、英語の「optic nerve」、ラテン語の「nervus opticus」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_4_internal_carotid_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "internal_carotid_artery",
+    "choices": [
+      "internal_carotid_artery",
+      "ophthalmic_artery",
+      "lacrimal_artery",
+      "central_retinal_artery"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は内頸動脈を示しています。内頸動脈は、英語の「internal carotid artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_5_ophthalmic_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "ophthalmic_artery",
+    "choices": [
+      "ophthalmic_artery",
+      "lacrimal_artery",
+      "central_retinal_artery",
+      "supraorbital_artery"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は眼動脈を示しています。眼動脈は、英語の「ophthalmic artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_6_lacrimal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "lacrimal_artery",
+    "choices": [
+      "lacrimal_artery",
+      "central_retinal_artery",
+      "supraorbital_artery",
+      "supratrochlear_artery"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は涙腺動脈を示しています。涙腺動脈は、英語の「lacrimal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_7_central_retinal_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "central_retinal_artery",
+    "choices": [
+      "central_retinal_artery",
+      "supraorbital_artery",
+      "supratrochlear_artery",
+      "lacrimal_gland"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は網膜中心動脈を示しています。網膜中心動脈は、英語の「central retinal artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_8_supraorbital_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "supraorbital_artery",
+    "choices": [
+      "supraorbital_artery",
+      "supratrochlear_artery",
+      "lacrimal_gland",
+      "eyeball"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は眼窩上動脈を示しています。眼窩上動脈は、英語の「supraorbital artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_9_supratrochlear_artery",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "supratrochlear_artery",
+    "choices": [
+      "supratrochlear_artery",
+      "lacrimal_gland",
+      "eyeball",
+      "optic_chiasm"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は滑車上動脈を示しています。滑車上動脈は、英語の「supratrochlear artery」に対応する解剖学用語です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_10_lacrimal_gland",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "lacrimal_gland",
+    "choices": [
+      "lacrimal_gland",
+      "eyeball",
+      "optic_chiasm",
+      "optic_nerve"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は涙腺を示しています。涙腺は眼窩の上外側に位置する腺です。"
+  },
+  {
+    "id": "q_auto_gray514_updated_plate_label_11_eyeball",
+    "type": "image_number_mcq",
+    "testSet": "basic_head",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "eyeball",
+    "choices": [
+      "eyeball",
+      "optic_chiasm",
+      "optic_nerve",
+      "internal_carotid_artery"
+    ],
+    "imageId": "gray514_updated_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は眼球を示しています。眼球は眼窩内に位置し、角膜・強膜・網膜などからなる視覚器官です。"
+  },
+  {
     "id": "q_auto_arm_muscles_back_plate_label_1_humerus",
     "type": "image_number_mcq",
     "testSet": "basic_upper",
@@ -5206,5 +5366,213 @@
     "imageId": "gray409_heb_plate",
     "targetLabel": "20",
     "explanation": "番号20は仙骨を示しています。仙骨は骨盤後壁を構成する骨で、複数の仙椎が癒合して形成される。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_1_quadratus_lumborum",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「1」で示す構造はどれか。",
+    "answerTermId": "quadratus_lumborum",
+    "choices": [
+      "quadratus_lumborum",
+      "psoas_minor",
+      "psoas_major",
+      "iliacus"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "1",
+    "explanation": "番号1は腰方形筋を示しています。腰方形筋は後腹壁を構成する筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_2_psoas_minor",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「2」で示す構造はどれか。",
+    "answerTermId": "psoas_minor",
+    "choices": [
+      "psoas_minor",
+      "psoas_major",
+      "iliacus",
+      "tensor_fasciae_latae"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "2",
+    "explanation": "番号2は小腰筋を示しています。小腰筋は大腰筋の前面に位置する筋で、欠如することもあります。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_3_psoas_major",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「3」で示す構造はどれか。",
+    "answerTermId": "psoas_major",
+    "choices": [
+      "psoas_major",
+      "iliacus",
+      "tensor_fasciae_latae",
+      "sartorius"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "3",
+    "explanation": "番号3は大腰筋を示しています。大腰筋は腰椎の外側から大腿骨の小転子へ向かう筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_4_iliacus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「4」で示す構造はどれか。",
+    "answerTermId": "iliacus",
+    "choices": [
+      "iliacus",
+      "tensor_fasciae_latae",
+      "sartorius",
+      "pectineus"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "4",
+    "explanation": "番号4は腸骨筋を示しています。腸骨筋は腸骨窩に位置し、大腰筋とともに腸腰筋を構成する筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_5_tensor_fasciae_latae",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「5」で示す構造はどれか。",
+    "answerTermId": "tensor_fasciae_latae",
+    "choices": [
+      "tensor_fasciae_latae",
+      "sartorius",
+      "pectineus",
+      "adductor_longus"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "5",
+    "explanation": "番号5は大腿筋膜張筋を示しています。大腿筋膜張筋は大腿の上外側に位置し、腸脛靱帯に続く筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_6_sartorius",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「6」で示す構造はどれか。",
+    "answerTermId": "sartorius",
+    "choices": [
+      "sartorius",
+      "pectineus",
+      "adductor_longus",
+      "gracilis"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "6",
+    "explanation": "番号6は縫工筋を示しています。縫工筋は大腿前面を上外側から下内側へ斜めに走る筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_7_pectineus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「7」で示す構造はどれか。",
+    "answerTermId": "pectineus",
+    "choices": [
+      "pectineus",
+      "adductor_longus",
+      "gracilis",
+      "rectus_femoris"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "7",
+    "explanation": "番号7は恥骨筋を示しています。恥骨筋は恥骨から大腿骨の恥骨筋線へ向かう筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_8_adductor_longus",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「8」で示す構造はどれか。",
+    "answerTermId": "adductor_longus",
+    "choices": [
+      "adductor_longus",
+      "gracilis",
+      "rectus_femoris",
+      "vastus_lateralis"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "8",
+    "explanation": "番号8は長内転筋を示しています。長内転筋は大腿内側の浅層に位置し、恥骨から大腿骨へ向かう筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_9_gracilis",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「9」で示す構造はどれか。",
+    "answerTermId": "gracilis",
+    "choices": [
+      "gracilis",
+      "rectus_femoris",
+      "vastus_lateralis",
+      "vastus_medialis"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "9",
+    "explanation": "番号9は薄筋を示しています。薄筋は大腿内側を縦に走り、恥骨から脛骨の上内側へ向かう筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_10_rectus_femoris",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「10」で示す構造はどれか。",
+    "answerTermId": "rectus_femoris",
+    "choices": [
+      "rectus_femoris",
+      "vastus_lateralis",
+      "vastus_medialis",
+      "patella"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "10",
+    "explanation": "番号10は大腿直筋を示しています。大腿直筋は大腿前面の浅層に位置し、大腿四頭筋を構成する筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_11_vastus_lateralis",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「11」で示す構造はどれか。",
+    "answerTermId": "vastus_lateralis",
+    "choices": [
+      "vastus_lateralis",
+      "vastus_medialis",
+      "patella",
+      "quadratus_lumborum"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "11",
+    "explanation": "番号11は外側広筋を示しています。外側広筋は大腿四頭筋の外側部を構成する筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_12_vastus_medialis",
+    "type": "image_number_mcq",
+    "testSet": "basic_muscle",
+    "prompt": "図中の「12」で示す構造はどれか。",
+    "answerTermId": "vastus_medialis",
+    "choices": [
+      "vastus_medialis",
+      "patella",
+      "quadratus_lumborum",
+      "psoas_minor"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "12",
+    "explanation": "番号12は内側広筋を示しています。内側広筋は大腿四頭筋の内側部を構成する筋です。"
+  },
+  {
+    "id": "q_auto_thigh_muscles_front_plate_label_13_patella",
+    "type": "image_number_mcq",
+    "testSet": "basic_lower",
+    "prompt": "図中の「13」で示す構造はどれか。",
+    "answerTermId": "patella",
+    "choices": [
+      "patella",
+      "quadratus_lumborum",
+      "psoas_minor",
+      "psoas_major"
+    ],
+    "imageId": "thigh_muscles_front_plate",
+    "targetLabel": "13",
+    "explanation": "番号13は膝蓋骨を示しています。膝蓋骨は膝関節前面に位置する種子骨で、大腿四頭筋腱内に存在する。"
   }
 ]

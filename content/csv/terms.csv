@@ -7553,3 +7553,18 @@ serratus_posterior_inferior,下後鋸筋,serratus posterior inferior,musculus se
 external_oblique,外腹斜筋,external oblique,musculus obliquus externus abdominis,muscle,abdomen,basic_muscle,外腹斜筋は腹壁外側を構成し、体幹の屈曲・回旋や腹圧形成に関わる筋です。
 serratus_anterior,前鋸筋,serratus anterior,musculus serratus anterior,muscle,thorax,basic_muscle,前鋸筋は肋骨から肩甲骨内側縁へ向かい、肩甲骨の外転と上方回旋に関わる筋です。
 thoracolumbar_fascia,胸腰筋膜,thoracolumbar fascia,fascia thoracolumbalis,fascia,back,basic_muscle,胸腰筋膜は背部から腰部に広がる強い筋膜で、背筋群や腹壁筋と連結します。
+quadratus_lumborum,腰方形筋,quadratus lumborum,musculus quadratus lumborum,muscle,abdomen,basic_muscle,腰方形筋は後腹壁を構成する筋です。
+psoas_minor,小腰筋,psoas minor,musculus psoas minor,muscle,abdomen,basic_muscle,小腰筋は大腰筋の前面に位置する筋で、欠如することもあります。
+psoas_major,大腰筋,psoas major,musculus psoas major,muscle,lower limb,basic_muscle,大腰筋は腰椎の外側から大腿骨の小転子へ向かう筋です。
+iliacus,腸骨筋,iliacus,musculus iliacus,muscle,lower limb,basic_muscle,腸骨筋は腸骨窩に位置し、大腰筋とともに腸腰筋を構成する筋です。
+tensor_fasciae_latae,大腿筋膜張筋,tensor fasciae latae,musculus tensor fasciae latae,muscle,lower limb,basic_muscle,大腿筋膜張筋は大腿の上外側に位置し、腸脛靱帯に続く筋です。
+sartorius,縫工筋,sartorius,musculus sartorius,muscle,lower limb,basic_muscle,縫工筋は大腿前面を上外側から下内側へ斜めに走る筋です。
+pectineus,恥骨筋,pectineus,musculus pectineus,muscle,lower limb,basic_muscle,恥骨筋は恥骨から大腿骨の恥骨筋線へ向かう筋です。
+adductor_longus,長内転筋,adductor longus,musculus adductor longus,muscle,lower limb,basic_muscle,長内転筋は大腿内側の浅層に位置し、恥骨から大腿骨へ向かう筋です。
+gracilis,薄筋,gracilis,musculus gracilis,muscle,lower limb,basic_muscle,薄筋は大腿内側を縦に走り、恥骨から脛骨の上内側へ向かう筋です。
+rectus_femoris,大腿直筋,rectus femoris,musculus rectus femoris,muscle,lower limb,basic_muscle,大腿直筋は大腿前面の浅層に位置し、大腿四頭筋を構成する筋です。
+vastus_lateralis,外側広筋,vastus lateralis,musculus vastus lateralis,muscle,lower limb,basic_muscle,外側広筋は大腿四頭筋の外側部を構成する筋です。
+vastus_medialis,内側広筋,vastus medialis,musculus vastus medialis,muscle,lower limb,basic_muscle,内側広筋は大腿四頭筋の内側部を構成する筋です。
+optic_chiasm,視交叉,optic chiasm,chiasma opticum,brain,head and neck,basic_head,視交叉は左右の視神経の線維が部分的に交叉する脳底部の構造です。
+lacrimal_gland,涙腺,lacrimal gland,glandula lacrimalis,gland,head and neck,basic_head,涙腺は眼窩の上外側に位置する腺です。
+eyeball,眼球,eyeball,bulbus oculi,organ,head and neck,basic_head,眼球は眼窩内に位置し、角膜・強膜・網膜などからなる視覚器官です。

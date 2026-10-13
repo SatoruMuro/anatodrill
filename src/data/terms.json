@@ -75613,5 +75613,155 @@
     "region": "back",
     "testSet": "basic_muscle",
     "explanation": "胸腰筋膜は背部から腰部に広がる強い筋膜で、背筋群や腹壁筋と連結します。"
+  },
+  {
+    "id": "quadratus_lumborum",
+    "japanese": "腰方形筋",
+    "english": "quadratus lumborum",
+    "latin": "musculus quadratus lumborum",
+    "category": "muscle",
+    "region": "abdomen",
+    "testSet": "basic_muscle",
+    "explanation": "腰方形筋は後腹壁を構成する筋です。"
+  },
+  {
+    "id": "psoas_minor",
+    "japanese": "小腰筋",
+    "english": "psoas minor",
+    "latin": "musculus psoas minor",
+    "category": "muscle",
+    "region": "abdomen",
+    "testSet": "basic_muscle",
+    "explanation": "小腰筋は大腰筋の前面に位置する筋で、欠如することもあります。"
+  },
+  {
+    "id": "psoas_major",
+    "japanese": "大腰筋",
+    "english": "psoas major",
+    "latin": "musculus psoas major",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "大腰筋は腰椎の外側から大腿骨の小転子へ向かう筋です。"
+  },
+  {
+    "id": "iliacus",
+    "japanese": "腸骨筋",
+    "english": "iliacus",
+    "latin": "musculus iliacus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "腸骨筋は腸骨窩に位置し、大腰筋とともに腸腰筋を構成する筋です。"
+  },
+  {
+    "id": "tensor_fasciae_latae",
+    "japanese": "大腿筋膜張筋",
+    "english": "tensor fasciae latae",
+    "latin": "musculus tensor fasciae latae",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "大腿筋膜張筋は大腿の上外側に位置し、腸脛靱帯に続く筋です。"
+  },
+  {
+    "id": "sartorius",
+    "japanese": "縫工筋",
+    "english": "sartorius",
+    "latin": "musculus sartorius",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "縫工筋は大腿前面を上外側から下内側へ斜めに走る筋です。"
+  },
+  {
+    "id": "pectineus",
+    "japanese": "恥骨筋",
+    "english": "pectineus",
+    "latin": "musculus pectineus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "恥骨筋は恥骨から大腿骨の恥骨筋線へ向かう筋です。"
+  },
+  {
+    "id": "adductor_longus",
+    "japanese": "長内転筋",
+    "english": "adductor longus",
+    "latin": "musculus adductor longus",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "長内転筋は大腿内側の浅層に位置し、恥骨から大腿骨へ向かう筋です。"
+  },
+  {
+    "id": "gracilis",
+    "japanese": "薄筋",
+    "english": "gracilis",
+    "latin": "musculus gracilis",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "薄筋は大腿内側を縦に走り、恥骨から脛骨の上内側へ向かう筋です。"
+  },
+  {
+    "id": "rectus_femoris",
+    "japanese": "大腿直筋",
+    "english": "rectus femoris",
+    "latin": "musculus rectus femoris",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "大腿直筋は大腿前面の浅層に位置し、大腿四頭筋を構成する筋です。"
+  },
+  {
+    "id": "vastus_lateralis",
+    "japanese": "外側広筋",
+    "english": "vastus lateralis",
+    "latin": "musculus vastus lateralis",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "外側広筋は大腿四頭筋の外側部を構成する筋です。"
+  },
+  {
+    "id": "vastus_medialis",
+    "japanese": "内側広筋",
+    "english": "vastus medialis",
+    "latin": "musculus vastus medialis",
+    "category": "muscle",
+    "region": "lower limb",
+    "testSet": "basic_muscle",
+    "explanation": "内側広筋は大腿四頭筋の内側部を構成する筋です。"
+  },
+  {
+    "id": "optic_chiasm",
+    "japanese": "視交叉",
+    "english": "optic chiasm",
+    "latin": "chiasma opticum",
+    "category": "brain",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "視交叉は左右の視神経の線維が部分的に交叉する脳底部の構造です。"
+  },
+  {
+    "id": "lacrimal_gland",
+    "japanese": "涙腺",
+    "english": "lacrimal gland",
+    "latin": "glandula lacrimalis",
+    "category": "gland",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "涙腺は眼窩の上外側に位置する腺です。"
+  },
+  {
+    "id": "eyeball",
+    "japanese": "眼球",
+    "english": "eyeball",
+    "latin": "bulbus oculi",
+    "category": "organ",
+    "region": "head and neck",
+    "testSet": "basic_head",
+    "explanation": "眼球は眼窩内に位置し、角膜・強膜・網膜などからなる視覚器官です。"
   }
 ]

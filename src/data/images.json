@@ -3159,7 +3159,78 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray514_updated.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "2",
+        "termId": "optic_chiasm",
+        "x": 0.2929,
+        "y": 0.8837,
+        "note": "視交叉"
+      },
+      {
+        "label": "3",
+        "termId": "optic_nerve",
+        "x": 0.4247,
+        "y": 0.8084,
+        "note": "視神経"
+      },
+      {
+        "label": "4",
+        "termId": "internal_carotid_artery",
+        "x": 0.3873,
+        "y": 0.9345,
+        "note": "内頸動脈"
+      },
+      {
+        "label": "5",
+        "termId": "ophthalmic_artery",
+        "x": 0.4884,
+        "y": 0.7806,
+        "note": "眼動脈"
+      },
+      {
+        "label": "6",
+        "termId": "lacrimal_artery",
+        "x": 0.5455,
+        "y": 0.6766,
+        "note": "涙腺動脈"
+      },
+      {
+        "label": "7",
+        "termId": "central_retinal_artery",
+        "x": 0.5521,
+        "y": 0.5859,
+        "note": "網膜中心動脈"
+      },
+      {
+        "label": "8",
+        "termId": "supraorbital_artery",
+        "x": 0.5883,
+        "y": 0.1711,
+        "note": "眼窩上動脈"
+      },
+      {
+        "label": "9",
+        "termId": "supratrochlear_artery",
+        "x": 0.4609,
+        "y": 0.1506,
+        "note": "滑車上動脈"
+      },
+      {
+        "label": "10",
+        "termId": "lacrimal_gland",
+        "x": 0.6246,
+        "y": 0.3779,
+        "note": "涙腺"
+      },
+      {
+        "label": "11",
+        "termId": "eyeball",
+        "x": 0.5587,
+        "y": 0.4323,
+        "note": "眼球"
+      }
+    ],
     "suggestions": [
       {
         "japanese": "眼動脈",
@@ -5969,7 +6040,99 @@
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thigh_muscles_front.png",
     "modified": false,
     "modificationDescription": "Downloaded as a Gray's Anatomy plate for reusable numbered plate study and quiz use; no app-side modification.",
-    "labels": [],
+    "labels": [
+      {
+        "label": "1",
+        "termId": "quadratus_lumborum",
+        "x": 0.4862,
+        "y": 0.1055,
+        "note": "腰方形筋"
+      },
+      {
+        "label": "2",
+        "termId": "psoas_minor",
+        "x": 0.6224,
+        "y": 0.1091,
+        "note": "小腰筋"
+      },
+      {
+        "label": "3",
+        "termId": "psoas_major",
+        "x": 0.5312,
+        "y": 0.2824,
+        "note": "大腰筋"
+      },
+      {
+        "label": "4",
+        "termId": "iliacus",
+        "x": 0.3291,
+        "y": 0.2489,
+        "note": "腸骨筋"
+      },
+      {
+        "label": "5",
+        "termId": "tensor_fasciae_latae",
+        "x": 0.205,
+        "y": 0.4106,
+        "note": "大腿筋膜張筋"
+      },
+      {
+        "label": "6",
+        "termId": "sartorius",
+        "x": 0.4291,
+        "y": 0.4813,
+        "note": "縫工筋"
+      },
+      {
+        "label": "7",
+        "termId": "pectineus",
+        "x": 0.574,
+        "y": 0.4514,
+        "note": "恥骨筋"
+      },
+      {
+        "label": "8",
+        "termId": "adductor_longus",
+        "x": 0.6531,
+        "y": 0.5384,
+        "note": "長内転筋"
+      },
+      {
+        "label": "9",
+        "termId": "gracilis",
+        "x": 0.764,
+        "y": 0.5329,
+        "note": "薄筋"
+      },
+      {
+        "label": "10",
+        "termId": "rectus_femoris",
+        "x": 0.4225,
+        "y": 0.6143,
+        "note": "大腿直筋"
+      },
+      {
+        "label": "11",
+        "termId": "vastus_lateralis",
+        "x": 0.3412,
+        "y": 0.7287,
+        "note": "外側広筋"
+      },
+      {
+        "label": "12",
+        "termId": "vastus_medialis",
+        "x": 0.6597,
+        "y": 0.7665,
+        "note": "内側広筋"
+      },
+      {
+        "label": "13",
+        "termId": "patella",
+        "x": 0.5664,
+        "y": 0.8614,
+        "note": "膝蓋骨"
+      }
+    ],
     "suggestions": [],
     "editionYear": 1918
   }
